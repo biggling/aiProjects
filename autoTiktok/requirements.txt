@@ -1,0 +1,35 @@
+# AI
+anthropic>=0.25.0
+openai>=1.30.0
+elevenlabs>=1.0.0
+
+# Scheduling
+apscheduler>=3.10.4
+
+# Database
+sqlalchemy>=2.0.30
+python-dotenv>=1.0.1
+
+# Video
+moviepy>=1.0.3
+Pillow>=10.3.0
+ffmpeg-python>=0.2.0
+pydub>=0.25.1
+gTTS>=2.5.1
+
+# Automation
+playwright>=1.44.0
+selenium>=4.20.0
+
+# Data / Scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.3
+pandas>=2.2.2
+feedparser>=6.0.11
+
+# Platform
+instagrapi>=2.0.0
+google-api-python-client>=2.130.0
+google-auth-oauthlib>=1.2.0
+slack-sdk>=3.27.2
+tenacity>=8.3.0

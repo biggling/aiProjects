@@ -1,0 +1,48 @@
+timezone: Asia/Bangkok
+
+publish_slots:
+  - "12:00"
+  - "18:00"
+
+video:
+  max_per_day: 2
+  duration_target_sec:
+    min: 30
+    max: 45
+  resolution:
+    width: 1080
+    height: 1920
+  max_file_size_mb: 50
+
+language:
+  primary: th
+  captions: en
+
+output_paths:
+  assets: data/assets
+  output: data/output
+  analytics: data/analytics
+  logs: data/logs
+
+research:
+  trending_limit: 20
+  min_commission_rate: 10.0
+  competitor_videos_per_hashtag: 10
+
+scriptgen:
+  word_count:
+    min: 80
+    max: 120
+
+voiceover:
+  stability: 0.4
+  similarity_boost: 0.8
+  style: 0.3
+
+api:
+  timeout_sec: 30
+  max_retries: 3
+
+disk:
+  max_data_size_gb: 10
+  archive_after_days: 7

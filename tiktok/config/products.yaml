@@ -1,0 +1,9 @@
+products:
+  - id: prod_001
+    name: ""
+    tiktok_shop_url: ""
+    commission_rate: 0.0
+    affiliate_link: ""
+    utm_source: tiktok
+    utm_campaign: ""
+    approved: false

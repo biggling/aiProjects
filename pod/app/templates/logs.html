@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title_suffix %} - Logs{% endblock %}
+{% block head %}{% if selected_file %}<meta http-equiv="refresh" content="30">{% endif %}{% endblock %}
+{% block content %}
+<h2 style="margin-bottom: 20px;">Log Viewer</h2>
+<div class="filters">
+    <select onchange="window.location.href='/logs?file='+this.value">
+        <option value="">Select log file...</option>
+        {% for f in log_files %}
+        <option value="{{ f }}" {% if f == selected_file %}selected{% endif %}>{{ f }}</option>
+        {% endfor %}
+    </select>
+</div>
+{% if lines %}
+<pre>{% for line in lines %}{{ line }}{% endfor %}</pre>
+{% elif selected_file %}
+<p style="color: #888;">Log file is empty.</p>
+{% endif %}
+{% endblock %}

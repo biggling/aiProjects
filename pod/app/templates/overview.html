@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block head %}<meta http-equiv="refresh" content="60">{% endblock %}
+{% block content %}
+<h2 style="margin-bottom: 20px;">Dashboard Overview</h2>
+<div class="cards">
+    <div class="card">
+        <h3>Tasks Today</h3>
+        <div class="value">{{ tasks_today }}</div>
+    </div>
+    <div class="card">
+        <h3>Errors Today</h3>
+        <div class="value" style="color: {% if errors_today > 0 %}#dc2626{% endif %}">{{ errors_today }}</div>
+    </div>
+    <div class="card">
+        <h3>Designs Pending</h3>
+        <div class="value">{{ designs_pending }}</div>
+    </div>
+    <div class="card">
+        <h3>Uploaded Today</h3>
+        <div class="value">{{ listings_today }}</div>
+    </div>
+    <div class="card">
+        <h3>Total Revenue</h3>
+        <div class="value">${{ total_revenue }}</div>
+    </div>
+    <div class="card">
+        <h3>Live Listings</h3>
+        <div class="value">{{ total_live }}</div>
+    </div>
+</div>
+{% endblock %}

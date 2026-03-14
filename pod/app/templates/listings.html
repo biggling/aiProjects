@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title_suffix %} - Listings{% endblock %}
+{% block content %}
+<h2 style="margin-bottom: 20px;">Listings</h2>
+<div class="filters">
+    <a href="/listings?status_filter=all" class="btn {% if status_filter == 'all' %}btn-primary{% endif %}">All</a>
+    <a href="/listings?status_filter=pending" class="btn {% if status_filter == 'pending' %}btn-primary{% endif %}">Pending</a>
+    <a href="/listings?status_filter=live" class="btn {% if status_filter == 'live' %}btn-primary{% endif %}">Live</a>
+    <a href="/listings?status_filter=underperforming" class="btn {% if status_filter == 'underperforming' %}btn-warning{% endif %}">Underperforming</a>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Niche</th>
+            <th>Status</th>
+            <th>Etsy ID</th>
+            <th>Views</th>
+            <th>Favs</th>
+            <th>Revenue</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for l in listings %}
+        <tr>
+            <td title="{{ l.description }}">{{ l.title[:50] }}{% if l.title|length > 50 %}...{% endif %}</td>
+            <td>{{ l.keyword }}</td>
+            <td><span class="status status-{{ l.status }}">{{ l.status }}</span></td>
+            <td>{{ l.etsy_id }}</td>
+            <td>{{ l.views }}</td>
+            <td>{{ l.favorites }}</td>
+            <td>{{ l.revenue }}</td>
+        </tr>
+        {% endfor %}
+        {% if not listings %}
+        <tr><td colspan="7" style="text-align:center; color:#888;">No listings found</td></tr>
+        {% endif %}
+    </tbody>
+</table>
+{% if total_pages > 1 %}
+<div style="margin-top: 16px; display: flex; gap: 8px;">
+    {% for p in range(1, total_pages + 1) %}
+    <a href="/listings?status_filter={{ status_filter }}&page={{ p }}" class="btn {% if p == page %}btn-primary{% endif %}">{{ p }}</a>
+    {% endfor %}
+</div>
+{% endif %}
+{% endblock %}

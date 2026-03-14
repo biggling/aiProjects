@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title_suffix %} - Designs{% endblock %}
+{% block content %}
+<h2 style="margin-bottom: 20px;">Design Review Queue</h2>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Niche</th>
+            <th>CLIP Score</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for d in designs %}
+        <tr>
+            <td>{{ d.id }}</td>
+            <td>{{ d.keyword }}</td>
+            <td>{{ d.clip_score }}</td>
+            <td><span class="status status-{{ d.status }}">{{ d.status }}</span></td>
+            <td>
+                <form method="post" action="/designs/{{ d.id }}/approve" style="display:inline">
+                    <button class="btn btn-primary btn-sm">Approve</button>
+                </form>
+                <form method="post" action="/designs/{{ d.id }}/reject" style="display:inline">
+                    <button class="btn btn-danger btn-sm">Reject</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+        {% if not designs %}
+        <tr><td colspan="5" style="text-align:center; color:#888;">No designs pending review</td></tr>
+        {% endif %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title_suffix %} - Reports{% endblock %}
+{% block content %}
+<h2 style="margin-bottom: 20px;">Weekly Reports</h2>
+<div class="filters">
+    <select onchange="window.location.href='/report?file='+this.value">
+        <option value="">Select report...</option>
+        {% for f in report_files %}
+        <option value="{{ f }}" {% if f == selected_file %}selected{% endif %}>{{ f }}</option>
+        {% endfor %}
+    </select>
+</div>
+{% if report_html %}
+<div class="report-content">
+    {{ report_html | safe }}
+</div>
+{% elif not report_files %}
+<p style="color: #888;">No reports generated yet.</p>
+{% endif %}
+{% endblock %}

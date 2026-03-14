@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title_suffix %} - Niches{% endblock %}
+{% block content %}
+<h2 style="margin-bottom: 20px;">Niche Rankings</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Keyword</th>
+            <th>Score</th>
+            <th>Trend</th>
+            <th>Velocity</th>
+            <th>Competition</th>
+            <th>Designs</th>
+            <th>Listings</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for n in niches %}
+        <tr>
+            <td><strong>{{ n.keyword }}</strong></td>
+            <td>{{ n.final_score }}</td>
+            <td>{{ n.trend_score }}</td>
+            <td>{{ n.velocity }}</td>
+            <td>{{ n.competition }}</td>
+            <td>{{ n.designs }}</td>
+            <td>{{ n.listings }}</td>
+            <td><span class="status status-{{ n.status }}">{{ n.status }}</span></td>
+            <td>
+                {% if n.status == 'active' %}
+                <form method="post" action="/niches/{{ n.id }}/pause" style="display:inline">
+                    <button class="btn btn-warning btn-sm">Pause</button>
+                </form>
+                <form method="post" action="/niches/{{ n.id }}/kill" style="display:inline">
+                    <button class="btn btn-danger btn-sm">Kill</button>
+                </form>
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

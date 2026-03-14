@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title_suffix %} - Tasks{% endblock %}
+{% block content %}
+<h2 style="margin-bottom: 20px;">Task Control Panel</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Task</th>
+            <th>Last Run</th>
+            <th>Status</th>
+            <th>Duration</th>
+            <th>Summary</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for task in tasks %}
+        <tr>
+            <td><strong>{{ task.name }}</strong></td>
+            <td>{{ task.last_run }}</td>
+            <td><span class="status status-{{ task.status }}">{{ task.status }}</span></td>
+            <td>{{ task.duration }}</td>
+            <td>{{ task.summary }}</td>
+            <td>
+                <form method="post" action="/tasks/{{ task.name }}/run">
+                    <button type="submit" class="btn btn-primary btn-sm">Run now</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

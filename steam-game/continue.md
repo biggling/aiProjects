@@ -1,30 +1,39 @@
 # Steam Game — Session State
 
 ## Current Phase
-Phase 1: Concept & Prototype
+Phase 1: Concept & Prototype — COMPLETE
 
 ## Last Session
-_No sessions yet_
+2026-03-22 — Research, concept selection, GDD, Godot project setup
+
+## What Was Done
+1. Researched 7 successful solo-dev indie games (Vampire Survivors, Balatro, Brotato, etc.)
+2. Brainstormed 3 concepts, selected "Sigil Spin" — roguelike slot machine
+3. Wrote full Game Design Document
+4. Set up Godot 4 project with scenes, scripts, and data directories
+5. Created core game scripts: main.gd (game controller), reel.gd (slot reel logic)
+6. Created sigils.json with 5 base sigils, combo multipliers, and fusion spells
+7. Created CLAUDE.md and plan.md
 
 ## Next Actions (in order)
-1. Research current trending indie games on Steam with small scope (2024-2026 hits)
-2. Analyze 5 successful solo-dev games: genre, dev time, estimated revenue, review count
-3. Brainstorm 3 game concepts that fit: simple mechanic, deep replayability, minimal art
-4. Pick ONE concept — write 1-page GDD (core loop, progression, scope, art direction)
-5. Set up Godot 4 project structure
-6. Build grey-box prototype of core mechanic (playable in 1 session)
+1. Install Godot 4 and verify project opens
+2. Create visual reel UI (sprites for each sigil type)
+3. Implement full reel spinning animation with visual feedback
+4. Add enemy spawner and basic enemy movement
+5. Connect combat system to reel results
+6. Build basic UI (HP bar, gold counter, wave number)
 
 ## Blockers
-_None yet_
+- Need Godot 4 installed on Mac Mini
 
 ## Decisions Needed from BiG
 - Godot 4 installed? Or preference for another engine?
-- Any game genre preference? (roguelike, puzzle, deckbuilder, idle, tower defense?)
-- Art style: pixel art, vector/minimalist, or ASCII?
+- Art style: pixel art (recommended) or minimalist vector?
 - Steam developer account set up? ($100 one-time fee)
-- Target price point? ($4.99 or $9.99?)
+- Target price point: $4.99 or $9.99?
 
 ## Notes
-This is a bigger scope project than others — but the payoff per sale is highest.
-Godot 4 + GDScript is recommended because Claude can write full game code autonomously.
-Key insight: the game must be fun in 30 seconds. Build the core loop first, everything else later.
+- "Sigil Spin" concept validated by Luck Be a Landlord's success ($5M+ revenue)
+- Adding combat element differentiates from pure slot roguelikes
+- Godot is proven for indie hits (Brotato, Dome Keeper)
+- MVP scope: 5 sigils, 10 enemies, 1 boss, 10 waves — achievable in 2-3 months

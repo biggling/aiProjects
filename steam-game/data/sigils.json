@@ -1,0 +1,78 @@
+{
+  "sigils": [
+    {
+      "id": "fire",
+      "name": "Flame Sigil",
+      "element": "fire",
+      "rarity": "common",
+      "base_damage": 10,
+      "description": "Burns a single enemy",
+      "color": "#FF4444"
+    },
+    {
+      "id": "ice",
+      "name": "Frost Sigil",
+      "element": "ice",
+      "rarity": "common",
+      "slow_duration": 2.0,
+      "description": "Slows all enemies",
+      "color": "#4488FF"
+    },
+    {
+      "id": "lightning",
+      "name": "Bolt Sigil",
+      "element": "lightning",
+      "rarity": "common",
+      "chain_damage": 8,
+      "max_chains": 3,
+      "description": "Chain lightning hits multiple enemies",
+      "color": "#FFDD44"
+    },
+    {
+      "id": "nature",
+      "name": "Leaf Sigil",
+      "element": "nature",
+      "rarity": "common",
+      "heal_amount": 5,
+      "description": "Heals the player",
+      "color": "#44DD44"
+    },
+    {
+      "id": "shield",
+      "name": "Ward Sigil",
+      "element": "shield",
+      "rarity": "common",
+      "block_stacks": 1,
+      "description": "Blocks the next enemy attack",
+      "color": "#DDDDFF"
+    }
+  ],
+  "combo_multipliers": {
+    "2": 1.0,
+    "3": 2.0,
+    "4": 4.0,
+    "5": 10.0
+  },
+  "fusion_spells": [
+    {
+      "sigils": ["fire", "ice"],
+      "name": "Steam Cloud",
+      "effect": "AoE damage + slow",
+      "damage": 15,
+      "slow": 1.5
+    },
+    {
+      "sigils": ["fire", "lightning"],
+      "name": "Plasma Bolt",
+      "effect": "High single-target damage",
+      "damage": 30
+    },
+    {
+      "sigils": ["nature", "shield"],
+      "name": "Thorned Barrier",
+      "effect": "Block + reflect damage",
+      "block": 2,
+      "reflect_damage": 5
+    }
+  ]
+}

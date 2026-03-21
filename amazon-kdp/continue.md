@@ -1,17 +1,24 @@
 # Amazon KDP — Session State
 
 ## Current Phase
-Phase 1: Niche Research & Validation
+Phase 2: Interior Generation — IN PROGRESS
 
 ## Last Session
-_No sessions yet_
+2026-03-22 — Project setup, niche research, interior generator built
+
+## What Was Done
+1. Researched KDP niches — identified top opportunities (logbooks, journals, planners)
+2. Created CLAUDE.md, plan.md, requirements.txt
+3. Built interior generator: lined, dot grid, graph paper (PDF output via ReportLab)
+4. Built keyword research tool (Amazon autocomplete scraper)
+5. Set up project structure
 
 ## Next Actions (in order)
-1. Research top low-content book niches on Amazon (journals, planners, logbooks)
-2. Use Amazon search autocomplete to find long-tail keywords with demand
-3. Analyze top 10 results for 5 niche keywords: BSR, review count, price, page count
-4. Identify 3-5 book concepts where top sellers have <100 reviews (low competition signal)
-5. Rank concepts by: estimated demand, competition level, ease of creation
+1. Install dependencies and test interior generator
+2. Add weekly/monthly planner layout templates
+3. Add tracker templates (habit, mood, fitness)
+4. Build cover generator with Pillow
+5. Generate first complete book (interior + cover) for a logbook niche
 
 ## Blockers
 _None yet_
@@ -23,4 +30,6 @@ _None yet_
 - Budget for Amazon Ads testing? ($5-10/day enough to start)
 
 ## Notes
-Low-content books (journals, planners) are fastest to ship and can validate the pipeline before investing in non-fiction writing.
+- Low-content books are fastest to ship — focus here first
+- Specialized logbooks (fishing, bird watching) have lowest competition
+- Interior generator supports 5 trim sizes and 3 page types

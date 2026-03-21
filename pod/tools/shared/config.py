@@ -19,6 +19,7 @@ def _optional(key: str, default: str = "") -> str:
 ANTHROPIC_API_KEY = _optional("ANTHROPIC_API_KEY")
 OPENAI_API_KEY = _optional("OPENAI_API_KEY")
 STABILITY_API_KEY = _optional("STABILITY_API_KEY")
+GEMINI_API_KEY = _optional("GEMINI_API_KEY")
 
 # Etsy
 ETSY_API_KEY = _optional("ETSY_API_KEY")

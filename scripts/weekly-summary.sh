@@ -10,7 +10,11 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 ENV_FILE="$PROJECT_ROOT/.env"
 
-source "$ENV_FILE"
+[[ -f "$ENV_FILE" ]] && source "$ENV_FILE"
+
+# Telegram config
+TELEGRAM_BOT_TOKEN="${TELEGRAM_BOT_TOKEN:-8484927192:AAHVDDU-WGsjJDOC0pSrnb_x_5RQ-mPetaQ}"
+TELEGRAM_CHAT_ID="${TELEGRAM_CHAT_ID:-8532895589}"
 
 LOG_DIR="${LOG_DIR:-$PROJECT_ROOT/logs}"
 WEEK_AGO=$(date -d "7 days ago" +%Y%m%d 2>/dev/null || date -v-7d +%Y%m%d)
@@ -36,7 +40,7 @@ last_summary() {
 # Get current phase from continue.md
 current_phase() {
   local proj="$1"
-  local cf="$PROJECT_ROOT/projects/$proj/continue.md"
+  local cf="$PROJECT_ROOT/$proj/continue.md"
   if [[ -f "$cf" ]]; then
     grep -A1 "Current Phase" "$cf" | tail -1 | sed 's/^[[:space:]]*//'
   else
@@ -45,55 +49,41 @@ current_phase() {
 }
 
 # Build summary message
-MSG="📊 WEEKLY DIGEST — $(date +'%b %d, %Y')
-━━━━━━━━━━━━━━━━━━━━━
+MSG="📊 <b>WEEKLY DIGEST</b> — $(date +'%b %d, %Y')
 
-🔴 Trade Automation
-   Phase: $(current_phase trade-auto)
-   Sessions: $(count_sessions trade-auto)
-   Latest: $(last_summary trade-auto | head -1)
+🎬 <b>TikTok</b>
+   $(current_phase tiktok) | Sessions: $(count_sessions tiktok)
 
-🟠 Print on Demand
-   Phase: $(current_phase pod)
-   Sessions: $(count_sessions pod)
-   Latest: $(last_summary pod | head -1)
+📈 <b>Trade Auto</b>
+   $(current_phase trade-auto) | Sessions: $(count_sessions trade-auto)
 
-🔵 Android App
-   Phase: $(current_phase android-app)
-   Sessions: $(count_sessions android-app)
-   Latest: $(last_summary android-app | head -1)
+🎨 <b>POD (Etsy)</b>
+   $(current_phase pod) | Sessions: $(count_sessions pod)
 
-🟣 Polymarket
-   Phase: $(current_phase polymarket)
-   Sessions: $(count_sessions polymarket)
-   Latest: $(last_summary polymarket | head -1)
+🛒 <b>Shopee Affiliate</b>
+   $(current_phase shopee-affiliate) | Sessions: $(count_sessions shopee-affiliate)
 
-🟢 Shopee Affiliate
-   Phase: $(current_phase shopee-affiliate)
-   Sessions: $(count_sessions shopee-affiliate)
-   Latest: $(last_summary shopee-affiliate | head -1)
+📚 <b>Amazon KDP</b>
+   $(current_phase amazon-kdp) | Sessions: $(count_sessions amazon-kdp)
 
-📚 Amazon KDP
-   Phase: $(current_phase amazon-kdp)
-   Sessions: $(count_sessions amazon-kdp)
-   Latest: $(last_summary amazon-kdp | head -1)
+🎮 <b>Steam Game</b>
+   $(current_phase steam-game) | Sessions: $(count_sessions steam-game)
 
-🎮 Steam Game
-   Phase: $(current_phase steam-game)
-   Sessions: $(count_sessions steam-game)
-   Latest: $(last_summary steam-game | head -1)
+📱 <b>Android App</b>
+   $(current_phase android-app) | Sessions: $(count_sessions android-app)
 
-━━━━━━━━━━━━━━━━━━━━━
-💡 Reply /run <project> to trigger a manual session"
+🔮 <b>Polymarket</b>
+   $(current_phase polymarket) | Sessions: $(count_sessions polymarket)"
 
 # Send to Telegram
-if [[ -n "${TELEGRAM_BOT_TOKEN:-}" && -n "${TELEGRAM_CHAT_ID:-}" ]]; then
-  curl -s --max-time 10 \
-    "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-    -d "chat_id=$TELEGRAM_CHAT_ID" \
-    -d "text=$MSG" \
-    -d "disable_web_page_preview=true" > /dev/null 2>&1
-fi
+curl -s --max-time 10 \
+  -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+  -H "Content-Type: application/json" \
+  -d "$(jq -n \
+    --arg chat_id "$TELEGRAM_CHAT_ID" \
+    --arg text "$MSG" \
+    '{chat_id: $chat_id, text: $text, parse_mode: "HTML", disable_web_page_preview: true}'
+  )" > /dev/null 2>&1 || true
 
 # Touch week marker for next week's count
 touch "$LOG_DIR/.week_marker"

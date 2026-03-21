@@ -8,17 +8,16 @@
 set -euo pipefail
 
 # ==================== CONFIG ====================
-# Copy .env.example to .env and fill in your values
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 ENV_FILE="$PROJECT_ROOT/.env"
 
-if [[ ! -f "$ENV_FILE" ]]; then
-  echo "ERROR: $ENV_FILE not found. Copy .env.example to .env and fill in values."
-  exit 1
-fi
+# Source .env if it exists (optional — Telegram config has defaults)
+[[ -f "$ENV_FILE" ]] && source "$ENV_FILE"
 
-source "$ENV_FILE"
+# Telegram
+TELEGRAM_BOT_TOKEN="${TELEGRAM_BOT_TOKEN:-8484927192:AAHVDDU-WGsjJDOC0pSrnb_x_5RQ-mPetaQ}"
+TELEGRAM_CHAT_ID="${TELEGRAM_CHAT_ID:-8532895589}"
 
 # Defaults
 LOG_DIR="${LOG_DIR:-$PROJECT_ROOT/logs}"
@@ -34,7 +33,7 @@ DATE_HUMAN=$(date +"%b %d %H:%M")
 mkdir -p "$LOG_DIR"
 
 # ==================== VALIDATION ====================
-VALID_PROJECTS=("trade-auto" "pod" "shopee-affiliate" "amazon-kdp" "steam-game" "android-app" "polymarket")
+VALID_PROJECTS=("tiktok" "trade-auto" "pod" "shopee-affiliate" "amazon-kdp" "steam-game" "android-app" "polymarket")
 
 usage() {
   echo "Usage: $0 <project> [custom-prompt]"
@@ -55,21 +54,22 @@ fi
 # ==================== TELEGRAM ====================
 send_telegram() {
   local message="$1"
-  local parse_mode="${2:-}"
+  local parse_mode="${2:-HTML}"
 
   if [[ -z "${TELEGRAM_BOT_TOKEN:-}" || -z "${TELEGRAM_CHAT_ID:-}" ]]; then
     echo "[WARN] Telegram not configured, skipping notification"
     return 0
   fi
 
-  local payload="chat_id=$TELEGRAM_CHAT_ID&text=$message&disable_web_page_preview=true"
-  if [[ -n "$parse_mode" ]]; then
-    payload="$payload&parse_mode=$parse_mode"
-  fi
-
   curl -s --max-time 10 \
-    "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-    -d "$payload" > /dev/null 2>&1 || true
+    -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+    -H "Content-Type: application/json" \
+    -d "$(jq -n \
+      --arg chat_id "$TELEGRAM_CHAT_ID" \
+      --arg text "$message" \
+      --arg parse_mode "$parse_mode" \
+      '{chat_id: $chat_id, text: $text, parse_mode: $parse_mode, disable_web_page_preview: true}'
+    )" > /dev/null 2>&1 || true
 }
 
 # ==================== RUN SINGLE PROJECT ====================
@@ -77,7 +77,7 @@ run_project() {
   local proj="$1"
   local custom="${2:-}"
   local log_file="$LOG_DIR/${proj}_${TIMESTAMP}.log"
-  local continue_file="$PROJECT_ROOT/projects/$proj/continue.md"
+  local continue_file="$PROJECT_ROOT/$proj/continue.md"
 
   echo "[$DATE_HUMAN] Starting: $proj" | tee -a "$LOG_DIR/scheduler.log"
 
@@ -93,34 +93,44 @@ run_project() {
   if [[ -n "$custom" ]]; then
     prompt="$custom
 
-After completing the task, update projects/$proj/continue.md with:
+After completing the task, update $proj/continue.md with:
 - What was completed
 - Exact next steps
 - Any blockers"
   else
-    prompt="Read projects/$proj/continue.md carefully.
+    prompt="Read $proj/continue.md carefully. Also read $proj/CLAUDE.md if it exists.
 
 Execute the highest priority next task listed there.
 Work autonomously — make decisions yourself unless it involves spending money.
 Write production-quality code, not prototypes.
 
-When done, update projects/$proj/continue.md with:
+When done, update $proj/continue.md with:
 - What was completed this session (be specific)
-- Exact next steps (so specific that future-you can start immediately)  
+- Exact next steps (so specific that future-you can start immediately)
 - Any blockers or decisions needed from BiG
 
 End with a 3-line summary of what you accomplished."
   fi
 
+  # Extract current phase from continue.md
+  local current_phase
+  current_phase=$(grep -A1 "Current Phase" "$continue_file" 2>/dev/null | tail -1 | sed 's/^[[:space:]]*//' | head -c 80)
+
   # Notify start
-  send_telegram "🚀 Starting: $proj
-📋 $(head -5 "$continue_file" | tail -3)"
+  send_telegram "🚀 <b>${proj}</b> — Agent started
+📍 ${current_phase:-unknown phase}"
 
   # Run Claude Code with timeout
   local exit_code=0
+  local start_time=$SECONDS
   local output
   output=$(cd "$PROJECT_ROOT" && timeout "$MAX_TIMEOUT" \
-    "$CLAUDE_BIN" --agent "$proj" --print "$prompt" 2>&1) || exit_code=$?
+    "$CLAUDE_BIN" --print "$prompt" \
+    --allowedTools "Read,Write,Edit,Bash,Glob,Grep" \
+    --max-turns 50 2>&1) || exit_code=$?
+  local duration=$(( SECONDS - start_time ))
+  local duration_min=$(( duration / 60 ))
+  local duration_sec=$(( duration % 60 ))
 
   # Save full log
   echo "$output" > "$log_file"
@@ -128,28 +138,46 @@ End with a 3-line summary of what you accomplished."
   # Handle results
   if [[ $exit_code -eq 124 ]]; then
     echo "[$DATE_HUMAN] TIMEOUT: $proj (${MAX_TIMEOUT}s)" | tee -a "$LOG_DIR/scheduler.log"
-    send_telegram "⏰ $proj — Timed out after ${MAX_TIMEOUT}s
-Check log: ${log_file##*/}"
+    send_telegram "⏰ <b>${proj}</b> — Timed out
+
+⏱ Duration: ${duration_min}m ${duration_sec}s
+📄 Log: ${log_file##*/}"
+
   elif [[ $exit_code -ne 0 ]]; then
     echo "[$DATE_HUMAN] ERROR: $proj (exit $exit_code)" | tee -a "$LOG_DIR/scheduler.log"
     local error_tail
-    error_tail=$(echo "$output" | tail -5)
-    send_telegram "❌ $proj — Error (exit $exit_code)
-$error_tail"
+    error_tail=$(echo "$output" | tail -5 | head -c 500 | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g')
+    send_telegram "❌ <b>${proj}</b> — Failed (exit ${exit_code})
+
+⏱ Duration: ${duration_min}m ${duration_sec}s
+<pre>${error_tail}</pre>"
+
   else
     echo "[$DATE_HUMAN] Done: $proj" | tee -a "$LOG_DIR/scheduler.log"
 
-    # Extract summary (last 30 lines, trim to Telegram limit)
+    # Extract summary: last meaningful lines (skip blank lines)
     local summary
-    summary=$(echo "$output" | tail -30 | head -c 3000)
-    send_telegram "✅ $proj — Done
-$summary"
+    summary=$(echo "$output" | grep -v '^$' | tail -15 | head -c 800 | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g')
+
+    # Read updated continue.md for next actions
+    local next_action
+    next_action=$(grep -A2 "Next Actions" "$continue_file" 2>/dev/null | tail -1 | sed 's/^[[:space:]]*//' | head -c 120)
+
+    send_telegram "✅ <b>${proj}</b> — Done
+
+⏱ Duration: ${duration_min}m ${duration_sec}s
+📍 Phase: ${current_phase}
+
+<b>Summary:</b>
+<pre>${summary}</pre>
+
+<b>Next:</b> ${next_action:-check continue.md}"
   fi
 
   # Log file size for monitoring
   local log_size
   log_size=$(wc -c < "$log_file")
-  echo "[$DATE_HUMAN] Log: ${log_file##*/} (${log_size} bytes)" >> "$LOG_DIR/scheduler.log"
+  echo "[$DATE_HUMAN] Log: ${log_file##*/} (${log_size} bytes, ${duration}s)" >> "$LOG_DIR/scheduler.log"
 
   return $exit_code
 }
@@ -157,19 +185,22 @@ $summary"
 # ==================== RUN ALL PROJECTS ====================
 run_all() {
   echo "[$DATE_HUMAN] Running all projects in priority order" | tee -a "$LOG_DIR/scheduler.log"
-  send_telegram "🔄 Starting full project rotation..."
+  send_telegram "🔄 <b>Full rotation starting</b>
+📦 Projects: ${#VALID_PROJECTS[@]}"
 
   local failed=0
+  local completed=0
   for proj in "${VALID_PROJECTS[@]}"; do
-    run_project "$proj" "" || ((failed++))
-    # Pause between projects to avoid rate limits
+    run_project "$proj" "" && ((completed++)) || ((failed++))
     sleep 30
   done
 
   if [[ $failed -eq 0 ]]; then
-    send_telegram "🎉 All projects completed successfully"
+    send_telegram "🎉 <b>All ${completed} projects completed</b>"
   else
-    send_telegram "⚠️ Rotation done — $failed project(s) had issues"
+    send_telegram "⚠️ <b>Rotation done</b>
+✅ ${completed} succeeded
+❌ ${failed} failed"
   fi
 }
 

@@ -48,32 +48,53 @@ current_phase() {
   fi
 }
 
+# Count research runs this week per project
+count_research() {
+  local proj="$1"
+  find "$LOG_DIR" -name "${proj}_research_*.log" -newer "$LOG_DIR/.week_marker" 2>/dev/null | wc -l || echo "0"
+}
+
 # Build summary message
 MSG="📊 <b>WEEKLY DIGEST</b> — $(date +'%b %d, %Y')
 
+— HIGH PRIORITY —
+🔌 <b>MCP Apps</b>
+   $(current_phase mcp-apps) | Work: $(count_sessions mcp-apps) | Research: $(count_research mcp-apps)
+
+🛍 <b>Digital Products</b>
+   $(current_phase digital-products) | Work: $(count_sessions digital-products) | Research: $(count_research digital-products)
+
+— ACTIVE —
 🎬 <b>TikTok</b>
-   $(current_phase tiktok) | Sessions: $(count_sessions tiktok)
+   $(current_phase tiktok) | Work: $(count_sessions tiktok) | Research: $(count_research tiktok)
 
 📈 <b>Trade Auto</b>
-   $(current_phase trade-auto) | Sessions: $(count_sessions trade-auto)
+   $(current_phase trade-auto) | Work: $(count_sessions trade-auto) | Research: $(count_research trade-auto)
 
 🎨 <b>POD (Etsy)</b>
-   $(current_phase pod) | Sessions: $(count_sessions pod)
+   $(current_phase pod) | Work: $(count_sessions pod) | Research: $(count_research pod)
 
+💻 <b>Micro-SaaS</b>
+   $(current_phase micro-saas) | Work: $(count_sessions micro-saas) | Research: $(count_research micro-saas)
+
+🎥 <b>YouTube</b>
+   $(current_phase youtube-content) | Work: $(count_sessions youtube-content) | Research: $(count_research youtube-content)
+
+— BACKLOG —
 🛒 <b>Shopee Affiliate</b>
-   $(current_phase shopee-affiliate) | Sessions: $(count_sessions shopee-affiliate)
+   $(current_phase shopee-affiliate) | Work: $(count_sessions shopee-affiliate)
 
 📚 <b>Amazon KDP</b>
-   $(current_phase amazon-kdp) | Sessions: $(count_sessions amazon-kdp)
+   $(current_phase amazon-kdp) | Work: $(count_sessions amazon-kdp)
 
 🎮 <b>Steam Game</b>
-   $(current_phase steam-game) | Sessions: $(count_sessions steam-game)
+   $(current_phase steam-game) | Work: $(count_sessions steam-game)
 
 📱 <b>Android App</b>
-   $(current_phase android-app) | Sessions: $(count_sessions android-app)
+   $(current_phase android-app) | Work: $(count_sessions android-app)
 
 🔮 <b>Polymarket</b>
-   $(current_phase polymarket) | Sessions: $(count_sessions polymarket)"
+   $(current_phase polymarket) | Work: $(count_sessions polymarket)"
 
 # Send to Telegram
 curl -s --max-time 10 \

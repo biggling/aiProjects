@@ -33,7 +33,7 @@ DATE_HUMAN=$(date +"%b %d %H:%M")
 mkdir -p "$LOG_DIR"
 
 # ==================== VALIDATION ====================
-VALID_PROJECTS=("tiktok" "trade-auto" "pod" "shopee-affiliate" "amazon-kdp" "steam-game" "android-app" "polymarket")
+VALID_PROJECTS=("mcp-apps" "digital-products" "tiktok" "trade-auto" "pod" "micro-saas" "youtube-content" "shopee-affiliate" "amazon-kdp" "steam-game" "android-app" "polymarket")
 
 usage() {
   echo "Usage: $0 <project> [custom-prompt]"

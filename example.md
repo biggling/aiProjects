@@ -291,6 +291,148 @@ Output looks like:
 
 ---
 
+## continue.md — Recurring Daily Tasks Pattern
+
+The agent reads `continue.md` at the start of every session. By adding a
+**Daily Tasks** section, you guarantee those tasks run on every work session
+without having to remember to ask for them.
+
+### Template structure
+
+```markdown
+# <Project> — Continue
+
+## Daily Tasks  ← agent always runs these first, every session
+- [ ] <repeating task 1>
+- [ ] <repeating task 2>
+- [ ] <repeating task 3>
+
+## Current Phase
+Phase N — short description
+
+## One-Time Next Steps  ← agent picks the top unchecked item
+- [ ] specific task A
+- [ ] specific task B
+- [x] completed task C
+
+## Notes / Blockers
+- any context the agent needs to know
+```
+
+The agent instruction in `run-agent-continue.sh` says:
+> "Continue the highest priority next task from continue.md"
+
+So put **Daily Tasks first** — the agent will always run them before moving to
+one-time steps.
+
+---
+
+### Example: mcp-apps/continue.md with daily research loop
+
+```markdown
+# mcp-apps — Continue
+
+## Daily Tasks
+- [ ] Search "new MCP server launched site:github.com" — log any in research/ideas.md
+- [ ] Check https://glama.ai/mcp/servers for newly listed servers, note gaps
+- [ ] Review research/findings/latest.md action items — pick one to act on today
+
+## Current Phase
+**Phase 2** — Building crypto portfolio tracker MCP server
+
+## One-Time Next Steps
+- [ ] Add get_portfolio_value() tool to the MCP server
+- [ ] Write README with install + usage instructions
+- [ ] Set up Stripe payment link via Gumroad
+- [x] Scaffold TypeScript MCP server with MCP SDK
+
+## Blockers
+- Need to decide: remote HTTP SSE vs local stdio — check community preference first
+```
+
+---
+
+### Example: digital-products/continue.md with daily idea capture
+
+```markdown
+# digital-products — Continue
+
+## Daily Tasks
+- [ ] Search Gumroad "developer" sorted by popular — log any new products to research/ideas.md
+- [ ] Check Etsy "notion template" new listings — note pricing and format trends
+- [ ] Write one product description draft (even rough) and save to drafts/
+
+## Current Phase
+**Phase 1** — Packaging Claude Code agent configs for Gumroad
+
+## One-Time Next Steps
+- [ ] Create ZIP of CLAUDE.md configs with README
+- [ ] Set up Gumroad product page at $9
+- [ ] Design cover image in Canva (1280x720)
+- [x] Identify first product: Claude Code agent config pack
+```
+
+---
+
+### Example: trade-auto/continue.md with daily market check
+
+```markdown
+# trade-auto — Continue
+
+## Daily Tasks
+- [ ] Fetch BTC/ETH 24h price change — log to data/daily_market.csv
+- [ ] Check if any open position hits stop-loss threshold — alert if so
+- [ ] Run strategy health check: python src/health_check.py
+
+## Current Phase
+**Phase 2** — Backtesting momentum strategy on 2023-2024 data
+
+## One-Time Next Steps
+- [ ] Fix grid level overlap bug when range_pct < 0.02
+- [ ] Add Bybit paper trading connector
+- [ ] Write backtest report for momentum strategy
+- [x] Implement 3 base strategies (momentum, mean-reversion, grid)
+```
+
+---
+
+### Example: shopee-affiliate/continue.md with daily content output
+
+```markdown
+# shopee-affiliate — Continue
+
+## Daily Tasks
+- [ ] Write 1 Thai product review post → save to content/drafts/YYYY-MM-DD.md
+- [ ] Pull today's Shopee TH trending products — log top 5 to research/trending.md
+- [ ] Check if any scheduled post needs affiliate links updated
+
+## Current Phase
+**Phase 2** — Building content generation pipeline
+
+## One-Time Next Steps
+- [ ] Build content/generator.py: niche → draft → affiliate link insert
+- [ ] Set up LINE Official Account for distribution
+- [ ] Create content calendar for April double-day campaigns
+- [x] Niche research complete — beauty + home appliances selected
+```
+
+---
+
+### How the agent handles checkboxes
+
+The agent does **not** permanently check off Daily Tasks — it runs them and
+leaves them unchecked so they repeat next session. One-Time Next Steps get
+checked `[x]` when complete.
+
+To make this explicit, add a note at the top of the Daily Tasks section:
+
+```markdown
+## Daily Tasks  (reset each session — do not mark [x])
+- [ ] ...
+```
+
+---
+
 ## Non-Interactive (--print) Mode
 
 ```bash

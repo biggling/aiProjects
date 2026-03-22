@@ -3,18 +3,18 @@
 ## Quick Start
 ```bash
 # Work on a specific project (run from project directory):
-cd mcp-apps && claude        # NEW — HIGH priority
-cd digital-products && claude # NEW — HIGH priority
-cd tiktok && claude
-cd trade-auto && claude
-cd pod && claude
-cd micro-saas && claude      # NEW — GOOD priority
-cd youtube-content && claude # NEW — GOOD priority
-cd shopee-affiliate && claude
-cd amazon-kdp && claude
-cd steam-game && claude
-cd android-app && claude
-cd polymarket && claude
+cd mcp-apps && claude         # Priority 1 — HIGH
+cd digital-products && claude # Priority 2 — HIGH
+cd trade-auto && claude       # Priority 3
+cd pod && claude              # Priority 4
+cd android-app && claude      # Priority 5
+cd micro-saas && claude       # Priority 6
+cd tiktok && claude           # Priority 7
+cd youtube-content && claude  # Priority 8
+cd shopee-affiliate && claude # Priority 9
+cd amazon-kdp && claude       # Priority 10
+cd steam-game && claude       # Priority 11
+cd polymarket && claude       # Priority 12
 ```
 
 ## Structure
@@ -31,7 +31,23 @@ aiProjects/
 │   └── continue.md
 ├── digital-products/       # Priority 2 — Gumroad/Etsy digital downloads (HIGH conviction)
 │   └── continue.md
-├── tiktok/                 # Priority 3 — TikTok/Reels/Shorts affiliate automation
+├── trade-auto/             # Priority 3 — Crypto trading bots
+│   ├── continue.md
+│   ├── src/
+│   ├── backtests/
+│   └── docs/
+├── pod/                    # Priority 4 — Etsy print on demand
+│   ├── continue.md
+│   ├── designs/
+│   ├── listings/
+│   └── scripts/
+├── android-app/            # Priority 5 — Play Store apps
+│   ├── continue.md
+│   ├── app/
+│   └── docs/
+├── micro-saas/             # Priority 6 — Micro-SaaS
+│   └── continue.md
+├── tiktok/                 # Priority 7 — TikTok/Reels/Shorts affiliate automation
 │   ├── CLAUDE.md
 │   ├── plan.md
 │   ├── continue.md
@@ -40,43 +56,27 @@ aiProjects/
 │   ├── dashboard/
 │   ├── scheduler/
 │   └── tests/
-├── trade-auto/             # Priority 4 — Crypto trading bots
-│   ├── continue.md
-│   ├── src/
-│   ├── backtests/
-│   └── docs/
-├── pod/                    # Priority 5 — Etsy print on demand
-│   ├── continue.md
-│   ├── designs/
-│   ├── listings/
-│   └── scripts/
-├── micro-saas/             # Priority 6 — Micro-SaaS (GOOD fit)
+├── youtube-content/        # Priority 8 — Dev tutorial YouTube channel
 │   └── continue.md
-├── youtube-content/        # Priority 7 — Dev tutorial YouTube channel (GOOD fit)
-│   └── continue.md
-├── shopee-affiliate/       # Priority 8 — Shopee affiliate (Thailand)
+├── shopee-affiliate/       # Priority 9 — Shopee affiliate (Thailand)
 │   ├── continue.md
 │   ├── src/
 │   ├── content/
 │   ├── research/
 │   └── campaigns/
-├── amazon-kdp/             # Priority 9 — Kindle Direct Publishing
+├── amazon-kdp/             # Priority 10 — Kindle Direct Publishing
 │   ├── continue.md
 │   ├── src/
 │   ├── books/
 │   ├── covers/
 │   ├── research/
 │   └── templates/
-├── steam-game/             # Priority 10 — Indie game on Steam
+├── steam-game/             # Priority 11 — Indie game on Steam
 │   ├── continue.md
 │   ├── godot/
 │   ├── docs/
 │   ├── assets/
 │   └── data/
-├── android-app/            # Priority 11 — Play Store apps
-│   ├── continue.md
-│   ├── app/
-│   └── docs/
 └── polymarket/             # Priority 12 — Prediction market bot
     ├── continue.md
     ├── src/

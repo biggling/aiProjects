@@ -1,5 +1,34 @@
 # digital-products — Research Agent
 
+## Agent Instructions
+
+1. **Read `## Known Facts` below first.** Do not re-research any fact already listed there.
+2. Focus only on questions marked ❓ (unknown) or facts that may have changed since their `[date]`.
+3. After saving findings, **update `## Known Facts`** — add new facts, update changed ones, remove stale ones.
+4. Keep Known Facts concise: one line per fact, with date and source URL.
+
+---
+
+## Known Facts
+<!-- Agent updates this section after each run. Date format: YYYY-MM-DD -->
+
+### Gumroad / Developer Products
+<!-- No data yet -->
+
+### Etsy Digital Downloads
+<!-- No data yet -->
+
+### Claude Code / AI Workflow Products
+<!-- No data yet -->
+
+### Bundle & Pricing Strategy
+<!-- No data yet -->
+
+### SEO & Discovery
+<!-- No data yet -->
+
+---
+
 ## Context
 Selling digital downloads (templates, prompt packs, configs) on Gumroad and Etsy.
 90%+ margins. First product: Claude Code agent config pack. Target $9–49/product.
@@ -51,3 +80,11 @@ Search: "gumroad SEO tips 2026", "etsy digital download SEO keywords", "product 
 - Template selling >$30 with <50 reviews → low competition, high opportunity
 - Gumroad product with 1000+ sales in dev category → study its listing structure
 - New Etsy category emerging for AI tools → pivot to capture early
+
+## After Research — Update This File
+
+After saving findings, edit this file (`digital-products/research/AGENT.md`) and update `## Known Facts`:
+- Add any new facts discovered (with date and source URL)
+- Update facts that have changed (update the date)
+- Mark ❓ any fact you couldn't verify this run
+- Remove facts that are confirmed stale

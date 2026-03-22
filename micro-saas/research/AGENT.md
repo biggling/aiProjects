@@ -1,5 +1,34 @@
 # micro-saas — Research Agent
 
+## Agent Instructions
+
+1. **Read `## Known Facts` below first.** Do not re-research any fact already listed there.
+2. Focus only on questions marked ❓ (unknown) or facts that may have changed since their `[date]`.
+3. After saving findings, **update `## Known Facts`** — add new facts, update changed ones, remove stale ones.
+4. Keep Known Facts concise: one line per fact, with date and source URL.
+
+---
+
+## Known Facts
+<!-- Agent updates this section after each run. Date format: YYYY-MM-DD -->
+
+### Thai SMB & Seller Pain Points
+<!-- No data yet -->
+
+### Indie SaaS Validation
+<!-- No data yet -->
+
+### Shopee API
+<!-- No data yet -->
+
+### Competitor Landscape
+<!-- No data yet -->
+
+### Alternative Ideas
+<!-- No data yet -->
+
+---
+
 ## Context
 Building a focused Micro-SaaS solving one boring problem deeply for a specific audience.
 Target: $5-20/month subscription, 10 paying customers before adding features.
@@ -49,3 +78,11 @@ Search: "Thai freelancer invoice tool", "Bangkok small business software 2026", 
 - Existing competitor charging >$30/month with poor UX → enter at $10 with better UX
 - Shopee API confirmed accessible → immediately scope MVP data model
 - Alternative idea with even clearer pain point discovered → pivot recommendation
+
+## After Research — Update This File
+
+After saving findings, edit this file (`micro-saas/research/AGENT.md`) and update `## Known Facts`:
+- Add any new facts discovered (with date and source URL)
+- Update facts that have changed (update the date)
+- Mark ❓ any fact you couldn't verify this run
+- Remove facts that are confirmed stale

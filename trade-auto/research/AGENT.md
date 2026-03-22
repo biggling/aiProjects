@@ -1,5 +1,34 @@
 # trade-auto — Research Agent
 
+## Agent Instructions
+
+1. **Read `## Known Facts` below first.** Do not re-research any fact already listed there.
+2. Focus only on questions marked ❓ (unknown) or facts that may have changed since their `[date]`.
+3. After saving findings, **update `## Known Facts`** — add new facts, update changed ones, remove stale ones.
+4. Keep Known Facts concise: one line per fact, with date and source URL.
+
+---
+
+## Known Facts
+<!-- Agent updates this section after each run. Date format: YYYY-MM-DD -->
+
+### Market Conditions
+<!-- No data yet -->
+
+### Trading Strategies
+<!-- No data yet -->
+
+### Exchange API Status
+<!-- No data yet -->
+
+### Risk Management
+<!-- No data yet -->
+
+### Community Signals
+<!-- No data yet -->
+
+---
+
 ## Context
 Automated crypto trading bots. Currently implementing 3 strategies with backtesting.
 Target: run unattended on VPS, trade on Binance/Bybit. Risk-managed, not high-frequency.
@@ -50,3 +79,11 @@ Search: site:reddit.com/r/algotrading "crypto" 2026, "quantconnect crypto 2026",
 - Strong trend regime detected → momentum strategy should outperform
 - BTC drops >15% in a week → pause live trading, review risk params
 - New Go trading library with active maintenance → evaluate for adoption
+
+## After Research — Update This File
+
+After saving findings, edit this file (`trade-auto/research/AGENT.md`) and update `## Known Facts`:
+- Add any new facts discovered (with date and source URL)
+- Update facts that have changed (update the date)
+- Mark ❓ any fact you couldn't verify this run
+- Remove facts that are confirmed stale

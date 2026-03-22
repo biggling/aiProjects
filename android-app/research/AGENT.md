@@ -1,5 +1,34 @@
 # android-app — Research Agent
 
+## Agent Instructions
+
+1. **Read `## Known Facts` below first.** Do not re-research any fact already listed there.
+2. Focus only on questions marked ❓ (unknown) or facts that may have changed since their `[date]`.
+3. After saving findings, **update `## Known Facts`** — add new facts, update changed ones, remove stale ones.
+4. Keep Known Facts concise: one line per fact, with date and source URL.
+
+---
+
+## Known Facts
+<!-- Agent updates this section after each run. Date format: YYYY-MM-DD -->
+
+### Play Store Productivity Benchmarks
+<!-- No data yet -->
+
+### AdMob Revenue Benchmarks
+<!-- No data yet -->
+
+### Competitor App Analysis
+<!-- No data yet -->
+
+### Kotlin / Jetpack Compose Updates
+<!-- No data yet -->
+
+### Thai Android Market
+<!-- No data yet -->
+
+---
+
 ## Context
 Android app for Play Store. Concept: "QuickBlock" — productivity/focus tool.
 Stack: Kotlin + Jetpack Compose. Monetization: Google AdMob + optional in-app purchase.
@@ -50,3 +79,11 @@ Search: "Thailand Android app market 2026", "Thai app Store ranking productivity
 - AdMob eCPM drops significantly → reconsider pure ads model, add IAP
 - Android API change restricting app usage stats access → core feature at risk, escalate
 - Thai productivity gap confirmed → localize UI to Thai for better Play Store ranking in TH
+
+## After Research — Update This File
+
+After saving findings, edit this file (`android-app/research/AGENT.md`) and update `## Known Facts`:
+- Add any new facts discovered (with date and source URL)
+- Update facts that have changed (update the date)
+- Mark ❓ any fact you couldn't verify this run
+- Remove facts that are confirmed stale

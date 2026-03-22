@@ -132,7 +132,7 @@ Reasoning: one sentence
   local exit_code=0
   local start_time=$SECONDS
   local output
-  output=$(cd "$PROJECT_ROOT" && timeout "$MAX_TIMEOUT" \
+  output=$(cd "$PROJECT_ROOT" && gtimeout "$MAX_TIMEOUT" \
     "$CLAUDE_BIN" --print "$prompt" \
     --allowedTools "Read,Write,Edit,Bash,Glob,Grep,WebSearch,WebFetch" \
     --max-turns 40 2>&1) || exit_code=$?

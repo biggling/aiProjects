@@ -2,12 +2,17 @@
 
 ## Overview
 
-Two agent types run for every project:
+Three agent scripts, each with a different purpose:
 
-| Agent | Script | Tools | When |
-|-------|--------|-------|------|
-| **Research** | `scripts/run-research.sh` | WebSearch, WebFetch, Read, Write | Morning — gathers intel, saves to `research/findings/` |
-| **Work** | `scripts/run-agent.sh` | Read, Write, Edit, Bash, Glob, Grep | Evening — builds, codes, ships |
+| Script | Purpose | Tools | When |
+|--------|---------|-------|------|
+| `run-research.sh` | Web research → saves findings | WebSearch, WebFetch, Read, Write | Morning |
+| `run-agent.sh` | Custom task with a prompt | Read, Write, Edit, Bash, Glob, Grep | Any time |
+| `run-agent-continue.sh` | Continue work, auto-injects research context | Read, Write, Edit, Bash, Glob, Grep | Evening |
+
+`run-agent-continue.sh` vs `run-agent.sh`:
+- **continue**: inlines `continue.md` + `research/findings/latest.md` directly into the prompt — agent has full context in turn 0, no file-read overhead
+- **agent**: takes a custom prompt, doesn't auto-load research
 
 ---
 
@@ -46,7 +51,59 @@ What the research agent does per project:
 
 ---
 
-## Continue Work — All Projects
+## Continue Work (Research-Aware) — All Projects
+
+`run-agent-continue.sh` automatically inlines `continue.md` + `research/findings/latest.md`
+into the prompt. The agent sees full context from turn 0 with no extra file-read turns.
+
+```bash
+# Basic continue — picks up from continue.md, uses latest research automatically
+./scripts/run-agent-continue.sh mcp-apps
+./scripts/run-agent-continue.sh digital-products
+./scripts/run-agent-continue.sh tiktok
+./scripts/run-agent-continue.sh trade-auto
+./scripts/run-agent-continue.sh pod
+./scripts/run-agent-continue.sh micro-saas
+./scripts/run-agent-continue.sh youtube-content
+./scripts/run-agent-continue.sh shopee-affiliate
+./scripts/run-agent-continue.sh amazon-kdp
+./scripts/run-agent-continue.sh steam-game
+./scripts/run-agent-continue.sh android-app
+./scripts/run-agent-continue.sh polymarket
+
+# With an optional focus hint (overrides "next task" default)
+./scripts/run-agent-continue.sh mcp-apps       "focus on the Stripe billing integration"
+./scripts/run-agent-continue.sh digital-products "write the Gumroad product description"
+./scripts/run-agent-continue.sh trade-auto     "tune momentum strategy parameters based on research"
+./scripts/run-agent-continue.sh tiktok         "fix the thumbnail generator aspect ratio bug"
+./scripts/run-agent-continue.sh pod            "generate 5 designs for the niche found in research"
+./scripts/run-agent-continue.sh micro-saas     "scaffold the Go backend for Shopee analytics MVP"
+./scripts/run-agent-continue.sh shopee-affiliate "write 3 Thai product review posts for this week's campaign"
+./scripts/run-agent-continue.sh amazon-kdp     "generate 3 planner interiors for the top KDP niche"
+./scripts/run-agent-continue.sh steam-game     "implement the sigil unlock tree from research player feedback"
+./scripts/run-agent-continue.sh android-app    "build the usage stats reader using the Android UsageStatsManager API"
+./scripts/run-agent-continue.sh polymarket     "find markets where price differs >8% from Kalshi"
+
+# Run all projects in priority order (30s gap between each)
+./scripts/run-agent-continue.sh all
+
+# Via run-now shorthand
+./scripts/run-now.sh continue mcp-apps
+./scripts/run-now.sh continue mcp-apps "focus on Stripe billing"
+./scripts/run-now.sh continue all
+```
+
+What happens inside each run:
+1. Reads `<project>/continue.md` — full content inlined
+2. Reads `<project>/research/findings/latest.md` — inlined (capped at 4k chars)
+3. Reads `<project>/CLAUDE.md` if it exists — inlined (capped at 2k chars)
+4. Runs the work agent with all context already in the prompt
+5. Telegram notification shows research age (today / yesterday / N days ago)
+6. Updates `continue.md` with what was done and exact next steps
+
+---
+
+## Custom Task (No Research Context) — All Projects
 
 ### 1. mcp-apps
 ```bash

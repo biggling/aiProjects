@@ -3,9 +3,13 @@
 ## Quick Start
 ```bash
 # Work on a specific project (run from project directory):
+cd mcp-apps && claude        # NEW — HIGH priority
+cd digital-products && claude # NEW — HIGH priority
 cd tiktok && claude
 cd trade-auto && claude
 cd pod && claude
+cd micro-saas && claude      # NEW — GOOD priority
+cd youtube-content && claude # NEW — GOOD priority
 cd shopee-affiliate && claude
 cd amazon-kdp && claude
 cd steam-game && claude
@@ -23,7 +27,11 @@ aiProjects/
 │   ├── run-now.sh
 │   ├── weekly-summary.sh
 │   └── crontab.conf
-├── tiktok/                 # Priority 1 — TikTok/Reels/Shorts affiliate automation
+├── mcp-apps/               # Priority 1 — MCP server products (HIGH conviction)
+│   └── continue.md
+├── digital-products/       # Priority 2 — Gumroad/Etsy digital downloads (HIGH conviction)
+│   └── continue.md
+├── tiktok/                 # Priority 3 — TikTok/Reels/Shorts affiliate automation
 │   ├── CLAUDE.md
 │   ├── plan.md
 │   ├── continue.md
@@ -32,40 +40,44 @@ aiProjects/
 │   ├── dashboard/
 │   ├── scheduler/
 │   └── tests/
-├── trade-auto/             # Priority 2 — Crypto trading bots
+├── trade-auto/             # Priority 4 — Crypto trading bots
 │   ├── continue.md
 │   ├── src/
 │   ├── backtests/
 │   └── docs/
-├── pod/                    # Priority 3 — Etsy print on demand
+├── pod/                    # Priority 5 — Etsy print on demand
 │   ├── continue.md
 │   ├── designs/
 │   ├── listings/
 │   └── scripts/
-├── shopee-affiliate/       # Priority 4 — Shopee affiliate (Thailand)
+├── micro-saas/             # Priority 6 — Micro-SaaS (GOOD fit)
+│   └── continue.md
+├── youtube-content/        # Priority 7 — Dev tutorial YouTube channel (GOOD fit)
+│   └── continue.md
+├── shopee-affiliate/       # Priority 8 — Shopee affiliate (Thailand)
 │   ├── continue.md
 │   ├── src/
 │   ├── content/
 │   ├── research/
 │   └── campaigns/
-├── amazon-kdp/             # Priority 5 — Kindle Direct Publishing
+├── amazon-kdp/             # Priority 9 — Kindle Direct Publishing
 │   ├── continue.md
 │   ├── src/
 │   ├── books/
 │   ├── covers/
 │   ├── research/
 │   └── templates/
-├── steam-game/             # Priority 6 — Indie game on Steam
+├── steam-game/             # Priority 10 — Indie game on Steam
 │   ├── continue.md
 │   ├── godot/
 │   ├── docs/
 │   ├── assets/
 │   └── data/
-├── android-app/            # Priority 7 — Play Store apps
+├── android-app/            # Priority 11 — Play Store apps
 │   ├── continue.md
 │   ├── app/
 │   └── docs/
-└── polymarket/             # Priority 8 — Prediction market bot
+└── polymarket/             # Priority 12 — Prediction market bot
     ├── continue.md
     ├── src/
     ├── data/

@@ -24,6 +24,15 @@
 ### Risk Management
 <!-- No data yet -->
 
+### Opportunity Analysis
+<!-- No data yet -->
+
+### Market Size & Edge
+<!-- No data yet -->
+
+### Target Persona & Users
+<!-- No data yet -->
+
 ### Community Signals
 <!-- No data yet -->
 

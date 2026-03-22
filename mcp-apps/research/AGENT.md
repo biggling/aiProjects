@@ -46,6 +46,12 @@
 - [2026-03-22] Azure Functions MCP: GA since Jan 2026, Node/Python/Java/.NET, Entra OAuth built-in
 - [2026-03-22] Hard limit: 25,000 tokens per tool result
 
+### Opportunity Analysis
+<!-- No data yet -->
+
+### Target Persona & Customers
+<!-- No data yet -->
+
 ### Pricing & Monetization
 - [2026-03-22] Ref MCP: $9/month (1,000 credits), "hundreds of subscribers" — price point validated
 - [2026-03-22] Recommended range: API integrations $10-30/month; database connectors $20-50/month
@@ -72,53 +78,74 @@ Target: $10-50/month subscriptions. First product: crypto portfolio tracker MCP.
 ## Research Tasks
 
 ### 1. MCP Marketplace Landscape
-
 Search: "MCP server marketplace 2026", "Anthropic MCP directory top servers", "Claude MCP plugins"
-
-- What are the top 10 most-used MCP servers right now?
-- What categories dominate (dev tools, data, finance, productivity)?
+- What are the top 10 most-used MCP servers right now? Any movement since last check?
+- Which new categories are gaining traction?
 - Which servers charge money and at what price?
-- Is Anthropic's directory open for submissions? What's the process?
+- Is Anthropic's directory open for submissions? Any changes to process?
 
-### 2. Competitor MCP Servers — Finance / Crypto Niche
+### 2. Opportunity Analysis — Niche Scoring
+Search: "MCP server niche opportunity 2026", "underserved MCP category", "best MCP to build"
+- Which niches have high search demand but few quality servers (supply gap)?
+- Rate each candidate niche on: competition level / API availability / willingness to pay / build effort
+- Which niches are adjacent to crypto/finance that are also underserved?
+- Any emerging use cases (AI agents, workflow automation) creating new MCP demand?
+- What do developers say they *wish* existed as an MCP server? (Reddit, HN, Discord)
 
+### 3. Market Size & Growth
+Search: "MCP adoption rate 2026", "Claude API users 2026", "AI developer tools market size"
+- How many active Claude/AI users are potential MCP customers?
+- What's the growth rate of MCP installs month-over-month?
+- What % of Claude Pro/API users actually use MCP servers?
+- Are enterprises or individual developers the primary adopters?
+- Any analyst reports on the AI developer tools market size?
+
+### 4. Target Persona & Customer Research
+Search: "who uses MCP servers", "Claude power users survey", "AI developer workflow tools"
+- Who is the typical MCP server buyer? (job title, use case, company size)
+- What problem are they solving when they search for an MCP?
+- Where do they discover new MCP servers? (directories, Twitter/X, Discord, word of mouth?)
+- What makes them pay vs. use a free alternative? (reliability, support, features, time savings?)
+- What are their biggest frustrations with current crypto/finance MCPs?
+- Crypto-specific: are buyers retail traders, quant devs, DeFi users, or financial analysts?
+
+### 5. Competitor MCP Servers — Finance / Crypto Niche
 Search: "crypto MCP server Claude", "portfolio tracker MCP", "CoinGecko MCP", "Binance MCP server"
+- Any new crypto/portfolio MCP servers since last check?
+- What are the user complaints in reviews/issues for existing ones?
+- What features are requested most in GitHub issues?
+- Any competitor that recently launched and gained traction quickly?
 
-- Do any crypto/portfolio MCP servers exist? What do they offer?
-- What APIs do they integrate (CoinGecko, Binance, CoinMarketCap)?
-- What are the gaps / missing features in existing offerings?
+### 6. MCP SDK & Tooling Updates
+Search: "MCP SDK changelog 2026", "MCP server TypeScript example", "modelcontextprotocol release"
+- Any SDK version changes since last check?
+- New official tooling, middleware, or boilerplates released?
+- Any breaking changes or deprecations announced?
 
-### 3. MCP SDK & Tooling Updates
-
-Search: "Anthropic MCP SDK 2026", "MCP server TypeScript example", "MCP remote server HTTP SSE"
-
-- What is the current stable MCP SDK version?
-- Is remote MCP (HTTP SSE) supported and widely used?
-- Any notable breaking changes or new features since Jan 2026?
-
-### 4. Pricing & Monetization Benchmarks
-
-Search: "MCP server pricing subscription", "Claude plugin revenue", "developer tool MCP monetization"
-
-- What price points work for MCP servers / Claude plugins?
-- What billing platforms do MCP sellers use (Stripe, Gumroad, Lemon Squeezy)?
-- Any public revenue numbers from MCP server creators?
+### 7. Pricing & Monetization Benchmarks
+Search: "MCP server pricing subscription", "Claude plugin revenue 2026", "developer tool SaaS pricing"
+- Any new MCP servers launched with paid tiers? What do they charge?
+- New monetization platforms or changes to existing ones (MCPize, Polar, Creem)?
+- Any creator sharing revenue numbers publicly?
 
 ## Sources to Check
-
-- https://www.anthropic.com/news/model-context-protocol
+- https://glama.ai/mcp/servers (MCP directory — filter by category)
+- https://smithery.ai (MCP marketplace — sort by installs)
+- https://www.pulsemcp.com/servers (community tracking)
 - https://github.com/modelcontextprotocol/servers (official registry)
-- https://glama.ai/mcp/servers (MCP directory)
-- https://smithery.ai (MCP marketplace)
-- Hacker News: search "MCP server"
-- Reddit r/ClaudeAI, r/LocalLLaMA
+- https://mcpize.com (monetization platform — check new listings)
+- Reddit r/ClaudeAI, r/LocalLLaMA, r/algotrading, r/CryptoCurrency
+- Hacker News: search "MCP server", "Model Context Protocol"
+- X/Twitter: search "MCP server" (sort: latest)
+- GitHub: search "mcp server crypto" (sort: recently updated)
 
 ## Decision Triggers — Flag if Found
-
-- Any crypto/finance MCP with >100 users → study their feature set
-- MCP server charging >$20/month with positive reviews → pricing confirmed
-- Shopee public API documentation → immediate opportunity
-- Anthropic directory submission form → log the URL in findings
+- Niche with zero paid MCP and 50+ GitHub requests/issues → immediate opportunity
+- Any crypto/finance MCP with >100 stars or users → study their feature set in depth
+- New persona segment discovered (e.g. DeFi power users, quant teams) → adjust positioning
+- MCP server charging >$20/month with positive reviews → pricing ceiling confirmed higher
+- Claude/Anthropic user count milestone announced → update TAM estimate
+- New distribution platform with 0% fees launching → evaluate listing priority
 
 ## After Research — Update This File
 

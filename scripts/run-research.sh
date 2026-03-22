@@ -22,7 +22,7 @@ TELEGRAM_BOT_TOKEN="${TELEGRAM_BOT_TOKEN:-8484927192:AAHVDDU-WGsjJDOC0pSrnb_x_5R
 TELEGRAM_CHAT_ID="${TELEGRAM_CHAT_ID:-8532895589}"
 
 LOG_DIR="${LOG_DIR:-$PROJECT_ROOT/logs}"
-MAX_TIMEOUT="${MAX_TIMEOUT:-900}"   # 15 min — research takes longer than work sessions
+MAX_TIMEOUT="${MAX_TIMEOUT:-1800}"  # 30 min — research takes longer than work sessions
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
 TODAY=$(date +%Y-%m-%d)
 TODAY_TIME=$(date +%Y-%m-%d_%H%M)

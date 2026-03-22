@@ -25,6 +25,7 @@ LOG_DIR="${LOG_DIR:-$PROJECT_ROOT/logs}"
 MAX_TIMEOUT="${MAX_TIMEOUT:-900}"   # 15 min — research takes longer than work sessions
 CLAUDE_BIN="${CLAUDE_BIN:-claude}"
 TODAY=$(date +%Y-%m-%d)
+TODAY_TIME=$(date +%Y-%m-%d_%H%M)
 
 PROJECT="${1:-}"
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
@@ -73,7 +74,7 @@ run_research() {
   local proj="$1"
   local agent_file="$PROJECT_ROOT/$proj/research/AGENT.md"
   local findings_dir="$PROJECT_ROOT/$proj/research/findings"
-  local output_file="$findings_dir/$TODAY.md"
+  local output_file="$findings_dir/${TODAY_TIME}.md"
   local latest_file="$findings_dir/latest.md"
   local log_file="$LOG_DIR/${proj}_research_${TIMESTAMP}.log"
 
@@ -88,24 +89,18 @@ run_research() {
   local agent_instructions
   agent_instructions=$(cat "$agent_file")
 
-  # Skip if already ran today
-  if [[ -f "$output_file" ]]; then
-    echo "[$DATE_HUMAN] Research already done today for $proj, skipping" | tee -a "$LOG_DIR/scheduler.log"
-    return 0
-  fi
-
   local prompt
   prompt="You are a research agent for the <${proj}> project. Today is ${TODAY} (Bangkok, GMT+7).
 
 ${agent_instructions}
 
 ## Output Instructions
-1. Save your complete findings to the file: ${proj}/research/findings/${TODAY}.md
+1. Save your complete findings to the file: ${proj}/research/findings/${TODAY_TIME}.md
 2. Also write the same content to: ${proj}/research/findings/latest.md
 3. Use this exact structure for the findings file:
 
 \`\`\`
-# ${proj} Research — ${TODAY}
+# ${proj} Research — ${TODAY_TIME}
 
 ## [Topic Section 1]
 - Finding with source URL
@@ -171,7 +166,7 @@ Reasoning: one sentence
 <pre>${summary}</pre>
 
 <b>Action Items:</b>
-${actions:-• See research/findings/${TODAY}.md}"
+${actions:-• See research/findings/${TODAY_TIME}.md}"
   fi
 
   return $exit_code

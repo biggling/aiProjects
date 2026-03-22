@@ -46,6 +46,13 @@ case "$ACTION" in
     "$SCRIPT_DIR/run-research.sh" "$target"
     ;;
 
+  continue)
+    target="${2:-all}"
+    focus="${3:-}"
+    echo "Running continue: $target..."
+    "$SCRIPT_DIR/run-agent-continue.sh" "$target" "$focus"
+    ;;
+
   mcp-apps|digital-products|tiktok|trade-auto|pod|micro-saas|youtube-content|shopee-affiliate|amazon-kdp|steam-game|android-app|polymarket|all)
     echo "Running $ACTION..."
     "$SCRIPT_DIR/run-agent.sh" "$ACTION" "${2:-}"
@@ -56,9 +63,10 @@ case "$ACTION" in
     echo ""
     echo "Usage:"
     echo "  $0 status"
-    echo "  $0 <project> [custom prompt]"
-    echo "  $0 all"
+    echo "  $0 <project> [custom prompt]        # run-agent (custom task)"
+    echo "  $0 continue <project|all> [focus]   # run-agent-continue (research-aware)"
     echo "  $0 research <project|all>"
+    echo "  $0 all"
     echo ""
     echo "Projects: $ALL_PROJECTS"
     exit 1

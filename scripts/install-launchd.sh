@@ -86,50 +86,20 @@ install_research() {
   echo "Installing research agents..."
 
   # Top 6 — 2x daily (night + morning)
-  make_plist "com.big.research.mcp-apps"         "$RESEARCH_SCRIPT" "mcp-apps"         "$(two_times 22 0  9 30)"
-  make_plist "com.big.research.digital-products" "$RESEARCH_SCRIPT" "digital-products" "$(two_times 22 30 10 0)"
-  make_plist "com.big.research.trade-auto"       "$RESEARCH_SCRIPT" "trade-auto"       "$(two_times 23 0  10 30)"
-  make_plist "com.big.research.pod"              "$RESEARCH_SCRIPT" "pod"              "$(two_times 23 30 11 0)"
-  make_plist "com.big.research.android-app"      "$RESEARCH_SCRIPT" "android-app"      "$(two_times 0  0  11 30)"
-  make_plist "com.big.research.micro-saas"       "$RESEARCH_SCRIPT" "micro-saas"       "$(two_times 0  30 12 0)"
+  make_plist "com.big.research.mcp-apps"         "$RESEARCH_SCRIPT" "mcp-apps"         "$(two_times 22 0  12 0)"
+  make_plist "com.big.research.digital-products" "$RESEARCH_SCRIPT" "digital-products" "$(two_times 22 30 12 30)"
+  make_plist "com.big.research.trade-auto"       "$RESEARCH_SCRIPT" "trade-auto"       "$(two_times 23 0  13 0)"
+  make_plist "com.big.research.pod"              "$RESEARCH_SCRIPT" "pod"              "$(two_times 23 30 13 30)"
+  make_plist "com.big.research.android-app"      "$RESEARCH_SCRIPT" "android-app"      "$(two_times 0  0  14 0)"
+  make_plist "com.big.research.micro-saas"       "$RESEARCH_SCRIPT" "micro-saas"       "$(two_times 0  30 14 30)"
 
-  # Bottom 6 — weekly
-  make_plist "com.big.research.tiktok"           "$RESEARCH_SCRIPT" "tiktok"           "<array>$(at_dow 8 0 4)</array>"
-  make_plist "com.big.research.youtube-content"  "$RESEARCH_SCRIPT" "youtube-content"  "<array>$(at_dow 9 0 4)</array>"
-  make_plist "com.big.research.shopee-affiliate" "$RESEARCH_SCRIPT" "shopee-affiliate" "<array>$(at_dow 8 0 6)</array>"
-  make_plist "com.big.research.amazon-kdp"       "$RESEARCH_SCRIPT" "amazon-kdp"       "<array>$(at_dow 9 0 6)</array>"
-  make_plist "com.big.research.steam-game"       "$RESEARCH_SCRIPT" "steam-game"       "<array>$(at_dow 10 0 6)</array>"
-  make_plist "com.big.research.polymarket"       "$RESEARCH_SCRIPT" "polymarket"       "<array>$(at_dow 8 0 0)</array>"
 }
 
 # ============================================================
-install_work() {
-  echo "Installing work agents..."
-
-  make_plist "com.big.work.mcp-apps-mon"         "$WORK_SCRIPT" "mcp-apps"         "<array>$(at_dow 19 0 1)</array>"
-  make_plist "com.big.work.mcp-apps-thu"         "$WORK_SCRIPT" "mcp-apps"         "<array>$(at_dow 19 0 4)</array>"
-  make_plist "com.big.work.digital-products-mon" "$WORK_SCRIPT" "digital-products" "<array>$(at_dow 20 0 1)</array>"
-  make_plist "com.big.work.digital-products-thu" "$WORK_SCRIPT" "digital-products" "<array>$(at_dow 20 0 4)</array>"
-  make_plist "com.big.work.trade-auto-tue"       "$WORK_SCRIPT" "trade-auto"       "<array>$(at_dow 19 0 2)</array>"
-  make_plist "com.big.work.trade-auto-fri"       "$WORK_SCRIPT" "trade-auto"       "<array>$(at_dow 19 0 5)</array>"
-  make_plist "com.big.work.pod-tue"              "$WORK_SCRIPT" "pod"              "<array>$(at_dow 20 0 2)</array>"
-  make_plist "com.big.work.pod-fri"              "$WORK_SCRIPT" "pod"              "<array>$(at_dow 20 0 5)</array>"
-  make_plist "com.big.work.android-app"          "$WORK_SCRIPT" "android-app"      "<array>$(at_dow 19 0 3)</array>"
-  make_plist "com.big.work.micro-saas"           "$WORK_SCRIPT" "micro-saas"       "<array>$(at_dow 21 0 3)</array>"
-  make_plist "com.big.work.tiktok"               "$WORK_SCRIPT" "tiktok"           "<array>$(at_dow 20 0 3)</array>"
-  make_plist "com.big.work.youtube-content"      "$WORK_SCRIPT" "youtube-content"  "<array>$(at_dow 21 0 5)</array>"
-  make_plist "com.big.work.shopee-affiliate"     "$WORK_SCRIPT" "shopee-affiliate" "<array>$(at_dow 14 0 6)</array>"
-  make_plist "com.big.work.amazon-kdp"           "$WORK_SCRIPT" "amazon-kdp"       "<array>$(at_dow 15 0 6)</array>"
-  make_plist "com.big.work.steam-game"           "$WORK_SCRIPT" "steam-game"       "<array>$(at_dow 14 0 0)</array>"
-}
-
-# ============================================================
-MODE="${1:-all}"
+MODE="${1:-research}"
 case "$MODE" in
   research) install_research ;;
-  work)     install_work ;;
-  all)      install_research; install_work ;;
-  *)        echo "Usage: $0 [research|work|all]"; exit 1 ;;
+  *)        echo "Usage: $0 [research]"; exit 1 ;;
 esac
 
 echo ""

@@ -78,12 +78,12 @@ install_research() {
   echo "Installing research agents..."
 
   # Top 6 — 2x daily (night + morning)
-  make_plist "com.big.research.mcp-apps"        "$RESEARCH_SCRIPT" "mcp-apps"        "$(two_times 22 0  4 0)"
-  make_plist "com.big.research.digital-products" "$RESEARCH_SCRIPT" "digital-products" "$(two_times 22 30 4 30)"
-  make_plist "com.big.research.trade-auto"       "$RESEARCH_SCRIPT" "trade-auto"       "$(two_times 23 0  5 0)"
-  make_plist "com.big.research.pod"              "$RESEARCH_SCRIPT" "pod"              "$(two_times 23 30 5 30)"
-  make_plist "com.big.research.android-app"      "$RESEARCH_SCRIPT" "android-app"      "$(two_times 0  0  6 0)"
-  make_plist "com.big.research.micro-saas"       "$RESEARCH_SCRIPT" "micro-saas"       "$(two_times 0  30 6 30)"
+  make_plist "com.big.research.mcp-apps"         "$RESEARCH_SCRIPT" "mcp-apps"         "$(two_times 22 0  9 30)"
+  make_plist "com.big.research.digital-products" "$RESEARCH_SCRIPT" "digital-products" "$(two_times 22 30 10 0)"
+  make_plist "com.big.research.trade-auto"       "$RESEARCH_SCRIPT" "trade-auto"       "$(two_times 23 0  10 30)"
+  make_plist "com.big.research.pod"              "$RESEARCH_SCRIPT" "pod"              "$(two_times 23 30 11 0)"
+  make_plist "com.big.research.android-app"      "$RESEARCH_SCRIPT" "android-app"      "$(two_times 0  0  11 30)"
+  make_plist "com.big.research.micro-saas"       "$RESEARCH_SCRIPT" "micro-saas"       "$(two_times 0  30 12 0)"
 
   # Bottom 6 — weekly
   make_plist "com.big.research.tiktok"           "$RESEARCH_SCRIPT" "tiktok"           "<array>$(at_dow 8 0 4)</array>"

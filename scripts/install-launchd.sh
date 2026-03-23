@@ -13,22 +13,30 @@ set -euo pipefail
 
 PROJ="/Users/big/Library/Mobile Documents/com~apple~CloudDocs/Fastlane/github/aiProjects"
 AGENTS_DIR="$HOME/Library/LaunchAgents"
-RESEARCH_SCRIPT="$PROJ/scripts/run-research.sh"
-WORK_SCRIPT="$PROJ/scripts/run-agent.sh"
+LOCAL_SCRIPTS="$HOME/scripts"
+mkdir -p "$LOCAL_SCRIPTS"
+cp "$PROJ/scripts/run-research.sh" "$LOCAL_SCRIPTS/run-research.sh"
+cp "$PROJ/scripts/run-agent.sh"    "$LOCAL_SCRIPTS/run-agent.sh"
+chmod +x "$LOCAL_SCRIPTS/run-research.sh" "$LOCAL_SCRIPTS/run-agent.sh"
+
+RESEARCH_SCRIPT="$LOCAL_SCRIPTS/run-research.sh"
+WORK_SCRIPT="$LOCAL_SCRIPTS/run-agent.sh"
 WEEKLY_SCRIPT="$PROJ/scripts/weekly-summary.sh"
 LOG_DIR="$PROJ/logs"
 UID_VAL=$(id -u)
 
 mkdir -p "$AGENTS_DIR" "$LOG_DIR"
 
-ENV_VARS='
+ENV_VARS="
     <key>EnvironmentVariables</key>
     <dict>
         <key>HOME</key>
         <string>/Users/big</string>
         <key>PATH</key>
         <string>/Users/big/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/Users/big/.npm-global/bin</string>
-    </dict>'
+        <key>PROJECT_ROOT</key>
+        <string>${PROJ}</string>
+    </dict>"
 
 # ============================================================
 make_plist() {

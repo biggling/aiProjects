@@ -8,8 +8,10 @@
 set -euo pipefail
 
 # ==================== CONFIG ====================
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+if [[ -z "${PROJECT_ROOT:-}" ]]; then
+  SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+  PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+fi
 ENV_FILE="$PROJECT_ROOT/.env"
 
 # Source .env if it exists (optional — Telegram config has defaults)

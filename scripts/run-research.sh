@@ -12,8 +12,10 @@
 
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+if [[ -z "${PROJECT_ROOT:-}" ]]; then
+  SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+  PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+fi
 ENV_FILE="$PROJECT_ROOT/.env"
 
 [[ -f "$ENV_FILE" ]] && source "$ENV_FILE"

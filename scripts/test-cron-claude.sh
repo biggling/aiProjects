@@ -63,3 +63,6 @@ log_message("Calling local Claude CLI for research...")
 #response = call_claude_cli(research_request, config)
 log("--- test end ---")
 EOF
+
+#Resume this session with:
+#claude --resume de0f4a41-1ae4-41b4-ba05-984d28388b37

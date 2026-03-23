@@ -1,7 +1,7 @@
 # MCP Apps / MCP Server Products — Continue
 
 ## Last Session
-2026-03-22 — Phase 1 research complete. See mcp-apps/research/findings/2026-03-22.md for full findings.
+2026-03-22 — Phase 1 research complete + buyer persona / market sizing research added. See mcp-apps/research/findings/2026-03-22.md for full findings.
 
 ## What This Is
 Build and sell niche MCP servers listed on Claude/ChatGPT app marketplaces. App directories are largely empty in 2026 — early movers with quality, focused tools can command $10-50/month subscriptions.
@@ -49,3 +49,8 @@ Scaffold TypeScript MCP server using `@modelcontextprotocol/server` v1.x + Strea
 - Keep tool responses under 25,000 tokens (Anthropic hard limit)
 - CoinGecko free API: 15,000+ coins — better than Binance-only approach
 - Differentiators over kukapay/crypto-portfolio-mcp: multi-exchange via CCXT, cloud sync, P&L/tax reporting
+- **Primary buyer persona confirmed:** Crypto-native quant developer, age 25–34, pays $49+/mo for Nansen/Glassnode; WTP $19–29/month for portfolio MCP
+- **TAM:** 6,400–32,000 paying subscribers realistically addressable from Claude user base
+- **Top frustration:** No CEX + DeFi combined P&L with cost basis — biggest confirmed gap
+- **Discovery priority order:** GitHub → Smithery → MCP Hive (May 11) → Reddit r/algotrading → X/Twitter
+- **Freemium benchmark:** 8% free-to-paid conversion; 500 installs → 40 paid → $760 MRR at $19/month

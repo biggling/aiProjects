@@ -127,10 +127,12 @@ Reasoning: one sentence
   local exit_code=0
   local start_time=$SECONDS
   local output
+  export _CLAUDE_PROMPT="$prompt"
   output=$(cd "$PROJECT_ROOT" && gtimeout "$MAX_TIMEOUT" \
-    "$CLAUDE_BIN" --print "$prompt" \
+    /bin/zsh -l -c 'claude --print "$_CLAUDE_PROMPT" \
     --allowedTools "Read,Write,Edit,Bash,Glob,Grep,WebSearch,WebFetch" \
-    --max-turns 40 2>&1) || exit_code=$?
+    --max-turns 40' 2>&1) || exit_code=$?
+  unset _CLAUDE_PROMPT
   local duration=$(( SECONDS - start_time ))
   local duration_min=$(( duration / 60 ))
   local duration_sec=$(( duration % 60 ))

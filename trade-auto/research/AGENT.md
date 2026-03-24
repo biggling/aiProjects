@@ -13,28 +13,38 @@
 <!-- Agent updates this section after each run. Date format: YYYY-MM-DD -->
 
 ### Market Conditions
-<!-- No data yet -->
+- [2026-03-23] BTC trading in range $65k-$80k; institutional ETFs hold >$100B. (capitalstreetfx.com)
+- [2026-03-23] BTC Dominance near 58.7%-60% resistance; Altcoin Season Index at 49. (thecoinrepublic.com)
+- [2026-03-23] Sentiment neutral/bearish for majors; focus on RWAs and AI protocols. (reddit.com)
 
 ### Trading Strategies
-<!-- No data yet -->
+- [2026-03-23] Top bots use hybrid momentum/mean-reversion with regime detection. (asutfiberglass.com)
+- [2026-03-23] FreqAI (CatBoost/Random Forest) used for adaptive market learning. (bitget.com)
+- [2026-03-23] GoCryptoTrader is the leading Go framework for high-concurrency HFT. (github.com)
 
 ### Exchange API Status
-<!-- No data yet -->
+- [2026-03-23] Binance legacy api/v1 retires 2026-03-25; !ticker@arr retires 2026-03-26. (binance.com)
+- [2026-03-23] Binance FIX TLS update requires SNI by 2026-06-08. (binance.com)
+- [2026-03-23] Bybit V5 features APR history and autoReinvest for staking. (github.io)
+- [2026-03-23] MEXC and Bitget offer lowest fees (0.01% - 0.05%). (coinbureau.com)
 
 ### Risk Management
-<!-- No data yet -->
+- [2026-03-23] "Smart" DCA scales buys based on 200-day Moving Average distance. (bitget.com)
+- [2026-03-23] Deep Reinforcement Learning (DRL) used for dynamic risk adjustment. (skywork.ai)
+- [2026-03-23] Private mempools (Flashbots) used to prevent MEV sandwich attacks. (pto.org.tr)
 
 ### Opportunity Analysis
-<!-- No data yet -->
+- [2026-03-23] Imminent altcoin rotation likely if BTC dominance fails at 60%. (capitalstreetfx.com)
+- [2026-03-23] Institutional interest growing in tokenized Real-World Assets (RWAs). (svb.com)
 
 ### Market Size & Edge
-<!-- No data yet -->
+- [2026-03-23] Total crypto market cap projected to exceed $4T in 2026. (bim.finance)
 
 ### Target Persona & Users
-<!-- No data yet -->
+- [2026-03-23] Professional retail moving to high-performance Go/Rust bots over Python. (github.com)
 
 ### Community Signals
-<!-- No data yet -->
+- [2026-03-23] Major crypto community migration from X to Threads (70% higher engagement). (posteverywhere.ai)
 
 ---
 
@@ -96,3 +106,29 @@ After saving findings, edit this file (`trade-auto/research/AGENT.md`) and updat
 - Update facts that have changed (update the date)
 - Mark ❓ any fact you couldn't verify this run
 - Remove facts that are confirmed stale
+
+## Output Instructions
+1. Save your complete findings to the file: trade-auto/research/findings/2026-03-23_2300.md
+2. Also write the same content to: trade-auto/research/findings/latest.md
+3. Use this exact structure for the findings file:
+
+```
+# trade-auto Research — 2026-03-23_2300
+
+## [Topic Section 1]
+- Finding with source URL
+- Finding with source URL
+
+## [Topic Section 2]
+...
+
+## Action Items for Work Agent
+- [ ] Specific action triggered by research
+- [ ] Another action
+
+## Sentiment
+Overall: [Bullish / Neutral / Bearish / Opportunity / Risk]
+Reasoning: one sentence
+```
+
+4. After saving both files, print a 5-bullet summary of the most important findings to stdout.

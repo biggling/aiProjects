@@ -6,6 +6,59 @@
 
 ---
 
+## Phase -1: Deep Market Research & Target Customer (DO BEFORE RESUMING BUILD)
+
+**Goal:** Validate TikTok Shop affiliate model with real data and identify exact audience/product sweet spot.
+
+### Market Sizing & Validation
+- [ ] Research TikTok Shop affiliate program in Thailand:
+  - Total affiliate creators in Thailand (TikTok Shop Creator Hub data)
+  - Average commission rates by category (beauty, gadgets, fashion)
+  - Top 10 TikTok Shop affiliate creators in Thailand — avg monthly earnings
+- [ ] Analyze actual TikTok Shop bestsellers in Thailand:
+  - Top 50 products by affiliate sales volume — note category, price, commission
+  - Which products have >10% commission AND >1000 daily sales?
+- [ ] Research AI-generated TikTok content performance:
+  - Do AI voiceover videos perform as well as human-voice videos?
+  - What's the avg view count for AI-generated product review content?
+  - Has TikTok cracked down on AI-generated content in 2026?
+- [ ] Calculate unit economics per video:
+  - Cost: AI video gen API ($X) + voiceover ($X) + compute ($X) per video
+  - Revenue: avg views × CTR × conversion rate × avg commission
+  - At what volume does this become profitable?
+- [ ] Research TikTok algorithm changes in 2026: any penalties for automated posting?
+
+### Laser-Targeted Audience Persona
+- [ ] **Primary audience: "Shopaholic Siri"** — Thai female, 18-30:
+  - Shopping behavior: daily TikTok scroller, impulse buyer
+  - Categories she buys: beauty/skincare, fashion accessories, home gadgets
+  - Price range: ฿100-฿1,000 ($3-$30) per impulse purchase
+  - Content that makes her buy: demo videos, before/after, "TikTok made me buy it"
+  - Language: Thai only — content MUST be in Thai
+  - Peak active hours: 12:00-14:00 (lunch) and 19:00-23:00 (evening)
+- [ ] **Secondary audience: "Gadget Guy Gorn"** — Thai male, 20-35:
+  - Buys: tech gadgets, gaming accessories, fitness gear
+  - Higher price tolerance: ฿500-฿3,000
+  - Content that works: unboxing, comparison, "ของเจ๋งจาก TikTok Shop"
+- [ ] Research which content angles get highest conversion (not just views):
+  - Demo/review vs lifestyle vs problem-solution vs humor
+  - Does "honest review" outperform "hype" in conversion?
+- [ ] Study top 5 TikTok Shop affiliate creators in Thailand — note their exact formula
+
+### Competitor Deep-Dive
+- [ ] Identify automated/AI TikTok Shop affiliate accounts — are they working?
+- [ ] Analyze top manual affiliate creators: posting frequency, avg views, engagement rate
+- [ ] Research what tools Thai affiliate creators use (CapCut templates, editing styles)
+- [ ] Check TikTok Creator Marketplace for commission benchmarks in Thailand
+
+### Research Deliverables
+- [ ] Unit economics model: cost per video vs expected revenue per video
+- [ ] Audience persona cards with buying triggers and content preferences
+- [ ] Top 20 product × category opportunities ranked by commission × volume × content ease
+- [ ] Go/no-go: is automated TikTok affiliate viable at current API costs?
+
+---
+
 ## Project overview
 
 Build a fully automated Python-based system that:

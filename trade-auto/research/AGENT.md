@@ -13,38 +13,68 @@
 <!-- Agent updates this section after each run. Date format: YYYY-MM-DD -->
 
 ### Market Conditions
-- [2026-03-23] BTC trading in range $65k-$80k; institutional ETFs hold >$100B. (capitalstreetfx.com)
-- [2026-03-23] BTC Dominance near 58.7%-60% resistance; Altcoin Season Index at 49. (thecoinrepublic.com)
-- [2026-03-23] Sentiment neutral/bearish for majors; focus on RWAs and AI protocols. (reddit.com)
+- [2026-03-27] BTC fell to ~$69,036–$69,990; rejected at $72K; below all EMAs (50d $72,081 / 100d $77,846 / 200d $86,066). (cryptotimes.io)
+- [2026-03-27] $14.16B options expiry occurred March 27; max pain $75K; post-expiry 3–7 day tradeable window active March 28 – April 3. (coindesk.com, coinpedia.org)
+- [2026-03-27] Extreme Fear index reading of 10 — worst in 16 months; market cap contracted to $2.36–$2.48T. (blockchainmagazine.net)
+- [2026-03-28] BTC Dominance 56.4%; Altcoin Season Index 27–35; firmly Bitcoin Season; altseason requires index >75. (coinmarketcap.com, ainvest.com)
+- [2026-03-28] MACD + RSI Golden Cross on altcoin dominance monthly chart — potential rotation signal (not confirmed); last similar signal Nov 2023. (ainvest.com)
+- [2026-03-28] Hyperliquid (HYPE) is breakout altcoin of 2026 YTD (L1 transition); AI (TAO) and RWA (ONDO) sectors continue outperforming. (cryptoticker.io)
+- [2026-03-28] Spot BTC ETF inflows down 73% in March to ~$890M vs $3.3B in February; March 24 single-day flow: -$66.6M. (fensory.com, coinglass.com)
+- [2026-03-28] Institutional capital rotating into tokenized treasury products ($12.8B March flows); ETF inflows = only 6.5% of digital asset flows vs 34% in January. (fensory.com)
+- [2026-03-28] Large pension/sovereign wealth funds = 67% of BTC ETF AUM; institutional base stable but fresh inflows stalled. (fensory.com)
+- [2026-03-28] April 2026 analyst consensus BTC range: $74K–$80K; regime = ranging/corrective. (investing.com, changelly.com)
+
+### Key April 2026 Macro Events
+- [2026-03-27] April 13–18: CLARITY Act Senate Banking Committee markup — last window before midterms. (phemex.com)
+- [2026-03-27] April 27–29: Bitcoin Conference Las Vegas; April 28–29: FOMC; April 29–30: TOKEN2049 Dubai. (phemex.com)
+- [2026-03-27] FOMC April 28–29: rates at 3.50–3.75%; only 1 cut projected for 2026; BTC fell after 8 of last 9 meetings. (phemex.com)
+- [2026-03-27] Powell term expires May 15; Warsh transition adds additional uncertainty to April FOMC. (phemex.com)
 
 ### Trading Strategies
-- [2026-03-23] Top bots use hybrid momentum/mean-reversion with regime detection. (asutfiberglass.com)
-- [2026-03-23] FreqAI (CatBoost/Random Forest) used for adaptive market learning. (bitget.com)
-- [2026-03-23] GoCryptoTrader is the leading Go framework for high-concurrency HFT. (github.com)
+- [2026-03-26] Multi-timeframe aggregation with 0.6 threshold reduces false signals by 40%. (noows.com.tr)
+- [2026-03-26] 2:1 Reward-to-Risk ratio now outperforms traditional 3:1 in efficient 2026 markets. (noows.com.tr)
+- [2026-03-27] Mean reversion (RSI+BB) Sharpe ~2.3; momentum (EMA/MACD) Sharpe ~1.0; 50/50 blend = Sharpe 1.71. (medium.com/@briplotnik)
+- [2026-03-27] Current sideways/downtrend regime explicitly favors mean reversion over momentum. (medium.com/@briplotnik)
+- [2026-03-28] Adaptive dual-mode strategy (mean reversion + breakout, switching via Hilbert Transform + BB) showed strong ETH backtest results. (pyquantlab.medium.com)
+- [2026-03-28] Jan 2026 week-1 backtest: Trend Following +3.0R vs Mean Reversion +1.45R; trend following 2x more profitable in trending periods. (medium.com/@tapu0531)
+- [2026-03-28] Threshold rebalancing outperformed hold by 77.1% median return; RL models achieved 85% cumulative return vs 45% traditional (2020–2025). (darkbot.io)
+- [2026-03-28] Freqtrade 2026.1 released: Hyperliquid HIP3 support, enhanced FreqUI metrics (CAGR, Calmar, Sortino, Sharpe, SQN), Python 3.13 support. (freqtrade.io)
+- [2026-03-27] BBGO (c9s/bbgo) is actively maintained Go framework with KLine backtesting and dnum precision. (github.com)
+- [2026-03-27] NostalgiaForInfinityX6 = recommended stable Freqtrade strategy; X7 = active dev version. (alexbobes.com)
+- [2026-03-26] "Agentic trading" via autonomous execution is the new industry focal point. (binance.com)
 
 ### Exchange API Status
-- [2026-03-23] Binance legacy api/v1 retires 2026-03-25; !ticker@arr retires 2026-03-26. (binance.com)
-- [2026-03-23] Binance FIX TLS update requires SNI by 2026-06-08. (binance.com)
-- [2026-03-23] Bybit V5 features APR history and autoReinvest for staking. (github.io)
-- [2026-03-23] MEXC and Bitget offer lowest fees (0.01% - 0.05%). (coinbureau.com)
+- [2026-03-27] Bybit: cancelled order history limited to 7 days (was 180 days) — BREAKING CHANGE March 26. (bybit-exchange.github.io)
+- [2026-03-27] Bybit: `ips` request field removed; IP address API modification via API prohibited. (bybit-exchange.github.io)
+- [2026-03-27] Bybit: Orderbook depth for Perps/Futures expanded from 200 to 500 (March 21). (bybit-exchange.github.io)
+- [2026-03-28] Bybit March 26: New endpoints added (Spread Max Qty, Option Asset Info, Portfolio Margin Info, Total Members Assets); no breaking changes in March. (bybit-exchange.github.io)
+- [2026-03-26] Binance !ticker@arr retired; must migrate to <symbol>@ticker or !miniTicker@arr. (binance.com)
+- [2026-03-26] Binance Ai Pro launched 2026-03-25; supports isolated sub-account agentic trading. (binance.com)
+- [2026-03-28] **BREAKING — Binance v1 endpoints retired March 25:** `/api/v1/ping`, `/api/v1/time`, v1 historical trade endpoints all dead. (developers.binance.com)
+- [2026-03-28] **Upcoming April 2 — Binance:** Successful order endpoints weight=0; RAW_REQUESTS limit → 300K/5min; STP Transfer enabled all symbols. (developers.binance.com)
+- [2026-03-28] Binance March 9 (live): New price range execution rule endpoints `GET /api/v3/executionRules`, `GET /api/v3/referencePrice`, stream `<symbol>@referencePrice`. (developers.binance.com)
+- [2026-03-26] FIX TLS update scheduled for June 8, 2026; SNI support will be mandatory. (binance.com)
+- [2026-03-27] MEXC offers 0% maker fees — relevant for limit-order-heavy strategies. (ventureburn.com)
 
 ### Risk Management
-- [2026-03-23] "Smart" DCA scales buys based on 200-day Moving Average distance. (bitget.com)
-- [2026-03-23] Deep Reinforcement Learning (DRL) used for dynamic risk adjustment. (skywork.ai)
-- [2026-03-23] Private mempools (Flashbots) used to prevent MEV sandwich attacks. (pto.org.tr)
+- [2026-03-27] Kelly criterion: 0.25x recommended in current extreme-fear + geopolitical regime (lower end of 0.25–0.5x range). (medium.com/@tmapendembe_28659)
+- [2026-03-27] Half Kelly retains 75% of max growth rate at 25% of full Kelly variance — strong mathematical basis. (medium.com/@tmapendembe_28659)
+- [2026-03-27] ATR-based volatility-adjusted position sizing is 2026 best practice — reduce size during high ATR. (darkbot.io)
+- [2026-03-28] Max drawdown target: <15–20% in live trading; circuit breakers mandatory at predefined thresholds. (darkbot.io)
+- [2026-03-28] Risk priority: (1) stop-loss, (2) take-profit, (3) portfolio exposure balance, (4) real-time drawdown circuit breaker. (darkbot.io)
+- [2026-03-28] Key insight: risk management > entry signal optimization; robust controls outperform sophisticated entries with weak protection. (darkbot.io)
+- [2026-03-26] Best-in-class: 25% undeployed capital reserve for capitalizing on market dislocations. (ph.org.tr)
+- [2026-03-26] Failsafe: API latency >200ms should trigger automatic strategy halt or switch. (ph.org.tr)
+- [2026-03-26] 8-10% drift tolerance for rebalancing is the current institutional standard. (xbto.com)
+- [2026-03-28] Never risk >1–2% capital on any single trade; recalibrate settings monthly. (bitget.com)
 
 ### Opportunity Analysis
-- [2026-03-23] Imminent altcoin rotation likely if BTC dominance fails at 60%. (capitalstreetfx.com)
-- [2026-03-23] Institutional interest growing in tokenized Real-World Assets (RWAs). (svb.com)
+- [2026-03-28] Post-expiry tradeable window active: March 28 – April 3; next major event: April 28–29 FOMC. (coinpedia.org)
+- [2026-03-28] AI (TAO), RWA (ONDO), and HYPE (Hyperliquid L1) are 2026 YTD outperformers vs BTC. (cryptoticker.io)
 
 ### Market Size & Edge
-- [2026-03-23] Total crypto market cap projected to exceed $4T in 2026. (bim.finance)
-
-### Target Persona & Users
-- [2026-03-23] Professional retail moving to high-performance Go/Rust bots over Python. (github.com)
-
-### Community Signals
-- [2026-03-23] Major crypto community migration from X to Threads (70% higher engagement). (posteverywhere.ai)
+- [2026-03-26] Institutional HFT actively "hunting" simple bots; multi-signal confirmation is mandatory. (noows.com.tr)
+- [2026-03-28] Algorithmic trading >80% of crypto volume in 2026; pure price-action single-indicator bots face intense competition. (darkbot.io)
 
 ---
 
@@ -108,12 +138,12 @@ After saving findings, edit this file (`trade-auto/research/AGENT.md`) and updat
 - Remove facts that are confirmed stale
 
 ## Output Instructions
-1. Save your complete findings to the file: trade-auto/research/findings/2026-03-23_2300.md
+1. Save your complete findings to the file: trade-auto/research/findings/2026-03-26_2300.md
 2. Also write the same content to: trade-auto/research/findings/latest.md
 3. Use this exact structure for the findings file:
 
 ```
-# trade-auto Research — 2026-03-23_2300
+# trade-auto Research — 2026-03-26_2300
 
 ## [Topic Section 1]
 - Finding with source URL

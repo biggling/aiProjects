@@ -13,46 +13,69 @@
 <!-- Agent updates this section after each run. Date format: YYYY-MM-DD -->
 
 ### Play Store Productivity Benchmarks
-- [2026-03-24] Productivity is #3 fastest-growing Play Store category: 10.03% growth, 123,533 apps — BusinessofApps
-- [2026-03-24] Top apps: Todoist (10M+, 4.4★), TickTick (5-10M+, 4.6★), Forest (10M+, 4.4★), Focus To-Do (10M+, 4.6★), Sectograph (6.9M, 4.64★) — AppBrain/AppFollow
-- [2026-03-24] Freemium + subscription dominates: 82% of non-gaming Play Store revenue; subscriptions clearly winning — BusinessofApps
-- [2026-03-24] Price sweet spot: Free core + $1.99–3.99/mo or $19.99/yr + lifetime unlock ~$29.99 — market analysis
-- [2026-03-24] Ads during focus sessions = direct rating killer; top feature request is ad-free focus experience — Play Store reviews
+- [2026-03-27] Android productivity ARPU is ~$6.19; 98% of revenue comes from freemium/subscription models — Tekrevol/AppVerticals
+- [2026-03-27] "Discovery Threshold": 4.5+ star rating is now baseline for Play Store visibility; <15% retention leads to deprioritization — Market analysis
+- [2026-03-26] Productivity App Market: Projected at $14.46B in 2026 with 32% of new features being "Agentic AI" — Fortune/BusinessInsights
+- [2026-03-25] Productivity shift: Agentic AI "proactive assistants" now automate tasks and routines based on user intent — Google Search
+- [2026-03-25] New paradigm: "Capacity Management" (analyzing energy/cognitive load) is replacing simple time-tracking — YouTube/Vertex AI
+- [2026-03-25] Neurodiversity-first design is a top 2026 trend, optimizing for non-linear workflows and ADHD focus — forem.com
+
+### Play Store Gamification Mechanics
+- [2026-03-27] **Streak Retention**: Users with 7-day streak are 3.6x more likely to stay engaged long-term (Duolingo data) — SensorTower
+- [2026-03-27] **Streak Wager**: Showing a streak wager mechanic boosts Day-14 retention by 14% — SensorTower
+- [2026-03-27] **Streak Freeze**: Offering a "protect your streak" feature reduced churn by 21% for at-risk users — Duolingo/SensorTower
+- [2026-03-27] **Badges**: Unlock achievement badges boost task completion rates by 30% — Orizon/Duolingo research
+- [2026-03-27] **XP Leaderboards**: Drive 40% more engagement; best as opt-in only (can demotivate low performers) — Orizon
+- [2026-03-27] **Streak push notifications**: Boost engagement by 25% when fired as a "streak at risk" alert — Enable3
+- [2026-03-27] **Trend**: "Intrinsic-first" design (streaks, habit rings, progress maps) outperforming gamey XP/points systems in 2026 — Beedone/Enable3
+
+### Time-Blocking Niche — Competitor Map
+- [2026-03-27] **TimeBloc** (com.foruslabs.timebloc): 100K+ installs, ~4.0 stars, updated Jan 2026; top complaints: crashes, data loss, scheduling bugs — Play Store/JustUseApp
+- [2026-03-27] **blocos** (com.soneto.blocos): ~600 downloads/month, 4.28 stars (1,600 ratings), updated Aug 2025; complaints: no device sync, reminders don't fire, no analytics — Play Store
+- [2026-03-27] **TimeFinder**: 4.1 stars (180 reviews); sync breaks after premium purchase — Play Store
+- [2026-03-27] **TimeTune** (1M+) and **TimeBlocks** (500K+) target routine/calendar use, not focused time-block task planning — Play Store
+- [2026-03-27] **Confirmed gap**: No time-blocking app has solved: crash-free + reliable notifications + free recurring blocks + Thai language — Market analysis
 
 ### AdMob Revenue Benchmarks
-- [2026-03-24] Thailand AdMob banner eCPM: ~$0.27; interstitial: $2.00–$3.78 (up 48% in 2024); Tier 3 market — AnyMind/Playwire
-- [2026-03-24] Thai-majority productivity app needs 1,000–2,000 DAU to earn $100/month (interstitial focus, 70% fill) — calculated from AnyMind data
-- [2026-03-24] AdMob mediation (AppLovin MAX + Meta AN) increases effective eCPM 20–40% over AdMob-only for Tier 3 — Tenjin 2025 report
-- [2026-03-24] Productivity apps earn ~0.8x gaming eCPM; global interstitial $2.50–$5.00, rewarded $8–$18 — Playwire benchmarks
-- [2026-03-24] Seasonal eCPM peak: September–November (back-to-school + pre-holiday ad spend)
+- [2026-03-27] Thailand 2026 eCPM Projections: Rewarded ($2.50–$5.50), Interstitial ($3.50–$4.80), App Open ($1.80–$2.50) — BusinessofApps
+- [2026-03-27] DAU Target: ~400–600 DAU needed in Thailand to earn $100/mo via blended ad revenue — Revenue Calculation
+- [2026-03-26] Thailand 2026 eCPM Projections: Rewarded ($2.20–$3.85), Interstitial ($1.65–$3.10), Banner ($0.09–$0.20) — Adnimation/Market data
+- [2026-03-25] Thailand eCPM recovery (Q1 2026): Rewarded Video ($1.50–$2.50), Interstitial ($1.00–$2.00), App Open ($0.80–$1.94) — AdMob/Market data
+
+### AdMob Policy Updates — 2026
+- [2026-03-27] **CRITICAL — TCF v2.3 Mandatory**: IAB TCF v2.3 required from March 1, 2026; non-compliant publishers face 60–80% CPM drop or "Limited Ads" — Google AdMob/Clym
+- [2026-03-27] **Required SDK**: Google Mobile Ads SDK v19.0.0+ (Android) needed to generate valid TCF v2.3 strings including Vendor ID 755 (Google) — Google AdMob
+- [2026-03-27] **UMP SDK**: Use Google's User Messaging Platform SDK alongside GMA SDK v19.0.0+ to automate TCF v2.3 CMP compliance at launch — Google AdMob
+- [2026-03-27] **Dashboard change**: Anomalies/Insights card removed from AdMob dashboard Jan 20, 2026; revenue anomaly alerts no longer auto-generated — Google AdMob Announcements
 
 ### Competitor App Analysis
-- [2026-03-24] **TimeBloc: iOS ONLY — no Android version exists** — major gap for Android users wanting visual time blocking — Play Store/JustUseApp
-- [2026-03-24] Structured: Android launched Nov 2023 (very new); iOS-first; many features still Android-missing; recurring tasks paywalled; 4.8★ — AppBrain/JustUseApp
-- [2026-03-24] Forest: 44M downloads, 4.4★ Android (vs 4.8★ iOS); free; top complaints: tree dies on any app switch, no pause/resume, battery-drain false errors — JustUseApp
-- [2026-03-24] Sectograph: 6.8M downloads, 4.64★; one-time Pro purchase (no subscription); users explicitly praise no-sub model; complaints: widget too small, zero dev support — Play Store
-- [2026-03-24] Focus To-Do: 11M downloads, 4.6★; $1.99/mo or $11.99 lifetime; top missing: calendar integration, multiple simultaneous timers — AppBrain/review
-- [2026-03-24] Freedom: 1.7M downloads, 4.1★; $39.99/yr subscription; VPN-based blocking trivially bypassed; outdated UI — G2/Trustpilot
-- [2026-03-24] Gap confirmed: no Android-native, no-subscription, widget-reliable daily time block planner; Android underserved vs iOS — cross-competitor analysis
+- [2026-03-27] Forest "Enshittification": Users report persistent ads for Pro members and broken notifications on Android — Reddit r/ForestApp
+- [2026-03-27] Freedom Tech Issues: 10-15% battery drain due to VPN-based blocking; users request URL-level granularity — User Reviews
+- [2026-03-26] **"Bypassability" Crisis**: Top Android blockers are criticized for being easily disabled via VPN toggles or force-stops — User Sentiment Analysis
+- [2026-03-26] **Physical Friction**: Growing demand for NFC-based "Hard Blocks" (e.g., Brick/Blok) to overcome software-only bypasses — Tech Trends
 
 ### Kotlin / Jetpack Compose Updates
-- [2026-03-24] Compose 1.10 (BOM 2025.12.00, Dec 2025): scroll parity with Views, pausable lazy prefetch, `retain` API — Android Developers blog
-- [2026-03-24] Room 3.0 (alpha Mar 2026, `androidx.room3`): KSP-only, coroutines-first, KMP support; Room 2.x entering maintenance — Android Developers
-- [2026-03-24] Android 15 (API 35): edge-to-edge enforced, FGS types required + 6h cap on dataSync/mediaProcessing, notification cooldown — Android release notes
-- [2026-03-24] `POST_NOTIFICATIONS` runtime permission required since API 33 (must request contextually) — Android Developers
-- [2026-03-24] `PACKAGE_USAGE_STATS` is NOT runtime permission — requires manual user grant via Settings; use `ACTION_USAGE_ACCESS_SETTINGS` intent
-- [2026-03-24] Use WorkManager (not FGS) for background reminders to avoid Android 15 FGS restrictions — Android best practices
-- [2026-03-24] **Play Store mandate**: All new apps/updates must target API 35+ (deadline was Aug 31, 2025, already passed) — QuickBlock must target API 35 from day one
-- [2026-03-24] Kotlin 2.3.0 (Dec 2025) is latest stable; K2 compiler ~48% faster clean builds — JetBrains blog
+- [2026-03-27] **Android 16 ProgressStyle**: New notification template for real-time progress tracking (perfect for focus timers) — Android Developers
+- [2026-03-27] **Android 16 Live Updates**: Full "Live Updates" notification system (Notification.ProgressStyle) released June 10, 2025 — Android Dev Blog
+- [2026-03-27] **API 36 Play Store Deadline**: All apps must target API 36 by August 31, 2026; API 37 required August 2027 — Google Play Console
+- [2026-03-27] **Health Connect ACTIVITY_INTENSITY**: New Health Connect data type for moderate/vigorous activity (per WHO) — enables focus session logging as cognitive activity in v2 — Android Developers
+- [2026-03-27] **Health Permissions Overhaul**: API 36+ replaces BODY_SENSORS with granular android.permissions.health.* permissions — Android Developers
+- [2026-03-27] **Adaptive Layout Enforcement**: Android 16 enforces foldable/tablet adaptive layouts; apps locking orientation may receive Play Store warnings — Android Dev Blog
+- [2026-03-27] **UsageStatsManager**: No new restrictions on PACKAGE_USAGE_STATS in Android 16; core app-blocking feature is safe — Android Developers
+- [2026-03-27] **Compose 1.10+ Pausable Composition**: Virtually eliminates jank by spreading UI work across frames — Android Dev Blog
+- [2026-03-26] **Android 16 FGS Timeout**: Data-sync services are now strictly limited to 6 hours in a 24-hour window — Android Developer Docs
+- [2026-03-25] Compose 1.11.0 Beta: **Strong-Skip Mode** and **K2 Compiler** are now default in Kotlin 2.2 — Android Developers
 
 ### Thai Android Market
-- [2026-03-24] Android market share Thailand: 65.91% (iOS: 33.68%) — Statcounter Feb 2026
-- [2026-03-24] Thai-language productivity apps: gap confirmed, none dominant in Thai Play Store top charts — Tracxn/Play Store analysis
-- [2026-03-24] Thai monetization: 39% devs use ads (vs 27% global); users expect productivity apps free; 2-3x lower WTP than West — 42matters
-- [2026-03-24] Gaming IAP thriving: Thailand #1 in SEA at $162M Q1 2025 — Sensor Tower
-- [2026-03-24] Google sideloading "Accountability Layer": Thailand is pilot country, Sept 2026 target → Play Store dominance reinforced — Google/MDES announcement
-- [2026-03-24] Asia Day 1 retention: 27%; Day 7: **8.1%** — habit-forming mechanics (streaks, daily reminders) critical to retain users — DataReportal/42matters
-- [2026-03-24] 78% of Thai consumers prioritize "ease and convenience" — minimal-friction UX is non-negotiable — Iconic Thai consumer insights
+- [2026-03-27] **Android share**: Android holds 67.67% of Thailand mobile OS market; iOS ~32%; Google Play is the only relevant app store — StatCounter/Statista
+- [2026-03-27] **No alternative stores**: No Chinese or local alternative app stores have meaningful adoption in Thailand; Play Store is sufficient — BusinessOfApps
+- [2026-03-27] **Market size**: Thailand app market projected at USD $2.37B by 2027 (8.91% CAGR) — Statista
+- [2026-03-27] **Thai UI gap confirmed**: No Thai-language time-blocking or daily planner app found in Play Store top charts — Market analysis
+- [2026-03-27] **Thai gamification benchmark**: Ling language app (Thai-localized, streaks + XP) achieves 4.6 stars / 18.1K reviews — direct model for QuickBlock — Play Store
+- [2026-03-27] **Localization Gap**: High demand for Thai Natural Language Processing (NLP) beyond simple translation — Pantip/Market Research
+- [2026-03-27] **Privacy Trend**: Thai users favor "Edge AI" (on-device) to avoid data harvesting concerns — Tech-Privacy reports
+- [2026-03-26] **Thai AI Value Gap**: 88% of Thais use AI, but 40% of potential value is lost due to lack of advanced workflow integration — EY Thailand
+- [2026-03-26] **Agentic Localization**: 2026 standard for Thai apps requires understanding local cultural nuances and idioms — iApp Thailand
 
 ---
 

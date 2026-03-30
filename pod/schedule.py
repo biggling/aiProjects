@@ -1,6 +1,14 @@
 from celery.schedules import crontab
 
 CELERYBEAT_SCHEDULE = {
+    # ── BIWEEKLY: 1st and 15th — Blue ocean runs after Gemini trends are fresh ─
+    # Runs the day after gemini-trend (Mon/Wed) to have fresh context
+    "blue-ocean":       {"task": "tasks.run_blue_ocean_scraper",   "schedule": crontab(hour=0,  minute=30, day_of_month="1,15")},
+
+    # ── PRE-MIDNIGHT: Sun/Tue/Thu — Gemini runs before pytrends so scorer
+    #    has all sources ready when it runs Mon/Wed/Fri at 01:00 ──────────
+    "gemini-trend":     {"task": "tasks.run_gemini_trend_scraper", "schedule": crontab(hour=23, minute=30, day_of_week="0,2,4")},
+
     # ── NIGHT: Mon/Wed/Fri ──────────────────────────────
     "trend-scrape":     {"task": "tasks.run_trend_scraper",    "schedule": crontab(hour=0,  minute=0,  day_of_week="1,3,5")},
     "reddit-scrape":    {"task": "tasks.run_reddit_scraper",   "schedule": crontab(hour=0,  minute=30, day_of_week="1,3,5")},

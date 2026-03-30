@@ -21,9 +21,21 @@ OPENAI_API_KEY = _optional("OPENAI_API_KEY")
 STABILITY_API_KEY = _optional("STABILITY_API_KEY")
 GEMINI_API_KEY = _optional("GEMINI_API_KEY")
 
-# Etsy
+# Image generation backend: "auto" | "gemini" | "stability" | "dalle"
+# "auto" tries Gemini first (cheaper), falls back to Stability AI, then DALL-E.
+IMAGE_BACKEND = _optional("IMAGE_BACKEND", "auto")
+
+# Gemini image model: "imagen-3.0-generate-002" (best quality) or
+# "gemini-2.0-flash-preview-image-generation" (faster/cheaper)
+GEMINI_IMAGE_MODEL = _optional("GEMINI_IMAGE_MODEL", "nano banana2")
+
+# Etsy — Shop A (personalized gifts / seasonal)
 ETSY_API_KEY = _optional("ETSY_API_KEY")
 ETSY_SHOP_ID = _optional("ETSY_SHOP_ID")
+
+# Etsy — Shop B (aesthetics / identity; launch Month 2)
+ETSY_API_KEY_B = _optional("ETSY_API_KEY_B")
+ETSY_SHOP_ID_B = _optional("ETSY_SHOP_ID_B")
 
 # Printify
 PRINTIFY_API_KEY = _optional("PRINTIFY_API_KEY")
@@ -56,8 +68,75 @@ DASHBOARD_USER = _optional("DASHBOARD_USER", "admin")
 DASHBOARD_PASS = _optional("DASHBOARD_PASS", "changeme")
 
 # Seed keywords for trend research
+# Update weekly: add seasonal keywords before each holiday, remove after peak.
 SEED_KEYWORDS = [
-    "funny cat shirt", "motivational quotes", "retro vintage",
-    "dog mom", "nurse life", "teacher appreciation",
-    "hiking adventure", "gaming", "plant mom", "introvert",
+    # URGENT — Mother's Day (May 10): list NOW
+    "personalized mom gift",
+    "first mother's day gift",
+    "mama sweatshirt personalized",
+    "custom tumbler for mom",
+    "gift for stepmom",
+    "promoted to grandma gift",
+    "twin mom gift",
+    "patchwork mama sweatshirt",
+    "matching mama mini outfit",
+    "mom mode on tote bag",
+
+    # URGENT — Father's Day (June 21): list by May 1
+    "best dad ever gift personalized",
+    "fishing dad shirt funny",
+    "camping dad gift",
+    "golf dad tee",
+    "gamer dad mug",
+    "dog dad shirt",
+    "first father's day gift",
+
+    # URGENT — Pride Month (June 1-30): list by May 1
+    "pride month shirt rainbow",
+    "pride tote bag inclusive",
+
+    # EVERGREEN — Gen X Women / Milestone gifts
+    "turning 50 gift women",
+    "turning 60 gift women",
+    "retirement gift teacher",
+    "retirement gift nurse",
+    "empty nester gift",
+    "milestone birthday tee women",
+    "promoted to grandma 2026",
+
+    # EVERGREEN — Personalized / Star Maps
+    "star map personalized anniversary",
+    "custom coordinates wall art",
+    "personalized family name sign",
+    "where we met map print",
+
+    # EVERGREEN — Tote Bags / Mugs (high gross margin)
+    "funny quote tote bag",
+    "aesthetic tote bag bookish",
+    "custom mug name milestone",
+    "personalized coffee mug funny",
+
+    # TRENDING 2026 — Crossbody bags (61% YoY search growth)
+    "aesthetic crossbody bag",
+    "cottagecore crossbody bag",
+    "literary girl crossbody bag",
+
+    # TRENDING 2026 — Aesthetic niches
+    "romantic goth sweatshirt",
+    "dark academia aesthetic shirt",
+    "literary girl tote bag",
+    "bookish mug reader gift",
+    "chateaucore aesthetic mug",
+    "circus maximalist wall art",
+
+    # MEDIUM — Outdoor / hobby micro-niches
+    "hiking gift women funny",
+    "plant mom tote bag",
+    "disc golf shirt funny",
+    "glamping shirt women",
+
+    # MEDIUM — Pet niche
+    "custom pet portrait mug",
+    "dog mom sweatshirt personalized",
+    "cat mom gift funny",
 ]

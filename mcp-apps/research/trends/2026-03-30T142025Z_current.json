@@ -1,0 +1,473 @@
+[
+  {
+    "niche": "Smart Meeting Summarizer & Action Extractor",
+    "trend_score": 98.0,
+    "velocity": 0.98,
+    "target_user": "Project managers, team leads, executives who spend too much time on meetings and follow-ups.",
+    "key_integrations": [
+      "Zoom",
+      "Google Meet",
+      "Microsoft Teams",
+      "Outlook Calendar",
+      "Slack"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-user subscription or per-meeting credit model",
+    "reason": "Combating meeting fatigue and ensuring accountability post-meeting is a universal pain point."
+  },
+  {
+    "niche": "Financial Fraud Pattern Detection",
+    "trend_score": 96.0,
+    "velocity": 0.98,
+    "target_user": "Banks, financial institutions, e-commerce platforms, risk management departments.",
+    "key_integrations": [
+      "Transaction data",
+      "payment gateways (Stripe, PayPal)",
+      "CRM",
+      "KYC databases",
+      "security logs"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-transaction processed, enterprise licensing",
+    "reason": "Fraud losses are immense; AI offers superior detection and prevention capabilities beyond rule-based systems."
+  },
+  {
+    "niche": "Multi-Source Knowledge Synthesis",
+    "trend_score": 95.0,
+    "velocity": 0.9,
+    "target_user": "Researchers, consultants, analysts needing to quickly synthesize info from various internal/external documents.",
+    "key_integrations": [
+      "Confluence",
+      "SharePoint",
+      "Notion",
+      "arXiv",
+      "Google Drive"
+    ],
+    "competition_level": "medium",
+    "monetization": "free tier + subscription based on data volume/user seats",
+    "reason": "Information overload is critical; users want AI to distill insights across disparate knowledge silos fast."
+  },
+  {
+    "niche": "Intelligent Code Review Assistant",
+    "trend_score": 95.0,
+    "velocity": 0.95,
+    "target_user": "Software developers, tech leads aiming to improve code quality and speed up review cycles.",
+    "key_integrations": [
+      "GitHub",
+      "GitLab",
+      "Bitbucket",
+      "Jira",
+      "internal code analysis tools"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-developer subscription",
+    "reason": "Developers want faster, more insightful code reviews to catch bugs earlier and enforce best practices without human bottleneck."
+  },
+  {
+    "niche": "Multi-Modal Content Creation Assistant",
+    "trend_score": 95.0,
+    "velocity": 0.95,
+    "target_user": "Content creators, marketers, social media managers, agencies needing diverse content quickly.",
+    "key_integrations": [
+      "Midjourney/DALL-E APIs",
+      "ElevenLabs",
+      "internal text generation",
+      "stock media libraries",
+      "social media platforms"
+    ],
+    "competition_level": "high",
+    "monetization": "usage-based (per asset generated), subscription tiers",
+    "reason": "The demand for high-quality, varied content is insatiable, and AI can dramatically speed up production."
+  },
+  {
+    "niche": "Real-time Financial Market Sentiment",
+    "trend_score": 94.0,
+    "velocity": 0.9,
+    "target_user": "Traders, hedge fund managers, financial analysts seeking an edge in volatile markets.",
+    "key_integrations": [
+      "X (Twitter) API",
+      "Reddit APIs",
+      "Bloomberg Terminal",
+      "Refinitiv",
+      "news aggregators"
+    ],
+    "competition_level": "medium",
+    "monetization": "high-tier subscription, enterprise data feed",
+    "reason": "Sentiment significantly impacts market movements, and instant analysis provides a competitive advantage."
+  },
+  {
+    "niche": "Data Privacy & Compliance Auditor",
+    "trend_score": 94.0,
+    "velocity": 0.9,
+    "target_user": "Data protection officers, legal teams, compliance officers ensuring adherence to GDPR, CCPA, PDPA (Thai).",
+    "key_integrations": [
+      "Internal databases",
+      "cloud storage (AWS S3, Azure Blob)",
+      "user consent platforms",
+      "data mapping tools"
+    ],
+    "competition_level": "low",
+    "monetization": "enterprise licensing, per-data scan fee",
+    "reason": "Regulatory fines for data breaches are severe; automated compliance monitoring is critical for risk mitigation."
+  },
+  {
+    "niche": "Automated Cloud Cost Optimization Assistant",
+    "trend_score": 93.0,
+    "velocity": 0.9,
+    "target_user": "FinOps teams, cloud architects, DevOps leads focused on reducing spiraling cloud spend.",
+    "key_integrations": [
+      "AWS Cost Explorer",
+      "Azure Cost Management",
+      "GCP Billing",
+      "Kubernetes",
+      "Terraform"
+    ],
+    "competition_level": "medium",
+    "monetization": "percentage of savings generated, subscription fee",
+    "reason": "Cloud costs are a top concern for businesses, and manual optimization is inefficient."
+  },
+  {
+    "niche": "Thai Language AI Customer Support",
+    "trend_score": 93.0,
+    "velocity": 0.95,
+    "target_user": "Thai businesses, international companies with Thai customer bases needing efficient local language support.",
+    "key_integrations": [
+      "Zendesk",
+      "Intercom",
+      "Line Messaging API",
+      "Facebook Messenger",
+      "internal knowledge bases"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-conversation or per-user subscription",
+    "reason": "High demand for localized customer service with native language understanding for better CX."
+  },
+  {
+    "niche": "Personalized Marketing Campaign Orchestrator",
+    "trend_score": 93.0,
+    "velocity": 0.95,
+    "target_user": "Marketing teams, growth hackers, e-commerce marketers wanting highly tailored campaigns.",
+    "key_integrations": [
+      "Google Ads",
+      "Facebook Ads",
+      "Mailchimp",
+      "HubSpot Marketing",
+      "CRM data",
+      "website analytics"
+    ],
+    "competition_level": "high",
+    "monetization": "percentage of ad spend managed, subscription fee",
+    "reason": "Generic campaigns yield poor ROI; hyper-personalization across channels maximizes engagement and conversions."
+  },
+  {
+    "niche": "Personalized Sales Outreach Agent",
+    "trend_score": 92.0,
+    "velocity": 0.95,
+    "target_user": "Sales development representatives (SDRs), account executives (AEs) to scale hyper-personalized outreach.",
+    "key_integrations": [
+      "Salesforce",
+      "HubSpot",
+      "LinkedIn Sales Navigator",
+      "Gmail",
+      "Outreach.io"
+    ],
+    "competition_level": "high",
+    "monetization": "per-seat subscription with usage-based tiers",
+    "reason": "Generic outreach emails have low conversion; hyper-personalization at scale is a huge value proposition."
+  },
+  {
+    "niche": "Thai E-commerce Platform Integrator",
+    "trend_score": 92.0,
+    "velocity": 0.95,
+    "target_user": "Thai businesses, local brands, international sellers expanding into the Thai market.",
+    "key_integrations": [
+      "Lazada Thailand",
+      "Shopee Thailand",
+      "Central Online",
+      "JD Central",
+      "local payment gateways"
+    ],
+    "competition_level": "low",
+    "monetization": "transaction fee, per-store subscription",
+    "reason": "Fragmented e-commerce landscape in Thailand requires unified management for efficient operations."
+  },
+  {
+    "niche": "E-commerce Product Catalog AI Enrichment",
+    "trend_score": 91.0,
+    "velocity": 0.85,
+    "target_user": "E-commerce managers, product content teams, marketing specialists needing richer product descriptions and SEO.",
+    "key_integrations": [
+      "Shopify",
+      "Magento",
+      "WooCommerce",
+      "BigCommerce",
+      "supplier APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-product processing, tiered subscription",
+    "reason": "High-quality product descriptions drive sales and reduce returns, but manual creation is labor-intensive."
+  },
+  {
+    "niche": "HR Talent Acquisition Assistant",
+    "trend_score": 91.0,
+    "velocity": 0.9,
+    "target_user": "Recruiters, HR managers, talent acquisition teams, especially in high-volume hiring.",
+    "key_integrations": [
+      "LinkedIn Recruiter",
+      "Indeed",
+      "applicant tracking systems (ATS)",
+      "HRIS (Workday, SAP SuccessFactors)"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-hire, per-candidate processed, or per-user subscription",
+    "reason": "Finding, screening, and engaging top talent is a constant challenge, and AI can streamline the entire funnel."
+  },
+  {
+    "niche": "Automated Incident Response Playbooks",
+    "trend_score": 90.0,
+    "velocity": 0.8,
+    "target_user": "SREs, DevOps engineers, IT operations teams for faster resolution of critical incidents.",
+    "key_integrations": [
+      "PagerDuty",
+      "Opsgenie",
+      "Jira",
+      "Slack",
+      "Datadog"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-incident or per-user subscription",
+    "reason": "Reducing Mean Time To Resolution (MTTR) is a critical KPI for all tech teams."
+  },
+  {
+    "niche": "CI/CD Pipeline Failure Root Cause",
+    "trend_score": 90.0,
+    "velocity": 0.85,
+    "target_user": "DevOps engineers, SREs, developers troubleshooting complex build and deployment failures.",
+    "key_integrations": [
+      "Jenkins",
+      "GitHub Actions",
+      "GitLab CI",
+      "CircleCI",
+      "Log Management (Splunk)"
+    ],
+    "competition_level": "low",
+    "monetization": "per-build or per-user subscription",
+    "reason": "Wasted developer time on debugging CI/CD failures is a huge productivity drain."
+  },
+  {
+    "niche": "Automated Customer Support Agent Training",
+    "trend_score": 90.0,
+    "velocity": 0.8,
+    "target_user": "Customer support managers, training departments, call center operations.",
+    "key_integrations": [
+      "Zendesk",
+      "Intercom",
+      "Salesforce Service Cloud",
+      "call transcription services",
+      "internal knowledge bases"
+    ],
+    "competition_level": "low",
+    "monetization": "per-agent subscription, enterprise licensing",
+    "reason": "Consistent, high-quality customer service is crucial, and training agents at scale is a challenge."
+  },
+  {
+    "niche": "Southeast Asian Local Payment Automation",
+    "trend_score": 90.0,
+    "velocity": 0.9,
+    "target_user": "E-commerce businesses, SaaS providers, digital service companies operating in SEA.",
+    "key_integrations": [
+      "PromptPay (Thailand)",
+      "TrueMoney Wallet",
+      "GrabPay",
+      "DANA (Indonesia)",
+      "local bank APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "per-transaction fee, tiered subscription",
+    "reason": "Local payment methods are crucial for market penetration in SEA, but integration and reconciliation are complex."
+  },
+  {
+    "niche": "Environmental Impact Reporting Automation",
+    "trend_score": 90.0,
+    "velocity": 0.85,
+    "target_user": "ESG officers, sustainability managers, large corporations needing to comply with environmental regulations.",
+    "key_integrations": [
+      "IoT sensors (energy, water)",
+      "supply chain data",
+      "ERP systems",
+      "regulatory databases (e.g., CDP, GRI)"
+    ],
+    "competition_level": "low",
+    "monetization": "enterprise licensing, per-report fee",
+    "reason": "Increasing regulatory pressure and investor demand for transparent ESG reporting drives this need."
+  },
+  {
+    "niche": "Legal Contract Clause Analysis",
+    "trend_score": 89.0,
+    "velocity": 0.8,
+    "target_user": "Legal professionals, contract managers, M&A analysts needing to quickly analyze large volumes of legal documents.",
+    "key_integrations": [
+      "Internal DMS",
+      "Dropbox",
+      "Google Drive",
+      "LexisNexis"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-document processing, enterprise license",
+    "reason": "Manual contract review is slow, expensive, and prone to human error, creating a massive efficiency gap."
+  },
+  {
+    "niche": "Regional Logistics & Supply Chain (SEA)",
+    "trend_score": 89.0,
+    "velocity": 0.8,
+    "target_user": "E-commerce fulfillment, manufacturers, distributors operating within Southeast Asia.",
+    "key_integrations": [
+      "DHL",
+      "J&T Express",
+      "Ninja Van",
+      "local freight forwarders",
+      "customs APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "per-shipment, enterprise licensing",
+    "reason": "Complex cross-border logistics and diverse local carriers in SEA demand intelligent optimization for cost and speed."
+  },
+  {
+    "niche": "Multi-CRM Data Harmonization",
+    "trend_score": 88.0,
+    "velocity": 0.7,
+    "target_user": "Sales operations, business analysts in companies with fragmented CRM data across departments or acquisitions.",
+    "key_integrations": [
+      "Salesforce",
+      "HubSpot",
+      "Zoho CRM",
+      "custom legacy CRMs"
+    ],
+    "competition_level": "low",
+    "monetization": "usage-based subscription, enterprise licensing",
+    "reason": "Inconsistent customer data leads to poor insights and operational inefficiencies."
+  },
+  {
+    "niche": "IoT Device Anomaly Detection",
+    "trend_score": 88.0,
+    "velocity": 0.75,
+    "target_user": "Industrial operations, smart city managers, logistics firms monitoring large-scale IoT deployments.",
+    "key_integrations": [
+      "AWS IoT",
+      "Azure IoT Hub",
+      "Google Cloud IoT",
+      "custom sensor data streams",
+      "SCADA systems"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-device or per-data volume subscription",
+    "reason": "Proactive identification of issues in IoT networks prevents costly downtime and maintenance."
+  },
+  {
+    "niche": "Automated Grant/Proposal Writing",
+    "trend_score": 88.0,
+    "velocity": 0.75,
+    "target_user": "Researchers, non-profits, startups, consultants seeking funding or project bids.",
+    "key_integrations": [
+      "Internal research docs",
+      "funding databases (Grants.gov)",
+      "project management tools",
+      "document editors"
+    ],
+    "competition_level": "low",
+    "monetization": "per-proposal or subscription for N proposals",
+    "reason": "Grant writing is time-consuming and critical for funding; AI can significantly streamline the process."
+  },
+  {
+    "niche": "Personalized Health & Wellness Coach",
+    "trend_score": 87.0,
+    "velocity": 0.75,
+    "target_user": "Individuals seeking tailored health advice, fitness enthusiasts, chronic disease patients managing conditions.",
+    "key_integrations": [
+      "Apple Health",
+      "Google Fit",
+      "Fitbit",
+      "Oura Ring",
+      "EHR systems (with consent)"
+    ],
+    "competition_level": "high",
+    "monetization": "subscription service, premium feature unlocks",
+    "reason": "Generic health advice often fails; people want personalized, evidence-based recommendations based on their unique data."
+  },
+  {
+    "niche": "Cross-Platform Gaming Analytics",
+    "trend_score": 87.0,
+    "velocity": 0.7,
+    "target_user": "Game developers, publishers, marketing teams in the gaming industry.",
+    "key_integrations": [
+      "Steam API",
+      "Xbox Live",
+      "PlayStation Network",
+      "mobile ad networks",
+      "in-game telemetry"
+    ],
+    "competition_level": "low",
+    "monetization": "per-active-user, revenue share, enterprise licensing",
+    "reason": "Understanding player behavior across platforms is key to retention and monetization in the highly competitive gaming market."
+  },
+  {
+    "niche": "API Documentation Generator & Tester",
+    "trend_score": 86.0,
+    "velocity": 0.7,
+    "target_user": "Developers, technical writers, API product managers needing up-to-date and accurate API docs.",
+    "key_integrations": [
+      "OpenAPI/Swagger",
+      "Postman",
+      "internal code repositories",
+      "CI/CD pipelines"
+    ],
+    "competition_level": "low",
+    "monetization": "per-project or per-user subscription",
+    "reason": "Poor API documentation hinders adoption and increases developer frustration; automation ensures accuracy."
+  },
+  {
+    "niche": "Legacy ERP Data Unification",
+    "trend_score": 85.0,
+    "velocity": 0.6,
+    "target_user": "Large enterprises, IT departments struggling to extract and utilize data from legacy SAP, Oracle EBS systems.",
+    "key_integrations": [
+      "SAP ECC/S/4HANA",
+      "Oracle EBS",
+      "custom mainframe systems",
+      "SQL Databases"
+    ],
+    "competition_level": "low",
+    "monetization": "enterprise licensing, project-based implementation",
+    "reason": "Modern AI models need access to rich historical data often trapped in older, complex systems."
+  },
+  {
+    "niche": "ASEAN Government e-Service Integrator",
+    "trend_score": 85.0,
+    "velocity": 0.7,
+    "target_user": "Businesses operating across ASEAN, consultants, legal firms dealing with regional regulatory compliance.",
+    "key_integrations": [
+      "Thai business registration",
+      "Singapore ACRA",
+      "Indonesian OSS",
+      "local permit APIs"
+    ],
+    "competition_level": "none",
+    "monetization": "per-transaction or subscription for compliance suite",
+    "reason": "Navigating diverse government e-services for compliance and operations across ASEAN is a major headache."
+  },
+  {
+    "niche": "Personalized Learning Path Generator",
+    "trend_score": 85.0,
+    "velocity": 0.7,
+    "target_user": "Students, lifelong learners, corporate training departments, educators seeking tailored skill development.",
+    "key_integrations": [
+      "Coursera",
+      "edX",
+      "internal LMS (Moodle, Canvas)",
+      "personal skill assessments"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription, per-course recommendation fee",
+    "reason": "Generic learning paths are inefficient; learners want tailored content that adapts to their progress and goals."
+  }
+]

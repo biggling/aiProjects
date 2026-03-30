@@ -1,5 +1,6 @@
 """Tests for FastAPI dashboard endpoints."""
 
+import base64
 import pytest
 from fastapi.testclient import TestClient
 
@@ -8,11 +9,15 @@ from tools.shared.db import get_session, init_db
 from tools.shared.models import Niche, Design, Listing, Prompt
 
 
+_token = base64.b64encode(b"admin:changeme").decode()
+AUTH_HEADERS = {"Authorization": f"Basic {_token}"}
+
+
 @pytest.fixture
 def client(setup_db):
     """Create test client with fresh DB."""
     init_db()
-    return TestClient(app)
+    return TestClient(app, headers=AUTH_HEADERS)
 
 
 @pytest.fixture
@@ -42,7 +47,7 @@ def seeded_db(setup_db):
         )
         session.add(listing)
 
-    return TestClient(app)
+    return TestClient(app, headers=AUTH_HEADERS)
 
 
 class TestDashboard:

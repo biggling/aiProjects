@@ -50,6 +50,24 @@ def run_trend_scraper():
     return _run_with_logging("trend_scraper", _do)
 
 
+@app.task(name="tasks.run_gemini_trend_scraper")
+def run_gemini_trend_scraper():
+    """Fetch current + upcoming trends from Gemini, save snapshots to DB."""
+    def _do():
+        from tools.trend.gemini_trend_scraper import run
+        return run()
+    return _run_with_logging("gemini_trend_scraper", _do)
+
+
+@app.task(name="tasks.run_blue_ocean_scraper")
+def run_blue_ocean_scraper():
+    """Discover low-competition blue ocean niches across all horizons (biweekly)."""
+    def _do():
+        from tools.trend.blue_ocean_scraper import run
+        return run()
+    return _run_with_logging("blue_ocean_scraper", _do)
+
+
 @app.task(name="tasks.run_reddit_scraper")
 def run_reddit_scraper():
     def _do():

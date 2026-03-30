@@ -14,39 +14,43 @@ def setup_db():
     Base.metadata.drop_all(engine)
 
 
-@patch("tools.design.image_generator.requests.post")
-def test_generate_image(mock_post, tmp_path):
-    mock_resp = MagicMock()
-    mock_resp.status_code = 200
-    mock_resp.content = b"\x89PNG\r\n\x1a\n" + b"\x00" * 100  # fake PNG
-    mock_post.return_value = mock_resp
-
+@patch("tools.design.image_generator._generate_stability")
+def test_generate_image(mock_stability, tmp_path):
+    """generate_image routes to stability backend and returns (True, 'stability', params)."""
     output = str(tmp_path / "test.png")
-    result = generate_image("a cute cat", output)
+    mock_stability.return_value = {"model": "sdxl", "backend": "stability"}
 
-    assert result is True
-    assert os.path.exists(output)
-    mock_post.assert_called_once()
+    # Force stability backend so the test doesn't depend on Gemini/DALL-E credentials
+    success, backend, params = generate_image("a cute cat", output, preferred_backend="stability")
+
+    assert success is True
+    assert backend == "stability"
+    assert params["backend"] == "stability"
+    mock_stability.assert_called_once()
 
 
-@patch("tools.design.image_generator.requests.post")
-def test_generate_image_failure(mock_post, tmp_path):
-    mock_resp = MagicMock()
-    mock_resp.status_code = 500
-    mock_resp.text = "Internal Server Error"
-    mock_post.return_value = mock_resp
+@patch("tools.design.image_generator._generate_stability")
+@patch("tools.design.image_generator._generate_gemini")
+@patch("tools.design.image_generator._generate_dalle")
+def test_generate_image_failure(mock_dalle, mock_gemini, mock_stability, tmp_path):
+    """generate_image returns (False, 'none', {}) when all backends fail."""
+    mock_gemini.return_value = None
+    mock_stability.return_value = None
+    mock_dalle.return_value = None
 
     output = str(tmp_path / "fail.png")
-    result = generate_image("a cute cat", output)
+    success, backend, params = generate_image("a cute cat", output)
 
-    assert result is False
+    assert success is False
+    assert backend == "none"
+    assert params == {}
 
 
 @patch("tools.design.image_generator.generate_image")
 def test_run(mock_gen):
-    mock_gen.return_value = True
+    """run() processes pending prompts and creates Design rows."""
+    mock_gen.return_value = (True, "gemini", {"backend": "gemini"})
 
-    # Insert test data
     with get_session() as session:
         niche = Niche(keyword="test", trend_score=80, status="active")
         session.add(niche)
@@ -67,6 +71,7 @@ def test_run(mock_gen):
         designs = session.query(Design).all()
         assert len(designs) == 3
         assert all(d.status == "generated" for d in designs)
+        assert all(d.image_backend == "gemini" for d in designs)
 
 
 @patch("tools.design.image_generator.generate_image")

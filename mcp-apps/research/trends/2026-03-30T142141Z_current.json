@@ -1,0 +1,462 @@
+[
+  {
+    "niche": "Contextual Code Review AI",
+    "trend_score": 96.0,
+    "velocity": 0.9,
+    "target_user": "Software Engineers, Engineering Managers: improve code quality, reduce review time, highly willing to pay for developer productivity.",
+    "key_integrations": [
+      "GitHub",
+      "GitLab",
+      "Bitbucket",
+      "Jira"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription per developer",
+    "reason": "Current AI code review tools are often limited; an MCP can provide deeper context from PRs, tickets, and existing codebase for superior suggestions."
+  },
+  {
+    "niche": "AI Meeting Summarizer & Actions",
+    "trend_score": 95.0,
+    "velocity": 0.85,
+    "target_user": "Knowledge Workers, Managers: automate meeting follow-ups, highly willing to pay for time savings.",
+    "key_integrations": [
+      "Zoom",
+      "Microsoft Teams",
+      "Google Meet",
+      "Asana",
+      "Salesforce"
+    ],
+    "competition_level": "medium",
+    "monetization": "free tier + subscription",
+    "reason": "Teams spend excessive time on meeting notes and action item extraction; an MCP can provide deeper integration and customization."
+  },
+  {
+    "niche": "AI Project Management Assistant",
+    "trend_score": 94.0,
+    "velocity": 0.88,
+    "target_user": "Project Managers, Team Leads: automate task creation, status updates, dependency tracking, willing to pay for efficiency and visibility.",
+    "key_integrations": [
+      "Jira",
+      "Asana",
+      "Monday.com",
+      "Slack"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription per user",
+    "reason": "AI can drastically reduce PM administrative overhead by understanding natural language requests and project context."
+  },
+  {
+    "niche": "AI Infra Anomaly Detector",
+    "trend_score": 94.0,
+    "velocity": 0.88,
+    "target_user": "SREs, Infrastructure Engineers: proactive outage prevention, reduce MTTR, highly willing to pay for system stability.",
+    "key_integrations": [
+      "Prometheus",
+      "Grafana",
+      "AWS CloudWatch",
+      "Azure Monitor",
+      "Splunk"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription per host/data volume",
+    "reason": "Traditional monitoring generates alert fatigue; AI can learn normal patterns and flag subtle anomalies before they become critical."
+  },
+  {
+    "niche": "Real-time Ad Campaign Optimizer",
+    "trend_score": 93.0,
+    "velocity": 0.82,
+    "target_user": "Marketing Teams, Ad Agencies: maximize ROI, automate bid adjustments, willing to pay for performance gains.",
+    "key_integrations": [
+      "Google Ads",
+      "Facebook Ads",
+      "LinkedIn Ads",
+      "Google Analytics"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription based on ad spend managed",
+    "reason": "Optimizing complex ad campaigns in real-time across multiple platforms is difficult; AI can react to market shifts instantly."
+  },
+  {
+    "niche": "AI CI/CD Pipeline Optimizer",
+    "trend_score": 93.0,
+    "velocity": 0.85,
+    "target_user": "DevOps Engineers, SREs: identify bottlenecks, predict failures, optimize build times, willing to pay for faster, more reliable deployments.",
+    "key_integrations": [
+      "Jenkins",
+      "GitHub Actions",
+      "GitLab CI",
+      "CircleCI",
+      "Datadog"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per pipeline/user",
+    "reason": "Optimizing complex CI/CD pipelines requires analyzing vast amounts of build logs and historical performance data."
+  },
+  {
+    "niche": "Advanced Support Triage & Drafting",
+    "trend_score": 92.0,
+    "velocity": 0.8,
+    "target_user": "Customer Service Managers: reduce agent load, improve response quality, willing to pay for efficiency and CSAT.",
+    "key_integrations": [
+      "Zendesk",
+      "Intercom",
+      "Salesforce Service Cloud",
+      "Confluence"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription per agent",
+    "reason": "Current solutions lack the sophisticated reasoning and multi-system synthesis needed for complex support issues."
+  },
+  {
+    "niche": "AI Test Case Generator",
+    "trend_score": 92.0,
+    "velocity": 0.83,
+    "target_user": "QA Engineers, Developers: automate test case creation, improve test coverage, willing to pay for increased quality and efficiency.",
+    "key_integrations": [
+      "Jira",
+      "Cucumber",
+      "Playwright",
+      "Cypress",
+      "Selenium"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per test case/user",
+    "reason": "Manually writing comprehensive test cases is time-consuming; AI can infer them from requirements or existing code."
+  },
+  {
+    "niche": "AI Legal Document Assistant",
+    "trend_score": 91.0,
+    "velocity": 0.8,
+    "target_user": "Legal Professionals: analyze contracts, draft standard clauses, summarize legal texts, high willingness to pay for reduced research time and risk.",
+    "key_integrations": [
+      "Clio",
+      "LexisNexis",
+      "DocuSign",
+      "internal document management"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription per document/user",
+    "reason": "Legal work is knowledge-intensive; an MCP can provide a secure, integrated AI for document review and drafting."
+  },
+  {
+    "niche": "AI Supply Chain Risk Predictor",
+    "trend_score": 91.0,
+    "velocity": 0.79,
+    "target_user": "Supply Chain Managers, Logistics Professionals: mitigate disruptions, optimize inventory, willing to pay for resilience.",
+    "key_integrations": [
+      "SAP SCM",
+      "Oracle SCM",
+      "logistics APIs",
+      "geopolitical data APIs",
+      "weather APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per node/data volume",
+    "reason": "Global supply chains are vulnerable; AI can proactively identify and predict risks by analyzing vast external and internal data streams."
+  },
+  {
+    "niche": "AI Sales Lead Qualification",
+    "trend_score": 90.0,
+    "velocity": 0.75,
+    "target_user": "Sales Development Representatives: qualify leads faster and more accurately, high willingness to pay for pipeline growth.",
+    "key_integrations": [
+      "Salesforce",
+      "HubSpot",
+      "LinkedIn Sales Navigator",
+      "Clearbit"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription per lead/user",
+    "reason": "Sales teams need highly personalized, dynamic lead qualification that current CRMs don't provide out-of-the-box with AI."
+  },
+  {
+    "niche": "Unified Cloud Semantic Search",
+    "trend_score": 90.0,
+    "velocity": 0.8,
+    "target_user": "Information Workers, Developers: find documents across all cloud storage via natural language, high willingness to pay for productivity.",
+    "key_integrations": [
+      "Google Drive",
+      "OneDrive",
+      "Dropbox",
+      "Box",
+      "local file systems"
+    ],
+    "competition_level": "medium",
+    "monetization": "free tier + subscription",
+    "reason": "Searching across fragmented cloud storage is inefficient; AI can provide a semantic search layer over everything."
+  },
+  {
+    "niche": "AI Investment Research Assistant",
+    "trend_score": 90.0,
+    "velocity": 0.75,
+    "target_user": "Financial Analysts, Investors: synthesize market data, news, and reports, high willingness to pay for actionable insights.",
+    "key_integrations": [
+      "Bloomberg Terminal API",
+      "Refinitiv Eikon",
+      "SEC Filings",
+      "financial news APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription per query/user",
+    "reason": "Analyzing vast financial datasets and news in real-time is beyond human capacity; AI can cut through the noise."
+  },
+  {
+    "niche": "Internal Knowledge Graph Builder",
+    "trend_score": 89.0,
+    "velocity": 0.78,
+    "target_user": "Enterprise Architects, Data Scientists: organize internal data, improve information retrieval, willing to pay for knowledge unification.",
+    "key_integrations": [
+      "SharePoint",
+      "Confluence",
+      "Notion",
+      "Slack",
+      "Google Drive"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per data volume/user",
+    "reason": "Extracting structured knowledge from disparate, unstructured enterprise data sources is a major unsolved pain point."
+  },
+  {
+    "niche": "AI API Design & Doc Gen",
+    "trend_score": 89.0,
+    "velocity": 0.78,
+    "target_user": "Backend Developers, Product Managers: accelerate API development, ensure consistent documentation, willing to pay for speed and quality.",
+    "key_integrations": [
+      "OpenAPI Spec",
+      "Postman",
+      "Swagger UI",
+      "GitHub Wiki"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per developer",
+    "reason": "Generating robust API designs and maintaining up-to-date documentation is a perennial developer challenge AI can simplify."
+  },
+  {
+    "niche": "Multi-platform Content Repurposing Engine",
+    "trend_score": 88.0,
+    "velocity": 0.7,
+    "target_user": "Content Marketers, Social Media Managers: scale content creation across channels, high willingness to pay for content velocity.",
+    "key_integrations": [
+      "WordPress",
+      "YouTube",
+      "X (Twitter)",
+      "LinkedIn",
+      "Mailchimp"
+    ],
+    "competition_level": "low",
+    "monetization": "free tier + subscription",
+    "reason": "Manually adapting content for different platforms is tedious; an AI agent integrating various APIs can automate this efficiently."
+  },
+  {
+    "niche": "AI HR Lifecycle Automation",
+    "trend_score": 87.0,
+    "velocity": 0.7,
+    "target_user": "HR Professionals: streamline onboarding/offboarding, policy inquiries, highly willing to pay for compliance and efficiency.",
+    "key_integrations": [
+      "Workday",
+      "BambooHR",
+      "Slack",
+      "Google Workspace",
+      "DocuSign"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per employee",
+    "reason": "HR workflows are rife with manual, repetitive tasks that an intelligent agent can orchestrate across multiple systems."
+  },
+  {
+    "niche": "AI Real Estate Market Analyst",
+    "trend_score": 87.0,
+    "velocity": 0.72,
+    "target_user": "Real Estate Agents, Developers, Investors: identify opportunities, forecast property values, willing to pay for competitive advantage.",
+    "key_integrations": [
+      "Zillow API",
+      "local MLS APIs",
+      "property tax databases",
+      "Google Maps API"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per report/user",
+    "reason": "Combining disparate real estate data with local market nuances for accurate predictions and recommendations is challenging for humans."
+  },
+  {
+    "niche": "E-commerce Trend Predictor",
+    "trend_score": 86.0,
+    "velocity": 0.7,
+    "target_user": "E-commerce Businesses, Product Managers: identify emerging product trends, optimize inventory, willing to pay for market insights.",
+    "key_integrations": [
+      "Shopify",
+      "WooCommerce",
+      "Amazon Seller Central",
+      "Lazada",
+      "Shopee"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per store/data volume",
+    "reason": "Predicting e-commerce trends requires ingesting and analyzing vast amounts of fragmented market and sales data."
+  },
+  {
+    "niche": "Intelligent Transaction Categorization",
+    "trend_score": 85.0,
+    "velocity": 0.65,
+    "target_user": "Accountants, Small Business Owners: automate expense tracking, reduce manual data entry, willing to pay for accuracy and time savings.",
+    "key_integrations": [
+      "Plaid",
+      "Stripe",
+      "QuickBooks",
+      "Xero"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription per transaction volume",
+    "reason": "Generic transaction categorization often falls short; an AI agent can learn specific business rules and improve accuracy over time."
+  },
+  {
+    "niche": "AI Patient Journey Optimizer",
+    "trend_score": 85.0,
+    "velocity": 0.68,
+    "target_user": "Healthcare Administrators, Clinicians: improve patient outcomes, reduce costs, willing to pay for operational efficiency and better care.",
+    "key_integrations": [
+      "EHR/EMR systems (Epic, Cerner)",
+      "patient portals",
+      "medical device data"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per patient/institution",
+    "reason": "Healthcare systems are complex; AI can map and optimize patient pathways by integrating disparate health data sources."
+  },
+  {
+    "niche": "AI Personalized Learning Curator",
+    "trend_score": 84.0,
+    "velocity": 0.65,
+    "target_user": "Students, Educators, Corporate Trainers: adaptive learning paths, tailored content, willing to pay for effective education.",
+    "key_integrations": [
+      "Moodle",
+      "Canvas",
+      "Khan Academy API",
+      "Coursera API",
+      "publisher APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per student/course",
+    "reason": "Generic learning platforms struggle with personalization; an AI agent can dynamically adapt to individual learner needs and progress."
+  },
+  {
+    "niche": "SEA Social Sentiment Analyzer",
+    "trend_score": 83.0,
+    "velocity": 0.87,
+    "target_user": "Marketing Teams, Brand Managers in SEA: monitor local brand perception, identify trends, willing to pay for actionable social insights.",
+    "key_integrations": [
+      "Facebook Graph API",
+      "X API",
+      "LINE OpenChat",
+      "Pantip.com"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per keyword/channel",
+    "reason": "Analyzing social media sentiment and trends accurately across diverse SEA languages and platforms is a niche challenge."
+  },
+  {
+    "niche": "SEA Local Payments AI Gateway",
+    "trend_score": 82.0,
+    "velocity": 0.9,
+    "target_user": "Businesses operating in SEA, E-commerce Platforms: enable AI agents to handle local transactions, willing to pay for seamless localized commerce.",
+    "key_integrations": [
+      "PromptPay",
+      "GrabPay",
+      "TrueMoney Wallet",
+      "KBank API",
+      "SCB API"
+    ],
+    "competition_level": "none",
+    "monetization": "transaction fee + subscription",
+    "reason": "Integrating AI agents with the diverse and often fragmented local payment ecosystems in Southeast Asia is a critical, unmet need."
+  },
+  {
+    "niche": "SEA Tourism AI Planner",
+    "trend_score": 81.0,
+    "velocity": 0.88,
+    "target_user": "Travelers to SEA, Tour Operators: personalized itineraries, real-time local recommendations, willing to pay for seamless travel planning.",
+    "key_integrations": [
+      "Agoda API",
+      "Klook API",
+      "Grab API",
+      "local transport APIs",
+      "TAT data"
+    ],
+    "competition_level": "low",
+    "monetization": "free tier + premium features/commissions",
+    "reason": "Planning travel in diverse SEA regions with local transport, events, and unique attractions is complex; AI can personalize and optimize."
+  },
+  {
+    "niche": "SEA E-commerce Price Scraper",
+    "trend_score": 80.0,
+    "velocity": 0.85,
+    "target_user": "E-commerce Sellers, Market Researchers in SEA: competitive pricing analysis, trend monitoring, willing to pay for market intelligence.",
+    "key_integrations": [
+      "Lazada API",
+      "Shopee API",
+      "Central Online",
+      "local payment systems"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per scrape/data volume",
+    "reason": "Localized e-commerce platforms in SEA require specialized scraping and analysis, often missed by global solutions."
+  },
+  {
+    "niche": "Thai SMB Customer Support AI",
+    "trend_score": 79.0,
+    "velocity": 0.8,
+    "target_user": "Small to Medium Businesses in Thailand: automate support, improve customer experience, willing to pay for efficiency and better service.",
+    "key_integrations": [
+      "LINE OA",
+      "Facebook Messenger",
+      "Zendesk",
+      "local CRM systems"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per agent/conversation",
+    "reason": "AI support for Thai SMBs needs to understand local cultural nuances, common idioms, and specific local service contexts."
+  },
+  {
+    "niche": "Thai Financial News Summarizer",
+    "trend_score": 78.0,
+    "velocity": 0.8,
+    "target_user": "Thai Investors, Financial Institutions: quickly digest local financial news, identify market-moving information, willing to pay for localized insights.",
+    "key_integrations": [
+      "SET (Stock Exchange of Thailand) API",
+      "local news outlets",
+      "Bloomberg Thailand"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription per user",
+    "reason": "Limited AI tools exist for deep comprehension and summarization of complex Thai financial language and market-specific contexts."
+  },
+  {
+    "niche": "Thai Legal Compliance AI",
+    "trend_score": 77.0,
+    "velocity": 0.75,
+    "target_user": "Businesses in Thailand, Legal Departments: monitor and interpret local regulations, ensure compliance, willing to pay for risk reduction.",
+    "key_integrations": [
+      "Royal Gazette API",
+      "Bar Council of Thailand",
+      "specific ministry websites"
+    ],
+    "competition_level": "none",
+    "monetization": "subscription per regulation/entity",
+    "reason": "Navigating complex and evolving Thai legal and regulatory frameworks requires specialized AI interpretation and monitoring capabilities."
+  },
+  {
+    "niche": "Thai Food Recommendation AI",
+    "trend_score": 75.0,
+    "velocity": 0.8,
+    "target_user": "Tourists, Foodies, Locals in Thailand: personalized restaurant and dish recommendations, including dietary needs, willing to pay for unique experiences.",
+    "key_integrations": [
+      "Wongnai API",
+      "Google Maps",
+      "Facebook Reviews",
+      "local food blogs"
+    ],
+    "competition_level": "low",
+    "monetization": "free tier + premium features/commissions",
+    "reason": "Thai cuisine is vast and complex; an AI agent can provide highly nuanced recommendations based on local expertise and user preferences."
+  }
+]

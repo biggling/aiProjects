@@ -1,7 +1,8 @@
-from tools.shared.config import ANTHROPIC_API_KEY, OPENAI_API_KEY
+from tools.shared.config import ANTHROPIC_API_KEY, OPENAI_API_KEY, GEMINI_API_KEY
 
 _anthropic_client = None
 _openai_client = None
+_gemini_client = None
 
 
 def get_anthropic():
@@ -20,3 +21,12 @@ def get_openai():
         import openai
         _openai_client = openai.OpenAI(api_key=OPENAI_API_KEY)
     return _openai_client
+
+
+def get_gemini():
+    """Return a singleton Google Gemini client (google-genai SDK)."""
+    global _gemini_client
+    if _gemini_client is None:
+        from google import genai
+        _gemini_client = genai.Client(api_key=GEMINI_API_KEY)
+    return _gemini_client

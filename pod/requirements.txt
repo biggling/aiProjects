@@ -9,6 +9,7 @@ praw
 playwright
 anthropic
 openai
+google-genai>=1.0.0
 rembg[cpu]
 Pillow
 requests

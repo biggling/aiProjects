@@ -1,0 +1,427 @@
+[
+  {
+    "niche": "Multi-Modal Marketing Content Creator",
+    "trend_score": 85.0,
+    "velocity": 0.95,
+    "upcoming_score": 99.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Marketing teams & content creators: Orchestrate various generative AI models (text, image, audio) to produce branded multi-modal content for summer campaigns; high willingness to pay for creative output and speed.",
+    "key_integrations": [
+      "Midjourney API",
+      "DALL-E 3 API",
+      "ElevenLabs API"
+    ],
+    "competition_level": "medium",
+    "monetization": "Content generation volume, seats + features",
+    "reason": "Summer marketing campaigns require a rapid pipeline for rich, multi-modal content creation."
+  },
+  {
+    "niche": "Specialized Synthetic Data Generator",
+    "trend_score": 82.0,
+    "velocity": 0.9,
+    "upcoming_score": 98.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "ML engineers & data scientists: Produce high-quality, domain-specific synthetic datasets for training new or refining existing AI models; high willingness to pay for data diversity and privacy.",
+    "key_integrations": [
+      "Hugging Face models",
+      "Internal data lakes",
+      "Domain-specific APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Data generation volume, enterprise license",
+    "reason": "New, specialized AI model releases around mid-year demand tailored synthetic training data for robust performance."
+  },
+  {
+    "niche": "Multi-Tenant Prompt Optimization",
+    "trend_score": 82.0,
+    "velocity": 0.85,
+    "upcoming_score": 97.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "SaaS product managers & AI platform engineers: Dynamically optimize and tailor AI feature behavior for diverse customer segments or tenants; high willingness to pay for feature performance and customer satisfaction.",
+    "key_integrations": [
+      "Internal analytics",
+      "Feature flag systems",
+      "Various LLM providers"
+    ],
+    "competition_level": "low",
+    "monetization": "Per API call routed/optimized, per tenant feature",
+    "reason": "SaaS companies launching new AI features need to dynamically optimize prompts for diverse tenant contexts."
+  },
+  {
+    "niche": "Dynamic Travel Itinerary Planner",
+    "trend_score": 78.0,
+    "velocity": 0.9,
+    "upcoming_score": 96.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Travel agencies & enterprise travel platforms: Offer hyper-personalized, real-time adaptive travel plans integrating various services; high willingness to pay for customer satisfaction and loyalty.",
+    "key_integrations": [
+      "Amadeus/Sabre APIs",
+      "Google Flights/Hotels APIs",
+      "Local event data"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-transaction fee, enterprise API access",
+    "reason": "Peak summer travel season drives immense demand for personalized and adaptive planning experiences."
+  },
+  {
+    "niche": "AI Ethics & Compliance Monitor",
+    "trend_score": 80.0,
+    "velocity": 0.8,
+    "upcoming_score": 96.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "AI governance teams & compliance officers: Ensure AI systems adhere to emerging global regulations (e.g., EU AI Act, US frameworks); extremely high willingness to pay for legal and reputational risk mitigation.",
+    "key_integrations": [
+      "Internal audit logs",
+      "Risk assessment tools",
+      "Regulatory databases"
+    ],
+    "competition_level": "low",
+    "monetization": "Per AI system monitored, audit report generation",
+    "reason": "Growing urgency for AI governance and compliance readiness ahead of anticipated regulatory enforcement."
+  },
+  {
+    "niche": "Predictive Supply Chain Orchestrator",
+    "trend_score": 79.0,
+    "velocity": 0.85,
+    "upcoming_score": 95.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Supply chain managers & logistics heads: Optimize logistics, inventory, and demand forecasting using multi-agent AI for early holiday season preparation; very high willingness to pay for cost savings and resilience.",
+    "key_integrations": [
+      "SAP SCM",
+      "IoT sensor data",
+      "Global shipping trackers"
+    ],
+    "competition_level": "medium",
+    "monetization": "Value-based (cost savings/efficiency gain), enterprise license",
+    "reason": "Early preparation for peak holiday season supply chain demands drives investment in optimization."
+  },
+  {
+    "niche": "Global Customer Service Translator",
+    "trend_score": 78.0,
+    "velocity": 0.85,
+    "upcoming_score": 94.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Customer support leads & multinational corporations: Provide real-time, context-aware multilingual customer support across channels; high willingness to pay for enhanced global customer satisfaction.",
+    "key_integrations": [
+      "Zendesk/Salesforce Service Cloud",
+      "Google Translate API",
+      "DeepL API"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per translated interaction, enterprise license",
+    "reason": "Summer travel and global business operations increase demand for seamless multilingual customer service."
+  },
+  {
+    "niche": "Automated Vulnerability Remediation",
+    "trend_score": 78.0,
+    "velocity": 0.8,
+    "upcoming_score": 94.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "DevOps teams & security engineers: Rapidly identify, analyze, and recommend patches for newly discovered software vulnerabilities; very high willingness to pay for security and operational continuity.",
+    "key_integrations": [
+      "GitHub Security API",
+      "Snyk",
+      "SonarQube"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per repository scanned, per vulnerability resolved, enterprise license",
+    "reason": "Hypothetical major security disclosures or framework updates around July drive urgent patching efforts."
+  },
+  {
+    "niche": "Dynamic Energy Grid Optimizer",
+    "trend_score": 78.0,
+    "velocity": 0.85,
+    "upcoming_score": 94.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Utility companies & energy traders: Forecast and manage peak summer energy demand, optimizing distribution and predicting outages; extremely high willingness to pay for grid stability and cost efficiency.",
+    "key_integrations": [
+      "Smart grid sensor data",
+      "Weather forecast APIs",
+      "Energy market APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Value-based (energy savings), enterprise license",
+    "reason": "Peak summer heatwaves drive unprecedented energy demand, requiring real-time grid optimization."
+  },
+  {
+    "niche": "Back-to-School Merchandising AI",
+    "trend_score": 75.0,
+    "velocity": 0.8,
+    "upcoming_score": 93.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Retail buyers & merchandisers: Generate data-driven strategies for inventory, pricing, and promotions for the back-to-school season; high willingness to pay for sales optimization.",
+    "key_integrations": [
+      "Salesforce Commerce Cloud",
+      "Inventory management systems",
+      "Market trend APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Percentage of uplift in sales/profit, enterprise subscription",
+    "reason": "Retailers finalize and implement back-to-school strategies in early summer to capture sales."
+  },
+  {
+    "niche": "Gaming Content Moderation AI",
+    "trend_score": 75.0,
+    "velocity": 0.8,
+    "upcoming_score": 93.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Game studios & online platform operators: Implement robust, multi-modal content moderation (text, voice, image) for new game launches and increased summer player activity; high willingness to pay for player safety and platform reputation.",
+    "key_integrations": [
+      "Discord API",
+      "Twitch API",
+      "In-game chat systems"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per player, per volume of content moderated",
+    "reason": "Summer gaming season and new content releases increase demand for sophisticated content moderation."
+  },
+  {
+    "niche": "Corporate ESG Reporting AI",
+    "trend_score": 75.0,
+    "velocity": 0.7,
+    "upcoming_score": 92.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Sustainability officers & corporate reporting teams: Consolidate and analyze diverse ESG data for mid-year report updates; high willingness to pay for accuracy and reduced manual effort.",
+    "key_integrations": [
+      "CDP",
+      "GRI standards",
+      "Internal utility data"
+    ],
+    "competition_level": "low",
+    "monetization": "Per report generated, data volume processed, enterprise license",
+    "reason": "Companies perform mid-year updates for annual ESG disclosures, requiring significant data synthesis."
+  },
+  {
+    "niche": "Precision Agriculture Decision AI",
+    "trend_score": 72.0,
+    "velocity": 0.75,
+    "upcoming_score": 92.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Farmers & agribusiness managers: Provide data-driven decisions integrating weather, soil, crop health, and economic models for optimized late summer/fall harvests; high willingness to pay for yield optimization and cost reduction.",
+    "key_integrations": [
+      "John Deere Operations Center API",
+      "Weather station APIs",
+      "Satellite imagery APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per acre/hectare managed, subscription + outcome-based",
+    "reason": "Late summer marks a critical decision-making period for optimized agricultural harvests."
+  },
+  {
+    "niche": "Healthcare Patient Intake AI",
+    "trend_score": 75.0,
+    "velocity": 0.7,
+    "upcoming_score": 92.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Hospital administrators & clinic managers: Streamline patient onboarding, handle complex medical queries, and route patients while maintaining HIPAA compliance; high willingness to pay for efficiency and improved patient experience.",
+    "key_integrations": [
+      "Epic/Cerner EHR",
+      "Insurance verification APIs",
+      "Telehealth platforms"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per patient intake, enterprise license",
+    "reason": "Healthcare providers prepare for fall patient intake and insurance enrollment periods, requiring efficient onboarding."
+  },
+  {
+    "niche": "Legal Compliance Audit Synthesizer",
+    "trend_score": 72.0,
+    "velocity": 0.7,
+    "upcoming_score": 91.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Legal compliance officers & corporate counsels: Expedite processing and summarization of legal documents for mid-year compliance reviews; high willingness to pay for accuracy and risk reduction.",
+    "key_integrations": [
+      "LexisNexis API",
+      "Internal DMS",
+      "Regulatory databases"
+    ],
+    "competition_level": "low",
+    "monetization": "Document volume-based, enterprise license",
+    "reason": "Mid-year corporate compliance checks and audit preparations intensify document review needs."
+  },
+  {
+    "niche": "Q3 Strategic Planning Agent",
+    "trend_score": 70.0,
+    "velocity": 0.75,
+    "upcoming_score": 90.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Business strategists & ops heads: Synthesize market trends, internal data, and generate actionable recommendations for Q3 planning; high willingness to pay for strategic advantage.",
+    "key_integrations": [
+      "Salesforce CRM",
+      "Tableau/PowerBI APIs",
+      "Financial market data"
+    ],
+    "competition_level": "medium",
+    "monetization": "Enterprise license + usage-based (data processed, reports generated)",
+    "reason": "Q3 business planning cycles kick off July 1st, demanding highly synthesized data and strategic insights."
+  },
+  {
+    "niche": "Developer Onboarding Assistant",
+    "trend_score": 70.0,
+    "velocity": 0.7,
+    "upcoming_score": 90.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Engineering managers & HR teams: Provide personalized, interactive onboarding for summer interns and new full-time hires; moderate willingness to pay for productivity gains.",
+    "key_integrations": [
+      "Confluence",
+      "Jira",
+      "GitHub API"
+    ],
+    "competition_level": "low",
+    "monetization": "Per active user seat, enterprise license",
+    "reason": "Major influx of summer interns and new graduates post-Spring requires efficient onboarding at scale."
+  },
+  {
+    "niche": "Smart City Predictive Maintenance",
+    "trend_score": 70.0,
+    "velocity": 0.7,
+    "upcoming_score": 90.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Municipal engineers & city planners: Manage a network of agents analyzing sensor data to predict and coordinate urban infrastructure maintenance; high willingness to pay for operational efficiency and public safety.",
+    "key_integrations": [
+      "SCADA systems",
+      "IoT sensor networks",
+      "Municipal planning software"
+    ],
+    "competition_level": "low",
+    "monetization": "Per monitored asset/area, data throughput",
+    "reason": "Summer is prime time for urban infrastructure maintenance, requiring predictive and efficient planning."
+  },
+  {
+    "niche": "AI-Driven IT Incident Response",
+    "trend_score": 70.0,
+    "velocity": 0.7,
+    "upcoming_score": 90.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Site reliability engineers & IT operations: Automate diagnosis, knowledge retrieval, and resolution workflows for system incidents during peak load; high willingness to pay for reduced downtime and faster MTTR.",
+    "key_integrations": [
+      "PagerDuty",
+      "Datadog",
+      "ServiceNow"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per incident, per monitored system, enterprise license",
+    "reason": "Increased system load during summer months (e.g., travel, e-commerce) heightens incident risk."
+  },
+  {
+    "niche": "Real-time Talent Sourcing Agent",
+    "trend_score": 70.0,
+    "velocity": 0.7,
+    "upcoming_score": 90.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Recruiters & talent acquisition specialists: Proactively source, screen, and personalize outreach to candidates for Q3 hiring needs; high willingness to pay for reduced time-to-hire and quality candidates.",
+    "key_integrations": [
+      "LinkedIn Recruiter API",
+      "Greenhouse/Workday HR",
+      "Job board APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per hire, per active search agent, enterprise license",
+    "reason": "Continued tech hiring post-Spring grad season for specialized roles drives demand for efficient sourcing."
+  },
+  {
+    "niche": "Financial Stress Test Orchestrator",
+    "trend_score": 68.0,
+    "velocity": 0.65,
+    "upcoming_score": 89.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Risk management teams & financial analysts: Coordinate complex financial models and regulatory guidelines for post-Q2 stress testing; very high willingness to pay for robust risk assessment.",
+    "key_integrations": [
+      "Bloomberg Terminal API",
+      "Internal financial models",
+      "Regulatory reporting platforms"
+    ],
+    "competition_level": "medium",
+    "monetization": "Enterprise license + compute usage",
+    "reason": "Post-Q2 financial reporting triggers extensive and complex stress testing requirements for institutions."
+  },
+  {
+    "niche": "Academic Grant Proposal Orchestrator",
+    "trend_score": 65.0,
+    "velocity": 0.7,
+    "upcoming_score": 88.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "University researchers & grant administrators: Automate literature review, data synthesis, and assist in drafting complex grant applications; moderate willingness to pay for efficiency and success rates.",
+    "key_integrations": [
+      "PubMed API",
+      "Google Scholar API",
+      "Institutional CRMs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-user subscription + project-based fees",
+    "reason": "Summer is peak academic grant writing season for major Fall submission deadlines."
+  },
+  {
+    "niche": "Dynamic Game NPC Behavior",
+    "trend_score": 68.0,
+    "velocity": 0.6,
+    "upcoming_score": 88.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Game designers & AI programmers: Create more realistic, adaptive, and context-aware NPC interactions and dialogue for upcoming game demos; moderate willingness to pay for enhanced player experience.",
+    "key_integrations": [
+      "Unity API",
+      "Unreal Engine API",
+      "Character animation tools"
+    ],
+    "competition_level": "low",
+    "monetization": "Per developer seat, project-based license",
+    "reason": "Game studios prepare major demos for late summer/fall conferences, emphasizing immersive AI."
+  },
+  {
+    "niche": "Personalized Corporate Training Paths",
+    "trend_score": 65.0,
+    "velocity": 0.6,
+    "upcoming_score": 85.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "L&D managers & HR departments: Dynamically generate tailored skill development paths and content for Q3 training initiatives; moderate willingness to pay for improved employee skills and retention.",
+    "key_integrations": [
+      "Workday Learning",
+      "Coursera for Business",
+      "Internal performance reviews"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per active learner, enterprise license",
+    "reason": "Q3 corporate training planning focuses on addressing skill gaps with personalized learning."
+  },
+  {
+    "niche": "Scientific Paper Synthesis Assistant",
+    "trend_score": 65.0,
+    "velocity": 0.6,
+    "upcoming_score": 85.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Researchers & post-docs: Expedite the synthesis of vast scientific literature, experimental results, and assist in manuscript drafting for journal submissions; moderate willingness to pay for efficiency.",
+    "key_integrations": [
+      "arXiv API",
+      "Nature API",
+      "EndNote"
+    ],
+    "competition_level": "low",
+    "monetization": "Per document processed, researcher seat",
+    "reason": "Academic cycles involve intense research consolidation and paper preparation for Fall journal submissions."
+  }
+]

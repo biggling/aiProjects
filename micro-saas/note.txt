@@ -1,0 +1,21 @@
+Top 3 gaps (global focus):
+
+  ┌─────┬─────────────────────────────────────────────────────────────────────┬─────────┐
+  │  #  │                                 Gap                                 │ Urgency │
+  ├─────┼─────────────────────────────────────────────────────────────────────┼─────────┤
+  │ 1   │ AI System Inventory Pro — EU AI Act compliance tracker for SMBs     │ 95      │
+  ├─────┼─────────────────────────────────────────────────────────────────────┼─────────┤
+  │ 2   │ EU VAT OSS Filing Assistant — cross-border VAT OSS report generator │ 90      │
+  ├─────┼─────────────────────────────────────────────────────────────────────┼─────────┤
+  │ 3   │ GDPR/CCPA Deletion Tracker — data deletion request management       │ 88      │
+  └─────┴─────────────────────────────────────────────────────────────────────┴─────────┘
+
+  Hottest pain points:
+  1. Amazon account health monitoring — proactive ASIN-level warning alerts (95)
+  2. Global sales tax/VAT automation — Etsy/Shopify digital products (95)
+  3. Business permit/license expiry tracker — multi-jurisdiction with renewals (95)
+
+  Strong compliance theme across both runs — EU AI Act, VAT/tax, GDPR. These are deadline-driven, which means urgency builds naturally and won't
+  fade. The Amazon account health monitor is particularly interesting as a global English-speaking audience with clear revenue stakes.
+
+✻ Churned for 2m 54s

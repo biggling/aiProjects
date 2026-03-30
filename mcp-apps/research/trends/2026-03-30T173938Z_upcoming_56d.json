@@ -1,0 +1,429 @@
+[
+  {
+    "niche": "Financial Services AI Compliance Context",
+    "trend_score": 55.0,
+    "velocity": 0.85,
+    "upcoming_score": 95.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Financial Institutions' Compliance Officers, Risk Management, FinTech CTOs; critical need for auditability, high willingness to pay.",
+    "key_integrations": [
+      "Regulatory Databases",
+      "Internal Policy Engines",
+      "Fraud Detection APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Enterprise license based on compliance scope and data volume.",
+    "reason": "Increased regulatory scrutiny on AI in finance and imminent Q2 financial reporting deadlines will necessitate auditable context trails for all AI-driven decisions."
+  },
+  {
+    "niche": "Enterprise RAG Governance & Compliance Layer",
+    "trend_score": 50.0,
+    "velocity": 0.9,
+    "upcoming_score": 93.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Enterprise Architects, Data Governance Leads, Legal Counsel in regulated industries; high willingness to pay for risk mitigation.",
+    "key_integrations": [
+      "Confluence",
+      "SharePoint",
+      "Data Loss Prevention (DLP) systems"
+    ],
+    "competition_level": "medium",
+    "monetization": "Subscription per document/data source indexed and policy enforced.",
+    "reason": "The GDPR anniversary (May 25th) and evolving data privacy regulations will heighten enterprise demand for RAG solutions that ensure data lineage, access control, and PII masking within AI context."
+  },
+  {
+    "niche": "Multi-Modal Conference Context Orchestrator",
+    "trend_score": 48.0,
+    "velocity": 0.9,
+    "upcoming_score": 92.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "AI/ML Engineers, Product Managers building multimodal applications, needing to integrate new, complex models quickly; high willingness to pay for cutting-edge capabilities.",
+    "key_integrations": [
+      "GPT-5/Gemini API (anticipated)",
+      "Stable Diffusion XL (successors)",
+      "Whisper/Audio-to-text APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Tiered subscription per API call volume and context complexity.",
+    "reason": "Anticipated major multimodal model announcements (e.g., GPT-5, Gemini Ultra successors) at developer conferences (Google I/O, Microsoft Build) in late May will drive immediate demand for robust context orchestration."
+  },
+  {
+    "niche": "Global Supply Chain Geopolitical Context AI",
+    "trend_score": 47.0,
+    "velocity": 0.88,
+    "upcoming_score": 91.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Supply Chain Managers, Logistics Analysts, Procurement Heads; critical for business continuity, high willingness to pay.",
+    "key_integrations": [
+      "Bloomberg API",
+      "Reuters",
+      "Logistics Trackers"
+    ],
+    "competition_level": "low",
+    "monetization": "Enterprise subscription based on data sources and scope of analysis.",
+    "reason": "Continued global supply chain volatility, combined with critical Q2/Q3 planning for the holiday season, demands real-time geopolitical and logistics context for risk assessment."
+  },
+  {
+    "niche": "Software Supply Chain Security Context",
+    "trend_score": 45.0,
+    "velocity": 0.89,
+    "upcoming_score": 91.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "DevSecOps Teams, Cybersecurity Analysts, CTOs; critical for enterprise security, high willingness to pay.",
+    "key_integrations": [
+      "Container Registries (Docker Hub, Quay)",
+      "Vulnerability Databases (NVD)",
+      "CI/CD pipelines"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-repository or per-pipeline enterprise subscription.",
+    "reason": "Heightened awareness and new regulatory guidance around software supply chain attacks will drive demand for AI that embeds security policies and provenance data as context in CI/CD pipelines."
+  },
+  {
+    "niche": "Agentic Workflow Long-Term Memory Server",
+    "trend_score": 45.0,
+    "velocity": 0.95,
+    "upcoming_score": 90.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Software Architects, AI Researchers, DevOps teams implementing autonomous agents; willing to pay for persistence and advanced planning capabilities.",
+    "key_integrations": [
+      "LangChain Agents",
+      "LlamaIndex Agents",
+      "AutoGen framework"
+    ],
+    "competition_level": "medium",
+    "monetization": "Subscription per active agent and context window size.",
+    "reason": "New advancements in open-source agentic frameworks (e.g., Autogen 2.0, LangChain enhancements) typically announced at Spring conferences will create a demand for sophisticated, persistent context management."
+  },
+  {
+    "niche": "Brand Safety & Content Moderation Context",
+    "trend_score": 46.0,
+    "velocity": 0.88,
+    "upcoming_score": 90.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Social Media Platforms, Brand Marketing Teams, Trust & Safety Officers; high willingness to pay to protect brand reputation.",
+    "key_integrations": [
+      "Social Media APIs",
+      "Content Policy Databases",
+      "Real-time News Feeds"
+    ],
+    "competition_level": "medium",
+    "monetization": "Usage-based per content item moderated or enterprise license.",
+    "reason": "Brands and platforms gearing up for increased content volume with summer campaigns will need robust AI for content moderation, informed by real-time cultural and brand safety guidelines."
+  },
+  {
+    "niche": "Healthcare Clinical Trial Context Management",
+    "trend_score": 49.0,
+    "velocity": 0.86,
+    "upcoming_score": 90.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Pharmaceutical Companies, CROs (Contract Research Organizations), Medical Researchers; critical for drug development, high willingness to pay.",
+    "key_integrations": [
+      "EHR/EMR systems",
+      "Clinical Trial Management Systems (CTMS)",
+      "Drug Databases"
+    ],
+    "competition_level": "medium",
+    "monetization": "Enterprise license based on trials managed and data volume.",
+    "reason": "Ongoing drug development and clinical trials will have critical data analysis points in Q2, requiring secure AI context management for patient data, protocols, and research literature."
+  },
+  {
+    "niche": "Dynamic User Persona & Journey Context",
+    "trend_score": 41.0,
+    "velocity": 0.87,
+    "upcoming_score": 89.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Product Managers, UX Designers, Marketing Strategists; willing to pay for deeper customer understanding.",
+    "key_integrations": [
+      "Google Analytics",
+      "Amplitude",
+      "CRM systems",
+      "User Feedback platforms"
+    ],
+    "competition_level": "low",
+    "monetization": "Tiered subscription based on active user profiles and data sources.",
+    "reason": "Product teams finalizing Q3/Q4 roadmaps will seek AI tools that dynamically build user personas and journey maps from real-time analytics, driving demand for contextual insights."
+  },
+  {
+    "niche": "Enterprise Knowledge Graph Context Weaver",
+    "trend_score": 44.0,
+    "velocity": 0.85,
+    "upcoming_score": 89.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Knowledge Management Specialists, Enterprise Architects, CIOs; high willingness to pay for improved internal search and insights.",
+    "key_integrations": [
+      "SharePoint",
+      "Confluence",
+      "Jira",
+      "Databases"
+    ],
+    "competition_level": "medium",
+    "monetization": "Enterprise license based on data sources integrated and user count.",
+    "reason": "Companies investing in internal knowledge management, often with Q2 budget allocation, will seek MCPs to unify siloed enterprise data into a contextual knowledge graph for AI-driven insights."
+  },
+  {
+    "niche": "Q2 Hyper-Personalized Sales Enablement Context",
+    "trend_score": 40.0,
+    "velocity": 0.8,
+    "upcoming_score": 88.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Sales/Marketing Ops, Growth Managers in B2B SaaS, E-commerce; willing to pay for tools that directly impact revenue.",
+    "key_integrations": [
+      "Salesforce CRM",
+      "HubSpot",
+      "Outreach/Salesloft"
+    ],
+    "competition_level": "medium",
+    "monetization": "Usage-based subscription per personalized content generation and context lookups.",
+    "reason": "Sales and marketing teams will finalize strategies for high-impact summer/Q3 campaigns, driving demand for hyper-personalized content generation based on rich CRM and intent data."
+  },
+  {
+    "niche": "Energy Grid Optimization Context AI",
+    "trend_score": 42.0,
+    "velocity": 0.87,
+    "upcoming_score": 88.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Utility Companies, Energy Grid Operators, Smart Grid Tech Providers; willing to pay for efficiency, reliability, and cost savings.",
+    "key_integrations": [
+      "SCADA systems",
+      "Weather Forecast APIs",
+      "Energy Market Data"
+    ],
+    "competition_level": "low",
+    "monetization": "Enterprise license based on grid size and energy volume managed.",
+    "reason": "Increasing energy demand as summer approaches will drive demand for AI that integrates real-time production, consumption, and weather data into a comprehensive context for grid optimization."
+  },
+  {
+    "niche": "Next-Gen Code Migration Context Server",
+    "trend_score": 42.0,
+    "velocity": 0.9,
+    "upcoming_score": 87.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Senior Software Engineers, DevOps Leads, Engineering Managers; high willingness to pay for reducing tech debt and migration costs.",
+    "key_integrations": [
+      "GitHub/GitLab API",
+      "Jira/Linear",
+      "IDE Extensions"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per seat enterprise subscription or usage-based per refactoring task.",
+    "reason": "Organizations planning Q3/Q4 tech debt reduction or migration to new frameworks/languages will accelerate efforts, seeking AI tools with deep code context for refactoring."
+  },
+  {
+    "niche": "Smart Manufacturing Digital Twin Context",
+    "trend_score": 43.0,
+    "velocity": 0.85,
+    "upcoming_score": 86.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Manufacturing Engineers, Plant Managers, Industrial IoT Architects; willing to invest in operational efficiency and predictive maintenance.",
+    "key_integrations": [
+      "SCADA systems",
+      "Historian Databases",
+      "CAD/PLM software"
+    ],
+    "competition_level": "low",
+    "monetization": "Subscription per connected device and data processing volume.",
+    "reason": "Industrial firms are accelerating digital twin projects for Q2 efficiency gains, requiring MCPs to fuse real-time sensor, CAD, and maintenance data for AI-driven insights."
+  },
+  {
+    "niche": "Academic Research Submission Context Engine",
+    "trend_score": 38.0,
+    "velocity": 0.8,
+    "upcoming_score": 85.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "University Researchers, PhD Students, Grant Writers in STEM fields; willing to pay for efficiency in publishing.",
+    "key_integrations": [
+      "ArXiv",
+      "PubMed",
+      "Zotero/Mendeley"
+    ],
+    "competition_level": "low",
+    "monetization": "Subscription per user or per grant application/publication submitted.",
+    "reason": "The end of the academic year in Spring leads to a rush of paper submissions and grant applications, requiring AI to manage and synthesize complex, domain-specific research context."
+  },
+  {
+    "niche": "AI for Inclusive Design Context",
+    "trend_score": 39.0,
+    "velocity": 0.83,
+    "upcoming_score": 85.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "UX/UI Designers, Accessibility Engineers, Product Teams; willing to pay for compliance and broader market reach.",
+    "key_integrations": [
+      "WCAG Standards",
+      "Figma/Sketch APIs",
+      "User Testing Platforms"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-designer subscription or tiered project-based fees.",
+    "reason": "Growing focus on digital accessibility and new regulatory pushes (often linked to GDPR anniversary on May 25th) will create demand for AI to embed WCAG guidelines and user profiles as context for inclusive design."
+  },
+  {
+    "niche": "AI-Powered Legal E-Discovery Context",
+    "trend_score": 40.0,
+    "velocity": 0.8,
+    "upcoming_score": 84.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Corporate Legal Departments, Law Firms, Legal Tech Providers; willing to pay for significant time and cost savings.",
+    "key_integrations": [
+      "eDiscovery Platforms",
+      "Document Management Systems",
+      "LexisNexis/Westlaw APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-matter pricing or tiered subscription based on data volume and complexity.",
+    "reason": "May often sees a spike in corporate legal activity (litigation, contract renewals), necessitating AI-assisted review with granular contextual understanding for e-discovery."
+  },
+  {
+    "niche": "Agricultural Predictive Context AI",
+    "trend_score": 39.0,
+    "velocity": 0.82,
+    "upcoming_score": 83.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Agritech Companies, Large Farms, Agricultural Co-ops; willing to pay for improved yields and resource efficiency.",
+    "key_integrations": [
+      "Weather APIs",
+      "Soil Sensor Data",
+      "Satellite Imagery"
+    ],
+    "competition_level": "low",
+    "monetization": "Subscription per acre managed or per crop cycle.",
+    "reason": "Farmers and agricultural firms are making critical planting/harvest decisions for the summer season, demanding AI-powered insights augmented by hyper-local climate and soil context."
+  },
+  {
+    "niche": "Personalized HR Onboarding Context Engine",
+    "trend_score": 37.0,
+    "velocity": 0.85,
+    "upcoming_score": 82.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "HR Directors, Talent Acquisition, Learning & Development; willing to pay for improved retention and faster time-to-productivity.",
+    "key_integrations": [
+      "HRIS (Workday, SAP SuccessFactors)",
+      "LMS (Cornerstone, Docebo)",
+      "Internal Wikis"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-employee monthly subscription or enterprise license.",
+    "reason": "The spring/summer hiring wave (Q2-Q3 planning) will drive demand for MCPs to customize onboarding materials and training paths based on individual and role-specific context."
+  },
+  {
+    "niche": "Geospatial Urban Planning Context AI",
+    "trend_score": 38.0,
+    "velocity": 0.8,
+    "upcoming_score": 82.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "City Planners, Real Estate Developers, Environmental Consultants; willing to pay for better-informed planning decisions.",
+    "key_integrations": [
+      "GIS Platforms",
+      "Satellite Imagery APIs",
+      "Demographic Databases"
+    ],
+    "competition_level": "low",
+    "monetization": "Project-based licensing or subscription per area analyzed.",
+    "reason": "Cities and developers initiating Q3/Q4 infrastructure projects will need AI that integrates and contextualizes vast geospatial data for informed urban planning and environmental assessments."
+  },
+  {
+    "niche": "AI Tutor Adaptive Learning Context",
+    "trend_score": 36.0,
+    "velocity": 0.8,
+    "upcoming_score": 81.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "EdTech Platforms, Private Tutoring Services, School Districts; willing to pay for personalized learning outcomes.",
+    "key_integrations": [
+      "LMS platforms",
+      "Assessment APIs",
+      "Curriculum Databases"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-student subscription or usage-based per adaptive session.",
+    "reason": "Students preparing for summer standardized tests or end-of-year exams will drive demand for AI tutors that provide highly personalized, adaptive learning paths based on individual progress context."
+  },
+  {
+    "niche": "Esports Real-time Betting Context AI",
+    "trend_score": 35.0,
+    "velocity": 0.85,
+    "upcoming_score": 80.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Esports Analytics Firms, Betting Operators, Fantasy Sports platforms; high willingness to pay for competitive advantage.",
+    "key_integrations": [
+      "Game APIs (e.g., Riot Games, Valve)",
+      "Live Stream Data",
+      "Sportsbook APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Value-based pricing per prediction or per contextual data stream.",
+    "reason": "Major esports tournaments (e.g., MSI for League of Legends, Valorant Masters) often climax in May, creating a spike in demand for real-time contextual analysis for betting and fan engagement."
+  },
+  {
+    "niche": "Personalized Fitness & Wellness Coaching Context",
+    "trend_score": 37.0,
+    "velocity": 0.84,
+    "upcoming_score": 80.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Fitness Apps, Wellness Platforms, Personal Trainers; willing to pay for higher user engagement and retention.",
+    "key_integrations": [
+      "Wearable APIs (Apple Health, Google Fit)",
+      "Dietary Trackers",
+      "Mental Health Apps"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-user monthly subscription or SDK licensing.",
+    "reason": "People preparing for summer activities and fitness goals will increase demand for AI coaching that integrates user biometrics, activity, and preferences into highly personalized wellness plans."
+  },
+  {
+    "niche": "Game Asset Generation Context Layer",
+    "trend_score": 35.0,
+    "velocity": 0.8,
+    "upcoming_score": 79.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Game Development Studios, 3D Artists, Indie Game Developers; willing to pay for accelerating asset pipelines and maintaining consistency.",
+    "key_integrations": [
+      "Unreal Engine/Unity APIs",
+      "Blender/Maya APIs",
+      "Internal Art Style Guides"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-artist subscription or project-based licensing.",
+    "reason": "Game development studios often have asset creation milestones in late Spring for summer/fall releases, driving demand for AI tools that manage game lore and art style context for asset generation."
+  },
+  {
+    "niche": "Investigative Journalism OSINT Context",
+    "trend_score": 34.0,
+    "velocity": 0.78,
+    "upcoming_score": 78.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "News Organizations, Investigative Journalists, OSINT Analysts; willing to pay for advanced research capabilities.",
+    "key_integrations": [
+      "Social Media Monitoring APIs",
+      "Public Records Databases",
+      "News Archives"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-analyst subscription or project-based licensing.",
+    "reason": "News cycles often intensify in late Spring with new political developments, driving demand for AI to aggregate and contextualize vast open-source intelligence for investigative reporting."
+  }
+]

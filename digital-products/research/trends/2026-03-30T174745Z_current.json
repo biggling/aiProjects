@@ -1,0 +1,430 @@
+[
+  {
+    "niche": "GPT-4 Marketing Prompt Pack",
+    "trend_score": 95.0,
+    "velocity": 0.9,
+    "target_buyer": "Marketers, content creators, indie founders; generate high-quality marketing copy, strategies; high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$39-$99",
+    "competition_level": "high",
+    "format": "PDF | Notion template | text files",
+    "reason": "Marketers need specialized, effective prompts to leverage advanced AI models for campaigns, SEO, and content creation."
+  },
+  {
+    "niche": "AI Prompt Engineering Cheatsheet",
+    "trend_score": 94.0,
+    "velocity": 0.91,
+    "target_buyer": "All AI users, developers, marketers, writers; quick reference for effective prompt crafting; low-medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$19-$49",
+    "competition_level": "high",
+    "format": "PDF | Notion database | card deck",
+    "reason": "The universal need for concise, actionable guidance on prompt engineering makes this a highly sought-after introductory product."
+  },
+  {
+    "niche": "Claude 3 Content Creation Prompts",
+    "trend_score": 93.0,
+    "velocity": 0.88,
+    "target_buyer": "Writers, content strategists, marketers; generate long-form, nuanced content with Claude; high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$39-$89",
+    "competition_level": "medium",
+    "format": "PDF | Notion template | text files",
+    "reason": "Users are seeking specialized prompt packs to leverage Claude's advanced reasoning and longer context window for content generation."
+  },
+  {
+    "niche": "AI Code Assistant Prompts",
+    "trend_score": 92.5,
+    "velocity": 0.85,
+    "target_buyer": "Developers, AI-powered coders; streamline coding, debugging, refactoring; high willingness to pay for efficiency.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$29-$79",
+    "competition_level": "medium",
+    "format": "PDF | JSON | text files",
+    "reason": "Developers seek specific prompt engineering to maximize efficiency with tools like Claude Code, Cursor, and OpenCode."
+  },
+  {
+    "niche": "AI Copywriting Frameworks",
+    "trend_score": 92.0,
+    "velocity": 0.87,
+    "target_buyer": "Writers, marketers, agencies; structured approaches to generate compelling copy with AI; high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$49-$119",
+    "competition_level": "medium",
+    "format": "PDF | Notion template | prompt pack",
+    "reason": "Beyond raw prompts, users need frameworks that integrate AI into a strategic copywriting process for better results."
+  },
+  {
+    "niche": "AI Product Management Prompts",
+    "trend_score": 91.5,
+    "velocity": 0.82,
+    "target_buyer": "Product managers, indie founders; assist with market research, feature ideation, roadmap planning; high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$39-$89",
+    "competition_level": "low",
+    "format": "PDF | Notion template | text files",
+    "reason": "Product managers are increasingly using AI for various stages of the product lifecycle and need specialized prompt guidance."
+  },
+  {
+    "niche": "AI Social Media Content Planner",
+    "trend_score": 91.0,
+    "velocity": 0.8,
+    "target_buyer": "Marketers, creators, agencies; automate content ideation, scheduling, copywriting for social media; high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$39-$89",
+    "competition_level": "medium",
+    "format": "Notion template | spreadsheet | prompt pack",
+    "reason": "Non-developer AI users need AI-driven solutions to streamline their social media presence and content generation efforts."
+  },
+  {
+    "niche": "Cursor/OpenCode Workflow Configs",
+    "trend_score": 91.0,
+    "velocity": 0.83,
+    "target_buyer": "Developers, AI-coding tool users; optimized configurations for specific AI coding workflows; high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$39-$89",
+    "competition_level": "low",
+    "format": "ZIP | config files | README",
+    "reason": "As dedicated AI coding tools gain traction, users seek pre-optimized configurations to unlock their full potential."
+  },
+  {
+    "niche": "Midjourney V6 Style Guide",
+    "trend_score": 90.5,
+    "velocity": 0.78,
+    "target_buyer": "Designers, AI artists, marketers; master specific artistic styles and prompts in Midjourney; high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$29-$69",
+    "competition_level": "medium",
+    "format": "PDF | image prompts | tutorial",
+    "reason": "Users are keen to unlock specific aesthetic control and advanced techniques with the latest Midjourney versions."
+  },
+  {
+    "niche": "AI-Powered Code Review Checklists",
+    "trend_score": 90.0,
+    "velocity": 0.75,
+    "target_buyer": "Developers, engineering managers; enhance code quality, enforce best practices using AI; high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$49-$129",
+    "competition_level": "low",
+    "format": "PDF | Notion template | script bundles",
+    "reason": "As AI assists more in coding, specialized AI-powered checklists are crucial for efficient and high-quality code reviews."
+  },
+  {
+    "niche": "AI UX Research Prompt Pack",
+    "trend_score": 90.0,
+    "velocity": 0.79,
+    "target_buyer": "UX designers, researchers, product managers; accelerate user research, persona creation with AI; high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$39-$99",
+    "competition_level": "low",
+    "format": "PDF | Notion template | text files",
+    "reason": "UX professionals are exploring AI to enhance research efficiency and generate deeper insights, creating demand for specialized prompts."
+  },
+  {
+    "niche": "AI Graphic Design Workflow",
+    "trend_score": 89.5,
+    "velocity": 0.77,
+    "target_buyer": "Designers, marketers, agencies; integrate AI tools (e.g., Midjourney, DALL-E, Firefly) into design processes; high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$49-$129",
+    "competition_level": "medium",
+    "format": "PDF | video course | prompt pack",
+    "reason": "Design professionals are eager to adopt AI tools to enhance creativity and efficiency in their daily design tasks."
+  },
+  {
+    "niche": "AI-Driven Dev Environment Setup",
+    "trend_score": 89.0,
+    "velocity": 0.73,
+    "target_buyer": "Developers; configure AI-integrated development environments (e.g., Cursor, OpenCode); high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$49-$119",
+    "competition_level": "low",
+    "format": "ZIP | config files | tutorial PDFs",
+    "reason": "Developers want pre-configured setups and guides to quickly integrate AI tools into their daily coding workflows."
+  },
+  {
+    "niche": "Notion AI Prompt Manager",
+    "trend_score": 89.0,
+    "velocity": 0.75,
+    "target_buyer": "AI power-users, developers, creators; organize and refine AI prompts for various tools; high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$39-$89",
+    "competition_level": "low",
+    "format": "Notion template",
+    "reason": "As AI usage grows, managing and iterating on successful prompts becomes crucial for efficiency and quality."
+  },
+  {
+    "niche": "Notion Developer OS",
+    "trend_score": 88.0,
+    "velocity": 0.65,
+    "target_buyer": "Developers, engineering managers; project planning, task management, documentation; medium-high willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$49-$129",
+    "competition_level": "medium",
+    "format": "Notion template",
+    "reason": "Demand for integrated Notion workspaces for developer productivity, sprint planning, and technical documentation is high."
+  },
+  {
+    "niche": "Notion Content Creator Hub",
+    "trend_score": 87.5,
+    "velocity": 0.67,
+    "target_buyer": "Content creators, YouTubers, bloggers; organize content pipelines, ideas, scheduling; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$49-$109",
+    "competition_level": "high",
+    "format": "Notion template",
+    "reason": "Creators need integrated Notion systems to manage their entire content lifecycle, from ideation to distribution."
+  },
+  {
+    "niche": "Indie Hacker Launch Playbook",
+    "trend_score": 87.0,
+    "velocity": 0.7,
+    "target_buyer": "Solo founders, indie hackers; guidance for product launch, marketing, early traction; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$59-$149",
+    "competition_level": "medium",
+    "format": "Notion template | PDF | mixed",
+    "reason": "Solo entrepreneurs constantly seek structured roadmaps and checklists to navigate the complexities of launching digital products."
+  },
+  {
+    "niche": "Newsletter Growth System",
+    "trend_score": 87.0,
+    "velocity": 0.69,
+    "target_buyer": "Creators, indie hackers, marketers; grow and monetize email newsletters; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$49-$119",
+    "competition_level": "medium",
+    "format": "Notion template | PDF | checklist",
+    "reason": "Email newsletters remain a powerful direct communication channel, driving demand for growth and monetization strategies."
+  },
+  {
+    "niche": "Digital Product Launch Checklist",
+    "trend_score": 86.0,
+    "velocity": 0.68,
+    "target_buyer": "Creators, indie hackers, course creators; structured guide for launching digital goods; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$29-$69",
+    "competition_level": "medium",
+    "format": "Notion template | PDF | checklist",
+    "reason": "Creators need systematic guides to ensure successful launches of their digital products, from ideation to post-launch marketing."
+  },
+  {
+    "niche": "Notion Freelancer OS",
+    "trend_score": 86.0,
+    "velocity": 0.66,
+    "target_buyer": "Freelancers, consultants; manage projects, clients, finances, personal tasks; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$59-$139",
+    "competition_level": "high",
+    "format": "Notion template",
+    "reason": "The comprehensive Notion system for freelancers integrates all aspects of their business into one place, a constant need."
+  },
+  {
+    "niche": "Notion Second Brain 2.0",
+    "trend_score": 85.0,
+    "velocity": 0.6,
+    "target_buyer": "Knowledge workers, creators, students; personal knowledge management, productivity; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$49-$119",
+    "competition_level": "high",
+    "format": "Notion template",
+    "reason": "The demand for comprehensive personal knowledge management systems within Notion remains strong and evolves with new features."
+  },
+  {
+    "niche": "Affiliate Marketing Tracker",
+    "trend_score": 85.0,
+    "velocity": 0.63,
+    "target_buyer": "Creators, bloggers, affiliate marketers; monitor affiliate sales, earnings, campaigns; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$29-$79",
+    "competition_level": "medium",
+    "format": "spreadsheet | Notion template",
+    "reason": "Growing interest in passive income drives demand for tools that simplify tracking and optimizing affiliate efforts."
+  },
+  {
+    "niche": "SaaS Metric Tracking Spreadsheet",
+    "trend_score": 84.0,
+    "velocity": 0.6,
+    "target_buyer": "Indie hackers, solo founders; monitor key business metrics (MRR, churn, LTV); medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$39-$99",
+    "competition_level": "medium",
+    "format": "spreadsheet",
+    "reason": "Indie hackers need simple yet robust tools to track their SaaS performance without investing in complex analytics dashboards."
+  },
+  {
+    "niche": "Sprint Planning Notion Template",
+    "trend_score": 84.0,
+    "velocity": 0.59,
+    "target_buyer": "Developers, Scrum Masters, product teams; organize and track agile sprints efficiently; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$39-$89",
+    "competition_level": "high",
+    "format": "Notion template",
+    "reason": "Agile teams constantly seek optimized Notion templates for streamlined sprint planning, execution, and review."
+  },
+  {
+    "niche": "Freelancer Client Onboarding Kit",
+    "trend_score": 83.0,
+    "velocity": 0.55,
+    "target_buyer": "Freelancers, agencies; streamline client acquisition, project kickoff, communication; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$39-$89",
+    "competition_level": "medium",
+    "format": "Notion template | PDF | document pack",
+    "reason": "Freelancers and agencies actively seek polished, efficient systems to professionalize and simplify their client onboarding process."
+  },
+  {
+    "niche": "MVP Development Planning Kit",
+    "trend_score": 83.0,
+    "velocity": 0.58,
+    "target_buyer": "Indie hackers, solo founders, early-stage startups; systematic approach to planning Minimum Viable Products; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$49-$119",
+    "competition_level": "medium",
+    "format": "Notion template | PDF | mixed",
+    "reason": "Entrepreneurs need clear frameworks to define, plan, and execute their MVP quickly and effectively."
+  },
+  {
+    "niche": "Technical Debt Tracking System",
+    "trend_score": 82.5,
+    "velocity": 0.53,
+    "target_buyer": "Developers, engineering managers; identify, prioritize, and manage technical debt effectively; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$39-$99",
+    "competition_level": "medium",
+    "format": "Notion template | spreadsheet",
+    "reason": "Managing technical debt is a perennial challenge for dev teams, making structured tracking tools valuable."
+  },
+  {
+    "niche": "API Documentation Notion Kit",
+    "trend_score": 82.0,
+    "velocity": 0.5,
+    "target_buyer": "Developers, technical writers; create clear, consistent API documentation; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$39-$99",
+    "competition_level": "medium",
+    "format": "Notion template",
+    "reason": "The ongoing need for structured and easy-to-maintain API documentation makes this a stable, valuable product for dev teams."
+  },
+  {
+    "niche": "Professional Project Proposal Kit",
+    "trend_score": 81.0,
+    "velocity": 0.52,
+    "target_buyer": "Freelancers, agencies, consultants; create impressive, client-winning proposals; medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$49-$129",
+    "competition_level": "medium",
+    "format": "document pack | Notion template | PDF",
+    "reason": "High-quality proposal templates save time and boost professionalism, key for client-facing businesses."
+  },
+  {
+    "niche": "Business Model Canvas Notion",
+    "trend_score": 80.0,
+    "velocity": 0.45,
+    "target_buyer": "Solo founders, entrepreneurs, business students; strategy planning, idea validation; low-medium willingness to pay.",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy",
+      "Lemon Squeezy"
+    ],
+    "price_range": "$19-$49",
+    "competition_level": "high",
+    "format": "Notion template | PDF",
+    "reason": "A foundational tool for any new business, continuously sought after for clear strategic planning."
+  }
+]

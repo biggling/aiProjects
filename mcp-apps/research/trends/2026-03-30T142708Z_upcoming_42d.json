@@ -1,0 +1,454 @@
+[
+  {
+    "niche": "Secure Enterprise Prompt Gateway",
+    "trend_score": 80.0,
+    "velocity": 0.8,
+    "upcoming_score": 95.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Enterprise Security Teams, DevOps, MLOps, needing secure, auditable access to all LLMs, willing to pay for compliance and control.",
+    "key_integrations": [
+      "OpenAI API",
+      "Anthropic API",
+      "Azure AI Services",
+      "Google Vertex AI",
+      "Data Loss Prevention (DLP) tools"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per API call, token volume, enterprise license with advanced security features.",
+    "reason": "Increasing regulatory scrutiny (e.g., EU AI Act, data privacy) and enterprise adoption of AI necessitate secure, auditable prompt management."
+  },
+  {
+    "niche": "Customer Support Automation Co-Pilot",
+    "trend_score": 78.0,
+    "velocity": 0.81,
+    "upcoming_score": 94.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Customer Service Managers, Agents, enhancing agent productivity and customer satisfaction, willing to pay for efficiency and quality.",
+    "key_integrations": [
+      "Zendesk",
+      "Salesforce Service Cloud",
+      "Intercom",
+      "Speech-to-text APIs",
+      "Knowledge base systems"
+    ],
+    "competition_level": "high",
+    "monetization": "Per agent/seat, conversation volume, enterprise platform.",
+    "reason": "Demand for improving Q2 customer satisfaction metrics and preparing for summer peak seasons drives investment in AI support tools."
+  },
+  {
+    "niche": "AI Governance & Guardrail Enforcer",
+    "trend_score": 70.0,
+    "velocity": 0.88,
+    "upcoming_score": 93.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Chief AI Officers, Compliance Officers, Legal Teams, ensuring AI models meet ethical and regulatory standards, critical for risk mitigation.",
+    "key_integrations": [
+      "Model monitoring platforms",
+      "AI safety frameworks",
+      "Enterprise policy engines",
+      "Audit logging systems"
+    ],
+    "competition_level": "low",
+    "monetization": "Per model managed, policy enforcement rules, enterprise compliance suite.",
+    "reason": "Organizations are actively preparing for phased EU AI Act implementation, requiring tools to enforce AI policies and guardrails."
+  },
+  {
+    "niche": "Agentic Workflow Orchestration Hub",
+    "trend_score": 75.0,
+    "velocity": 0.85,
+    "upcoming_score": 92.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "AI/ML Engineers, Solution Architects, building complex agentic systems, high willingness to pay for reliability and scaling.",
+    "key_integrations": [
+      "OpenAI Assistants API",
+      "Google Vertex AI Agents",
+      "LangChain/AutoGen frameworks"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per agent/workflow run, context token usage, enterprise license.",
+    "reason": "Google I/O (early May) is expected to launch new agent frameworks/features, driving immediate developer need for robust orchestration."
+  },
+  {
+    "niche": "Cybersecurity Threat Intelligence Aggregator",
+    "trend_score": 75.0,
+    "velocity": 0.84,
+    "upcoming_score": 92.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "SOC Analysts, CISO, proactively identifying and mitigating cyber threats, critical for organizational security.",
+    "key_integrations": [
+      "SIEM systems (Splunk, CrowdStrike)",
+      "Threat intelligence feeds",
+      "Vulnerability databases",
+      "Dark web monitoring tools"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per threat alert, intelligence source, enterprise security platform.",
+    "reason": "Ongoing increase in cyber threats, coupled with critical Q2 budget reviews, drives investment in advanced threat intelligence capabilities."
+  },
+  {
+    "niche": "Supply Chain Risk Predictor AI",
+    "trend_score": 72.0,
+    "velocity": 0.79,
+    "upcoming_score": 91.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Logistics Managers, Procurement Officers, identifying and mitigating supply chain disruptions, critical for business continuity.",
+    "key_integrations": [
+      "ERP systems (SAP, Oracle)",
+      "Weather APIs",
+      "Geopolitical news feeds",
+      "Shipping APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per prediction, supply chain segment managed, enterprise risk suite.",
+    "reason": "Q2 is a key period for companies to review and de-risk supply chains for the latter half of the year, driven by economic uncertainties."
+  },
+  {
+    "niche": "Multi-Modal Contextual RAG",
+    "trend_score": 70.0,
+    "velocity": 0.9,
+    "upcoming_score": 90.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Data Scientists, ML Engineers, implementing RAG over diverse enterprise data, willing to pay for advanced capabilities.",
+    "key_integrations": [
+      "Google Cloud Vision/Video AI",
+      "Azure AI Vision",
+      "Pinecone/Weaviate",
+      "new multi-modal LLMs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per query/document processed, context size, enterprise features.",
+    "reason": "Anticipated releases of highly capable multi-modal foundation models at Google I/O will drive immediate demand for advanced RAG."
+  },
+  {
+    "niche": "DevOps AI Assistant Context Manager",
+    "trend_score": 70.0,
+    "velocity": 0.82,
+    "upcoming_score": 90.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "DevOps Engineers, SREs, developers using AI assistants for coding/troubleshooting, need persistent context across tools and sessions.",
+    "key_integrations": [
+      "GitHub Copilot APIs",
+      "Jira/Confluence",
+      "VS Code APIs",
+      "Terminal/Shell integrations"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per user/seat, context storage volume, enterprise features.",
+    "reason": "Microsoft Build (late May) announcements on Copilot stack enhancements will accelerate demand for advanced AI assistance in developer workflows."
+  },
+  {
+    "niche": "Edge AI Model Context Manager",
+    "trend_score": 65.0,
+    "velocity": 0.83,
+    "upcoming_score": 89.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "IoT Developers, Embedded Systems Engineers, deploying AI on resource-constrained devices, needs efficient context handling and fallbacks.",
+    "key_integrations": [
+      "TensorFlow Lite",
+      "ONNX Runtime",
+      "AWS IoT Greengrass",
+      "Azure IoT Edge",
+      "device sensor APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per device connected, context compression rate, enterprise solution.",
+    "reason": "Anticipated Apple WWDC (early June) focus on on-device AI will spur demand for efficient edge AI context management ahead of time."
+  },
+  {
+    "niche": "AI-Driven Patent & IP Search",
+    "trend_score": 68.0,
+    "velocity": 0.78,
+    "upcoming_score": 89.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "R&D Departments, Patent Attorneys, Startups, performing comprehensive IP searches and competitive analysis, critical for innovation.",
+    "key_integrations": [
+      "Patent databases (USPTO, EPO)",
+      "Scientific publication databases",
+      "Legal databases",
+      "Semantic search engines"
+    ],
+    "competition_level": "low",
+    "monetization": "Per search, document analyzed, enterprise subscription.",
+    "reason": "Mid-Q2 is a common period for R&D teams to evaluate new IP and for startups to secure patents, driving demand for efficient search tools."
+  },
+  {
+    "niche": "Real Estate Listing Multi-Analyzer",
+    "trend_score": 65.0,
+    "velocity": 0.8,
+    "upcoming_score": 88.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Real Estate Agents, Developers, Investors, needing comprehensive property insights from various data types, willing to pay for speed and depth.",
+    "key_integrations": [
+      "Zillow/Trulia APIs",
+      "GIS mapping services",
+      "Property tax databases",
+      "Image analysis APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per property analyzed, monthly subscription, enterprise solution.",
+    "reason": "The spring real estate market surge is in full swing, driving demand for AI tools to quickly analyze new listings and market trends."
+  },
+  {
+    "niche": "Legal Document Review Accelerator",
+    "trend_score": 67.0,
+    "velocity": 0.76,
+    "upcoming_score": 88.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Attorneys, Paralegals, Corporate Legal Departments, accelerating contract review and due diligence, high willingness to pay for speed and accuracy.",
+    "key_integrations": [
+      "Document management systems (DMS)",
+      "e-Discovery platforms",
+      "Legal research databases",
+      "Specialized legal LLMs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per document reviewed, hourly usage, enterprise license.",
+    "reason": "Q2 often sees a surge in M&A activities and contract renewals, necessitating rapid, AI-assisted legal document analysis."
+  },
+  {
+    "niche": "Automated Software Test Case Generator",
+    "trend_score": 65.0,
+    "velocity": 0.8,
+    "upcoming_score": 88.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "QA Engineers, Developers, accelerating software testing cycles for rapid feature delivery, high value for product quality.",
+    "key_integrations": [
+      "Jira/Azure DevOps",
+      "Git repositories",
+      "Test automation frameworks (Selenium, Playwright)",
+      "AI code analysis tools"
+    ],
+    "competition_level": "low",
+    "monetization": "Per test case generated, code coverage, enterprise license.",
+    "reason": "Post-Google I/O and Microsoft Build, dev teams will be rapidly implementing new features, demanding faster, more comprehensive testing."
+  },
+  {
+    "niche": "Cross-Platform UI/UX AI Assistant",
+    "trend_score": 60.0,
+    "velocity": 0.78,
+    "upcoming_score": 87.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "UI/UX Designers, Frontend Developers, generating consistent designs and code across web, mobile, desktop platforms, willing to pay for efficiency.",
+    "key_integrations": [
+      "Figma/Sketch APIs",
+      "React/Vue/SwiftUI frameworks",
+      "AI code generation models",
+      "design system APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per design iteration, component generation, seat license.",
+    "reason": "With Google I/O and Microsoft Build focusing on platform unification, demand for AI-driven cross-platform design tools will spike."
+  },
+  {
+    "niche": "Personalized Fitness & Wellness Coach",
+    "trend_score": 65.0,
+    "velocity": 0.73,
+    "upcoming_score": 87.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Health Tech Companies, Fitness Apps, providing dynamic, personalized coaching, willing to pay for high user engagement and retention.",
+    "key_integrations": [
+      "Wearable device APIs (Apple Health, Google Fit)",
+      "Nutrition tracking apps",
+      "Workout logging platforms",
+      "Behavioral science models"
+    ],
+    "competition_level": "low",
+    "monetization": "Per user session, coaching plan generated, platform integration fee.",
+    "reason": "The push for summer fitness and health goals creates high demand for personalized, AI-driven wellness solutions by mid-May."
+  },
+  {
+    "niche": "Smart Contract Auditing AI",
+    "trend_score": 62.0,
+    "velocity": 0.77,
+    "upcoming_score": 86.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Blockchain Developers, Auditors, Legal Professionals, ensuring security and compliance of smart contracts, high value for risk reduction.",
+    "key_integrations": [
+      "Ethereum/Solana APIs",
+      "Static analysis tools",
+      "Formal verification frameworks",
+      "Legal databases"
+    ],
+    "competition_level": "low",
+    "monetization": "Per contract audited, vulnerability identified, enterprise security suite.",
+    "reason": "Increasing adoption of Web3 and enterprise blockchain solutions drives demand for automated, robust smart contract security by mid-Q2."
+  },
+  {
+    "niche": "Marketing Campaign A/B Test Optimizer",
+    "trend_score": 70.0,
+    "velocity": 0.77,
+    "upcoming_score": 86.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Digital Marketers, Growth Hackers, optimizing marketing campaigns through rapid, intelligent A/B testing, willing to pay for ROI.",
+    "key_integrations": [
+      "Google Ads API",
+      "Facebook Ads API",
+      "CRM systems",
+      "Experimentation platforms (Optimizely, VWO)"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per campaign optimized, feature usage, monthly platform fee.",
+    "reason": "Marketers are fine-tuning campaigns for summer product launches and sales, requiring sophisticated AI for real-time optimization."
+  },
+  {
+    "niche": "Q2 Financial Narrative Generator",
+    "trend_score": 60.0,
+    "velocity": 0.75,
+    "upcoming_score": 85.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Financial Analysts, CFOs, automating quarterly reporting, need accuracy and compliance, high willingness to pay for time savings.",
+    "key_integrations": [
+      "SAP/Oracle Financials",
+      "Tableau",
+      "Bloomberg API",
+      "Specialized financial LLMs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per report generated, seat license, enterprise subscription.",
+    "reason": "Companies are deeply engaged in Q2 financial reporting and budgeting cycles by mid-May, seeking AI for efficiency and compliance."
+  },
+  {
+    "niche": "Brand Voice & Style Guide Enforcer",
+    "trend_score": 63.0,
+    "velocity": 0.74,
+    "upcoming_score": 85.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Marketing Teams, Content Managers, ensuring consistent brand messaging across all AI-generated content, high value for brand integrity.",
+    "key_integrations": [
+      "CMS platforms (WordPress, Contentful)",
+      "Marketing automation tools",
+      "Internal style guides",
+      "Grammar/spelling APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per document processed, content volume, team subscription.",
+    "reason": "Marketing teams are ramping up content creation for summer campaigns, requiring strict adherence to brand guidelines across diverse outputs."
+  },
+  {
+    "niche": "Healthcare Clinical Trial Contextualizer",
+    "trend_score": 68.0,
+    "velocity": 0.72,
+    "upcoming_score": 84.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Clinical Researchers, Pharma Companies, navigating complex trial data and regulations, critical for accelerated drug discovery.",
+    "key_integrations": [
+      "Electronic Health Records (EHR) systems",
+      "Medline/PubMed",
+      "Regulatory databases (FDA, EMA)",
+      "Specialized medical LLMs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per trial/patient record, enterprise license, compliance module add-on.",
+    "reason": "Q2 is a critical period for pharmaceutical R&D, with increased pressure to accelerate clinical trials and meet regulatory milestones."
+  },
+  {
+    "niche": "Scientific Research Data Harmonizer",
+    "trend_score": 60.0,
+    "velocity": 0.7,
+    "upcoming_score": 83.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Research Scientists, Data Engineers, unifying disparate scientific datasets for analysis and model training, critical for breakthroughs.",
+    "key_integrations": [
+      "ELN (Electronic Lab Notebooks)",
+      "LIMS (Lab Information Management Systems)",
+      "Public data repositories",
+      "Scientific ontologies"
+    ],
+    "competition_level": "low",
+    "monetization": "Per dataset processed, data volume, research group subscription.",
+    "reason": "Post-academic year closure, summer research initiatives kick off, demanding efficient data preparation and integration for new projects."
+  },
+  {
+    "niche": "Personalized Academic Advisor AI",
+    "trend_score": 58.0,
+    "velocity": 0.68,
+    "upcoming_score": 82.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "University Students, Academic Advisors, creating personalized learning paths and career guidance, willing to pay for improved outcomes.",
+    "key_integrations": [
+      "Learning Management Systems (LMS)",
+      "Career services platforms",
+      "Course catalogs",
+      "Student information systems"
+    ],
+    "competition_level": "low",
+    "monetization": "Per student subscription, institutional license, premium feature tiers.",
+    "reason": "End of academic year and summer course planning creates a critical window for students to finalize study plans with AI assistance."
+  },
+  {
+    "niche": "Summer Internship Talent Scouter",
+    "trend_score": 55.0,
+    "velocity": 0.7,
+    "upcoming_score": 80.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "HR Recruiters, Hiring Managers, efficiently sourcing and vetting candidates for summer internship programs, high urgency.",
+    "key_integrations": [
+      "LinkedIn API",
+      "ATS platforms (Workday, Greenhouse)",
+      "Resume parsing APIs",
+      "Video interview platforms"
+    ],
+    "competition_level": "low",
+    "monetization": "Per candidate processed, per role, annual subscription.",
+    "reason": "Mid-May marks the peak for companies finalizing summer internship placements and initial onboarding, requiring rapid candidate processing."
+  },
+  {
+    "niche": "Teacher AI Assistant Lesson Planner",
+    "trend_score": 58.0,
+    "velocity": 0.67,
+    "upcoming_score": 80.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Educators, School Administrators, generating personalized lesson plans and educational content, willing to pay for time savings and engagement.",
+    "key_integrations": [
+      "Curriculum management systems",
+      "Learning standards databases",
+      "Content repositories (OER)",
+      "Virtual classroom platforms"
+    ],
+    "competition_level": "low",
+    "monetization": "Per lesson plan, content generated, school/district license.",
+    "reason": "Teachers prepare for summer school and next academic year's curriculum during mid-May, seeking AI to streamline lesson planning."
+  },
+  {
+    "niche": "Event Logistics & Communication AI",
+    "trend_score": 55.0,
+    "velocity": 0.65,
+    "upcoming_score": 78.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_user": "Event Planners, Conference Organizers, managing complex event logistics and attendee communication, high urgency for smooth operations.",
+    "key_integrations": [
+      "Event management platforms (Eventbrite, Cvent)",
+      "CRM systems",
+      "Email/SMS APIs",
+      "Venue management software"
+    ],
+    "competition_level": "low",
+    "monetization": "Per event, attendee volume, annual subscription.",
+    "reason": "Preparations for the summer event season (conferences, festivals) are intense in mid-May, requiring streamlined logistics and communication."
+  }
+]

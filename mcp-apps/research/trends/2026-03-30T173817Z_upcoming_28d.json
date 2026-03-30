@@ -1,0 +1,433 @@
+[
+  {
+    "niche": "AI Tax Document Context Manager",
+    "trend_score": 75.0,
+    "velocity": 0.85,
+    "upcoming_score": 98.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Financial Accountants, Individuals: Securely process tax documents, high willingness to pay for accuracy/efficiency.",
+    "key_integrations": [
+      "IRS Tax Prep APIs (hypothetical)",
+      "TurboTax",
+      "Accounting software APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Usage-based (per document/query), Enterprise SaaS",
+    "reason": "US tax deadline (April 15th) drives peak demand for secure, accurate AI assistance with tax document processing and contextualizing regulations."
+  },
+  {
+    "niche": "New LLM API Migration Context",
+    "trend_score": 70.0,
+    "velocity": 0.9,
+    "upcoming_score": 95.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "AI Engineers, Lead Developers: Facilitate seamless migration to a hypothetical new major LLM release, high willingness to pay for reduced integration friction.",
+    "key_integrations": [
+      "OpenAI API (GPT-5)",
+      "Anthropic API (Claude 4)",
+      "Google Cloud Vertex AI"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-project license, Usage-based (context token volume)",
+    "reason": "Anticipated release of a major new LLM (e.g., GPT-5 or similar) in early April will drive urgent demand for context migration and optimization tools."
+  },
+  {
+    "niche": "Open-Source LLM Fine-Tuning Context",
+    "trend_score": 65.0,
+    "velocity": 0.88,
+    "upcoming_score": 94.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "ML Engineers, Data Scientists: Efficiently prepare and manage datasets for fine-tuning open-source LLMs, high willingness to pay for model performance and specialized application.",
+    "key_integrations": [
+      "Hugging Face Hub",
+      "PyTorch",
+      "TensorFlow",
+      "AWS SageMaker"
+    ],
+    "competition_level": "low",
+    "monetization": "Developer SaaS, Usage-based (dataset volume)",
+    "reason": "Hypothetical major open-source LLM releases (e.g., Llama 4) will drive significant demand for tools that streamline fine-tuning with precise context management."
+  },
+  {
+    "niche": "Agentic Framework State Manager",
+    "trend_score": 65.0,
+    "velocity": 0.88,
+    "upcoming_score": 93.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "AI Agents Developers, Research Engineers: Robust context management for complex multi-step AI agents, high willingness to pay for reliability and performance.",
+    "key_integrations": [
+      "LangChain",
+      "CrewAI",
+      "AutoGen",
+      "Vector DBs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Developer SaaS, Enterprise license",
+    "reason": "New versions or mainstream adoption of agentic frameworks (e.g., LangChain 1.x, CrewAI v0.2.x) will create demand for durable and dynamic context persistence."
+  },
+  {
+    "niche": "Q2 Financial Budgeting Context",
+    "trend_score": 60.0,
+    "velocity": 0.75,
+    "upcoming_score": 92.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "CFOs, Finance Managers: AI-driven budget forecasting and scenario planning, high willingness to pay for strategic insights.",
+    "key_integrations": [
+      "SAP S/4HANA",
+      "Oracle Financials",
+      "Bloomberg Terminal APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Enterprise SaaS, Value-based tiers",
+    "reason": "Companies finalize Q2/H1 budgets around this time, requiring complex financial data aggregation and contextual analysis for strategic decisions."
+  },
+  {
+    "niche": "Sales Call Coaching Context",
+    "trend_score": 68.0,
+    "velocity": 0.78,
+    "upcoming_score": 92.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Sales Managers, Sales Representatives: AI analysis of sales calls to provide contextual coaching and improve performance, high willingness to pay for revenue impact.",
+    "key_integrations": [
+      "Salesforce Sales Cloud",
+      "Gong.io",
+      "Zoom/Teams APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-user subscription, Enterprise SaaS",
+    "reason": "Post-Q1 sales reviews and setting Q2 targets create demand for AI tools that provide contextual insights from sales conversations for coaching and improvement."
+  },
+  {
+    "niche": "Legal Discovery Context Assistant",
+    "trend_score": 60.0,
+    "velocity": 0.8,
+    "upcoming_score": 91.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Lawyers, Paralegals: Efficiently review and contextualize large volumes of legal documents for discovery, high willingness to pay for time savings and accuracy.",
+    "key_integrations": [
+      "Relativity",
+      "eDiscovery platforms",
+      "LexisNexis APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-matter fee, Enterprise SaaS",
+    "reason": "Law firms ramp up for Q2 litigation and discovery phases, increasing demand for AI-powered context management in legal document review."
+  },
+  {
+    "niche": "Social Media Trend Forecasting",
+    "trend_score": 70.0,
+    "velocity": 0.76,
+    "upcoming_score": 91.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Marketing Teams, Brand Strategists: AI to analyze real-time social data for emerging trends and campaign planning, high willingness to pay for market advantage.",
+    "key_integrations": [
+      "Twitter API",
+      "Facebook Graph API",
+      "Google Trends"
+    ],
+    "competition_level": "medium",
+    "monetization": "Subscription, Data processing fees",
+    "reason": "Brands are planning summer marketing campaigns in Q2, creating urgent demand for contextual AI to forecast social media trends and consumer sentiment."
+  },
+  {
+    "niche": "AI Regulatory Compliance Context",
+    "trend_score": 55.0,
+    "velocity": 0.8,
+    "upcoming_score": 90.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Legal/Compliance Officers, AI Governance Leads: Ensure AI systems comply with emerging regulations (e.g., EU AI Act impact, new state laws), high willingness to pay to mitigate risk.",
+    "key_integrations": [
+      "AWS Audit Manager",
+      "Azure Compliance Center",
+      "OneTrust"
+    ],
+    "competition_level": "low",
+    "monetization": "Enterprise SaaS, Compliance modules",
+    "reason": "Increasing clarity and enforcement timelines for AI governance frameworks will push companies to adopt solutions that track and audit AI context usage."
+  },
+  {
+    "niche": "Customer Service Handoff Context",
+    "trend_score": 72.0,
+    "velocity": 0.75,
+    "upcoming_score": 90.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Contact Center Managers, Customer Service Agents: Improve bot-to-human agent handoffs with summarized chat context, high willingness to pay for enhanced customer experience.",
+    "key_integrations": [
+      "Salesforce Service Cloud",
+      "Zendesk",
+      "Genesys Cloud"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-agent license, Usage-based (summaries)",
+    "reason": "Companies post-Q1 review focus on improving customer experience and agent efficiency, leading to demand for seamless bot-to-human transitions."
+  },
+  {
+    "niche": "DevOps Incident Resolution Context",
+    "trend_score": 65.0,
+    "velocity": 0.8,
+    "upcoming_score": 90.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "SREs, DevOps Engineers: Aggregate logs and alerts for faster AI-assisted incident diagnosis, high willingness to pay for reduced downtime.",
+    "key_integrations": [
+      "PagerDuty",
+      "Datadog",
+      "Splunk",
+      "Jira Service Management"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-incident, Enterprise subscription",
+    "reason": "Q2 often sees new software deployments and associated potential incidents, making rapid, context-rich AI resolution tools highly valuable."
+  },
+  {
+    "niche": "Ethical AI Bias Detection Context",
+    "trend_score": 58.0,
+    "velocity": 0.82,
+    "upcoming_score": 90.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "AI Ethicists, Data Scientists: Proactively identify and mitigate biases in AI models by analyzing contextual inputs and outputs, high willingness to pay for compliance and brand reputation.",
+    "key_integrations": [
+      "IBM AI Fairness 360",
+      "Google What-If Tool",
+      "Aequitas"
+    ],
+    "competition_level": "low",
+    "monetization": "Enterprise SaaS, Audit-based fees",
+    "reason": "Growing regulatory pressure and public scrutiny around AI bias will accelerate demand for solutions that provide contextual analysis for ethical auditing in Q2."
+  },
+  {
+    "niche": "Medical Grant Application Context",
+    "trend_score": 50.0,
+    "velocity": 0.78,
+    "upcoming_score": 89.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Medical Researchers, Grant Writers: Accelerate processing and synthesis of complex medical literature for grant submissions, high willingness to pay for competitive advantage.",
+    "key_integrations": [
+      "PubMed API",
+      "ClinicalTrials.gov",
+      "Scopus API"
+    ],
+    "competition_level": "low",
+    "monetization": "Project-based, Academic institution license",
+    "reason": "Many medical and scientific grant application deadlines fall in Q2, creating a surge in demand for tools that manage and summarize vast research context."
+  },
+  {
+    "niche": "Supply Chain Optimization Context",
+    "trend_score": 68.0,
+    "velocity": 0.7,
+    "upcoming_score": 89.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Logistics Managers, Supply Chain Analysts: Aggregate real-time data for predictive maintenance and route optimization, high willingness to pay for cost savings.",
+    "key_integrations": [
+      "SAP SCM",
+      "Oracle SCM Cloud",
+      "FedEx/UPS APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Enterprise SaaS, Usage-based (data volume)",
+    "reason": "Q2 often involves reassessments and adjustments to supply chains for summer and holiday season planning, driving demand for contextual AI."
+  },
+  {
+    "niche": "Enterprise RAG for Internal Knowledge",
+    "trend_score": 70.0,
+    "velocity": 0.7,
+    "upcoming_score": 88.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Knowledge Managers, CTOs: Improve access to internal documentation for employees, high willingness to pay for productivity gains.",
+    "key_integrations": [
+      "SharePoint",
+      "Confluence",
+      "Jira",
+      "Weaviate"
+    ],
+    "competition_level": "medium",
+    "monetization": "Enterprise SaaS, Usage-based (indexed data volume)",
+    "reason": "Post-Q1 focus on operational efficiency drives demand for better internal knowledge management, making robust RAG solutions critical."
+  },
+  {
+    "niche": "Codebase Migration & Refactoring",
+    "trend_score": 55.0,
+    "velocity": 0.75,
+    "upcoming_score": 88.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Software Architects, Lead Developers: AI assistance for understanding and refactoring large legacy codebases during migration, high willingness to pay for reduced effort and risk.",
+    "key_integrations": [
+      "GitHub",
+      "GitLab",
+      "VS Code APIs",
+      "SonarQube"
+    ],
+    "competition_level": "low",
+    "monetization": "Developer SaaS, Project-based licensing",
+    "reason": "Development teams often tackle technical debt or framework migrations in Q2, requiring AI to contextualize complex legacy code for efficient refactoring."
+  },
+  {
+    "niche": "Real Estate Market Trend Context",
+    "trend_score": 65.0,
+    "velocity": 0.72,
+    "upcoming_score": 87.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Real Estate Agents, Investors: Analyze property data, market trends, and economic indicators for Q2 projections, high willingness to pay for actionable insights.",
+    "key_integrations": [
+      "Zillow API",
+      "MLS Data Feeds",
+      "Local Government Data APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Subscription, Usage-based (data queries)",
+    "reason": "The spring real estate market heats up in Q2, driving demand for contextual AI to provide real-time market analysis and forecasting."
+  },
+  {
+    "niche": "Environmental Impact Assessment AI",
+    "trend_score": 52.0,
+    "velocity": 0.78,
+    "upcoming_score": 87.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "ESG Analysts, Project Managers: Contextual AI for regulatory compliance, scientific data analysis, and reporting in environmental assessments, high willingness to pay for accuracy and speed.",
+    "key_integrations": [
+      "EPA Databases",
+      "Satellite Imagery APIs",
+      "Sensor data platforms"
+    ],
+    "competition_level": "low",
+    "monetization": "Enterprise SaaS, Report-based fees",
+    "reason": "Q2 is a common period for new project planning and associated environmental impact assessments, increasing demand for AI to manage complex data contexts."
+  },
+  {
+    "niche": "Academic Thesis Review Context",
+    "trend_score": 45.0,
+    "velocity": 0.83,
+    "upcoming_score": 86.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "University Professors, Graduate Students: AI-assisted review of complex academic papers, high willingness to pay for efficiency and quality.",
+    "key_integrations": [
+      "Turnitin API",
+      "Canvas LMS",
+      "Research databases"
+    ],
+    "competition_level": "low",
+    "monetization": "Institutional license, Per-submission fee",
+    "reason": "The end of the academic year in Q2 brings a surge in thesis and dissertation submissions, increasing demand for AI to manage and analyze large academic contexts."
+  },
+  {
+    "niche": "Multimodal Product Design Review",
+    "trend_score": 58.0,
+    "velocity": 0.77,
+    "upcoming_score": 86.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Product Designers, Engineers: Combine visual, textual, and sensory data for AI-driven design analysis, high willingness to pay for innovation and defect reduction.",
+    "key_integrations": [
+      "Autodesk Fusion 360",
+      "Figma API",
+      "Jira"
+    ],
+    "competition_level": "low",
+    "monetization": "Enterprise SaaS, Usage-based (model inferences)",
+    "reason": "Q2 is a common period for detailed product design reviews, driving demand for multimodal AI to contextualize diverse design inputs and feedback."
+  },
+  {
+    "niche": "Game Dev NPC Dialogue Context",
+    "trend_score": 50.0,
+    "velocity": 0.8,
+    "upcoming_score": 85.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Game Developers, Narrative Designers: Maintain consistent character lore and game state for dynamic NPC dialogue, high willingness to pay for immersive experiences.",
+    "key_integrations": [
+      "Unity AI",
+      "Unreal Engine Metahumans",
+      "Inworld AI"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-seat license, Usage-based (context calls)",
+    "reason": "Post-GDC (March), game studios integrate new AI tools into development pipelines, with Q2 sprints focusing on narrative and NPC interaction."
+  },
+  {
+    "niche": "Personalized Learning Path Context",
+    "trend_score": 60.0,
+    "velocity": 0.7,
+    "upcoming_score": 85.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "EdTech Platforms, Online Course Providers: Deliver adaptive learning experiences based on student context, high willingness to pay for engagement and outcomes.",
+    "key_integrations": [
+      "Canvas LMS",
+      "Moodle",
+      "Duolingo API"
+    ],
+    "competition_level": "low",
+    "monetization": "Platform integration fee, Per-student license",
+    "reason": "Educational platforms prepare for summer enrollments and next academic year in Q2, seeking AI to create personalized learning paths from student context."
+  },
+  {
+    "niche": "HR Onboarding & Policy Context",
+    "trend_score": 60.0,
+    "velocity": 0.7,
+    "upcoming_score": 85.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "HR Managers, New Hires: AI-driven answers to onboarding questions and policy queries from internal documents, high willingness to pay for efficiency and employee satisfaction.",
+    "key_integrations": [
+      "Workday",
+      "ADP",
+      "SharePoint/Confluence"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-employee license, Enterprise SaaS",
+    "reason": "Post-Q1 hiring waves mean increased demand for efficient AI-powered onboarding and policy dissemination, leveraging internal HR documents as context."
+  },
+  {
+    "niche": "Personalized Health & Wellness Context",
+    "trend_score": 60.0,
+    "velocity": 0.73,
+    "upcoming_score": 84.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Fitness Apps, Health Coaches: AI that contextualizes user health data for personalized wellness plans, high willingness to pay for user engagement and results.",
+    "key_integrations": [
+      "Apple Health",
+      "Google Fit",
+      "Fitbit API",
+      "MyFitnessPal API"
+    ],
+    "competition_level": "medium",
+    "monetization": "Platform integration, Per-user license",
+    "reason": "Demand for health and fitness solutions spikes before summer, driving interest in AI that can provide deeply personalized plans from user context."
+  },
+  {
+    "niche": "Creative Writing Style Consistency",
+    "trend_score": 50.0,
+    "velocity": 0.75,
+    "upcoming_score": 80.0,
+    "horizon_days": 28,
+    "peak_date": "2026-04-27",
+    "target_user": "Authors, Content Creators: Maintain narrative coherence and consistent character voice across long-form content, high willingness to pay for quality and efficiency.",
+    "key_integrations": [
+      "Scrivener",
+      "Google Docs API",
+      "Custom story databases"
+    ],
+    "competition_level": "low",
+    "monetization": "Subscription, Per-project fee",
+    "reason": "Writers and content creators working on Q2 projects require tools to manage complex narratives and ensure stylistic consistency over large bodies of work."
+  }
+]

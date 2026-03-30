@@ -1,0 +1,411 @@
+[
+  {
+    "niche": "GPT-5 Advanced Prompt Engineering Pack",
+    "trend_score": 80.0,
+    "velocity": 0.9,
+    "upcoming_score": 98.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "AI power-users, developers, creators, indie hackers: leveraging new LLM capabilities, high willingness to pay for cutting-edge tools",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$25-$75",
+    "competition_level": "low",
+    "format": "PDF | Notion template | mixed",
+    "reason": "Anticipated release of GPT-5 (or equivalent next-gen LLM) in late April drives urgent demand for optimized prompting strategies."
+  },
+  {
+    "niche": "Multi-Modal AI Prompt Pack",
+    "trend_score": 85.0,
+    "velocity": 0.95,
+    "upcoming_score": 97.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "AI power-users, creators, developers: leveraging integrated text-to-image/video/3D workflows, high willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$20-$60",
+    "competition_level": "low",
+    "format": "PDF | Notion template",
+    "reason": "Increasing adoption and expanding capabilities of multi-modal AI models create demand for specialized, integrated prompt workflows."
+  },
+  {
+    "niche": "GPT-5 API Integration Code Templates",
+    "trend_score": 80.0,
+    "velocity": 0.9,
+    "upcoming_score": 96.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Developers, indie hackers: needing quick starts for integrating new LLM APIs into their applications, high willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$40-$150",
+    "competition_level": "low",
+    "format": "ZIP | code templates",
+    "reason": "The release of a new major LLM API like GPT-5 will create immediate demand for quick integration patterns for developers."
+  },
+  {
+    "niche": "AI-First Team Operating System (Notion)",
+    "trend_score": 75.0,
+    "velocity": 0.85,
+    "upcoming_score": 93.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Non-technical founders, indie hackers, AI-first teams: structuring project management and knowledge bases around AI tools, high willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$40-$150",
+    "competition_level": "low",
+    "format": "Notion template",
+    "reason": "The rise of AI-first startups and teams necessitates integrated project management and knowledge base solutions tailored for AI workflows."
+  },
+  {
+    "niche": "AI Agent Framework Configuration Kit",
+    "trend_score": 70.0,
+    "velocity": 0.8,
+    "upcoming_score": 92.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Developers, AI power-users, indie hackers: building advanced autonomous agents, high willingness to pay for time-saving configs",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$30-$90",
+    "competition_level": "low",
+    "format": "ZIP | code templates | YAML configs",
+    "reason": "A major update to a leading AI agent framework (e.g., LangChain, LlamaIndex) makes previous configurations obsolete and requires new setups."
+  },
+  {
+    "niche": "Solopreneur AI Automation Toolkit",
+    "trend_score": 75.0,
+    "velocity": 0.8,
+    "upcoming_score": 92.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Solopreneurs, indie hackers, non-technical founders: optimizing and automating operations with accessible AI integrations, moderate to high willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$30-$90",
+    "competition_level": "low",
+    "format": "ZIP | custom configs | PDF guide",
+    "reason": "Solopreneurs are actively seeking to optimize and automate their operations with readily available AI integrations to boost efficiency."
+  },
+  {
+    "niche": "TikTok/Reels Trend Analysis Prompt Pack",
+    "trend_score": 75.0,
+    "velocity": 0.85,
+    "upcoming_score": 91.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Creators: quickly identifying and leveraging trending content for short-form video platforms, moderate willingness to pay",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy"
+    ],
+    "price_range": "$15-$40",
+    "competition_level": "medium",
+    "format": "PDF | Notion template",
+    "reason": "The rapid pace of short-form video trends demands AI assistance for content ideation and analysis to stay relevant."
+  },
+  {
+    "niche": "Mid-Year Business Review Notion Template",
+    "trend_score": 65.0,
+    "velocity": 0.7,
+    "upcoming_score": 90.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Solopreneurs, non-technical founders, creators: conducting Q2 performance reviews and Q3 strategic planning, moderate willingness to pay",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy"
+    ],
+    "price_range": "$15-$45",
+    "competition_level": "medium",
+    "format": "Notion template",
+    "reason": "Businesses and solopreneurs are actively conducting Q2 performance reviews and finalizing Q3 strategic planning in early May."
+  },
+  {
+    "niche": "Indie Hacker Micro-SaaS Launch Kit",
+    "trend_score": 75.0,
+    "velocity": 0.75,
+    "upcoming_score": 90.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Indie hackers, non-technical founders: preparing for product launches, moderate to high willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$35-$120",
+    "competition_level": "medium",
+    "format": "Notion template | PDF | mixed",
+    "reason": "Indie hackers and startups are preparing for summer product launches and mid-year marketing pushes, needing structured launch plans."
+  },
+  {
+    "niche": "AI-Powered Personal Knowledge Management System (Notion)",
+    "trend_score": 75.0,
+    "velocity": 0.8,
+    "upcoming_score": 90.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "AI power-users, creators, developers: enhancing personal organization with AI search and summarization features, moderate to high willingness to pay",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy"
+    ],
+    "price_range": "$25-$70",
+    "competition_level": "medium",
+    "format": "Notion template",
+    "reason": "Individuals are increasingly leveraging new AI tools to enhance their personal knowledge management within platforms like Notion."
+  },
+  {
+    "niche": "AI-Powered Business Idea Validation Toolkit",
+    "trend_score": 70.0,
+    "velocity": 0.8,
+    "upcoming_score": 90.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Indie hackers, non-technical founders: quickly validating new business concepts using AI-driven market research, moderate to high willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$30-$80",
+    "competition_level": "low",
+    "format": "Notion template | PDF | spreadsheet",
+    "reason": "Indie hackers and non-technical founders are increasingly using AI to accelerate market research and idea validation processes."
+  },
+  {
+    "niche": "AI Research Assistant Workflow (PDF/Notion)",
+    "trend_score": 70.0,
+    "velocity": 0.8,
+    "upcoming_score": 89.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "AI power-users, creators, developers: leveraging AI for efficient academic or market research tasks, moderate willingness to pay",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy"
+    ],
+    "price_range": "$20-$50",
+    "competition_level": "low",
+    "format": "PDF | Notion template",
+    "reason": "There's a growing need for efficient research methods using advanced AI summarization and data extraction capabilities."
+  },
+  {
+    "niche": "Developer AI Copilot Customization Guide",
+    "trend_score": 70.0,
+    "velocity": 0.8,
+    "upcoming_score": 88.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Developers: optimizing their AI coding assistants for specific tech stacks and personal workflows, moderate willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$15-$40",
+    "competition_level": "medium",
+    "format": "PDF | Notion template",
+    "reason": "Developers continuously seek to optimize their new AI coding assistants as new features roll out, requiring fine-tuning guides."
+  },
+  {
+    "niche": "Prompt Engineering for Sales Outreach",
+    "trend_score": 70.0,
+    "velocity": 0.8,
+    "upcoming_score": 88.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Non-technical founders, indie hackers, sales teams: generating personalized sales emails, pitches, and scripts using AI, moderate willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$30-$80",
+    "competition_level": "medium",
+    "format": "PDF | Notion template | spreadsheet",
+    "reason": "Sales teams are rapidly adopting AI to scale personalized outreach, creating a need for proven prompt strategies and templates."
+  },
+  {
+    "niche": "Serverless Microservice Boilerplate (Rust/Go)",
+    "trend_score": 65.0,
+    "velocity": 0.75,
+    "upcoming_score": 87.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Developers: adopting performant, cost-effective serverless backends, high willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$50-$180",
+    "competition_level": "low",
+    "format": "ZIP | code templates",
+    "reason": "The growing trend of using high-performance languages like Rust and Go for serverless backend architectures creates demand for quick-start templates."
+  },
+  {
+    "niche": "Next.js 15 Boilerplate & Component Kit",
+    "trend_score": 70.0,
+    "velocity": 0.75,
+    "upcoming_score": 86.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Developers: needing updated tools and best practices for adopting a new major version of Next.js, high willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$50-$180",
+    "competition_level": "medium",
+    "format": "ZIP | code templates",
+    "reason": "The anticipated release of Next.js 15 drives demand for updated development starter kits and best practice guides for developers."
+  },
+  {
+    "niche": "SaaS Content Marketing Planner (Q3)",
+    "trend_score": 60.0,
+    "velocity": 0.7,
+    "upcoming_score": 85.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Indie hackers, non-technical founders, creators: finalizing content calendars and marketing strategies for Q3, moderate willingness to pay",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy"
+    ],
+    "price_range": "$20-$50",
+    "competition_level": "medium",
+    "format": "Notion template | spreadsheet | PDF",
+    "reason": "Creators and SaaS teams are actively finalizing their content calendars and marketing strategies for Q3, which starts July 1st."
+  },
+  {
+    "niche": "Advanced Webflow/Framer Component Library",
+    "trend_score": 70.0,
+    "velocity": 0.7,
+    "upcoming_score": 85.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Creators, non-technical founders, indie hackers: pushing design boundaries on no-code platforms, moderate willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$30-$100",
+    "competition_level": "medium",
+    "format": "ZIP | component files",
+    "reason": "As Webflow and Framer adoption surges, creators demand sophisticated, reusable design components to enhance their projects."
+  },
+  {
+    "niche": "Creator Legal & IP Template Pack (AI-generated content)",
+    "trend_score": 65.0,
+    "velocity": 0.7,
+    "upcoming_score": 85.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Creators, indie hackers, non-technical founders: navigating legal complexities and protecting intellectual property for AI-generated works, high willingness to pay",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy"
+    ],
+    "price_range": "$40-$120",
+    "competition_level": "none",
+    "format": "PDF | document templates",
+    "reason": "Creators face increasing legal complexities with AI-generated content, driving demand for specific legal templates and guidance."
+  },
+  {
+    "niche": "Advanced Prompt Debugging & Optimization Guide",
+    "trend_score": 68.0,
+    "velocity": 0.75,
+    "upcoming_score": 84.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "AI power-users, developers: solving complex issues and optimizing performance of advanced prompts, moderate willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$25-$60",
+    "competition_level": "low",
+    "format": "PDF | Notion template",
+    "reason": "As prompt engineering matures and complex prompts inevitably fail, users need advanced techniques for debugging and optimization."
+  },
+  {
+    "niche": "Indie Game Dev Starter Kit (Unity/Godot AI tools)",
+    "trend_score": 60.0,
+    "velocity": 0.7,
+    "upcoming_score": 82.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Developers: rapidly prototyping AI features within indie game development, moderate willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$40-$120",
+    "competition_level": "low",
+    "format": "ZIP | code templates | assets",
+    "reason": "The increasing accessibility of AI tools in game engines drives demand for starter kits to rapidly prototype AI features in indie games."
+  },
+  {
+    "niche": "Creator Economy Mid-Year Financial Planner",
+    "trend_score": 60.0,
+    "velocity": 0.65,
+    "upcoming_score": 80.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Creators, solopreneurs: performing mid-year financial health checks and preparing for future tax seasons, moderate willingness to pay",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy"
+    ],
+    "price_range": "$15-$40",
+    "competition_level": "medium",
+    "format": "Notion template | spreadsheet | PDF",
+    "reason": "Creators and solopreneurs are performing mid-year financial health checks and adjusting budgets for the remainder of the year."
+  },
+  {
+    "niche": "Digital Nomad Summer Travel Planner (Notion)",
+    "trend_score": 55.0,
+    "velocity": 0.6,
+    "upcoming_score": 78.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Creators, solopreneurs, digital nomads: planning summer work-travel logistics, low to moderate willingness to pay",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy"
+    ],
+    "price_range": "$10-$30",
+    "competition_level": "medium",
+    "format": "Notion template",
+    "reason": "Digital nomads and remote workers are actively planning their summer travel itineraries, requiring integrated work and travel management."
+  },
+  {
+    "niche": "'Vibe Coder' Aesthetic Terminal & Dev Setup",
+    "trend_score": 50.0,
+    "velocity": 0.65,
+    "upcoming_score": 75.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "Developers: valuing aesthetics and personalization in their coding environment, low to moderate willingness to pay",
+    "platform_fit": [
+      "Gumroad"
+    ],
+    "price_range": "$10-$35",
+    "competition_level": "low",
+    "format": "PDF | config files (ZIP)",
+    "reason": "A growing community of developers focused on aesthetic and personalized coding environments creates demand for custom setup guides."
+  },
+  {
+    "niche": "Productivity OS for AI-Enhanced Workflows (Notion)",
+    "trend_score": 78.0,
+    "velocity": 0.85,
+    "    upcoming_score": 94.0,
+    "horizon_days": 42,
+    "peak_date": "2026-05-11",
+    "target_buyer": "All professional digital product buyers: seeking comprehensive systems for managing tasks, projects, and knowledge with AI, high willingness to pay",
+    "platform_fit": [
+      "Gumroad",
+      "Etsy"
+    ],
+    "price_range": "$35-$100",
+    "competition_level": "medium",
+    "format": "Notion template",
+    "reason": "Demand for holistic productivity systems that seamlessly integrate new AI features into daily work is rapidly growing."
+  }
+]

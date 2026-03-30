@@ -1,0 +1,431 @@
+[
+  {
+    "niche": "Multi-Model Cost & Latency Optimizer",
+    "trend_score": 79.0,
+    "velocity": 0.91,
+    "upcoming_score": 96.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "FinOps Engineers, CTOs; dynamically routing requests to the most cost-effective and performant LLM provider; very high willingness to pay for operational efficiency.",
+    "key_integrations": [
+      "OpenAI API",
+      "Gemini API",
+      "Anthropic API",
+      "AWS Bedrock"
+    ],
+    "competition_level": "high",
+    "monetization": "percentage of cost savings / performance improvement",
+    "reason": "The influx of new models and pricing structures from major conferences will create an urgent need for MCPs to optimize AI inference costs and latency."
+  },
+  {
+    "niche": "Intelligent Agent Task Router & Balancer",
+    "trend_score": 80.0,
+    "velocity": 0.92,
+    "upcoming_score": 95.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "AI Engineers, Agent Framework Devs; optimizing multi-step agent workflows across heterogeneous models; high willingness to pay for performance and cost savings.",
+    "key_integrations": [
+      "LangChain/AutoGen",
+      "OpenAI Function Calling",
+      "Anthropic Tools"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-agent-task / model invocation volume",
+    "reason": "New model releases and mature agent frameworks will push demand for MCPs that intelligently route complex agentic workflows for optimal execution."
+  },
+  {
+    "niche": "EU AI Act Compliance & Governance Proxy",
+    "trend_score": 72.0,
+    "velocity": 0.87,
+    "upcoming_score": 94.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Legal & Compliance Officers, AI Ethics Teams; ensuring AI systems adhere to regulatory requirements like auditability and explainability; very high willingness to pay for risk mitigation.",
+    "key_integrations": [
+      "OpenTelemetry",
+      "Internal Audit Logs",
+      "Data Governance Platforms"
+    ],
+    "competition_level": "low",
+    "monetization": "managed service / compliance audit fee",
+    "reason": "Phased implementation of the EU AI Act will drive immediate demand for MCPs that can log, audit, and enforce governance policies for AI system outputs."
+  },
+  {
+    "niche": "Real-time Enterprise RAG Fabric",
+    "trend_score": 78.0,
+    "velocity": 0.88,
+    "upcoming_score": 93.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Data Scientists, Financial Analysts; ensuring fresh, accurate, and attributable context for critical business decisions; high willingness to pay for accuracy and auditability.",
+    "key_integrations": [
+      "Pinecone",
+      "Elasticsearch",
+      "Confluence/SharePoint"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-query / context volume",
+    "reason": "Q2 financial reporting and strategic planning cycles will intensify demand for MCPs that deliver real-time, verifiable RAG from diverse enterprise data sources."
+  },
+  {
+    "niche": "Hyper-Personalized Marketing Content Generator",
+    "trend_score": 76.0,
+    "velocity": 0.88,
+    "upcoming_score": 93.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Marketing Directors, Content Strategists; scaling tailored content across multiple channels and segments for summer campaigns; high willingness to pay for conversion.",
+    "key_integrations": [
+      "Salesforce Marketing Cloud",
+      "Adobe Experience Manager",
+      "Social Media APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-content piece / subscription tiers",
+    "reason": "Brands planning summer campaigns will require MCPs to manage diverse generative AI models for creating and optimizing hyper-personalized content at scale."
+  },
+  {
+    "niche": "Multi-Modal Context Aggregation Gateway",
+    "trend_score": 75.0,
+    "velocity": 0.85,
+    "upcoming_score": 92.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "AI Architects, GenAI Product Managers; unifying diverse input types for complex applications; high willingness to pay for seamless integration.",
+    "key_integrations": [
+      "Google Gemini API",
+      "OpenAI GPT-5 Vision/Audio",
+      "Azure AI Vision"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-context-unit / multi-modal payload volume",
+    "reason": "Google I/O's anticipated deep dive into Gemini's enhanced multi-modal capabilities will drive urgent demand for unified context management."
+  },
+  {
+    "niche": "Proactive Customer Service Experience Engine",
+    "trend_score": 73.0,
+    "velocity": 0.86,
+    "upcoming_score": 91.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Customer Support Leads, CX Strategists; deploying AI agents that anticipate customer needs and provide proactive support; high willingness to pay for improved CX.",
+    "key_integrations": [
+      "Zendesk",
+      "Salesforce Service Cloud",
+      "Twilio API"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-interaction / seat-based",
+    "reason": "Businesses anticipating the summer surge in customer inquiries will invest heavily in advanced AI agents, requiring robust MCPs for context and workflow management."
+  },
+  {
+    "niche": "Real-time Social Media Trend & Sentiment Analyzer",
+    "trend_score": 74.0,
+    "velocity": 0.89,
+    "upcoming_score": 91.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Social Media Managers, PR Specialists; leveraging real-time social data for trend identification and proactive content creation; high willingness to pay for market responsiveness.",
+    "key_integrations": [
+      "Twitter API",
+      "Facebook Graph API",
+      "Reddit API",
+      "Sentiment Analysis Models"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-data stream / tiered subscription",
+    "reason": "Marketing and PR teams preparing for summer initiatives will heavily rely on MCPs to process real-time social media data and drive timely, trend-aligned content creation."
+  },
+  {
+    "niche": "Custom Copilot Extension Orchestrator",
+    "trend_score": 70.0,
+    "velocity": 0.9,
+    "upcoming_score": 90.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Enterprise Developers, M365 Admins; extending Copilot with proprietary data and functions; high willingness to pay for integration and security.",
+    "key_integrations": [
+      "Microsoft Graph API",
+      "Azure OpenAI Service",
+      "Custom LOB APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "seat-based / managed service fee",
+    "reason": "Microsoft Build will unveil new Copilot extensibility features, creating an immediate need for robust backend orchestration for enterprise adoption."
+  },
+  {
+    "niche": "AI-Powered Developer Workflow Assistant",
+    "trend_score": 70.0,
+    "velocity": 0.89,
+    "upcoming_score": 90.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Software Engineers, DevOps Teams; integrating various LLMs into IDEs and CI/CD pipelines for code generation, review, and debugging; high willingness to pay for productivity.",
+    "key_integrations": [
+      "VS Code API",
+      "GitHub Copilot",
+      "Jira API",
+      "Slack API"
+    ],
+    "competition_level": "medium",
+    "monetization": "seat-based / per-AI-assistance invocation",
+    "reason": "New announcements at Microsoft Build will spur adoption of AI in developer tools, necessitating MCPs for context, model routing, and security within dev workflows."
+  },
+  {
+    "niche": "Brand Voice & Style Consistency Enforcer",
+    "trend_score": 71.0,
+    "velocity": 0.87,
+    "upcoming_score": 90.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Brand Managers, Marketing Operations; ensuring all AI-generated content adheres to specific brand guidelines and tone of voice; high willingness to pay for brand integrity.",
+    "key_integrations": [
+      "Brand Style Guides (custom)",
+      "Grammarly API",
+      "Content Management Systems"
+    ],
+    "competition_level": "low",
+    "monetization": "per-content piece / enterprise subscription",
+    "reason": "Companies scaling AI content generation will urgently need MCPs to enforce brand guidelines and maintain consistent voice across all model outputs."
+  },
+  {
+    "niche": "Domain-Specific Fine-Tuning Pipeline Manager",
+    "trend_score": 68.0,
+    "velocity": 0.82,
+    "upcoming_score": 89.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "ML Engineers, Data Scientists; streamlining and versioning the fine-tuning of base models with proprietary datasets; high willingness to pay for efficiency.",
+    "key_integrations": [
+      "Hugging Face Transformers",
+      "Vertex AI Custom Training",
+      "AWS SageMaker"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-training-job / model version fee",
+    "reason": "Post-conference model releases will empower enterprises to pursue more specialized AI, accelerating demand for MCPs that manage fine-tuning at scale."
+  },
+  {
+    "niche": "Legal & Regulatory Compliance Document AI",
+    "trend_score": 67.0,
+    "velocity": 0.83,
+    "upcoming_score": 89.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Corporate Lawyers, Compliance Managers; automating review and summarization of legal documents for Q2 filings; high willingness to pay for speed and accuracy.",
+    "key_integrations": [
+      "LexisNexis",
+      "Thomson Reuters",
+      "Internal Document Management Systems"
+    ],
+    "competition_level": "medium",
+    "monetization": "per-document processed / subscription",
+    "reason": "Corporate legal departments preparing for Q2 regulatory filings and shareholder meetings will prioritize AI tools for efficient, verifiable document review."
+  },
+  {
+    "niche": "Dynamic Prompt Optimization & Experimentation",
+    "trend_score": 65.0,
+    "velocity": 0.8,
+    "upcoming_score": 88.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Prompt Engineers, AI Product Owners; maximizing model output quality and minimizing cost through A/B testing and versioning; high willingness to pay for ROI.",
+    "key_integrations": [
+      "OpenAI API",
+      "Gemini API",
+      "Weights & Biases"
+    ],
+    "competition_level": "medium",
+    "monetization": "feature-based subscription / usage-based for experiments",
+    "reason": "As new models are released post-conferences, developers will urgently need MCPs to test, optimize, and version prompts for optimal performance and cost efficiency."
+  },
+  {
+    "niche": "Automated Code Vulnerability & Security Auditor",
+    "trend_score": 66.0,
+    "velocity": 0.84,
+    "upcoming_score": 88.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Security Engineers, DevSecOps Leads; integrating multiple security AI tools for continuous code analysis and vulnerability detection; high willingness to pay for risk reduction.",
+    "key_integrations": [
+      "Snyk",
+      "Checkmarx",
+      "GitHub Actions"
+    ],
+    "competition_level": "low",
+    "monetization": "per-repo / seat-based",
+    "reason": "As development accelerates post-conferences, MCPs will be needed to integrate multiple AI-powered security tools for continuous and comprehensive code analysis."
+  },
+  {
+    "niche": "Generative AI Media Asset & Script Orchestrator",
+    "trend_score": 69.0,
+    "velocity": 0.85,
+    "upcoming_score": 87.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Game Designers, Creative Directors; streamlining the creation of game assets, dialogue, and story elements for summer releases; high willingness to pay for speed.",
+    "key_integrations": [
+      "Midjourney API",
+      "RunwayML",
+      "Unity/Unreal Engine"
+    ],
+    "competition_level": "low",
+    "monetization": "per-asset generated / project-based",
+    "reason": "Game studios and creative agencies preparing for summer announcements (e.g., E3, Summer Game Fest) will drive demand for generative AI orchestration."
+  },
+  {
+    "niche": "Supply Chain Resilience Predictor & Modeler",
+    "trend_score": 64.0,
+    "velocity": 0.8,
+    "upcoming_score": 87.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Supply Chain Managers, Logistics Analysts; leveraging AI to analyze Q2 performance and predict future disruptions; high willingness to pay for risk mitigation.",
+    "key_integrations": [
+      "SAP SCM",
+      "Oracle SCM",
+      "Weather APIs",
+      "News Feeds"
+    ],
+    "competition_level": "low",
+    "monetization": "value-based / per-transaction volume",
+    "reason": "Q2 performance reviews and ongoing geopolitical shifts will drive demand for AI models, managed by MCPs, to analyze and predict supply chain disruptions."
+  },
+  {
+    "niche": "Secure Medical Data De-identification Layer",
+    "trend_score": 60.0,
+    "velocity": 0.78,
+    "upcoming_score": 86.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Healthcare CIOs, Data Privacy Officers; ensuring HIPAA/GDPR compliance when processing sensitive patient data with AI; extremely high willingness to pay for compliance.",
+    "key_integrations": [
+      "Epic Systems EMR",
+      "FHIR API",
+      "Azure Health Bot"
+    ],
+    "competition_level": "low",
+    "monetization": "per-data-unit processed / managed service",
+    "reason": "Increased regulatory scrutiny and Q2 compliance cycles in healthcare will drive demand for MCPs that securely de-identify and route patient data to compliant models."
+  },
+  {
+    "niche": "Edge-to-Cloud Context Synchronization for ML",
+    "trend_score": 60.0,
+    "velocity": 0.75,
+    "upcoming_score": 85.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "IoT Developers, Embedded Systems Engineers; maintaining consistent context for hybrid edge/cloud AI deployments; medium willingness to pay for reliability.",
+    "key_integrations": [
+      "TensorFlow Lite",
+      "ONNX Runtime",
+      "AWS IoT Core"
+    ],
+    "competition_level": "low",
+    "monetization": "device-based subscription / data sync volume",
+    "reason": "Anticipated advancements in on-device AI from major tech players will accelerate the need for MCPs managing context between edge and cloud models."
+  },
+  {
+    "niche": "Industrial IoT Data-to-Insight Converter",
+    "trend_score": 63.0,
+    "velocity": 0.79,
+    "upcoming_score": 85.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Operations Managers, Data Engineers; translating raw sensor data into meaningful context for AI analysis and decision-making; medium willingness to pay for operational efficiency.",
+    "key_integrations": [
+      "AWS IoT Analytics",
+      "Azure IoT Hub",
+      "SCADA systems"
+    ],
+    "competition_level": "low",
+    "monetization": "per-data stream / managed service",
+    "reason": "Enterprises processing Q2 IoT data will demand MCPs to transform raw sensor data into actionable insights for AI-driven operational intelligence."
+  },
+  {
+    "niche": "HR Talent Acquisition & Onboarding AI Agent",
+    "trend_score": 62.0,
+    "velocity": 0.77,
+    "upcoming_score": 84.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "HR Managers, Recruiters; automating personalized candidate screening and onboarding content generation; medium willingness to pay for efficiency gains.",
+    "key_integrations": [
+      "Workday",
+      "Greenhouse",
+      "LinkedIn API"
+    ],
+    "competition_level": "low",
+    "monetization": "per-applicant / seat-based",
+    "reason": "May/June's peak graduation and hiring season will accelerate demand for AI agents specialized in HR tasks, necessitating MCPs for context management."
+  },
+  {
+    "niche": "Predictive Equipment Maintenance Scheduler",
+    "trend_score": 61.0,
+    "velocity": 0.77,
+    "upcoming_score": 84.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Plant Managers, Asset Reliability Engineers; optimizing maintenance schedules based on real-time sensor data and AI predictions; high willingness to pay for uptime and cost savings.",
+    "key_integrations": [
+      "SAP PM",
+      "IBM Maximo",
+      "SCADA systems"
+    ],
+    "competition_level": "low",
+    "monetization": "per-asset monitored / value-based",
+    "reason": "Industrial sectors reviewing Q1 asset performance will implement AI-driven predictive maintenance, enabled by robust MCPs to integrate diverse data sources."
+  },
+  {
+    "niche": "Scientific Discovery & Patent Synthesis Engine",
+    "trend_score": 59.0,
+    "velocity": 0.76,
+    "upcoming_score": 83.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "R&D Scientists, Patent Attorneys; accelerating research by synthesizing insights from vast scientific literature and patent databases; high willingness to pay for innovation speed.",
+    "key_integrations": [
+      "PubMed API",
+      "Google Patents API",
+      "SciPy"
+    ],
+    "competition_level": "low",
+    "monetization": "per-query / institutional license",
+    "reason": "Academic institutions and R&D departments will accelerate AI adoption, via MCPs, to analyze new findings and rapidly synthesize information from vast scientific datasets."
+  },
+  {
+    "niche": "Adaptive Learning Path Context Builder",
+    "trend_score": 58.0,
+    "velocity": 0.74,
+    "upcoming_score": 82.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Educational Technologists, Curriculum Designers; personalizing learning experiences based on student progress and preferences; medium willingness to pay for engagement.",
+    "key_integrations": [
+      "Canvas LMS",
+      "Coursera API",
+      "Student Information Systems"
+    ],
+    "competition_level": "low",
+    "monetization": "per-student / institutional license",
+    "reason": "Educational institutions planning summer programs and fall curricula will adopt MCPs to create personalized, adaptive learning experiences at scale."
+  },
+  {
+    "niche": "Inclusive Content & Accessibility Rewriter",
+    "trend_score": 57.0,
+    "velocity": 0.73,
+    "upcoming_score": 81.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Content Managers, Accessibility Officers; adapting generated content for various accessibility needs (e.g., simplified language, audio descriptions); medium willingness to pay for compliance.",
+    "key_integrations": [
+      "WCAG Guidelines (custom checks)",
+      "Speech-to-Text APIs",
+      "Natural Language Processing tools"
+    ],
+    "competition_level": "none",
+    "monetization": "per-content piece / subscription",
+    "reason": "Anticipated updates to global digital accessibility guidelines will prompt organizations to use MCPs for ensuring all generated content is universally accessible."
+  }
+]

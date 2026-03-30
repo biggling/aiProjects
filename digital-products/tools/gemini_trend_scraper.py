@@ -1,9 +1,10 @@
-"""Gemini-powered MCP niche trend discovery.
+"""Gemini-powered digital products trend discovery.
 
-Identifies trending niches and developer pain points for MCP server products.
+Identifies trending niches for Gumroad/Etsy digital downloads:
+templates, prompt packs, configs, planners, notion templates, etc.
 
 Two modes per run:
-  1. Current hot niches  — what devs/AI users need RIGHT NOW
+  1. Current hot niches  — what buyers need RIGHT NOW
   2. Upcoming niches     — what will be hot in 2-16 weeks
 
 Results saved as JSON snapshots in research/trends/ for historical comparison.
@@ -21,6 +22,8 @@ from google import genai
 _ROOT = Path(__file__).resolve().parents[2]  # aiProjects/
 load_dotenv(_ROOT / ".env")
 load_dotenv(Path(__file__).resolve().parents[1] / ".env", override=False)
+# Also try mcp-apps .env for the key
+load_dotenv(_ROOT / "mcp-apps" / ".env", override=False)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 MODEL = "gemini-2.5-flash"
@@ -28,62 +31,68 @@ OUTPUT_DIR = Path(__file__).resolve().parents[1] / "research" / "trends"
 
 # ── Prompts ───────────────────────────────────────────────────────────────────
 
-_CURRENT_PROMPT = """You are an expert in developer tools, AI ecosystems, and the MCP (Model Context Protocol) marketplace.
+_CURRENT_PROMPT = """You are an expert in digital products, indie hacking, and the Gumroad/Etsy/Lemon Squeezy marketplace for creators and developers.
 
-Identify 30 niche use-cases / problem domains that are HOT RIGHT NOW for MCP server products.
-Developers and AI power-users are actively looking for MCP servers that solve these needs today.
+Identify 30 niche product categories that are HOT RIGHT NOW for digital downloads targeting developers, AI power-users, indie hackers, and creators.
 
-Focus on global markets — US, EU, and Asia-Pacific:
-- Workflow automation gaps (tasks people do manually that AI could handle via MCP)
-- Hot SaaS/API integrations developers want in their AI agents (CRMs, project trackers, comms tools)
-- Data source connectors with high demand and low existing MCP supply
-- Developer productivity niches (code review, CI/CD, infra monitoring, security)
-- Domain-specific AI assistants (finance, legal, e-commerce, marketing, health, education)
-- Enterprise integration gaps (ERP, compliance, data governance, multi-cloud)
-- Emerging AI-native workflows (agent orchestration, RAG pipelines, LLM observability)
+Products include: Notion templates, prompt packs, AI workflow configs, code templates, productivity planners, spreadsheet tools, Figma UI kits, script bundles, tutorial PDFs, toolkits, and config packs.
+
+Focus on buyer intent in 2026:
+- AI coding tools ecosystem (Claude Code, Cursor, Windsurf, OpenCode configs and workflows)
+- Developer productivity (project planning, code review templates, sprint planners)
+- AI prompt engineering (prompt packs for GPT-4, Claude, Gemini for specific workflows)
+- Solo founder / indie hacker toolkits (business templates, revenue trackers, launch checklists)
+- Non-developer AI users (designers, marketers, writers using AI tools daily)
+- Notion ecosystem (database templates, dashboards, CRM/project management systems)
+- Freelancer/agency tools (client onboarding, proposal templates, invoice systems)
+- Passive income systems (affiliate tracking, newsletter templates, content calendars)
 
 Return ONLY a valid JSON array of 30 objects, no markdown:
 [
   {
-    "niche": "short MCP product name or category (3-6 words)",
+    "niche": "short product name or category (3-6 words)",
     "trend_score": <float 0-100, 100 = peak demand right now>,
     "velocity": <float -1.0 to 1.0, positive = rising fast>,
-    "target_user": "who needs this: role, use-case, willingness to pay",
-    "key_integrations": ["top 2-3 APIs or services this MCP would wrap"],
+    "target_buyer": "who buys this: role, use-case, willingness to pay",
+    "platform_fit": ["Gumroad", "Etsy", "Lemon Squeezy"],
+    "price_range": "$X-$Y",
     "competition_level": "none | low | medium | high",
-    "monetization": "how to charge: free tier + subscription | one-time | marketplace",
+    "format": "ZIP | PDF | Notion template | spreadsheet | video course | mixed",
     "reason": "one sentence: why this is in demand right now"
   }
 ]"""
 
 UPCOMING_HORIZONS = [14, 28, 42, 56, 84, 112]
 
-_UPCOMING_PROMPT_TEMPLATE = """You are an expert in developer tools, AI ecosystems, and the MCP (Model Context Protocol) marketplace.
+_UPCOMING_PROMPT_TEMPLATE = """You are an expert in digital products, indie hacking, and the Gumroad/Etsy/Lemon Squeezy marketplace.
 
-Today is {today}. Identify 25 niche use-cases for MCP server products that will PEAK in demand
-around {peak_date} ({horizon_days} days from now).
+Today is {today}. Identify 25 digital product niches that will PEAK in demand around {peak_date} ({horizon_days} days from now).
 
-Target global markets (US, EU, Asia-Pacific). Think about:
-- Platform launches, API releases, or developer conferences happening around {peak_date}
-- Seasonal global business workflows (tax season, budget cycles, hiring waves, fiscal year-end)
-- AI ecosystem shifts: new model releases, new agent frameworks going mainstream globally
-- Regulatory or compliance deadlines in major markets (GDPR, SOC2, HIPAA, EU AI Act)
-- Growing global developer communities that will hit critical mass at that horizon
-- Enterprise adoption waves in finance, healthcare, legal, and e-commerce verticals
+Products: Notion templates, prompt packs, AI workflow configs, productivity planners, code templates, toolkits, PDFs.
+Buyers: developers, AI power-users, indie hackers, creators, non-technical founders.
+
+Think about what will drive demand at that horizon:
+- AI ecosystem events: new model launches, tool releases, agent framework updates
+- Seasonal business cycles: Q2 planning, mid-year review templates, tax tools, budget planners
+- Indie hacker / startup events: major conferences, Product Hunt trends, launch calendar waves
+- Platform policy changes affecting creators (Etsy, Gumroad, Notion updates)
+- Growing communities hitting critical mass (vibe coders, solopreneurs, AI-first teams)
+- Developer tool adoption waves (new IDEs, frameworks, workflow tools going mainstream)
 
 Return ONLY a valid JSON array of 25 objects, no markdown:
 [
   {{
-    "niche": "short MCP product name or category (3-6 words)",
+    "niche": "short product name or category (3-6 words)",
     "trend_score": <float 0-100, current score today>,
     "velocity": <float 0.0 to 1.0, rising speed>,
     "upcoming_score": <float 0-100, predicted peak score at {peak_date}>,
     "horizon_days": {horizon_days},
     "peak_date": "{peak_date}",
-    "target_user": "who needs this: role, use-case, willingness to pay",
-    "key_integrations": ["top 2-3 APIs or services this MCP would wrap"],
+    "target_buyer": "who buys this: role, use-case, willingness to pay",
+    "platform_fit": ["Gumroad", "Etsy"],
+    "price_range": "$X-$Y",
     "competition_level": "none | low | medium | high",
-    "monetization": "how to charge",
+    "format": "ZIP | PDF | Notion template | spreadsheet | mixed",
     "reason": "one sentence: what event/shift drives peak demand at {peak_date}"
   }}
 ]"""
@@ -93,7 +102,7 @@ Return ONLY a valid JSON array of 25 objects, no markdown:
 
 def _call_gemini(prompt: str) -> list[dict]:
     if not GEMINI_API_KEY:
-        raise RuntimeError("GEMINI_API_KEY not set — check aiProjects/.env")
+        raise RuntimeError("GEMINI_API_KEY not set — check aiProjects/.env or mcp-apps/.env")
     client = genai.Client(api_key=GEMINI_API_KEY)
     response = client.models.generate_content(model=MODEL, contents=prompt)
     text = response.text.strip()
@@ -161,8 +170,9 @@ def get_top_niches(top_n: int = 20) -> list[dict]:
             "avg_velocity": round(avg_vel, 3),
             "appearances": len(entries),
             "competition_level": latest.get("competition_level"),
-            "target_user": latest.get("target_user"),
-            "key_integrations": latest.get("key_integrations"),
+            "target_buyer": latest.get("target_buyer"),
+            "price_range": latest.get("price_range"),
+            "format": latest.get("format"),
             "reason": latest.get("reason"),
         })
 
@@ -175,7 +185,7 @@ def get_top_niches(top_n: int = 20) -> list[dict]:
 def run():
     today = datetime.now(timezone.utc)
     today_str = today.strftime("%Y-%m-%d")
-    print(f"[gemini_trend_scraper] Starting — {today_str}")
+    print(f"[digital_trend_scraper] Starting — {today_str}")
 
     # Step 1: current trends
     print("  Fetching current hot niches...")
@@ -203,15 +213,15 @@ def run():
             print(f"    WARNING: parse error for {label} horizon: {e}")
 
     # Step 3: print composite rankings
-    print("\n  Top 15 composite-ranked MCP niches (all-time):")
+    print("\n  Top 15 composite-ranked digital product niches (all-time):")
     for i, r in enumerate(get_top_niches(15), 1):
         flag = f" (seen {r['appearances']}x)" if r["appearances"] > 1 else ""
         print(
             f"    {i:>2}. [{r['composite_score']:>5.1f}]{flag} {r['niche']}"
-            f"  [{r['competition_level']}] — {r.get('reason', '')[:80]}"
+            f"  [{r['competition_level']}] {r.get('price_range', '')} — {r.get('reason', '')[:80]}"
         )
 
-    print("\n[gemini_trend_scraper] Done.")
+    print("\n[digital_trend_scraper] Done.")
 
 
 if __name__ == "__main__":

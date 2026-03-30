@@ -1,0 +1,431 @@
+[
+  {
+    "niche": "AI Agent Workflow Compliance Engine",
+    "trend_score": 65.0,
+    "velocity": 0.95,
+    "upcoming_score": 95.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Chief AI Officers, Legal & Compliance Teams; ensuring responsible AI behavior; very high willingness to pay to mitigate regulatory risk.",
+    "key_integrations": [
+      "LangChain/AutoGen APIs",
+      "internal model APIs",
+      "audit logging systems"
+    ],
+    "competition_level": "low",
+    "monetization": "Enterprise license, usage-based per agent interaction, compliance reports.",
+    "reason": "Phased enforcement of global AI regulations (like EU AI Act) around Q3 forces enterprises to implement auditable AI governance solutions."
+  },
+  {
+    "niche": "Threat Intelligence Fusion AI",
+    "trend_score": 78.0,
+    "velocity": 0.88,
+    "upcoming_score": 95.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "CSOs, Security Analysts; enhancing real-time threat detection; very high willingness to pay for security posture.",
+    "key_integrations": [
+      "SIEM systems (Splunk, CrowdStrike)",
+      "various threat feed APIs",
+      "MITRE ATT&CK framework"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per threat detected, data ingested, enterprise license.",
+    "reason": "The constantly evolving cyber threat landscape, coupled with new regulatory pressures, drives continuous investment in advanced threat intelligence fusion."
+  },
+  {
+    "niche": "API Migration & Code Review AI",
+    "trend_score": 72.0,
+    "velocity": 0.9,
+    "upcoming_score": 94.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Software Engineers, DevRel Teams; rapidly adapting to new platform APIs; high willingness to pay for developer productivity.",
+    "key_integrations": [
+      "GitHub/GitLab APIs",
+      "OpenAPI specifications",
+      "various language-specific code analysis tools"
+    ],
+    "competition_level": "low",
+    "monetization": "Per PR reviewed, lines of code migrated, developer seat.",
+    "reason": "Developers are actively integrating and updating applications to new APIs announced at major spring/early summer tech conferences (e.g., WWDC, Build, I/O)."
+  },
+  {
+    "niche": "Multilingual CS Agent Orchestration",
+    "trend_score": 78.0,
+    "velocity": 0.85,
+    "upcoming_score": 93.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Head of Customer Service, Global Support Ops; scaling support globally & efficiently; high willingness to pay for CSAT & cost reduction.",
+    "key_integrations": [
+      "Zendesk/Salesforce Service Cloud",
+      "Google Translate API",
+      "specialized intent models"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per support interaction, agent seat, language pair.",
+    "reason": "Global companies are ramping up customer support capabilities in anticipation of Q3/Q4 sales volumes and international market expansion."
+  },
+  {
+    "niche": "AI Incident Remediation Engine",
+    "trend_score": 75.0,
+    "velocity": 0.9,
+    "upcoming_score": 93.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "SREs, DevOps Engineers; automating incident response for complex systems; high willingness to pay for uptime & faster MTTR.",
+    "key_integrations": [
+      "PagerDuty",
+      "Datadog/Splunk",
+      "Kubernetes APIs",
+      "cloud provider APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per incident, active agent time, enterprise subscription.",
+    "reason": "Post-spring tech conferences, new systems are deployed, increasing complexity and demand for autonomous incident resolution by mid-year."
+  },
+  {
+    "niche": "Q3 Marketing Campaign AI Orchestration",
+    "trend_score": 75.0,
+    "velocity": 0.88,
+    "upcoming_score": 92.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Marketing Directors, Agencies; scaling personalized campaigns for Q3/Q4; high willingness to pay for efficiency & reach.",
+    "key_integrations": [
+      "Salesforce Marketing Cloud",
+      "Adobe Experience Cloud",
+      "Midjourney/DALL-E APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per campaign run, token usage, advanced feature subscription.",
+    "reason": "Global marketing teams are finalizing Q3 strategies and ramping up creative production for holiday seasons and product launches."
+  },
+  {
+    "niche": "Edge-to-Cloud AI Arbitration",
+    "trend_score": 60.0,
+    "velocity": 0.92,
+    "upcoming_score": 92.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "IoT Solution Architects, Manufacturing Ops; optimizing real-time inference at scale; high willingness to pay for performance & cost savings.",
+    "key_integrations": [
+      "AWS Greengrass",
+      "Azure IoT Edge",
+      "custom SLM/TinyML models"
+    ],
+    "competition_level": "low",
+    "monetization": "Per edge device, data throughput, model switching events.",
+    "reason": "Increased deployment of complex AI workloads on edge devices demands sophisticated arbitration for seamless cloud fallback and model switching."
+  },
+  {
+    "niche": "Supply Chain Agent Orchestration",
+    "trend_score": 75.0,
+    "velocity": 0.88,
+    "upcoming_score": 92.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Supply Chain Managers, Logistics Directors; improving efficiency and resilience for peak seasons; high willingness to pay for cost savings & predictability.",
+    "key_integrations": [
+      "SAP",
+      "Oracle SCM",
+      "real-time sensor data APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per transaction, optimized route, enterprise license.",
+    "reason": "Companies are meticulously optimizing supply chains in July to handle the anticipated surge in demand for the Q3/Q4 holiday season."
+  },
+  {
+    "niche": "Multi-Modal Ad Creative AI",
+    "trend_score": 75.0,
+    "velocity": 0.88,
+    "upcoming_score": 92.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Advertising Agencies, Brand Managers; producing diverse and effective ad content at scale; very high willingness to pay for campaign performance.",
+    "key_integrations": [
+      "Google Ads API",
+      "Facebook Ads API",
+      "video editing software APIs",
+      "text-to-video models"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per creative asset, campaign managed, impression volume.",
+    "reason": "Advertising agencies are intensely developing and finalizing diverse creative campaigns for Q3/Q4, requiring rapid multi-modal asset generation and orchestration."
+  },
+  {
+    "niche": "Game Asset Generation Pipeline AI",
+    "trend_score": 72.0,
+    "velocity": 0.9,
+    "upcoming_score": 91.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Game Developers, Art Directors; accelerating asset production for new titles; high willingness to pay for speed & artistic consistency.",
+    "key_integrations": [
+      "Unreal Engine API",
+      "Unity Asset Store API",
+      "Stable Diffusion/Midjourney APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per generated asset, developer seat, enterprise license.",
+    "reason": "Game studios are accelerating asset creation following major summer game announcements for Q4/early 2027 releases, requiring complex model orchestration."
+  },
+  {
+    "niche": "Compliance-Focused Synthetic Data AI",
+    "trend_score": 65.0,
+    "velocity": 0.9,
+    "upcoming_score": 91.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Data Scientists, AI Governance Teams; training robust models with privacy; high willingness to pay for privacy compliance & model quality.",
+    "key_integrations": [
+      "Private data stores",
+      "data anonymization tools",
+      "model training platforms"
+    ],
+    "competition_level": "low",
+    "monetization": "Per synthetic dataset, data privacy audit, enterprise license.",
+    "reason": "Heightened regulatory scrutiny on AI data privacy is forcing organizations to adopt advanced synthetic data generation methods for model training by mid-year."
+  },
+  {
+    "niche": "Drug Discovery Pathway AI",
+    "trend_score": 68.0,
+    "velocity": 0.88,
+    "upcoming_score": 91.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Bio-pharma R&D, Computational Chemists; accelerating research and development; very high willingness to pay for breakthrough discoveries.",
+    "key_integrations": [
+      "ChemBL",
+      "PubChem",
+      "molecular simulation software (e.g., Schrodinger)"
+    ],
+    "competition_level": "low",
+    "monetization": "Per research project, compute utilization, enterprise license.",
+    "reason": "Pharmaceutical companies are intensifying R&D efforts in July, driving demand for AI to optimize complex drug discovery pathways and meet internal milestones."
+  },
+  {
+    "niche": "Multimodal Product Description Generation",
+    "trend_score": 70.0,
+    "velocity": 0.9,
+    "upcoming_score": 90.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "E-commerce Managers, PIM Teams; automating content for new product lines; medium-high willingness to pay for speed & consistency.",
+    "key_integrations": [
+      "Shopify API",
+      "Salesforce Commerce Cloud",
+      "vision-language models (e.g., GPT-4V)"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per generated description/asset, feature tiers.",
+    "reason": "E-commerce retailers are preparing extensively for the Q3/Q4 holiday shopping season, demanding vast amounts of accurate multimodal product content."
+  },
+  {
+    "niche": "Hyper-Personalized Learning Path AI",
+    "trend_score": 68.0,
+    "velocity": 0.88,
+    "upcoming_score": 90.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "EdTech Platforms, Corporate L&D; enhancing learner engagement and outcomes; high willingness to pay for retention & efficacy.",
+    "key_integrations": [
+      "Moodle/Blackboard APIs",
+      "knowledge graph databases",
+      "content generation APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per active learner, content module generation, SaaS subscription.",
+    "reason": "Educational institutions and corporate L&D departments are preparing adaptive curricula for the upcoming fall intake, demanding personalized content orchestration."
+  },
+  {
+    "niche": "Clinical Trial Data Analysis AI",
+    "trend_score": 65.0,
+    "velocity": 0.88,
+    "upcoming_score": 90.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Clinical Researchers, Pharma Data Scientists; extracting insights from complex trial data; very high willingness to pay for accelerated drug discovery & compliance.",
+    "key_integrations": [
+      "Electronic Health Records (EHR) systems",
+      "imaging APIs (DICOM)",
+      "statistical packages (R/SAS)"
+    ],
+    "competition_level": "low",
+    "monetization": "Per trial, data processed volume, enterprise license.",
+    "reason": "Biopharma companies are intensifying data analysis for ongoing clinical trials to meet regulatory submission deadlines or mid-year research reviews."
+  },
+  {
+    "niche": "Talent Acquisition AI Orchestration",
+    "trend_score": 70.0,
+    "velocity": 0.88,
+    "upcoming_score": 90.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "HR Directors, Recruiters; streamlining hiring for Q3/Q4 growth; high willingness to pay for efficiency & candidate experience.",
+    "key_integrations": [
+      "Workday",
+      "Greenhouse",
+      "LinkedIn Recruiter API",
+      "video interview platforms"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per hire, candidate processed, recruiter seat.",
+    "reason": "Many organizations initiate major hiring waves in July to staff up for Q3/Q4 business objectives and projects."
+  },
+  {
+    "niche": "Patent Search & Analysis AI",
+    "trend_score": 68.0,
+    "velocity": 0.85,
+    "upcoming_score": 90.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "IP Lawyers, R&D Teams; identifying new IP opportunities and assessing risks; high willingness to pay for competitive advantage & legal protection.",
+    "key_integrations": [
+      "USPTO/EPO APIs",
+      "LexisNexis PatentSight",
+      "internal innovation databases"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per patent search, analysis report, annual enterprise license.",
+    "reason": "Tech companies are actively assessing new IP opportunities and competitive landscapes during mid-year R&D cycles for future product launches."
+  },
+  {
+    "niche": "Legal Contract Review AI",
+    "trend_score": 70.0,
+    "velocity": 0.85,
+    "upcoming_score": 89.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Corporate Legal Departments, M&A Lawyers; expediting due diligence & compliance checks; high willingness to pay for accuracy & time savings.",
+    "key_integrations": [
+      "Document Management Systems (DMS)",
+      "LexisNexis/Westlaw APIs",
+      "internal legal knowledge bases"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per document, clause extraction, annual subscription.",
+    "reason": "Mid-year M&A activity and annual corporate compliance checks drive demand for rapid, accurate legal document processing across multiple models."
+  },
+  {
+    "niche": "Investment Strategy AI Agents",
+    "trend_score": 70.0,
+    "velocity": 0.85,
+    "upcoming_score": 89.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Financial Advisors, Wealth Managers; delivering tailored investment advice at scale; high willingness to pay for client retention & performance.",
+    "key_integrations": [
+      "Financial data providers (Refinitiv)",
+      "internal CRM",
+      "risk assessment tools"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per client portfolio, advice generation, platform access fee.",
+    "reason": "Financial advisors are conducting mid-year portfolio reviews and updating investment strategies for clients based on H1 performance and market forecasts."
+  },
+  {
+    "niche": "Event-Driven Content Moderation AI",
+    "trend_score": 70.0,
+    "velocity": 0.85,
+    "upcoming_score": 89.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Trust & Safety Teams, Platform Ops; managing spikes in user-generated content; high willingness to pay for brand safety & user experience.",
+    "key_integrations": [
+      "Azure Content Moderator",
+      "Google Cloud Vision AI",
+      "internal moderation queues"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per content item, moderation rule set, spike capacity.",
+    "reason": "Social platforms and UGC sites anticipate user activity spikes linked to major summer cultural events, necessitating scalable content moderation."
+  },
+  {
+    "niche": "Urban Planning Simulation AI",
+    "trend_score": 60.0,
+    "velocity": 0.9,
+    "upcoming_score": 89.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "City Planners, Municipal Analysts; optimizing infrastructure and resource allocation; medium-high willingness to pay for efficient public services.",
+    "key_integrations": [
+      "GIS systems (ArcGIS)",
+      "IoT sensor data",
+      "demographic databases"
+    ],
+    "competition_level": "low",
+    "monetization": "Per simulation run, city population tier, annual license.",
+    "reason": "Municipalities are conducting mid-year reviews and planning for next year's budget cycle, requiring advanced simulation for urban development projects."
+  },
+  {
+    "niche": "Specialized Financial Report Synthesis",
+    "trend_score": 70.0,
+    "velocity": 0.8,
+    "upcoming_score": 88.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "CFOs, Financial Analysts; automating Q2 closing/mid-year reporting; high willingness to pay for accuracy and speed.",
+    "key_integrations": [
+      "Bloomberg Terminal API",
+      "internal ERP/CRM",
+      "specialized numerical analysis models"
+    ],
+    "competition_level": "medium",
+    "monetization": "Annual enterprise license, report generation units.",
+    "reason": "Companies are closing Q2 and preparing mid-year financial reports, requiring rapid synthesis of diverse structured and unstructured data."
+  },
+  {
+    "niche": "Grant Proposal AI Assistant",
+    "trend_score": 65.0,
+    "velocity": 0.85,
+    "upcoming_score": 88.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Research Coordinators, Non-Profit Grant Writers; maximizing funding success rates; high willingness to pay for efficiency & quality.",
+    "key_integrations": [
+      "Grants.gov API",
+      "institutional research portals",
+      "internal knowledge bases"
+    ],
+    "competition_level": "low",
+    "monetization": "Per proposal, success fee (small percentage), institutional subscription.",
+    "reason": "Academic institutions and non-profits are actively preparing numerous grant proposals for major fall submission deadlines."
+  },
+  {
+    "niche": "Research Paper Analysis AI",
+    "trend_score": 68.0,
+    "velocity": 0.8,
+    "upcoming_score": 87.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Academic Researchers, R&D Scientists; staying current with vast literature, generating new insights; medium-high willingness to pay for efficiency.",
+    "key_integrations": [
+      "PubMed API",
+      "ArXiv API",
+      "institutional repositories"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per paper analyzed, research project, institutional license.",
+    "reason": "Academic and corporate research teams are intensely reviewing literature and generating new hypotheses during the summer research cycle."
+  },
+  {
+    "niche": "Wellness Coaching AI Agents",
+    "trend_score": 70.0,
+    "velocity": 0.8,
+    "upcoming_score": 87.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Health Tech Companies, Corporate Wellness Programs; delivering individualized health plans; high willingness to pay for user engagement & outcomes.",
+    "key_integrations": [
+      "Apple HealthKit",
+      "Google Fit",
+      "wearable device APIs (Garmin, Fitbit)",
+      "nutrition databases"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per user, premium feature subscription, white-label solution.",
+    "reason": "Health and fitness companies are gearing up for post-summer user acquisition drives and fall wellness program launches."
+  }
+]

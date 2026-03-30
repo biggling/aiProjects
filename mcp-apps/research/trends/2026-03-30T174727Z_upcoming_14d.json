@@ -1,0 +1,430 @@
+[
+  {
+    "niche": "Secure Tax Doc Context Manager",
+    "trend_score": 90.0,
+    "velocity": 0.95,
+    "upcoming_score": 98.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Financial services, tax preparers, accounting firms; secure AI processing of sensitive PII for tax season; high willingness to pay for security and accuracy.",
+    "key_integrations": [
+      "OCR APIs",
+      "Accounting software (e.g., QuickBooks)",
+      "Enterprise KMS"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-document processing fee; enterprise license",
+    "reason": "US tax deadline (April 15th) and European fiscal year-end activities drive peak demand for secure, AI-powered document processing."
+  },
+  {
+    "niche": "Secure Enterprise RAG Gateway",
+    "trend_score": 89.0,
+    "velocity": 0.9,
+    "upcoming_score": 97.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Knowledge managers, AI platform teams; building secure, hallucination-free internal knowledge retrieval systems; high willingness to pay for accuracy and data security.",
+    "key_integrations": [
+      "Confluence",
+      "SharePoint",
+      "SaaS CRMs",
+      "Vector DBs (Pinecone, Weaviate)"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-user seat; data processed; enterprise license",
+    "reason": "Businesses are transitioning from basic RAG PoCs to production-ready, secure knowledge AI solutions for internal use."
+  },
+  {
+    "niche": "EU AI Act Compliance Gateway",
+    "trend_score": 88.0,
+    "velocity": 0.9,
+    "upcoming_score": 96.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "AI architects in European enterprises; ensuring explainability, auditability, and data governance for AI systems; high willingness to pay for compliance assurance.",
+    "key_integrations": [
+      "EU AI Act reporting tools",
+      "Enterprise logging systems",
+      "Data governance platforms"
+    ],
+    "competition_level": "medium",
+    "monetization": "Enterprise subscription; usage-based (audit logs, data processed)",
+    "reason": "Enterprises are accelerating efforts to align AI deployments with the EU AI Act's imminent enforcement phases, demanding robust compliance tools."
+  },
+  {
+    "niche": "Real-time AI Cost Optimization Router",
+    "trend_score": 87.0,
+    "velocity": 0.92,
+    "upcoming_score": 95.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "FinOps teams, AI platform engineers; dynamically routing requests to cheapest available LLMs (GCP, Azure, AWS, OSS); high willingness to pay for significant cost savings.",
+    "key_integrations": [
+      "OpenAI API",
+      "Anthropic Claude",
+      "Google Gemini",
+      "Azure OpenAI"
+    ],
+    "competition_level": "medium",
+    "monetization": "Percentage of savings; usage-based (requests/tokens)",
+    "reason": "New, more efficient models and increased enterprise AI usage make real-time cost control critical as Q2 budgets are finalized."
+  },
+  {
+    "niche": "Multimodal Agent Orchestrator",
+    "trend_score": 85.0,
+    "velocity": 0.88,
+    "upcoming_score": 94.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "AI developers and researchers; integrating new multimodal LLMs (vision, audio, text) into complex agentic workflows; high willingness to pay for advanced capabilities.",
+    "key_integrations": [
+      "OpenAI GPT-4o+",
+      "Google Gemini Advanced",
+      "Llama Vision/Audio Models"
+    ],
+    "competition_level": "medium",
+    "monetization": "API calls; per-agent instance; developer subscription",
+    "reason": "Recent advancements and announcements in multimodal AI models are driving immediate developer adoption and integration into next-gen agents."
+  },
+  {
+    "niche": "Enterprise AI Governance MCP",
+    "trend_score": 86.0,
+    "velocity": 0.89,
+    "upcoming_score": 94.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "CIOs, CSOs, AI governance committees; ensuring SOC2, ISO27001 compliance for internal AI applications; very high willingness to pay for security and compliance.",
+    "key_integrations": [
+      "Enterprise IAM",
+      "SIEM systems",
+      "Data Loss Prevention (DLP)"
+    ],
+    "competition_level": "medium",
+    "monetization": "Enterprise license; per-user seat",
+    "reason": "Enterprises are moving AI from pilot to production, requiring immediate adherence to stringent internal governance and security standards."
+  },
+  {
+    "niche": "Dynamic Agent Framework MCP",
+    "trend_score": 84.0,
+    "velocity": 0.87,
+    "upcoming_score": 93.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Advanced AI developers, platform teams; orchestrating complex multi-agent workflows (e.g., CrewAI, AutoGen); high willingness to pay for scalable, resilient agent infrastructure.",
+    "key_integrations": [
+      "LangChain",
+      "CrewAI",
+      "AutoGen"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-agent execution; developer platform subscription",
+    "reason": "The maturation of multi-agent frameworks is creating demand for robust backend services to manage agent context, tools, and state."
+  },
+  {
+    "niche": "HIPAA-Compliant Clinical Context",
+    "trend_score": 82.0,
+    "velocity": 0.85,
+    "upcoming_score": 92.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Healthcare providers, MedTech startups; secure summarization, RAG over EMR data, clinical decision support; high willingness to pay for compliance and accuracy.",
+    "key_integrations": [
+      "EPIC/Cerner EMR APIs",
+      "Medical knowledge bases",
+      "De-identification services"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-patient record; enterprise license",
+    "reason": "Healthcare organizations are rapidly adopting AI for efficiency, demanding immediate, strictly HIPAA-compliant solutions for patient data."
+  },
+  {
+    "niche": "Advanced RAG Context Engine",
+    "trend_score": 83.0,
+    "velocity": 0.86,
+    "upcoming_score": 91.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "AI researchers, data scientists; advanced RAG techniques (multi-hop, query rewriting, self-correction); high willingness to pay for cutting-edge retrieval capabilities.",
+    "key_integrations": [
+      "LlamaIndex",
+      "Vector DBs",
+      "Knowledge Graphs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Developer subscription; usage-based (queries)",
+    "reason": "New research in RAG techniques is quickly being productized, driving demand for advanced context management for complex queries."
+  },
+  {
+    "niche": "AI Observability & Finetuning",
+    "trend_score": 81.0,
+    "velocity": 0.84,
+    "upcoming_score": 91.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "MLOps engineers, AI product managers; monitoring LLM performance, drift, prompt effectiveness; high willingness to pay for operational stability and model improvement.",
+    "key_integrations": [
+      "MLflow",
+      "Prometheus",
+      "Model registries"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-model monitored; usage-based (logs, metrics)",
+    "reason": "Enterprises are scaling AI deployments, necessitating robust tools for continuous monitoring and rapid iteration of AI models."
+  },
+  {
+    "niche": "P&C Insurance Claim AI Assistant",
+    "trend_score": 80.0,
+    "velocity": 0.83,
+    "upcoming_score": 90.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Insurance companies, claims adjusters; accelerating claims processing, fraud detection, customer communication; high willingness to pay for efficiency and accuracy.",
+    "key_integrations": [
+      "Claims management systems",
+      "Image analysis APIs",
+      "Regulatory databases"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-claim processed; enterprise license",
+    "reason": "Global Q2 starts bring increased insurance claims processing, requiring AI for efficiency and accuracy to handle volume."
+  },
+  {
+    "niche": "Dynamic Content Personalization",
+    "trend_score": 80.0,
+    "velocity": 0.85,
+    "upcoming_score": 90.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "E-commerce marketing teams, content agencies; real-time personalized marketing copy, product descriptions; high willingness to pay for increased conversion rates.",
+    "key_integrations": [
+      "Shopify API",
+      "Salesforce Marketing Cloud",
+      "CMS platforms"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-content piece; subscription tiers",
+    "reason": "E-commerce businesses are gearing up for Q2 campaigns, demanding highly personalized, AI-generated content to drive engagement."
+  },
+  {
+    "niche": "Legal Doc Analysis Context",
+    "trend_score": 79.0,
+    "velocity": 0.82,
+    "upcoming_score": 89.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Law firms, corporate legal departments; contract review, due diligence, legal research; high willingness to pay for speed and accuracy in high-stakes environments.",
+    "key_integrations": [
+      "LexisNexis API",
+      "Westlaw API",
+      "Document management systems"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-document processed; enterprise license",
+    "reason": "Anticipated Q2 deal flows and M&A activities drive demand for accelerated legal document analysis, leveraging AI for efficiency."
+  },
+  {
+    "niche": "AI-Powered Due Diligence Assistant",
+    "trend_score": 78.0,
+    "velocity": 0.81,
+    "upcoming_score": 88.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Investment banks, private equity firms; rapid analysis of financial reports, market data for M&A due diligence; very high willingness to pay for speed and insights.",
+    "key_integrations": [
+      "Bloomberg API",
+      "CapIQ API",
+      "SEC EDGAR"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-project fee; enterprise license",
+    "reason": "Increased M&A activity globally around Q2 creates urgent demand for AI to accelerate complex due diligence processes."
+  },
+  {
+    "niche": "Hybrid Edge LLM Deployer",
+    "trend_score": 77.0,
+    "velocity": 0.8,
+    "upcoming_score": 87.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "IoT solution providers, manufacturing engineers; deploying specialized SLMs on-prem or at the edge for low-latency inference; high willingness to pay for performance and data privacy.",
+    "key_integrations": [
+      "ONNX Runtime",
+      "TensorRT",
+      "Edge computing platforms"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-device license; usage-based (inference)",
+    "reason": "New smaller, more efficient LLMs are enabling edge AI use cases, driving immediate adoption for latency-critical applications."
+  },
+  {
+    "niche": "Prompt Management & A/B Test",
+    "trend_score": 76.0,
+    "velocity": 0.79,
+    "upcoming_score": 86.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Prompt engineers, AI product teams; versioning, testing, and optimizing prompts across multiple models; medium willingness to pay for efficiency and quality control.",
+    "key_integrations": [
+      "OpenAI API",
+      "Anthropic Claude",
+      "Version control systems (Git)"
+    ],
+    "competition_level": "medium",
+    "monetization": "Developer subscription; per-prompt version",
+    "reason": "As AI applications mature, prompt engineering becomes a critical, complex discipline requiring dedicated management and optimization tools."
+  },
+  {
+    "niche": "Synthetic Data Generation MCP",
+    "trend_score": 75.0,
+    "velocity": 0.78,
+    "upcoming_score": 85.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Data scientists, ML engineers; creating high-quality, privacy-preserving synthetic data for model training and testing; medium willingness to pay for data diversity and privacy.",
+    "key_integrations": [
+      "Faker libraries",
+      "GAN frameworks",
+      "Differential privacy tools"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-data generated; enterprise license",
+    "reason": "The growing need for diverse, privacy-compliant training data for new AI models drives demand for sophisticated synthetic data generation."
+  },
+  {
+    "niche": "AI-Powered Supply Chain Optimization",
+    "trend_score": 74.0,
+    "velocity": 0.77,
+    "upcoming_score": 84.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Logistics managers, operations directors; predictive analytics for inventory, demand forecasting, route optimization; high willingness to pay for efficiency and reduced costs.",
+    "key_integrations": [
+      "SAP SCM",
+      "Oracle SCM",
+      "Weather APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-transaction; enterprise license",
+    "reason": "Global economic shifts and Q2 planning cycles force businesses to optimize supply chains with advanced AI for resilience and cost savings."
+  },
+  {
+    "niche": "Cross-lingual Compliance Review",
+    "trend_score": 73.0,
+    "velocity": 0.76,
+    "upcoming_score": 83.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Global legal teams, compliance officers; reviewing multilingual documents for regulatory adherence; high willingness to pay for accuracy and speed.",
+    "key_integrations": [
+      "DeepL API",
+      "Google Translate API",
+      "Legal databases"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-word translated/reviewed; enterprise license",
+    "reason": "Increased global regulatory scrutiny (e.g., EU AI Act, GDPR) demands AI-powered, multilingual compliance review capabilities."
+  },
+  {
+    "niche": "Automated Cybersecurity Threat Intel",
+    "trend_score": 72.0,
+    "velocity": 0.75,
+    "upcoming_score": 82.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Security operations centers (SOC), CSOs; real-time threat analysis, vulnerability assessment, incident response; very high willingness to pay for proactive defense.",
+    "key_integrations": [
+      "Splunk",
+      "CrowdStrike",
+      "VirusTotal API"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-endpoint monitored; enterprise license",
+    "reason": "The constant evolution of cyber threats necessitates AI to process vast amounts of threat intelligence in real-time, especially in Q2 surge of digital activity."
+  },
+  {
+    "niche": "HR AI Document Processor",
+    "trend_score": 71.0,
+    "velocity": 0.74,
+    "upcoming_score": 81.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "HR departments, recruiters; automated resume screening, contract generation, policy Q&A; medium willingness to pay for efficiency and candidate experience.",
+    "key_integrations": [
+      "Workday",
+      "SAP SuccessFactors",
+      "DocuSign API"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-document processed; per-applicant screened",
+    "reason": "Companies initiating Q2 hiring waves are seeking AI solutions to streamline the high volume of HR documentation and applicant screening."
+  },
+  {
+    "niche": "AI-Powered Customer Feedback Loop",
+    "trend_score": 70.0,
+    "velocity": 0.73,
+    "upcoming_score": 80.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Product managers, marketing teams; sentiment analysis, trend identification from customer reviews, social media; medium willingness to pay for actionable insights.",
+    "key_integrations": [
+      "Zendesk",
+      "Salesforce Service Cloud",
+      "Social media APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-analysis run; usage-based (data volume)",
+    "reason": "As businesses ramp up Q2 product launches and marketing, analyzing customer feedback becomes critical for rapid iteration and success."
+  },
+  {
+    "niche": "ESG Reporting Context Manager",
+    "trend_score": 69.0,
+    "velocity": 0.72,
+    "upcoming_score": 79.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Sustainability officers, compliance teams; automating data collection, analysis, and report generation for ESG disclosures; high willingness to pay for accuracy and compliance.",
+    "key_integrations": [
+      "Sustainability data platforms",
+      "Regulatory APIs",
+      "Internal data lakes"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-report generated; enterprise license",
+    "reason": "Increasing global pressure from investors and regulators drives demand for AI to streamline complex and data-intensive ESG reporting."
+  },
+  {
+    "niche": "Developer Sandbox AI Context",
+    "trend_score": 68.0,
+    "velocity": 0.71,
+    "upcoming_score": 78.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Developer relations, platform engineers; providing safe, sandboxed AI environments for API testing, tutorials, and hackathons; medium willingness to pay for developer engagement.",
+    "key_integrations": [
+      "GitHub",
+      "GitLab",
+      "Cloud provider APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-sandbox instance; developer platform subscription",
+    "reason": "Anticipated spring developer events and platform launches create demand for robust, secure AI development environments."
+  },
+  {
+    "niche": "AI-Driven Market Research Analyst",
+    "trend_score": 67.0,
+    "velocity": 0.7,
+    "upcoming_score": 77.0,
+    "horizon_days": 14,
+    "peak_date": "2026-04-13",
+    "target_user": "Market research firms, product strategy teams; automated competitor analysis, trend spotting, consumer behavior insights; high willingness to pay for timely, deep insights.",
+    "key_integrations": [
+      "Statista",
+      "Euromonitor",
+      "News APIs",
+      "Social media APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-report; subscription tiers",
+    "reason": "Businesses entering Q2 planning cycles require rapid, comprehensive market intelligence to inform strategic decisions."
+  }
+]

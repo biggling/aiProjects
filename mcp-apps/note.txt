@@ -1,0 +1,25 @@
+
+  Updated top composite rankings (3 runs accumulated):
+
+  ┌─────┬───────────────────────────────────────┬─────────────┬───────────────┐
+  │  #  │                 Niche                 │ Competition │    Signal     │
+  ├─────┼───────────────────────────────────────┼─────────────┼───────────────┤
+  │ 1-2 │ Meeting Summarizer & Action Extractor │ medium      │ consistent #1 │
+  ├─────┼───────────────────────────────────────┼─────────────┼───────────────┤
+  │ 3   │ Autonomous Agent Orchestration Hub    │ low         │ new this run  │
+  ├─────┼───────────────────────────────────────┼─────────────┼───────────────┤
+  │ 4   │ Financial Fraud Pattern Detection     │ medium      │               │
+  ├─────┼───────────────────────────────────────┼─────────────┼───────────────┤
+  │ 5   │ Multi-Agent RAG Orchestrator          │ low         │ new this run  │
+  ├─────┼───────────────────────────────────────┼─────────────┼───────────────┤
+  │ 11  │ LLM Observability & Monitoring        │ low         │ new this run  │
+  └─────┴───────────────────────────────────────┴─────────────┴───────────────┘
+
+  Key new low-competition niches emerging:
+  - Autonomous Agent Orchestration Hub — multi-agent coordination is a confirmed gap
+  - Multi-Agent RAG Orchestrator — sophisticated retrieval is outpacing easy tooling
+  - LLM Observability & Monitoring — production LLM ops is an underserved space
+
+  The global market focus is surfacing more enterprise/infra niches. 3 data points now — patterns are starting to solidify
+  around agent orchestration + code review as the most consistent signals.
+

@@ -1,0 +1,36 @@
+
+⏺ All 7 snapshots generated (1 current + 6 upcoming horizons). Here are the top findings:
+
+  Top digital product niches right now:
+
+  ┌─────┬───────────────────────────────────┬─────────────┬──────────┐
+  │  #  │               Niche               │ Competition │  Price   │
+  ├─────┼───────────────────────────────────┼─────────────┼──────────┤
+  │ 1   │ GPT-4 marketing prompt pack       │ high        │ $39-$99  │
+  ├─────┼───────────────────────────────────┼─────────────┼──────────┤
+  │ 2   │ AI prompt engineering cheatsheet  │ high        │ $19-$49  │
+  ├─────┼───────────────────────────────────┼─────────────┼──────────┤
+  │ 3   │ Claude 3 content creation prompts │ medium      │ $39-$89  │
+  ├─────┼───────────────────────────────────┼─────────────┼──────────┤
+  │ 4   │ AI code assistant prompts         │ medium      │ $29-$79  │
+  ├─────┼───────────────────────────────────┼─────────────┼──────────┤
+  │ 5   │ AI copywriting frameworks         │ medium      │ $49-$119 │
+  ├─────┼───────────────────────────────────┼─────────────┼──────────┤
+  │ 6   │ AI product management prompts     │ low         │ $39-$89  │
+  ├─────┼───────────────────────────────────┼─────────────┼──────────┤
+  │ 7   │ Cursor/OpenCode workflow configs  │ low         │ $39-$89  │
+  ├─────┼───────────────────────────────────┼─────────────┼──────────┤
+  │ 10  │ AI UX research prompt pack        │ low         │ $39-$99  │
+  ├─────┼───────────────────────────────────┼─────────────┼──────────┤
+  │ 11  │ AI-powered code review checklists │ low         │ $49-$129 │
+  ├─────┼───────────────────────────────────┼─────────────┼──────────┤
+  │ 13  │ Notion AI prompt manager          │ low         │ $39-$89  │
+  └─────┴───────────────────────────────────┴─────────────┴──────────┘
+
+  Key takeaways:
+  - Low competition sweet spots: AI product management prompts, Cursor/OpenCode configs, AI UX research prompts, Notion AI prompt manager — all
+  score 100+ with low competition
+  - Cursor/OpenCode workflow configs (#7) directly aligns with your existing Claude Code work and the cross-platform AGENTS.md opportunity
+  identified in prior research
+  - AI code review checklists (#11) is a natural companion to the Claude Code config bundle
+  - Snapshots saved to digital-products/research/trends/ for historical comparison

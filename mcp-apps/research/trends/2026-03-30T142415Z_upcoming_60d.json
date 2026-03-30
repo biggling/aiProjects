@@ -1,0 +1,427 @@
+[
+  {
+    "niche": "Multi-Agent Workflow State Manager",
+    "trend_score": 55.0,
+    "velocity": 0.85,
+    "upcoming_score": 95.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "AI engineers, R&D teams: orchestrating complex multi-agent systems and maintaining consistent context across steps.",
+    "key_integrations": [
+      "AutoGen",
+      "LangChain",
+      "CrewAI"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-workflow execution or resource consumption",
+    "reason": "Mainstream adoption and refinement of multi-agent frameworks post-conference season requires robust state management."
+  },
+  {
+    "niche": "Global Travel Agent Contextualizer",
+    "trend_score": 50.0,
+    "velocity": 0.75,
+    "upcoming_score": 92.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Online travel agencies, hospitality groups: real-time, personalized trip planning with dynamic pricing and availability.",
+    "key_integrations": [
+      "Amadeus API",
+      "Sabre API",
+      "HotelTonight API"
+    ],
+    "competition_level": "medium",
+    "monetization": "Transaction-based or per-query",
+    "reason": "Peak summer travel booking season commences in late spring, driving demand for highly contextualized travel recommendations."
+  },
+  {
+    "niche": "Multi-Modal Demo Orchestrator (Build/I/O)",
+    "trend_score": 40.0,
+    "velocity": 0.8,
+    "upcoming_score": 90.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "AI solution architects, product managers: showcasing cutting-edge multi-modal AI at major conferences.",
+    "key_integrations": [
+      "Google Gemini API",
+      "Azure AI Services",
+      "OpenAI API"
+    ],
+    "competition_level": "low",
+    "monetization": "Usage-based (API calls, data processing)",
+    "reason": "Microsoft Build (mid-May) and Google I/O (often May) drive demand for robust multi-modal AI demonstration backends."
+  },
+  {
+    "niche": "Customer Service AI Agent Context Switcher",
+    "trend_score": 60.0,
+    "velocity": 0.7,
+    "upcoming_score": 90.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Customer service managers, contact center directors: seamless handover of customer context between AI agents and human agents.",
+    "key_integrations": [
+      "Zendesk",
+      "Salesforce Service Cloud",
+      "Twilio Flex"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-user seat or interaction volume",
+    "reason": "Companies prepare for increased summer support volumes by deploying more sophisticated AI agents requiring better context handoffs."
+  },
+  {
+    "niche": "Gaming NPC Dynamic Context Engine",
+    "trend_score": 45.0,
+    "velocity": 0.8,
+    "upcoming_score": 90.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Game developers, AI designers: enabling rich, contextual, and memory-aware NPCs that adapt to player actions and game state.",
+    "key_integrations": [
+      "Unity API",
+      "Unreal Engine API",
+      "PlayFab"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-game or monthly studio license",
+    "reason": "Growing interest in generative AI for games, with new game announcements and development cycles peaking before summer releases."
+  },
+  {
+    "niche": "Edge AI Context for Retail Inventory Agents",
+    "trend_score": 45.0,
+    "velocity": 0.7,
+    "upcoming_score": 88.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Retail operations, supply chain managers: real-time inventory adjustments driven by on-site AI agents for pre-summer sales.",
+    "key_integrations": [
+      "Shopify",
+      "SAP Retail",
+      "IoT sensor platforms"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-store location or device",
+    "reason": "Retailers prepare for summer sales spikes by optimizing inventory with edge AI, needing robust local context management."
+  },
+  {
+    "niche": "Sales Proposal Generation Context Manager",
+    "trend_score": 48.0,
+    "velocity": 0.7,
+    "upcoming_score": 88.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Sales teams, business development: AI-powered generation of personalized sales proposals, maintaining deal context.",
+    "key_integrations": [
+      "Salesforce CRM",
+      "HubSpot",
+      "DocuSign"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-proposal or user seat",
+    "reason": "Many businesses close new deals before mid-year, driving demand for efficient, personalized sales outreach."
+  },
+  {
+    "niche": "Q2 Financial Report AI Context Hub",
+    "trend_score": 35.0,
+    "velocity": 0.7,
+    "upcoming_score": 85.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Financial analysts, CFOs: automated synthesis of Q2 fiscal data, high accuracy demanded.",
+    "key_integrations": [
+      "SAP S/4HANA",
+      "Oracle ERP Cloud",
+      "PowerBI"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-report or data volume processed",
+    "reason": "Many enterprises close Q2 fiscal year-end or mid-year budgeting around this time, driving demand for rapid, accurate financial synthesis."
+  },
+  {
+    "niche": "Legal Document Summarization & Context",
+    "trend_score": 40.0,
+    "velocity": 0.7,
+    "upcoming_score": 85.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Legal professionals, paralegals: rapid review and summarization of legal briefs, contracts, and discovery documents.",
+    "key_integrations": [
+      "DocuSign",
+      "LexisNexis",
+      "Westlaw"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-document or subscription",
+    "reason": "Mid-year litigation cycles and corporate legal reviews often spike in late spring."
+  },
+  {
+    "niche": "Enterprise Knowledge Graph Context Builder",
+    "trend_score": 40.0,
+    "velocity": 0.7,
+    "upcoming_score": 85.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Knowledge managers, data scientists: automating the creation and maintenance of enterprise knowledge graphs from unstructured data.",
+    "key_integrations": [
+      "Neo4j",
+      "Apache Jena",
+      "SharePoint"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-node/edge or data ingestion",
+    "reason": "As RAG becomes more sophisticated, companies invest in automated knowledge graph creation for better context grounding."
+  },
+  {
+    "niche": "Healthcare Patient Context Shield",
+    "trend_score": 38.0,
+    "velocity": 0.7,
+    "upcoming_score": 83.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Healthcare IT, compliance officers: secure, compliant context management for AI in patient care, adhering to HIPAA/GDPR.",
+    "key_integrations": [
+      "Epic Systems",
+      "Cerner",
+      "FHIR APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-patient record or API call",
+    "reason": "Increased scrutiny on AI in healthcare and evolving data privacy regulations (e.g., updates to HIPAA enforcement)."
+  },
+  {
+    "niche": "Creative Content Multi-Modal Context",
+    "trend_score": 35.0,
+    "velocity": 0.75,
+    "upcoming_score": 82.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Marketing agencies, content creators: generating consistent branding and style across multi-modal AI-generated content (text, image, video).",
+    "key_integrations": [
+      "Adobe Creative Cloud",
+      "Midjourney API",
+      "RunwayML"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-project or output volume",
+    "reason": "Demand for summer ad campaigns and marketing content creation spikes, requiring consistent brand context across diverse outputs."
+  },
+  {
+    "niche": "Real-time Supply Chain Anomaly Context",
+    "trend_score": 38.0,
+    "velocity": 0.7,
+    "upcoming_score": 82.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Supply chain managers, logistics coordinators: early detection and contextual analysis of disruptions and anomalies.",
+    "key_integrations": [
+      "Oracle SCM",
+      "SAP Ariba",
+      "Freight APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-shipment or data volume",
+    "reason": "Global logistics prepare for summer demand surges, requiring proactive anomaly detection for smooth operations."
+  },
+  {
+    "niche": "AI Act Compliance Context Logger",
+    "trend_score": 30.0,
+    "velocity": 0.75,
+    "upcoming_score": 80.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Legal, compliance officers, AI governance teams: ensuring auditability for high-risk AI systems under evolving EU AI Act.",
+    "key_integrations": [
+      "Splunk",
+      "ServiceNow GRC",
+      "OpenPolicyAgent"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-log volume, enterprise licensing",
+    "reason": "Increasing clarity on EU AI Act implementation timelines for high-risk systems pushes companies to adopt compliance tools."
+  },
+  {
+    "niche": "DevOps Incident Response Context Aggregator",
+    "trend_score": 42.0,
+    "velocity": 0.65,
+    "upcoming_score": 80.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "DevOps engineers, SREs: real-time aggregation of incident context (logs, metrics, alerts) for AI-driven diagnosis.",
+    "key_integrations": [
+      "PagerDuty",
+      "Datadog",
+      "Splunk"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-incident or data ingestion",
+    "reason": "Post-conference infrastructure updates and increased service loads demand faster, AI-assisted incident resolution."
+  },
+  {
+    "niche": "Legacy System Data Context Bridge",
+    "trend_score": 30.0,
+    "velocity": 0.6,
+    "upcoming_score": 78.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Enterprise architects, data engineers: connecting modern AI models to siloed, on-premise legacy data sources.",
+    "key_integrations": [
+      "SAP ECC",
+      "IBM Mainframe",
+      "SQL Server"
+    ],
+    "competition_level": "high",
+    "monetization": "Per-connector or data volume",
+    "reason": "Enterprises accelerate AI adoption but are bottlenecked by legacy data access, requiring specialized context solutions."
+  },
+  {
+    "niche": "Financial Planning AI Context Manager",
+    "trend_score": 35.0,
+    "velocity": 0.6,
+    "upcoming_score": 78.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Financial advisors, wealth managers: personalized financial advice and portfolio adjustments based on real-time market and client context.",
+    "key_integrations": [
+      "Bloomberg Terminal",
+      "Morningstar",
+      "Fidelity API"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-client or subscription",
+    "reason": "Mid-year financial reviews and planning for tax season (next year) drives demand for sophisticated analysis tools."
+  },
+  {
+    "niche": "Personalized Summer Intern Onboarding Agent Context",
+    "trend_score": 25.0,
+    "velocity": 0.6,
+    "upcoming_score": 75.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "HR teams, program managers: streamlining personalized onboarding for new summer interns arriving in late May/early June.",
+    "key_integrations": [
+      "Workday",
+      "SAP SuccessFactors",
+      "LMS platforms"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-intern or program fee",
+    "reason": "Mass intake of summer interns and new graduates in late May/early June creates a need for scalable, personalized onboarding."
+  },
+  {
+    "niche": "Smart Home IoT Agent Context Controller",
+    "trend_score": 30.0,
+    "velocity": 0.65,
+    "upcoming_score": 75.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Smart home device manufacturers, home automation developers: managing context across disparate IoT devices for intelligent home agents.",
+    "key_integrations": [
+      "Matter",
+      "Home Assistant",
+      "Alexa Skills Kit"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-device or user subscription",
+    "reason": "Increased sales of smart home devices for summer improvements and demand for seamless integration."
+  },
+  {
+    "niche": "Personalized Digital Twin Context Layer",
+    "trend_score": 30.0,
+    "velocity": 0.6,
+    "upcoming_score": 75.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Industrial engineers, smart city planners: integrating real-world sensor data with simulated environments for predictive maintenance and optimization.",
+    "key_integrations": [
+      "Siemens Digital Industries",
+      "Azure Digital Twins",
+      "MQTT brokers"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-twin instance or data stream",
+    "reason": "Advancements in IoT and AI drive demand for more sophisticated digital twins, needing robust context management."
+  },
+  {
+    "niche": "Regulatory Impact Analysis Context Engine",
+    "trend_score": 28.0,
+    "velocity": 0.65,
+    "upcoming_score": 72.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Compliance analysts, government affairs: rapid assessment of new legislation's impact on business operations.",
+    "key_integrations": [
+      "GovLoop",
+      "Bloomberg Government",
+      "Internal policy docs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-query or subscription",
+    "reason": "Mid-year legislative sessions often result in new regulations requiring immediate impact analysis."
+  },
+  {
+    "niche": "Curriculum Development Contextual RAG",
+    "trend_score": 20.0,
+    "velocity": 0.65,
+    "upcoming_score": 70.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Educators, academic administrators: rapid development of summer/fall curricula leveraging vast knowledge bases.",
+    "key_integrations": [
+      "Canvas LMS",
+      "Blackboard Learn",
+      "Digital library APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-user or institutional license",
+    "reason": "Educational institutions plan and finalize summer courses and fall curricula in late spring."
+  },
+  {
+    "niche": "Academic Research Multi-LLM Context Router",
+    "trend_score": 20.0,
+    "velocity": 0.6,
+    "upcoming_score": 70.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Researchers, PhD students: orchestrating specialized LLMs for different research tasks (summarization, hypothesis generation, data analysis).",
+    "key_integrations": [
+      "arXiv API",
+      "Scopus API",
+      "Jupyter Notebooks"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-query or academic license",
+    "reason": "Mid-year academic research deadlines and summer project kickoffs drive demand for efficient research tools."
+  },
+  {
+    "niche": "AI-Driven Patent Search Context Engine",
+    "trend_score": 25.0,
+    "velocity": 0.65,
+    "upcoming_score": 70.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "R&D departments, patent lawyers: contextualized search and analysis of vast patent databases to identify prior art and innovation opportunities.",
+    "key_integrations": [
+      "USPTO API",
+      "EPO databases",
+      "Google Patents"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-search or subscription",
+    "reason": "Mid-year innovation cycles and increased R&D investments prompt thorough patent landscape analysis."
+  },
+  {
+    "niche": "Construction Project Contextual Planner",
+    "trend_score": 22.0,
+    "velocity": 0.55,
+    "upcoming_score": 68.0,
+    "horizon_days": 60,
+    "peak_date": "2026-05-29",
+    "target_user": "Project managers, site supervisors: AI-driven optimization of construction schedules and resource allocation for summer projects.",
+    "key_integrations": [
+      "Procore",
+      "Autodesk BIM 360",
+      "Microsoft Project"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-project or subscription",
+    "reason": "Construction season ramps up in late spring, requiring efficient planning and resource management."
+  }
+]

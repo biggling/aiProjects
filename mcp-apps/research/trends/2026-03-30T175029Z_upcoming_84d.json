@@ -1,0 +1,427 @@
+[
+  {
+    "niche": "Multimodal Marketing Content Generator",
+    "trend_score": 80.0,
+    "velocity": 0.9,
+    "upcoming_score": 95.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Marketing agencies, brand managers, content creation teams; high willingness to pay for creative velocity.",
+    "key_integrations": [
+      "Midjourney API",
+      "DALL-E 3",
+      "ElevenLabs"
+    ],
+    "competition_level": "high",
+    "monetization": "Credit-based usage or tiered enterprise plans.",
+    "reason": "Launch of Q3 marketing campaigns and summer promotions drives demand for diverse, AI-generated content across modalities."
+  },
+  {
+    "niche": "Enterprise Private RAG Search Gateway",
+    "trend_score": 80.0,
+    "velocity": 0.9,
+    "upcoming_score": 93.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Large enterprises, knowledge management, legal departments; high willingness to pay for secure internal knowledge access.",
+    "key_integrations": [
+      "SharePoint",
+      "Confluence",
+      "custom internal data sources"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-user seat license or data volume processed.",
+    "reason": "Post-Q2 knowledge sharing and internal training initiatives drive demand for secure, AI-powered internal information retrieval."
+  },
+  {
+    "niche": "EU AI Act Compliance Orchestrator",
+    "trend_score": 75.0,
+    "velocity": 0.85,
+    "upcoming_score": 92.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "EU-based enterprises, legal tech firms, risk & compliance officers; high willingness to pay for regulatory adherence.",
+    "key_integrations": [
+      "Azure AI Studio",
+      "OpenAI API",
+      "custom internal models"
+    ],
+    "competition_level": "medium",
+    "monetization": "Subscription based on API calls / model usage + compliance feature add-ons.",
+    "reason": "Initial enforcement phases for high-risk systems under the EU AI Act become critical for mid-year compliance reviews."
+  },
+  {
+    "niche": "Dynamic E-commerce Personalization Engine",
+    "trend_score": 80.0,
+    "velocity": 0.8,
+    "upcoming_score": 90.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "E-commerce retailers, marketing platforms; high willingness to pay for conversion uplift.",
+    "key_integrations": [
+      "Shopify API",
+      "Salesforce Commerce Cloud",
+      "custom recommender systems"
+    ],
+    "competition_level": "high",
+    "monetization": "Percentage of attributed sales or performance-based pricing.",
+    "reason": "Preparing for summer sales and planning for holiday seasons requires highly adaptable, real-time personalization with diverse AI models."
+  },
+  {
+    "niche": "Developer AI Code Review Orchestrator",
+    "trend_score": 75.0,
+    "velocity": 0.85,
+    "upcoming_score": 90.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Software development teams, SREs, CTOs; high willingness to pay for improved code quality and security.",
+    "key_integrations": [
+      "GitHub Copilot API",
+      "SonarQube",
+      "custom static analysis tools"
+    ],
+    "competition_level": "high",
+    "monetization": "Per-developer seat license or per-repo pricing.",
+    "reason": "Post-Q2 sprints, teams aim to streamline code quality before mid-year releases or major platform updates announced at developer conferences."
+  },
+  {
+    "niche": "Hyper-personalized Customer Service Agent",
+    "trend_score": 75.0,
+    "velocity": 0.85,
+    "upcoming_score": 90.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Airlines, hospitality, e-commerce customer support; high willingness to pay for improved CX and reduced costs.",
+    "key_integrations": [
+      "Zendesk",
+      "Salesforce Service Cloud",
+      "custom CRM data"
+    ],
+    "competition_level": "high",
+    "monetization": "Per-agent seat or per-interaction pricing.",
+    "reason": "Preparing for summer travel and increased customer support queries across various industries demands deeply personalized AI agents."
+  },
+  {
+    "niche": "Multimodal Financial Fraud Detection Hub",
+    "trend_score": 70.0,
+    "velocity": 0.8,
+    "upcoming_score": 88.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Fintech companies, major banks, e-commerce platforms; high willingness to pay to prevent losses.",
+    "key_integrations": [
+      "FICO",
+      "custom ML fraud models",
+      "major LLMs for anomaly explanation"
+    ],
+    "competition_level": "medium",
+    "monetization": "Usage-based (per transaction/query) with enterprise licensing tiers.",
+    "reason": "Increased transaction volumes (summer travel, promotions) and mid-year financial reviews heighten demand for sophisticated, multi-model fraud prevention."
+  },
+  {
+    "niche": "Cloud Cost Optimization AI Advisor",
+    "trend_score": 70.0,
+    "velocity": 0.75,
+    "upcoming_score": 88.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "FinOps teams, CTOs, cloud architects; high willingness to pay for cost savings.",
+    "key_integrations": [
+      "AWS Cost Explorer",
+      "Azure Cost Management",
+      "Google Cloud Billing API"
+    ],
+    "competition_level": "medium",
+    "monetization": "Percentage of identified savings or fixed annual fee based on cloud spend.",
+    "reason": "End of Q2 budget reviews intensify scrutiny of cloud spend, seeking AI-driven recommendations across multi-cloud environments."
+  },
+  {
+    "niche": "AI Model Performance Monitoring Hub",
+    "trend_score": 70.0,
+    "velocity": 0.8,
+    "upcoming_score": 88.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "ML Ops teams, data scientists, AI product managers; high willingness to pay for model reliability.",
+    "key_integrations": [
+      "MLflow",
+      "Prometheus",
+      "custom model monitors"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-model monitored or data volume of inferences.",
+    "reason": "As Q2 models are deployed and Q3 production cycles ramp up, detecting AI model drift and ensuring reliability becomes critical."
+  },
+  {
+    "niche": "Legal eDiscovery Document Intelligence",
+    "trend_score": 70.0,
+    "velocity": 0.7,
+    "upcoming_score": 87.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Large law firms, corporate legal departments, legal tech vendors; high willingness to pay for efficiency.",
+    "key_integrations": [
+      "Relativity API",
+      "OpenText",
+      "specialized legal LLMs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-document processing fee or annual enterprise license with tiered usage.",
+    "reason": "Q2/Q3 typically sees an uptick in litigation and M&A activities, driving demand for rapid, compliant document analysis."
+  },
+  {
+    "niche": "Healthcare Clinical Trial Data Harmonizer",
+    "trend_score": 65.0,
+    "velocity": 0.75,
+    "upcoming_score": 85.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Pharmaceutical companies, CROs, medical device firms; high willingness to pay for accelerated trial insights.",
+    "key_integrations": [
+      "EPIC FHIR API",
+      "HL7",
+      "domain-specific NLP models"
+    ],
+    "competition_level": "low",
+    "monetization": "Volume-based (data processed) with premium support for regulatory compliance.",
+    "reason": "Summer marks peak patient recruitment and data collection for many clinical trials, requiring diverse AI model analysis."
+  },
+  {
+    "niche": "Enterprise Data Governance AI Assistant",
+    "trend_score": 65.0,
+    "velocity": 0.75,
+    "upcoming_score": 85.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Data Stewards, CIOs, Compliance Officers; high willingness to pay for robust data management.",
+    "key_integrations": [
+      "Collibra",
+      "Alation",
+      "custom NLP for data cataloging"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-data source or data volume managed.",
+    "reason": "Mid-year data audits and preparation for new regulatory requirements (e.g., EU AI Act data quality) demand AI assistance for classification and management."
+  },
+  {
+    "niche": "Synthetic Data Generation for AI Testing",
+    "trend_score": 60.0,
+    "velocity": 0.8,
+    "upcoming_score": 85.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "AI/ML R&D teams, data privacy officers, QA engineers; high willingness to pay for privacy and robust testing.",
+    "key_integrations": [
+      "Faker API",
+      "PII anonymization tools",
+      "generative models"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-data generation task or subscription for synthetic data access.",
+    "reason": "Ahead of new model deployments or regulatory audits (e.g., EU AI Act data quality), demand for privacy-preserving synthetic data spikes."
+  },
+  {
+    "niche": "Dynamic AI Governance Policy Enforcer",
+    "trend_score": 60.0,
+    "velocity": 0.8,
+    "upcoming_score": 85.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "CIOs, Chief AI Officers, Security Teams; very high willingness to pay for risk mitigation and control.",
+    "key_integrations": [
+      "Okta",
+      "Active Directory",
+      "internal compliance dashboards"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-user or per-AI service enforced.",
+    "reason": "Following major tech conferences and new model releases, enterprises need to rapidly update and enforce internal AI usage policies."
+  },
+  {
+    "niche": "Real-time Supply Chain Anomaly Detector",
+    "trend_score": 65.0,
+    "velocity": 0.75,
+    "upcoming_score": 84.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Logistics, manufacturing, retail supply chain managers; high willingness to pay for resilience.",
+    "key_integrations": [
+      "SAP SCM",
+      "Oracle SCM",
+      "IoT sensor data APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Volume-based (data/events processed) or per-node managed.",
+    "reason": "Preparing for Q3 holiday season build-up, supply chain resilience is critical, driving demand for multi-AI-model monitoring."
+  },
+  {
+    "niche": "AI-Powered Incident Response Orchestrator",
+    "trend_score": 60.0,
+    "velocity": 0.7,
+    "upcoming_score": 83.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "SOC teams, cybersecurity firms; very high willingness to pay for reduced breach impact.",
+    "key_integrations": [
+      "Splunk",
+      "CrowdStrike API",
+      "MITRE ATT&CK"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-endpoint or per-incident subscription.",
+    "reason": "Mid-year security reviews often highlight gaps, driving demand for AI-assisted tools to triage and respond to cybersecurity incidents faster."
+  },
+  {
+    "niche": "Manufacturing Predictive Maintenance Agent",
+    "trend_score": 60.0,
+    "velocity": 0.7,
+    "upcoming_score": 82.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Heavy industry, automotive, aerospace manufacturers; high willingness to pay for reduced downtime.",
+    "key_integrations": [
+      "AWS IoT Core",
+      "Siemens Mindsphere",
+      "custom ML models"
+    ],
+    "competition_level": "medium",
+    "monetization": "Asset-based subscription or usage-based on data processed and model inference.",
+    "reason": "Before peak summer production shifts or facility shutdowns, companies need accurate predictive models to optimize uptime."
+  },
+  {
+    "niche": "Regional Language Model Bridging Gateway",
+    "trend_score": 60.0,
+    "velocity": 0.75,
+    "upcoming_score": 82.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Global tech companies, localization services, government; high willingness to pay for market penetration.",
+    "key_integrations": [
+      "Baidu ERNIE",
+      "Kakao",
+      "custom SLMs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-request or per-language pair subscription.",
+    "reason": "Expansion into specific APAC or LatAm markets requires integrating niche language models with global LLMs for effective localization."
+  },
+  {
+    "niche": "HR Talent Acquisition Interview Agent",
+    "trend_score": 60.0,
+    "velocity": 0.7,
+    "upcoming_score": 80.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "HR departments, recruiting agencies; high willingness to pay for efficiency and reduced bias.",
+    "key_integrations": [
+      "Workday API",
+      "Greenhouse API",
+      "specialized NLP for resume analysis"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-candidate screening fee or annual subscription.",
+    "reason": "Mid-year hiring pushes and internship conclusions drive demand for efficient, unbiased, and scalable candidate screening."
+  },
+  {
+    "niche": "Accessibility AI Compliance Checker (WCAG)",
+    "trend_score": 55.0,
+    "velocity": 0.8,
+    "upcoming_score": 80.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Web development agencies, corporate digital teams, public sector; high willingness to pay for legal compliance.",
+    "key_integrations": [
+      "Axe-core",
+      "Google Lighthouse",
+      "custom image/video analysis AI"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-project or per-domain annual subscription.",
+    "reason": "WCAG 2.2 enforcement becomes more critical, driving demand for mid-year audits of digital products using multiple AI tools."
+  },
+  {
+    "niche": "Cross-Border Regulatory AI Sandbox",
+    "trend_score": 55.0,
+    "velocity": 0.7,
+    "upcoming_score": 78.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Global enterprises, legal compliance teams, regulatory tech; very high willingness to pay for risk mitigation.",
+    "key_integrations": [
+      "GDPR API",
+      "CCPA API",
+      "PIPL rulesets"
+    ],
+    "competition_level": "low",
+    "monetization": "Annual subscription with specific jurisdiction add-ons.",
+    "reason": "Global companies expanding into new markets need a secure sandbox to test AI models against diverse and evolving regulatory landscapes."
+  },
+  {
+    "niche": "AR/VR Immersive Content Creation Suite",
+    "trend_score": 50.0,
+    "velocity": 0.75,
+    "upcoming_score": 78.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Game studios, metaverse developers, marketing agencies; high willingness to pay for rapid content generation.",
+    "key_integrations": [
+      "Unity API",
+      "Unreal Engine",
+      "text-to-3D APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Credit-based usage for generation tasks or seat license for design tools.",
+    "reason": "Anticipated new AR/VR hardware announcements (e.g., WWDC) drive demand for AI-assisted content creation to populate these platforms."
+  },
+  {
+    "niche": "Real-time Carbon Footprint AI Monitoring",
+    "trend_score": 50.0,
+    "velocity": 0.7,
+    "upcoming_score": 78.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "ESG officers, manufacturing, logistics, data centers; high willingness to pay for compliance and brand reputation.",
+    "key_integrations": [
+      "IoT energy sensors",
+      "supply chain data",
+      "carbon accounting platforms"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-facility or per-data source monitored.",
+    "reason": "Increased focus on ESG reporting and mid-year sustainability goal assessments drive demand for AI-powered environmental impact monitoring."
+  },
+  {
+    "niche": "Personalized Education Content Adaptor",
+    "trend_score": 50.0,
+    "velocity": 0.65,
+    "upcoming_score": 75.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "EdTech companies, universities, online learning platforms; medium willingness to pay for engagement and outcomes.",
+    "key_integrations": [
+      "Moodle API",
+      "Canvas API",
+      "domain-specific knowledge graphs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-student license or institution-wide subscription.",
+    "reason": "Ahead of the academic year starting (August/September), schools prepare adaptive learning materials requiring diverse AI models."
+  },
+  {
+    "niche": "Agricultural Yield Optimization AI",
+    "trend_score": 45.0,
+    "velocity": 0.6,
+    "upcoming_score": 72.0,
+    "horizon_days": 84,
+    "peak_date": "2026-06-22",
+    "target_user": "Agribusiness, large-scale farms, agricultural tech; medium willingness to pay for yield increase.",
+    "key_integrations": [
+      "Satellite imagery APIs",
+      "IoT sensor data",
+      "weather APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-acre or per-farm subscription.",
+    "reason": "Mid-year growing season creates urgent need for real-time analysis of weather, soil, and crop data for optimization."
+  }
+]

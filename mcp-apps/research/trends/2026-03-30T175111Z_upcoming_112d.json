@@ -1,0 +1,436 @@
+[
+  {
+    "niche": "EU AI Act Compliance Context",
+    "trend_score": 70.0,
+    "velocity": 0.95,
+    "upcoming_score": 98.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Legal/Compliance Officers, Data Governance Teams in EU; ensuring GenAI adherence to EU AI Act, data provenance; critical willingness to pay.",
+    "key_integrations": [
+      "GDPR compliance tools",
+      "internal audit systems",
+      "model registry platforms"
+    ],
+    "competition_level": "low",
+    "monetization": "Subscription per active model/agent, data volume, audit log storage.",
+    "reason": "The EU AI Act will be in active discussion for implementation, making auditable and explainable context crucial for models operating in Europe."
+  },
+  {
+    "niche": "HIPAA-Compliant Patient Context",
+    "trend_score": 75.0,
+    "velocity": 0.9,
+    "upcoming_score": 97.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Healthcare IT, Clinical Decision Support Developers; secure, confidential patient data for AI diagnosis/treatment; extremely high willingness to pay for compliance & patient safety.",
+    "key_integrations": [
+      "HL7 FHIR API",
+      "EHR systems (Epic, Cerner)",
+      "clinical knowledge bases"
+    ],
+    "competition_level": "low",
+    "monetization": "Per patient record access, secure deployment licensing, managed service fees.",
+    "reason": "Increased adoption of AI in clinical settings necessitates robust, HIPAA-compliant context management to avoid data breaches and ensure diagnostic accuracy."
+  },
+  {
+    "niche": "Enterprise Agent Memory Store",
+    "trend_score": 82.0,
+    "velocity": 0.88,
+    "upcoming_score": 96.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "AI Solution Architects, MLOps Engineers; building reliable, persistent enterprise agents; high willingness to pay for stability & compliance.",
+    "key_integrations": [
+      "OpenAI Assistants API",
+      "LangChain",
+      "enterprise knowledge bases (SharePoint, Confluence)"
+    ],
+    "competition_level": "medium",
+    "monetization": "Usage-based (context queries, storage), Enterprise license for self-hosted.",
+    "reason": "Mature agent frameworks (e.g., OpenAI, LangChain, proprietary enterprise systems) will drive production deployments requiring scalable, persistent, and auditable memory by mid-2026."
+  },
+  {
+    "niche": "Real-time Financial Anomaly Context",
+    "trend_score": 80.0,
+    "velocity": 0.87,
+    "upcoming_score": 95.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Financial Risk Analysts, Fraud Detection Teams; immediate access to transaction, market, and behavioral data for anomaly detection; high willingness to pay to prevent losses.",
+    "key_integrations": [
+      "SWIFT API",
+      "Bloomberg Terminals",
+      "internal transaction databases"
+    ],
+    "competition_level": "medium",
+    "monetization": "Transaction volume-based, custom enterprise solutions.",
+    "reason": "Volatility in global markets and increased sophistication of financial fraud schemes drive demand for real-time, comprehensive context for AI-driven detection."
+  },
+  {
+    "niche": "Geopolitical Risk Event Context",
+    "trend_score": 74.0,
+    "velocity": 0.9,
+    "upcoming_score": 95.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Corporate Security, Global Operations Managers; real-time aggregation of geopolitical events, social unrest, and policy changes for AI-driven risk assessment; critical for global business continuity.",
+    "key_integrations": [
+      "Reuters API",
+      "Bloomberg News",
+      "regional government advisories",
+      "social media feeds"
+    ],
+    "competition_level": "low",
+    "monetization": "Per region, event volume, custom enterprise intelligence.",
+    "reason": "Ongoing global instability and election cycles (like US elections later in 2026, creating Q3/Q4 uncertainty) will necessitate AI-driven risk mitigation relying on real-time geopolitical context."
+  },
+  {
+    "niche": "Secure Code Generation Context",
+    "trend_score": 79.0,
+    "velocity": 0.86,
+    "upcoming_score": 94.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "DevOps Engineers, Security Teams; providing internal coding standards, security policies, and architectural patterns to AI code generators; critical for enterprise security.",
+    "key_integrations": [
+      "GitHub Copilot Enterprise",
+      "internal Git repos",
+      "OWASP standards"
+    ],
+    "competition_level": "low",
+    "monetization": "Per developer seat, self-hosted enterprise licensing.",
+    "reason": "As enterprise developers increasingly adopt AI coding assistants, the demand for injecting internal, secure, and proprietary context becomes paramount to avoid vulnerabilities."
+  },
+  {
+    "niche": "Hyper-Personalized CX Context Router",
+    "trend_score": 81.0,
+    "velocity": 0.89,
+    "upcoming_score": 94.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Customer Service Directors, CX Product Managers; real-time, 360-degree customer context for AI agents & human agents; very high willingness to pay for CSAT & efficiency.",
+    "key_integrations": [
+      "Salesforce Service Cloud",
+      "Zendesk",
+      "internal CRM",
+      "telephony APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per agent seat, interaction volume, premium features.",
+    "reason": "Companies are moving beyond basic chatbots to truly intelligent CX, requiring deep, real-time context to provide hyper-personalized and effective customer interactions."
+  },
+  {
+    "niche": "AI Model Evaluation & Bias Context",
+    "trend_score": 70.0,
+    "velocity": 0.93,
+    "upcoming_score": 94.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "MLOps Engineers, AI Ethics Officers; feeding diverse test datasets, fairness metrics, and regulatory requirements as context for AI model evaluation; high willingness to pay for governance.",
+    "key_integrations": [
+      "Weights & Biases",
+      "MLflow",
+      "internal audit frameworks"
+    ],
+    "competition_level": "low",
+    "monetization": "Per model evaluated, data volume, compliance reporting features.",
+    "reason": "The growing focus on responsible AI and regulatory compliance (like EU AI Act) will make robust, context-driven AI model evaluation and bias detection a top priority for MLOps teams."
+  },
+  {
+    "niche": "Dynamic E-commerce Personalization Context",
+    "trend_score": 78.0,
+    "velocity": 0.85,
+    "upcoming_score": 93.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "E-commerce Product Managers, Marketing Teams; real-time personalized shopping experiences for Q3/Q4 sales; high willingness to pay for conversion uplift.",
+    "key_integrations": [
+      "Shopify API",
+      "Salesforce Commerce Cloud",
+      "real-time analytics platforms"
+    ],
+    "competition_level": "medium",
+    "monetization": "Request-based pricing, volume-tiered subscriptions.",
+    "reason": "The run-up to Q3/Q4 global shopping seasons (back-to-school, early holiday planning) will intensify demand for hyper-personalized shopping experiences."
+  },
+  {
+    "niche": "ESG Reporting & Impact Context",
+    "trend_score": 69.0,
+    "velocity": 0.92,
+    "upcoming_score": 93.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Sustainability Officers, Investor Relations; aggregating disparate environmental, social, and governance data for AI-assisted reporting and impact analysis; high willingness to pay for compliance & reputation.",
+    "key_integrations": [
+      "GRI Standards",
+      "SASB Standards",
+      "internal carbon accounting",
+      "supply chain audit data"
+    ],
+    "competition_level": "low",
+    "monetization": "Per report, data source integration, enterprise license.",
+    "reason": "Growing global regulatory pressure (e.g., EU CSRD coming into effect) and investor demand for transparent ESG reporting will make AI-driven context aggregation for compliance critical."
+  },
+  {
+    "niche": "Multimodal Marketing Campaign Context",
+    "trend_score": 72.0,
+    "velocity": 0.89,
+    "upcoming_score": 92.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Marketing Agencies, Brand Managers; coherent context (text, image, video, brand guidelines) for AI-driven content generation; high willingness to pay for efficiency & brand consistency.",
+    "key_integrations": [
+      "Adobe Creative Cloud APIs",
+      "DAM systems",
+      "social media APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per campaign, content piece generation, user seat licenses.",
+    "reason": "The maturation of multimodal AI models creates a need for sophisticated context aggregation across various media types for effective Q3/Q4 marketing campaigns."
+  },
+  {
+    "niche": "Real-time Portfolio Risk Context",
+    "trend_score": 77.0,
+    "velocity": 0.86,
+    "upcoming_score": 92.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Hedge Fund Managers, Wealth Advisors; aggregating real-time market data, news sentiment, and macroeconomic indicators for AI-driven risk assessment; high willingness to pay for alpha.",
+    "key_integrations": [
+      "FactSet API",
+      "Refinitiv API",
+      "Bloomberg Terminals",
+      "global news feeds"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per asset under management (AUM) tier, data source access, custom deployment.",
+    "reason": "Mid-year financial market shifts and geopolitical events intensify the need for real-time, comprehensive context for AI-driven portfolio risk management and rebalancing."
+  },
+  {
+    "niche": "Legal E-Discovery Context Aggregation",
+    "trend_score": 73.0,
+    "velocity": 0.88,
+    "upcoming_score": 91.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Litigation Support Specialists, Legal Tech Providers; aggregating diverse legal documents, emails, and communications for AI-assisted e-discovery; high willingness to pay for accuracy & speed.",
+    "key_integrations": [
+      "Concordance",
+      "RelativityOne",
+      "Microsoft 365 eDiscovery"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per case, data volume processed, custom enterprise solutions.",
+    "reason": "The ever-increasing volume of digital evidence and regulatory scrutiny drives demand for AI-powered e-discovery, requiring robust context management to link disparate data."
+  },
+  {
+    "niche": "Enterprise Knowledge Graph Context",
+    "trend_score": 75.0,
+    "velocity": 0.85,
+    "upcoming_score": 91.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "CTOs, Knowledge Management Leads; unifying disparate enterprise data sources into a coherent graph for AI-powered internal search, Q&A, and insight generation; high willingness to pay for efficiency.",
+    "key_integrations": [
+      "Confluence",
+      "Jira",
+      "Salesforce",
+      "internal databases"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per data source integrated, user seat, custom graph queries.",
+    "reason": "As enterprise AI maturity grows, companies will invest in unified knowledge graphs to provide comprehensive, interconnected context to internal LLMs and agents for strategic planning."
+  },
+  {
+    "niche": "Global Supply Chain Event Context",
+    "trend_score": 76.0,
+    "velocity": 0.84,
+    "upcoming_score": 90.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Supply Chain Managers, Logistics Analysts; real-time aggregation of geopolitical, weather, and logistical data for AI-driven re-routing/rescheduling; high willingness to pay for resilience.",
+    "key_integrations": [
+      "SAP SCM",
+      "weather APIs",
+      "shipping carrier APIs",
+      "news feeds"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per data source integration, event volume, custom enterprise deployment.",
+    "reason": "Ongoing global instabilities and the need for Q3/Q4 inventory planning push companies to leverage AI with dynamic context for supply chain resilience and optimization."
+  },
+  {
+    "niche": "Biopharma Drug Discovery Context",
+    "trend_score": 68.0,
+    "velocity": 0.87,
+    "upcoming_score": 90.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Bioinformatics Scientists, R&D Leads in Pharma; aggregating molecular data, scientific literature, clinical trial results for AI-driven drug discovery; high willingness to pay for accelerating research.",
+    "key_integrations": [
+      "PubChem",
+      "PDB",
+      "clinicaltrials.gov",
+      "internal lab data"
+    ],
+    "competition_level": "low",
+    "monetization": "Per project, data volume, custom enterprise deployment.",
+    "reason": "The increasing use of AI in drug discovery requires sophisticated context management to synthesize vast, complex biological and chemical data, accelerating mid-year research milestones."
+  },
+  {
+    "niche": "Edge AI Operational Context Streaming",
+    "trend_score": 67.0,
+    "velocity": 0.85,
+    "upcoming_score": 89.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "IoT Solution Architects, Industrial AI Engineers; low-latency context distribution for AI models deployed on edge devices (manufacturing, smart cities); high willingness to pay for reliability.",
+    "key_integrations": [
+      "AWS IoT Core",
+      "Azure IoT Hub",
+      "Kafka"
+    ],
+    "competition_level": "low",
+    "monetization": "Per connected device, data stream volume, enterprise licensing.",
+    "reason": "The proliferation of edge AI devices, especially in industrial settings, demands robust, low-latency context management to enable real-time decision-making and anomaly detection."
+  },
+  {
+    "niche": "Adaptive Learning Path Context",
+    "trend_score": 70.0,
+    "velocity": 0.83,
+    "upcoming_score": 89.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "EdTech Platforms, Corporate L&D; personalized educational content and paths based on learner progress, goals, and prior knowledge; medium willingness to pay for engagement & outcomes.",
+    "key_integrations": [
+      "SCORM",
+      "LTI",
+      "internal assessment engines"
+    ],
+    "competition_level": "low",
+    "monetization": "Per learner, content module, platform integration fee.",
+    "reason": "The global summer school and corporate training season drives demand for AI that can adapt learning experiences in real-time, based on granular contextual understanding of each student."
+  },
+  {
+    "niche": "Industrial QA Context & Anomaly Detection",
+    "trend_score": 71.0,
+    "velocity": 0.84,
+    "upcoming_score": 89.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Manufacturing Engineers, Quality Control Managers; integrating sensor data, CAD models, and historical defects for AI-driven quality assurance; high willingness to pay for reduced waste & uptime.",
+    "key_integrations": [
+      "SCADA systems",
+      "MES (Manufacturing Execution Systems)",
+      "computer vision APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per production line, sensor integration, data volume.",
+    "reason": "As manufacturing AI becomes more prevalent, the need to manage and feed real-time production context to models for quality control and predictive maintenance will peak."
+  },
+  {
+    "niche": "Intelligent HR Onboarding Context",
+    "trend_score": 68.0,
+    "velocity": 0.8,
+    "upcoming_score": 88.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "HR Managers, L&D Specialists; personalized onboarding and training paths for new hires using AI; medium willingness to pay for improved employee retention & productivity.",
+    "key_integrations": [
+      "Workday API",
+      "LMS platforms",
+      "internal policy documents"
+    ],
+    "competition_level": "low",
+    "monetization": "Per employee, module access, managed service fees.",
+    "reason": "A mid-year hiring surge (post-graduation, pre-holiday) drives demand for efficient, personalized onboarding experiences powered by contextual AI assistants."
+  },
+  {
+    "niche": "Academic Research Synthesis Context",
+    "trend_score": 65.0,
+    "velocity": 0.83,
+    "upcoming_score": 87.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Researchers, Grant Writers (Universities, Pharma); aggregating vast scientific literature, grant requirements, and internal data for AI-driven synthesis; medium willingness to pay for efficiency.",
+    "key_integrations": [
+      "PubMed API",
+      "Scopus API",
+      "internal lab data systems",
+      "grant portals"
+    ],
+    "competition_level": "low",
+    "monetization": "User seat licenses, data volume, institutional subscriptions.",
+    "reason": "Grant application cycles and mid-year paper submissions in academia and R&D demand efficient, AI-assisted synthesis of complex research context."
+  },
+  {
+    "niche": "Patent Landscape Analysis Context",
+    "trend_score": 69.0,
+    "velocity": 0.82,
+    "upcoming_score": 86.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "R&D Directors, IP Lawyers; AI-driven analysis of global patent databases and technical literature; high willingness to pay for competitive intelligence & risk mitigation.",
+    "key_integrations": [
+      "USPTO API",
+      "EPO API",
+      "WIPO database",
+      "scientific publication APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per search query, document analysis, user seat licenses.",
+    "reason": "Mid-year R&D strategy reviews and product roadmap planning drive demand for comprehensive AI-assisted patent analysis to identify opportunities and avoid infringement."
+  },
+  {
+    "niche": "Government Grant Proposal Context",
+    "trend_score": 64.0,
+    "velocity": 0.8,
+    "upcoming_score": 85.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Non-profit Organizations, University Grant Offices; AI-assisted generation of compliant grant proposals by integrating guidelines, past successes, and research data; medium willingness to pay for success rates.",
+    "key_integrations": [
+      "Grants.gov API",
+      "EU Funding Portals",
+      "internal project databases"
+    ],
+    "competition_level": "low",
+    "monetization": "Per proposal generated, team subscription, success-based fees.",
+    "reason": "Many government and institutional grant cycles have deadlines or planning phases around mid-year, increasing demand for AI-powered proposal writing with tailored context."
+  },
+  {
+    "niche": "Geo-spatial Real Estate Opportunity Context",
+    "trend_score": 66.0,
+    "velocity": 0.81,
+    "upcoming_score": 85.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Real Estate Developers, Investment Funds; AI-driven analysis of local market trends, demographics, zoning laws, and infrastructure plans; high willingness to pay for market insights.",
+    "key_integrations": [
+      "Zillow API",
+      "local government data portals",
+      "satellite imagery APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per query, region analyzed, custom data integrations.",
+    "reason": "Mid-year real estate market analysis and investment planning drives demand for AI that can synthesize complex geo-spatial and regulatory context for strategic decisions."
+  },
+  {
+    "niche": "Dynamic Game World State Context",
+    "trend_score": 62.0,
+    "velocity": 0.78,
+    "upcoming_score": 84.0,
+    "horizon_days": 112,
+    "peak_date": "2026-07-20",
+    "target_user": "Game Developers, AI Narrative Designers; real-time context (player actions, NPC states, lore) for AI-driven NPCs, dynamic storytelling, and quest generation; medium willingness to pay for immersive experiences.",
+    "key_integrations": [
+      "Unity API",
+      "Unreal Engine API",
+      "internal game databases"
+    ],
+    "competition_level": "low",
+    "monetization": "Per game title, user base, custom engine integrations.",
+    "reason": "As advanced AI enters game development, creating more dynamic and reactive game worlds, managing complex, evolving game state context becomes critical for developers."
+  }
+]

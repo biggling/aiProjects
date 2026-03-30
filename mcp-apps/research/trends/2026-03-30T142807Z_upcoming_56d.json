@@ -1,0 +1,427 @@
+[
+  {
+    "niche": "Secure Code Generation & Review with Contextual Compliance Checks",
+    "trend_score": 78.0,
+    "velocity": 0.9,
+    "upcoming_score": 96.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Security architects, lead developers, engineering managers; critical for code quality, security, and developer productivity.",
+    "key_integrations": [
+      "GitHub Copilot",
+      "GitLab Duo",
+      "SonarQube"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-developer seat, per-code analysis run.",
+    "reason": "Post-Microsoft Build, developers will push AI-assisted coding, creating demand for MCPs to ensure generated code meets enterprise and security standards."
+  },
+  {
+    "niche": "Multi-Agent Workflow Orchestration for Business Process Automation",
+    "trend_score": 68.0,
+    "velocity": 0.9,
+    "upcoming_score": 95.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Automation architects, process improvement teams; high willingness to pay for scalable, reliable automation.",
+    "key_integrations": [
+      "LangChain",
+      "AutoGen",
+      "custom internal APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-agent workflow execution, contextual state storage.",
+    "reason": "Maturation of agent frameworks and dev conference announcements will push complex multi-agent workflows from PoC to production, demanding MCPs for inter-agent context and state."
+  },
+  {
+    "niche": "Regulatory Change Management for Financial Services (EU AI Act)",
+    "trend_score": 75.0,
+    "velocity": 0.9,
+    "upcoming_score": 95.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Compliance officers, legal counsel, risk management; essential for avoiding hefty fines and maintaining operational license.",
+    "key_integrations": [
+      "Reuters Regulatory Intelligence",
+      "Bloomberg Law",
+      "internal policy repositories"
+    ],
+    "competition_level": "low",
+    "monetization": "Enterprise licensing, per-regulation monitored, managed service.",
+    "reason": "Financial institutions, especially those operating in the EU, need to analyze new regulations like the EU AI Act and update internal policies and systems, using MCP for context."
+  },
+  {
+    "niche": "Multimodal Content Moderation for Social Platforms",
+    "trend_score": 82.0,
+    "velocity": 0.8,
+    "upcoming_score": 94.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Trust & Safety teams, platform engineers; critical for brand reputation and regulatory compliance.",
+    "key_integrations": [
+      "OpenAI GPT-4o",
+      "Google Gemini",
+      "custom vision/audio models"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-volume of content, feature-based for specific media types.",
+    "reason": "Increasing pressure on social platforms to combat misinformation and harmful content, especially with new multimodal models making moderation more complex."
+  },
+  {
+    "niche": "Intelligent Query Routing for Vector Database Augmentation",
+    "trend_score": 80.0,
+    "velocity": 0.8,
+    "upcoming_score": 94.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "ML engineers, data architects, AI platform teams; crucial for scaling RAG performance and cost-efficiency.",
+    "key_integrations": [
+      "Pinecone",
+      "Weaviate",
+      "Hugging Face embeddings"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-query routed, vector DB integration fee, performance-based.",
+    "reason": "As RAG systems mature, intelligent routing of queries to the correct vector store/context source becomes crucial, especially with new model embedding capabilities."
+  },
+  {
+    "niche": "Real-time PII Redaction & Compliance for Customer Support AI",
+    "trend_score": 80.0,
+    "velocity": 0.7,
+    "upcoming_score": 93.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "CXO, legal, compliance officers, call center managers; critical for regulatory adherence and avoiding fines.",
+    "key_integrations": [
+      "Zendesk",
+      "Salesforce Service Cloud",
+      "OpenAI"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-token processed, seat-based for compliance review.",
+    "reason": "Continued push for data privacy and upcoming EU AI Act implications for customer-facing AI drive the need for real-time redaction before hitting LLMs."
+  },
+  {
+    "niche": "Dynamic RAG Contextualization for Enterprise Search",
+    "trend_score": 75.0,
+    "velocity": 0.8,
+    "upcoming_score": 92.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Large enterprises, IT departments, knowledge workers; high willingness to pay for efficiency and accuracy.",
+    "key_integrations": [
+      "SharePoint",
+      "Confluence",
+      "Azure OpenAI"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-query/context processing, tiered enterprise licensing.",
+    "reason": "Post-Microsoft Build/Google I/O, enterprises will rapidly adopt new RAG capabilities, requiring MCPs to manage context from diverse internal data sources."
+  },
+  {
+    "niche": "Real-time Supply Chain Risk Assessment with Geospatial AI",
+    "trend_score": 70.0,
+    "velocity": 0.8,
+    "upcoming_score": 92.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Supply chain managers, risk officers; crucial for business continuity and risk mitigation.",
+    "key_integrations": [
+      "SAP SCM",
+      "E2open",
+      "Google Maps API"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-transaction volume, API calls, data source integrations.",
+    "reason": "Geopolitical events and seasonal weather patterns (hurricane season starts June 1st) increase supply chain vulnerabilities, driving demand for AI to integrate real-time data."
+  },
+  {
+    "niche": "Dynamic Prompt Engineering & A/B Testing for Marketing Copy",
+    "trend_score": 78.0,
+    "velocity": 0.7,
+    "upcoming_score": 91.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Marketing VPs, copywriters, digital advertising managers; high value for campaign effectiveness and ROI.",
+    "key_integrations": [
+      "Midjourney",
+      "Jasper",
+      "HubSpot"
+    ],
+    "competition_level": "medium",
+    "monetization": "Seat-based, per-campaign, feature-gated.",
+    "reason": "Ahead of summer marketing campaigns and Q3 product launches, marketing teams need robust MCPs to rapidly iterate and optimize AI-generated copy."
+  },
+  {
+    "niche": "Creative Asset Generation for Summer Ad Campaigns (Multimodal)",
+    "trend_score": 72.0,
+    "velocity": 0.8,
+    "upcoming_score": 91.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Creative directors, brand managers, digital agencies; high value for accelerating content creation and campaign relevance.",
+    "key_integrations": [
+      "Midjourney",
+      "Stable Diffusion",
+      "Adobe Creative Cloud"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-asset generated, credit-based, project licensing.",
+    "reason": "Marketing teams finalize creative assets for summer ad campaigns, requiring multimodal MCPs to combine visual, audio, and text AI models efficiently."
+  },
+  {
+    "niche": "Secure Financial Report Generation with Auditable AI",
+    "trend_score": 70.0,
+    "velocity": 0.8,
+    "upcoming_score": 90.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Financial analysts, compliance officers, auditors, CFOs; essential for regulatory compliance and decision-making.",
+    "key_integrations": [
+      "Bloomberg Terminal API",
+      "FactSet",
+      "specialized financial LLMs"
+    ],
+    "competition_level": "low",
+    "monetization": "Value-based enterprise licensing, per-report generation.",
+    "reason": "Post-Q1 earnings and new compliance needs for AI use in regulated industries push auditable AI for financial analysis and report drafting."
+  },
+  {
+    "niche": "AI-Powered Sales Enablement for Q3 Product Launches",
+    "trend_score": 75.0,
+    "velocity": 0.7,
+    "upcoming_score": 90.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Sales VPs, sales operations, product marketing; valuable for increasing sales team effectiveness and revenue.",
+    "key_integrations": [
+      "Salesforce Sales Cloud",
+      "Outreach.io",
+      "Gong.io"
+    ],
+    "competition_level": "medium",
+    "monetization": "Seat-based, per-campaign, content generation volume.",
+    "reason": "Sales teams gearing up for new Q3 product releases or seasonal pushes need AI to generate tailored collateral, personalized outreach, and battle cards."
+  },
+  {
+    "niche": "Personalized Learning Paths for Developer Skill Upskilling",
+    "trend_score": 68.0,
+    "velocity": 0.8,
+    "upcoming_score": 90.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Developers, CTOs, L&D for tech companies; essential for staying competitive and improving team skills.",
+    "key_integrations": [
+      "Pluralsight",
+      "Coursera",
+      "GitHub learning labs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Seat-based, per-course completion, API integrations.",
+    "reason": "Following major developer conferences, developers want to quickly learn new frameworks and APIs, creating a need for MCPs to provide context-aware, personalized learning."
+  },
+  {
+    "niche": "Budget Cycle AI Assistant for Q3/FY Planning",
+    "trend_score": 65.0,
+    "velocity": 0.8,
+    "upcoming_score": 90.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Financial planners, budget managers, CFOs; valuable for accurate forecasting and efficient resource allocation.",
+    "key_integrations": [
+      "Oracle EPM",
+      "SAP BPC",
+      "internal financial systems"
+    ],
+    "competition_level": "low",
+    "monetization": "Seat-based for finance teams, per-budget cycle.",
+    "reason": "Many companies are deep into Q3 budget planning or finalizing annual budgets, creating a need for AI to analyze data, forecast, and draft narratives."
+  },
+  {
+    "niche": "Legal Document Summarization & Clause Extraction for Q2 Reviews",
+    "trend_score": 72.0,
+    "velocity": 0.7,
+    "upcoming_score": 89.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Corporate counsel, paralegals, M&A teams; high value for time savings and accuracy in legal work.",
+    "key_integrations": [
+      "Clio",
+      "DocuSign",
+      "specialized legal LLMs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-document processed, seat-based for legal professionals.",
+    "reason": "Post-Q1 and leading into Q2, legal teams review contracts and prepare for negotiations, requiring AI assistance for context and summary."
+  },
+  {
+    "niche": "HR Onboarding & Training Content Personalization (Summer Interns)",
+    "trend_score": 65.0,
+    "velocity": 0.8,
+    "upcoming_score": 88.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "HR managers, L&D specialists; valuable for efficient onboarding and improved employee engagement.",
+    "key_integrations": [
+      "Workday",
+      "SuccessFactors",
+      "internal knowledge bases"
+    ],
+    "competition_level": "low",
+    "monetization": "Per employee onboarding, content volume processed.",
+    "reason": "The May-June summer intern/new grad hiring wave requires rapid, personalized onboarding content and training modules managed by an MCP."
+  },
+  {
+    "niche": "Healthcare Patient Intake Form Automation with Privacy Grounding",
+    "trend_score": 77.0,
+    "velocity": 0.7,
+    "upcoming_score": 88.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Hospital administrators, clinic managers, IT compliance; critical for efficiency and HIPAA compliance.",
+    "key_integrations": [
+      "Epic",
+      "Cerner",
+      "custom EMR systems"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-patient, per-form processed, enterprise licensing.",
+    "reason": "Ongoing digital transformation in healthcare and demand for efficiency while adhering strictly to HIPAA drives the need for AI-powered, privacy-grounded intake forms."
+  },
+  {
+    "niche": "AI-Powered Incident Response Playbook Generation",
+    "trend_score": 70.0,
+    "velocity": 0.7,
+    "upcoming_score": 88.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "SOC analysts, incident response teams, CISO; critical for reducing breach impact and improving security posture.",
+    "key_integrations": [
+      "Splunk",
+      "CrowdStrike",
+      "MITRE ATT&CK framework"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-playbook generated/updated, seat-based for security teams.",
+    "reason": "Increasing cyber threats and the need for rapid response drive demand for AI to create and adapt incident playbooks based on real-time threat intelligence."
+  },
+  {
+    "niche": "ESG Report Generation & Compliance Audit",
+    "trend_score": 70.0,
+    "velocity": 0.7,
+    "upcoming_score": 88.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Sustainability officers, corporate social responsibility teams, investor relations; essential for meeting investor demands and regulatory mandates.",
+    "key_integrations": [
+      "Salesforce Net Zero Cloud",
+      "Workiva",
+      "specialized ESG data providers"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-report, data source integration, enterprise licensing.",
+    "reason": "Growing investor and regulatory pressure for robust ESG reporting means Q2 often involves data gathering and preliminary report drafting for year-end, which MCPs can streamline."
+  },
+  {
+    "niche": "AI-Enhanced Field Service Troubleshooting Guides (Seasonal Prep)",
+    "trend_score": 65.0,
+    "velocity": 0.8,
+    "upcoming_score": 87.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Field service managers, technicians; valuable for improving first-time fix rates and customer satisfaction.",
+    "key_integrations": [
+      "ServiceNow Field Service Management",
+      "Salesforce Field Service",
+      "custom equipment manuals"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-technician seat, per-incident resolution, knowledge base integration.",
+    "reason": "Ahead of summer peak season for HVAC, utilities, and other field services, dynamic, context-aware troubleshooting guides improve first-time fix rates."
+  },
+  {
+    "niche": "Test Data Generation for Software QA (Spring Release Cycles)",
+    "trend_score": 68.0,
+    "velocity": 0.7,
+    "upcoming_score": 86.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "QA managers, test engineers, dev leads; valuable for accelerating testing cycles and improving software quality.",
+    "key_integrations": [
+      "Selenium",
+      "Cypress",
+      "Jira"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-test case generated, usage-based on data volume.",
+    "reason": "Companies aiming for major software releases in Spring/early Summer need AI-generated test data, especially for edge cases and diverse scenarios, facilitated by an MCP."
+  },
+  {
+    "niche": "Edge AI Context Synchronization for Industrial IoT Diagnostics",
+    "trend_score": 65.0,
+    "velocity": 0.7,
+    "upcoming_score": 85.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Manufacturing operations, predictive maintenance engineers; crucial for operational efficiency and reduced downtime.",
+    "key_integrations": [
+      "AWS IoT Greengrass",
+      "Azure IoT Edge",
+      "local sensor data APIs"
+    ],
+    "competition_level": "medium",
+    "monetization": "Per-device connection, data sync volume, hybrid licensing.",
+    "reason": "As industrial IoT deployments scale, edge devices need local AI, but also selective context sync with cloud FMs for deeper analysis, which MCPs facilitate."
+  },
+  {
+    "niche": "Personalized University Student Recruitment Messaging (Fall Intake)",
+    "trend_score": 60.0,
+    "velocity": 0.8,
+    "upcoming_score": 85.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "University admissions, marketing departments; critical for maximizing student enrollment and engagement.",
+    "key_integrations": [
+      "Salesforce Education Cloud",
+      "Slate",
+      "university CRM"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-student interaction, campaign-based, enrollment success fee.",
+    "reason": "Universities heavily focus on recruiting students for the Fall intake, requiring personalized outreach and information based on student interests and profiles, managed by an MCP."
+  },
+  {
+    "niche": "Code Explainer & Documentation Generation for Legacy Systems",
+    "trend_score": 65.0,
+    "velocity": 0.7,
+    "upcoming_score": 84.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "Legacy system owners, senior developers, enterprise architects; valuable for reducing technical debt and improving maintainability.",
+    "key_integrations": [
+      "GitHub",
+      "GitLab",
+      "Confluence"
+    ],
+    "competition_level": "low",
+    "monetization": "Per-line of code processed, repository scan, project-based.",
+    "reason": "Companies use summer months to tackle technical debt, making AI crucial for understanding and documenting complex legacy codebases with deep contextual awareness."
+  },
+  {
+    "niche": "Academic Research Grant Proposal Augmentation",
+    "trend_score": 60.0,
+    "velocity": 0.7,
+    "upcoming_score": 80.0,
+    "horizon_days": 56,
+    "peak_date": "2026-05-25",
+    "target_user": "University researchers, grant officers; valuable for improving grant success rates and reducing administrative burden.",
+    "key_integrations": [
+      "PubMed",
+      "Scopus",
+      "grant portal APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "Subscription per researcher/department, project-based.",
+    "reason": "End of academic year often involves grant proposal submissions, making AI assistance critical for drafting, context gathering, and review augmentation."
+  }
+]

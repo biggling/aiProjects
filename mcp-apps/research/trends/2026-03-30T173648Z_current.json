@@ -1,0 +1,422 @@
+[
+  {
+    "niche": "Salesforce/HubSpot Data Augmenter",
+    "trend_score": 95.0,
+    "velocity": 0.9,
+    "target_user": "Sales/Marketing Operations, Account Managers; enrich CRM data from external sources, keep records up-to-date; very high willingness to pay for data quality.",
+    "key_integrations": [
+      "Salesforce",
+      "HubSpot",
+      "ZoomInfo/Clearbit"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription",
+    "reason": "Outdated or incomplete CRM data severely impacts sales and marketing effectiveness; AI can proactively fix this."
+  },
+  {
+    "niche": "Real-time Financial Data Analyst",
+    "trend_score": 95.0,
+    "velocity": 0.9,
+    "target_user": "Financial Analysts, Portfolio Managers, Traders; summarize market news, identify trends, monitor specific assets; extremely high willingness to pay for timely insights.",
+    "key_integrations": [
+      "Bloomberg Terminal",
+      "Refinitiv Eikon",
+      "Quandl"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription",
+    "reason": "Financial markets are fast-moving; human analysts struggle to process all information, making AI a competitive edge."
+  },
+  {
+    "niche": "Legal Contract Review Assistant",
+    "trend_score": 95.0,
+    "velocity": 0.9,
+    "target_user": "Lawyers, Legal Teams, Business Development; analyze contracts for key clauses, risks, deviations; extremely high willingness to pay for speed and accuracy.",
+    "key_integrations": [
+      "DocuSign",
+      "Microsoft Word",
+      "internal legal databases"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription",
+    "reason": "Manual contract review is slow, expensive, and error-prone; AI can drastically improve efficiency and reduce risk."
+  },
+  {
+    "niche": "Local Payment Gateway Integrator (SEA)",
+    "trend_score": 95.0,
+    "velocity": 0.9,
+    "target_user": "E-commerce Businesses, SaaS Providers in SEA; integrate with dominant local payment methods; very high willingness to pay for market access and reduced friction.",
+    "key_integrations": [
+      "PromptPay",
+      "GrabPay",
+      "ShopeePay/TrueMoney"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription",
+    "reason": "Fragmented payment landscape in SEA requires developers to integrate many systems; an MCP can simplify this."
+  },
+  {
+    "niche": "AI-Powered Code Review Assistant",
+    "trend_score": 94.0,
+    "velocity": 0.9,
+    "target_user": "Software Developers, Engineering Leads; improve code quality, enforce best practices, speed up review cycles; high willingness to pay for developer productivity and code health.",
+    "key_integrations": [
+      "GitHub",
+      "GitLab",
+      "Bitbucket/Jira"
+    ],
+    "competition_level": "medium",
+    "monetization": "free tier + subscription",
+    "reason": "Manual code reviews are time-consuming and prone to human error; AI can provide consistent, immediate feedback."
+  },
+  {
+    "niche": "Internal Knowledge Base Q&A",
+    "trend_score": 93.0,
+    "velocity": 0.9,
+    "target_user": "Employees across all departments, IT Support; instantly answer questions from internal docs, reduce support tickets; very high willingness to pay for productivity and self-service.",
+    "key_integrations": [
+      "Confluence",
+      "SharePoint",
+      "Notion/Google Drive"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription",
+    "reason": "Employees waste significant time searching for information; an AI assistant can make internal knowledge instantly accessible."
+  },
+  {
+    "niche": "Lazada/Shopee Seller AI Assistant",
+    "trend_score": 93.0,
+    "velocity": 0.9,
+    "target_user": "E-commerce Sellers in SEA; optimize product listings, manage inventory, respond to customer queries across multiple platforms; very high willingness to pay for operational efficiency.",
+    "key_integrations": [
+      "Lazada Seller API",
+      "Shopee Open Platform API",
+      "inventory management systems"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription",
+    "reason": "Selling on major SEA platforms is competitive and demanding; AI can provide a significant operational edge."
+  },
+  {
+    "niche": "Personalized Sales Prospecting Agent",
+    "trend_score": 92.0,
+    "velocity": 0.9,
+    "target_user": "SDRs, Sales Managers; generate highly relevant outreach, save research time; very high willingness to pay for pipeline growth.",
+    "key_integrations": [
+      "LinkedIn Sales Navigator",
+      "Salesforce/HubSpot",
+      "Outreach/Salesloft"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription",
+    "reason": "Generic sales outreach has low conversion; personalized AI-driven communication is a massive efficiency boost."
+  },
+  {
+    "niche": "Cloud Cost Optimization Agent",
+    "trend_score": 92.0,
+    "velocity": 0.9,
+    "target_user": "FinOps Engineers, CTOs, Cloud Architects; analyze cloud spending, recommend optimizations, automate resource scaling; very high willingness to pay for cost savings.",
+    "key_integrations": [
+      "AWS Cost Explorer",
+      "Azure Cost Management",
+      "Google Cloud Billing/Kubernetes"
+    ],
+    "competition_level": "medium",
+    "monetization": "percentage of savings generated + subscription",
+    "reason": "Cloud costs are a major concern; AI can identify and act on opportunities for significant savings."
+  },
+  {
+    "niche": "ESG Reporting Automation Agent",
+    "trend_score": 92.0,
+    "velocity": 0.9,
+    "target_user": "ESG Officers, Sustainability Managers, Public Relations; collect data, generate reports, monitor compliance; extremely high willingness to pay for regulatory compliance and brand reputation.",
+    "key_integrations": [
+      "SAP",
+      "Oracle ERP",
+      "utility providers/IoT sensors"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription",
+    "reason": "ESG reporting is increasingly mandatory and complex, requiring vast data aggregation and AI can automate much of this burden."
+  },
+  {
+    "niche": "Local SEA Social Media Monitor",
+    "trend_score": 92.0,
+    "velocity": 0.9,
+    "target_user": "Marketing Teams, PR Agencies in SEA; monitor sentiment on local platforms, manage customer queries, identify trends; very high willingness to pay for localized insights.",
+    "key_integrations": [
+      "LINE API",
+      "Facebook Messenger (Thai)",
+      "TikTok"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription",
+    "reason": "Global social listening tools often miss the nuances and dominant platforms of the SEA market."
+  },
+  {
+    "niche": "Meeting AI Action Item Extractor",
+    "trend_score": 90.0,
+    "velocity": 0.8,
+    "target_user": "Project Managers, Sales Teams, C-suite; automating follow-ups, improving meeting ROI; high willingness to pay for efficiency.",
+    "key_integrations": [
+      "Google Meet/Zoom/Teams",
+      "Asana/Jira/ClickUp",
+      "Salesforce/HubSpot"
+    ],
+    "competition_level": "medium",
+    "monetization": "free tier + subscription",
+    "reason": "Teams spend too much time manually summarizing meetings and tracking action items across multiple platforms."
+  },
+  {
+    "niche": "Project Tracker AI Assistant",
+    "trend_score": 90.0,
+    "velocity": 0.8,
+    "target_user": "Project Managers, Team Leads; summarize project progress, identify blockers, update tasks; high willingness to pay for reduced overhead.",
+    "key_integrations": [
+      "Jira",
+      "Asana",
+      "ClickUp/Monday.com"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription",
+    "reason": "Project managers spend too much time on administrative tasks; AI can free them up for strategic work."
+  },
+  {
+    "niche": "Marketing Campaign Copy Optimizer",
+    "trend_score": 90.0,
+    "velocity": 0.9,
+    "target_user": "Marketing Specialists, Copywriters; generate A/B test variations, improve conversion rates for ads and emails; high willingness to pay for improved campaign ROI.",
+    "key_integrations": [
+      "Google Ads",
+      "Facebook Ads",
+      "Mailchimp/Klaviyo"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription",
+    "reason": "Optimizing marketing copy manually is tedious and often relies on guesswork; AI provides data-driven improvements."
+  },
+  {
+    "niche": "Supply Chain Risk Assessment AI",
+    "trend_score": 90.0,
+    "velocity": 0.9,
+    "target_user": "Supply Chain Managers, Procurement Leads; identify geopolitical, weather, or vendor risks; high willingness to pay for business continuity.",
+    "key_integrations": [
+      "SAP Ariba",
+      "Oracle SCM",
+      "logistics APIs"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription",
+    "reason": "Global events highlight the fragility of supply chains; proactive AI risk assessment is becoming essential."
+  },
+  {
+    "niche": "Security Posture Remediation AI",
+    "trend_score": 90.0,
+    "velocity": 0.8,
+    "target_user": "Security Engineers, CISOs; identify vulnerabilities, suggest fixes, automate security configuration changes; very high willingness to pay for reduced attack surface.",
+    "key_integrations": [
+      "Qualys",
+      "Tenable",
+      "CrowdStrike/AWS Security Hub"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription",
+    "reason": "Security teams are overwhelmed; AI can help prioritize and automate fixes, improving overall security posture."
+  },
+  {
+    "niche": "Healthcare Patient Intake & Triage",
+    "trend_score": 90.0,
+    "velocity": 0.8,
+    "target_user": "Hospitals, Clinics, GPs; automate pre-consultation information gathering, symptom checking, initial risk assessment; very high willingness to pay for efficiency and patient safety.",
+    "key_integrations": [
+      "EHR systems (Epic, Cerner)",
+      "telehealth platforms",
+      "appointment scheduling systems"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription",
+    "reason": "Healthcare systems are overloaded; AI can streamline administrative tasks and improve initial patient assessment."
+  },
+  {
+    "niche": "Thai Government Document Assistant",
+    "trend_score": 90.0,
+    "velocity": 0.8,
+    "target_user": "Businesses, Individuals in Thailand; navigate complex government forms, automate submissions, understand regulations; high willingness to pay for compliance and time savings.",
+    "key_integrations": [
+      "Thai e-government portals",
+      "specific agency APIs",
+      "OCR for physical documents"
+    ],
+    "competition_level": "none",
+    "monetization": "one-time | subscription",
+    "reason": "Thai bureaucratic processes are notoriously complex; AI assistance can significantly ease this burden."
+  },
+  {
+    "niche": "Real Estate Market Analysis AI",
+    "trend_score": 89.0,
+    "velocity": 0.8,
+    "target_user": "Real Estate Agents, Investors, Developers; analyze property values, market trends, generate neighborhood reports; high willingness to pay for competitive insights.",
+    "key_integrations": [
+      "Zillow API",
+      "MLS data feeds",
+      "government property records"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription",
+    "reason": "Real estate decisions are data-intensive; AI can provide faster, more accurate market intelligence."
+  },
+  {
+    "niche": "Thai/SEA Tourism Itinerary Planner",
+    "trend_score": 89.0,
+    "velocity": 0.8,
+    "target_user": "Tourists, Travel Agencies; generate personalized travel itineraries, find local deals, assist with multi-platform bookings; high willingness to pay for convenience and unique experiences.",
+    "key_integrations": [
+      "Agoda API",
+      "Booking.com API",
+      "local tour operators/Google Maps"
+    ],
+    "competition_level": "medium",
+    "monetization": "free tier + subscription",
+    "reason": "Southeast Asia is a major tourist destination; a localized AI assistant can greatly enhance the travel experience."
+  },
+  {
+    "niche": "Customer Support Agent Triage",
+    "trend_score": 88.0,
+    "velocity": 0.7,
+    "target_user": "Customer Service Managers, Support Teams; automatically categorize, route, and provide initial responses; high willingness to pay for reduced resolution times.",
+    "key_integrations": [
+      "Zendesk/Intercom/Freshdesk",
+      "Slack/Teams",
+      "Internal Knowledge Base"
+    ],
+    "competition_level": "high",
+    "monetization": "subscription",
+    "reason": "Reducing manual workload for support agents and speeding up customer issue resolution is critical for CX."
+  },
+  {
+    "niche": "Enterprise Comms Channel Summarizer",
+    "trend_score": 88.0,
+    "velocity": 0.8,
+    "target_user": "Team Leads, Executives, Knowledge Workers; condense information from noisy chat channels, synthesize decisions; high willingness to pay for focus and clarity.",
+    "key_integrations": [
+      "Slack",
+      "Microsoft Teams",
+      "Discord"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription",
+    "reason": "Information overload in enterprise communication channels makes it hard to stay informed and make decisions."
+  },
+  {
+    "niche": "CI/CD Pipeline Anomaly Detector",
+    "trend_score": 88.0,
+    "velocity": 0.8,
+    "target_user": "DevOps Engineers, SREs; proactively identify build failures, performance regressions, security issues in pipelines; high willingness to pay for system stability.",
+    "key_integrations": [
+      "Jenkins",
+      "GitLab CI",
+      "GitHub Actions/Datadog"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription",
+    "reason": "Identifying and resolving CI/CD issues quickly is crucial for rapid and reliable software delivery."
+  },
+  {
+    "niche": "E-commerce Product Merchandising AI",
+    "trend_score": 88.0,
+    "velocity": 0.8,
+    "target_user": "E-commerce Managers, Merchandisers; optimize product display, recommend cross-sells/upsells, personalize shopping experience; high willingness to pay for increased AOV and conversion.",
+    "key_integrations": [
+      "Shopify",
+      "Magento",
+      "Salesforce Commerce Cloud"
+    ],
+    "competition_level": "medium",
+    "monetization": "subscription",
+    "reason": "Effective merchandising is key to e-commerce success; AI can adapt strategies in real-time based on customer behavior."
+  },
+  {
+    "niche": "E-commerce Product Description Generator",
+    "trend_score": 87.0,
+    "velocity": 0.8,
+    "target_user": "E-commerce Store Owners, Product Managers; create compelling, SEO-optimized product descriptions at scale; high willingness to pay for conversion optimization.",
+    "key_integrations": [
+      "Shopify",
+      "Magento",
+      "WooCommerce"
+    ],
+    "competition_level": "medium",
+    "monetization": "free tier + subscription",
+    "reason": "Writing unique, high-quality product descriptions for thousands of SKUs is a major bottleneck for e-commerce growth."
+  },
+  {
+    "niche": "Automated API Documentation Generator",
+    "trend_score": 86.0,
+    "velocity": 0.7,
+    "target_user": "API Developers, Technical Writers; generate up-to-date documentation from code and usage; high willingness to pay for improved developer experience and reduced overhead.",
+    "key_integrations": [
+      "OpenAPI/Swagger",
+      "Postman",
+      "GitHub/Confluence"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription",
+    "reason": "Outdated API documentation hinders adoption and increases support costs; AI can keep it current."
+  },
+  {
+    "niche": "Multi-Platform Content Repurposer",
+    "trend_score": 85.0,
+    "velocity": 0.7,
+    "target_user": "Marketing Teams, Content Creators; transform long-form content into various formats; medium willingness to pay for content velocity.",
+    "key_integrations": [
+      "WordPress/Ghost",
+      "Buffer/Hootsuite",
+      "YouTube/TikTok"
+    ],
+    "competition_level": "medium",
+    "monetization": "free tier + subscription",
+    "reason": "Content marketing demands high volume across diverse channels, and manual repurposing is time-consuming."
+  },
+  {
+    "niche": "IoT Predictive Maintenance Orchestrator",
+    "trend_score": 85.0,
+    "velocity": 0.7,
+    "target_user": "Manufacturing Managers, Facility Operators; analyze sensor data, predict equipment failures, schedule maintenance; high willingness to pay for reduced downtime and costs.",
+    "key_integrations": [
+      "AWS IoT Core",
+      "Azure IoT Hub",
+      "Siemens MindSphere"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription",
+    "reason": "Unexpected equipment failures are costly; AI-driven predictive maintenance offers significant operational savings."
+  },
+  {
+    "niche": "HRIS Policy & Onboarding AI",
+    "trend_score": 82.0,
+    "velocity": 0.7,
+    "target_user": "HR Managers, New Employees; automate policy Q&A, guide through onboarding tasks; high willingness to pay for reduced HR workload and improved employee experience.",
+    "key_integrations": [
+      "Workday",
+      "SAP SuccessFactors",
+      "ADP/BambooHR"
+    ],
+    "competition_level": "low",
+    "monetization": "subscription",
+    "reason": "HR departments are swamped with repetitive questions and manual onboarding processes; AI can streamline this significantly."
+  },
+  {
+    "niche": "Cross-System Data Sync Agent",
+    "trend_score": 80.0,
+    "velocity": 0.6,
+    "target_user": "Operations Managers, IT Teams; automate data flow between disparate business systems; high willingness to pay for data integrity and reduced manual entry.",
+    "key_integrations": [
+      "ERP systems (SAP/Oracle)",
+      "CRM (Salesforce)",
+      "E-commerce (Shopify)"
+    ],
+    "competition_level": "high",
+    "monetization": "subscription",
+    "reason": "Businesses struggle with siloed data and manual syncing, leading to errors and inefficiency."
+  }
+]

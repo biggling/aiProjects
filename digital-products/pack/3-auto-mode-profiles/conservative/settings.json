@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch"
+    ],
+    "deny": [
+      "Write",
+      "Edit",
+      "Bash",
+      "NotebookEdit"
+    ]
+  },
+  "autoApprove": false,
+  "description": "Conservative — read-only exploration. No writes, no bash."
+}

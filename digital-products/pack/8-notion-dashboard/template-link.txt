@@ -1,0 +1,14 @@
+Notion Side Project Dashboard Template
+
+[Template link will be added here after the Notion template is built and published]
+
+To build the template:
+1. Create a new Notion page
+2. Add a "Projects" database with properties from README.md
+3. Add a "Milestones" database with relation to Projects
+4. Add a "Research Log" database
+5. Create the 5 views described in README.md
+6. Share the page as a template: Share → Publish → Allow template duplication
+7. Paste the template URL here
+
+Estimated build time: 2-3 hours

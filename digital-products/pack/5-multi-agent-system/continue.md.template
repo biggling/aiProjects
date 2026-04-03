@@ -1,0 +1,25 @@
+# [Project Name] — Continue
+
+## Daily Tasks  (reset each session — do not mark [x])
+- [ ] Check research/findings/latest.md for new action items — pick one to act on
+- [ ] [add your recurring daily task here]
+- [ ] [add your recurring daily task here]
+
+## Current Phase
+**Phase N** — [short description] — [STATUS: Active / Blocked / Complete]
+
+## Next Actions
+- [ ] [highest priority task — be specific enough that Claude can do it without asking]
+- [ ] [next task]
+- [ ] [next task]
+- [x] [example completed task]
+
+## Blockers
+_None_ (or describe what's blocking and what's needed to unblock)
+
+## Decisions Needed
+- [ ] [decision you need to make before work can continue]
+
+## Notes
+- [context Claude needs to know — stack details, recent gotchas, relevant constraints]
+- [keep this section current — stale notes are noise]

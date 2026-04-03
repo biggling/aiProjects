@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
+      "Bash(*)"
+    ],
+    "deny": []
+  },
+  "autoApprove": true,
+  "nonInteractive": true,
+  "description": "CI / Scripted — full tool access for headless cron runs (--bare --print). Never prompts for confirmation. Do NOT use for interactive sessions."
+}

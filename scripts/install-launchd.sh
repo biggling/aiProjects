@@ -1,7 +1,7 @@
 #!/bin/bash
 # ============================================================
 # Install aiProjects single launchd agent
-# One plist fires every :00 and :30, scheduler.sh dispatches jobs
+# One plist fires every 5 minutes, scheduler.sh dispatches jobs
 # based on scripts/schedule.conf
 #
 # Usage:
@@ -19,12 +19,16 @@ UID_VAL=$(id -u)
 
 # Copy scripts to non-iCloud path (launchd cannot exec from iCloud Drive)
 mkdir -p "$LOCAL_SCRIPTS" "$AGENTS_DIR" "$LOG_DIR"
-cp "$PROJ/scripts/scheduler.sh"    "$LOCAL_SCRIPTS/scheduler.sh"
-cp "$PROJ/scripts/run-research.sh" "$LOCAL_SCRIPTS/run-research.sh"
-cp "$PROJ/scripts/run-agent.sh"    "$LOCAL_SCRIPTS/run-agent.sh"
+cp "$PROJ/scripts/scheduler.sh"           "$LOCAL_SCRIPTS/scheduler.sh"
+cp "$PROJ/scripts/run-research.sh"        "$LOCAL_SCRIPTS/run-research.sh"
+cp "$PROJ/scripts/run-agent.sh"           "$LOCAL_SCRIPTS/run-agent.sh"
+cp "$PROJ/scripts/run-agent-continue.sh"  "$LOCAL_SCRIPTS/run-agent-continue.sh"
+cp "$PROJ/scripts/run-agent-subdir.sh"    "$LOCAL_SCRIPTS/run-agent-subdir.sh"
 chmod +x "$LOCAL_SCRIPTS/scheduler.sh" \
          "$LOCAL_SCRIPTS/run-research.sh" \
-         "$LOCAL_SCRIPTS/run-agent.sh"
+         "$LOCAL_SCRIPTS/run-agent.sh" \
+         "$LOCAL_SCRIPTS/run-agent-continue.sh" \
+         "$LOCAL_SCRIPTS/run-agent-subdir.sh"
 
 PLIST="$AGENTS_DIR/${LABEL}.plist"
 
@@ -40,11 +44,8 @@ cat > "$PLIST" <<PLIST
         <string>/bin/bash</string>
         <string>${LOCAL_SCRIPTS}/scheduler.sh</string>
     </array>
-    <key>StartCalendarInterval</key>
-    <array>
-        <dict><key>Minute</key><integer>0</integer></dict>
-        <dict><key>Minute</key><integer>30</integer></dict>
-    </array>
+    <key>StartInterval</key>
+    <integer>300</integer>
     <key>EnvironmentVariables</key>
     <dict>
         <key>HOME</key>
@@ -68,6 +69,6 @@ launchctl bootout "gui/${UID_VAL}/${LABEL}" 2>/dev/null || true
 launchctl bootstrap "gui/${UID_VAL}" "$PLIST"
 
 echo "✓ Installed: ${LABEL}"
-echo "  Fires every :00 and :30 — schedule: $PROJ/scripts/schedule.conf"
+echo "  Fires every 5 minutes — schedule: $PROJ/scripts/schedule.conf"
 echo ""
 launchctl list | grep "$LABEL" | awk '{print "  Status: pid="$1, "exit="$2}'

@@ -28,8 +28,10 @@ while IFS= read -r line; do
     if [[ "$t" == "$CURRENT_TIME" ]]; then
       echo "[$(date '+%b %d %H:%M')] Dispatching: $type $project" >> "$LOG"
       case "$type" in
-        research) bash "$HOME/scripts/run-research.sh" "$project" ;;
-        work)     bash "$HOME/scripts/run-agent.sh"   "$project" ;;
+        research) bash "$HOME/scripts/run-research.sh"      "$project" ;;
+        work)     bash "$HOME/scripts/run-agent.sh"         "$project" ;;
+        continue) bash "$HOME/scripts/run-agent-continue.sh" "$project" ;;
+        subwork)  bash "$HOME/scripts/run-agent-subdir.sh"  "$project" ;;
         *) echo "[$(date '+%b %d %H:%M')] Unknown type: $type" >> "$LOG" ;;
       esac
       break

@@ -24,7 +24,19 @@ TELEGRAM_CHAT_ID="${TELEGRAM_CHAT_ID:-8532895589}"
 # Defaults
 LOG_DIR="${LOG_DIR:-$PROJECT_ROOT/logs}"
 MAX_TIMEOUT="${MAX_TIMEOUT:-600}"  # 10 minutes max per session
-CLAUDE_BIN="${CLAUDE_BIN:-claude}"
+
+# AI CLI config — override via env or .env file
+# Supported: claude | gemini
+AI_CLI="${AI_CLI:-claude}"
+case "$AI_CLI" in
+  gemini)
+    AI_CMD='gemini --prompt "$_AI_PROMPT" -y'
+    ;;
+  claude|*)
+    AI_CLI="claude"
+    AI_CMD='claude --print "$_AI_PROMPT" --allowedTools "Read,Write,Edit,Bash,Glob,Grep" --max-turns 50'
+    ;;
+esac
 
 # ==================== SETUP ====================
 PROJECT="${1:-}"
@@ -126,10 +138,10 @@ End with a 3-line summary of what you accomplished."
   local exit_code=0
   local start_time=$SECONDS
   local output
+  export _AI_PROMPT="$prompt"
   output=$(cd "$PROJECT_ROOT" && gtimeout "$MAX_TIMEOUT" \
-    "$CLAUDE_BIN" --print "$prompt" \
-    --allowedTools "Read,Write,Edit,Bash,Glob,Grep" \
-    --max-turns 50 2>&1) || exit_code=$?
+    /bin/zsh -l -c "$AI_CMD" 2>&1) || exit_code=$?
+  unset _AI_PROMPT
   local duration=$(( SECONDS - start_time ))
   local duration_min=$(( duration / 60 ))
   local duration_sec=$(( duration % 60 ))

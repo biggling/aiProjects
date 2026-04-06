@@ -5,9 +5,19 @@
 # specific subdirectory before running Claude.
 #
 # Usage:
-#   ./run-agent-subdir.sh <project/subdir> [custom-prompt]
+#   ./run-agent-subdir.sh <project/subdir> [hint]
+#
+#   hint can be:
+#     @plan.md          — read plan.md from the subdir as the prompt
+#     @AGENT.md         — read AGENT.md from the subdir as the prompt
+#     "inline prompt"   — use this string directly as the prompt
+#     (empty)           — auto-detect: AGENT.md → plan.md → continue.md
+#
+# Examples:
 #   ./run-agent-subdir.sh trade-auto/src
-#   ./run-agent-subdir.sh mcp-apps/packages/server "Fix the auth handler"
+#   ./run-agent-subdir.sh trade-auto/src @plan.md
+#   ./run-agent-subdir.sh tiktok/modules @AGENT.md
+#   ./run-agent-subdir.sh pod/scripts "Generate 5 new design prompts"
 #
 # The project root (for continue.md and logs) is derived from
 # the first path component: "trade-auto/src" → project=trade-auto
@@ -33,18 +43,19 @@ CLAUDE_BIN="${CLAUDE_BIN:-claude}"
 
 # ==================== ARGS ====================
 PROJECT_PATH="${1:-}"   # e.g. "trade-auto/src" or "mcp-apps/packages/server"
-CUSTOM_PROMPT="${2:-}"
+HINT="${2:-}"           # @file, "inline prompt", or empty (auto-detect)
 TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 DATE_HUMAN=$(date +"%b %d %H:%M")
 
 mkdir -p "$LOG_DIR"
 
 usage() {
-  echo "Usage: $0 <project/subdir> [custom-prompt]"
+  echo "Usage: $0 <project/subdir> [@file | \"prompt\"]"
   echo ""
   echo "Examples:"
   echo "  $0 trade-auto/src"
-  echo "  $0 mcp-apps/packages/server"
+  echo "  $0 trade-auto/src @plan.md"
+  echo "  $0 tiktok/modules @AGENT.md"
   echo "  $0 pod/scripts \"Generate 5 new design prompts\""
   exit 1
 }
@@ -92,34 +103,61 @@ LOG_FILE="$LOG_DIR/${PROJECT}_subdir_${TIMESTAMP}.log"
 
 echo "[$DATE_HUMAN] Starting subdir agent: $PROJECT_PATH" | tee -a "$LOG_DIR/scheduler.log"
 
-# Build prompt
-local_continue=""
-[[ -f "$CONTINUE_FILE" ]] && local_continue=$(cat "$CONTINUE_FILE")
+# ==================== RESOLVE HINT → INSTRUCTIONS ====================
+# Priority:
+#   1. @file  — read named file from subdir (or project root)
+#   2. "text" — use as-is
+#   3. (empty) — auto-detect: AGENT.md → plan.md → continue.md
 
-if [[ -n "$CUSTOM_PROMPT" ]]; then
-  PROMPT="$CUSTOM_PROMPT
+resolve_instructions() {
+  local hint="$1"
 
-Working directory: $WORK_DIR
-Project root: $PROJECT_ROOT/$PROJECT
+  if [[ "$hint" == @* ]]; then
+    # @file — strip the @ and read the file
+    local fname="${hint#@}"
+    # check subdir first, then project root
+    for candidate in "$WORK_DIR/$fname" "$PROJECT_ROOT/$PROJECT/$fname"; do
+      if [[ -f "$candidate" ]]; then
+        cat "$candidate"
+        return
+      fi
+    done
+    echo "[WARN] $hint not found in $WORK_DIR or $PROJECT_ROOT/$PROJECT — falling back to continue.md" >&2
+    [[ -f "$CONTINUE_FILE" ]] && cat "$CONTINUE_FILE" || echo "(no instructions found)"
 
-After completing the task, update $PROJECT/continue.md with:
-- What was completed
-- Exact next steps
-- Any blockers"
-else
-  PROMPT="You are working on the <${PROJECT}> project, specifically in the subdirectory: ${PROJECT_PATH}
+  elif [[ -n "$hint" ]]; then
+    # inline prompt — use directly
+    echo "$hint"
+
+  else
+    # auto-detect: AGENT.md → plan.md → continue.md
+    for candidate in "$WORK_DIR/AGENT.md" "$WORK_DIR/plan.md" "$CONTINUE_FILE"; do
+      if [[ -f "$candidate" ]]; then
+        cat "$candidate"
+        return
+      fi
+    done
+    echo "(no instructions found — add AGENT.md or plan.md to $PROJECT_PATH)"
+  fi
+}
+
+INSTRUCTIONS=$(resolve_instructions "$HINT")
+
+# Build full prompt
+PROMPT="You are working on the <${PROJECT}> project, specifically in the subdirectory: ${PROJECT_PATH}
 
 Your working directory is already set to this subdirectory — use relative paths from here.
 
-${local_continue:+## Current State (continue.md)
+## Instructions
 
-${local_continue}
+${INSTRUCTIONS}
 
 ---
 
-}Execute the highest priority next task from continue.md that relates to this subdirectory.
-Work autonomously — make decisions yourself unless it involves spending money.
-Write production-quality code, not prototypes.
+Rules:
+- Work autonomously. Make decisions yourself unless it involves spending money or live accounts.
+- Write production-quality code, not prototypes.
+- Do not re-read files whose content is already above.
 
 When done, update ${PROJECT}/continue.md with:
 - What was completed this session (be specific)
@@ -127,14 +165,15 @@ When done, update ${PROJECT}/continue.md with:
 - Any blockers or decisions needed from BiG
 
 End with a 3-line summary of what you accomplished."
-fi
 
 # Extract current phase for Telegram
 CURRENT_PHASE=""
 [[ -f "$CONTINUE_FILE" ]] && CURRENT_PHASE=$(grep -A1 "Current Phase" "$CONTINUE_FILE" 2>/dev/null | tail -1 | sed 's/^[[:space:]]*//' | head -c 80)
 
-send_telegram "🚀 <b>${PROJECT}</b>/<i>${SUBDIR}</i> — Subdir agent started
-📍 ${CURRENT_PHASE:-unknown phase}"
+HINT_LABEL="${HINT:-auto}"
+send_telegram "🚀 <b>${PROJECT}/${SUBDIR}</b> — Subdir agent started
+📍 ${CURRENT_PHASE:-unknown phase}
+📋 Instructions: ${HINT_LABEL}"
 
 EXIT_CODE=0
 START_TIME=$SECONDS

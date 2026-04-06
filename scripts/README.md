@@ -28,6 +28,7 @@ work        digital-products  20:00
 
 - `type` — which runner to invoke (see [Supported types](#supported-types))
 - `project` — directory name under `aiProjects/`; for `subwork`, use `project/subdir` notation
+- `hint` — optional, `subwork` only (see below); placed before times
 - `HH:MM` — one or more 24h times (Bangkok, GMT+7); scheduler checks every 5 min
 
 ## Supported types
@@ -37,7 +38,32 @@ work        digital-products  20:00
 | `research` | `run-research.sh` | Reads `<project>/research/AGENT.md`, web-searches, saves findings to `research/findings/` |
 | `work` | `run-agent.sh` | Reads `<project>/continue.md` each turn, executes next priority task |
 | `continue` | `run-agent-continue.sh` | Like `work` but inlines research findings into the prompt upfront |
-| `subwork` | `run-agent-subdir.sh` | Like `work` but CWD is set to `project/subdir`; use `project/subdir` in the project field |
+| `subwork` | `run-agent-subdir.sh` | Like `work` but CWD is set to `project/subdir`; supports `@file` and inline prompt hints |
+
+## subwork hint examples
+
+The `hint` field is optional and placed **before** the times. Scheduler detects times by `HH:MM` pattern.
+
+```
+# Auto-detect: looks for AGENT.md → plan.md → continue.md in the subdir
+subwork  trade-auto/src          20:00
+
+# Use AGENT.md from the subdir as instructions
+subwork  tiktok/modules  @AGENT.md   21:00  01:00
+
+# Use plan.md from the subdir as instructions
+subwork  tiktok/modules  @plan.md    21:00
+
+# Inline prompt (no quotes needed in conf, single token only — use @file for multi-word)
+subwork  pod/scripts     @AGENT.md   23:00
+
+# Multiple times work the same way
+subwork  trade-auto/src  @plan.md    20:00  02:00
+```
+
+**File resolution order for `@file`:** subdir first, then project root.
+
+**Auto-detect order (no hint):** `subdir/AGENT.md` → `subdir/plan.md` → `project/continue.md`
 
 ## How to add a new schedule type
 

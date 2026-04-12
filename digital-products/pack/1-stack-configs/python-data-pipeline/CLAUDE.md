@@ -122,3 +122,56 @@ tests/
 - No bare `except:` or `except Exception:` without re-raising or logging
 - No global mutable state outside of the configured singletons (DB engine, Celery app)
 - No synchronous HTTP in Celery tasks without timeout — always set `timeout=` on requests
+
+## Checkpointing (Long-Running Pipelines)
+- Save progress after each successful batch — never reprocess from scratch on failure
+- Write checkpoint to DB or a `data/checkpoints/<run_id>.json` file
+- On restart, read checkpoint and skip already-processed records
+- Log checkpoint state at INFO level so you can monitor progress remotely
+
+```python
+# Checkpoint pattern
+def run_pipeline(items: list[Item]) -> None:
+    checkpoint = load_checkpoint() or {"last_id": 0}
+    for item in items:
+        if item.id <= checkpoint["last_id"]:
+            continue
+        process(item)
+        save_checkpoint({"last_id": item.id})
+        logger.info("checkpoint saved", last_id=item.id)
+```
+
+## Data Validation (Pydantic)
+- Define `pydantic.BaseModel` schemas for all external data (API responses, CSV rows, JSON files)
+- Validate at the collection stage — fail loud on bad data, don't silently skip
+- Use `model_validator(mode='after')` for cross-field validation
+- Log validation failures with the raw data for debugging
+
+```python
+from pydantic import BaseModel, field_validator
+
+class TrendRecord(BaseModel):
+    keyword: str
+    volume: int
+    date: str
+
+    @field_validator('volume')
+    @classmethod
+    def volume_must_be_positive(cls, v: int) -> int:
+        if v < 0:
+            raise ValueError('volume must be non-negative')
+        return v
+```
+
+## Alerting
+- Send a Telegram/Slack alert when a pipeline stage fails after max retries
+- Include: stage name, error message, timestamp, and the run ID in the alert
+- Alert on data anomalies too: zero rows collected, >50% records invalid, etc.
+
+## Common Mistakes Claude Makes Without This Config
+- Using `session.query(Model)` (legacy API) instead of `session.execute(select(Model))`
+- Sharing a SQLAlchemy session across threads
+- Writing bare `except:` that silently swallows pipeline failures
+- Using `os.path.join` instead of `pathlib.Path`
+- Celery tasks that aren't idempotent — fail on retry
+- Not setting `timeout=` on `requests.get()` — hangs forever on slow APIs

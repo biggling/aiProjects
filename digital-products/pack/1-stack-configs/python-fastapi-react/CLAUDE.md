@@ -109,3 +109,50 @@ export function useItem(id: number) {
 - No synchronous DB calls in async FastAPI routes
 - No `console.log` in production — remove before commit
 - No direct DOM manipulation — use React state
+
+## Security (FastAPI)
+- Enable CORS with explicit origins — never use `allow_origins=["*"]` in production
+- Use `python-jose` or `PyJWT` for JWT — validate `exp`, `iss`, `aud` claims
+- Sanitize file upload names: `secure_filename()` from `werkzeug.utils` — never use raw user-provided filenames
+- Set `httponly=True`, `secure=True`, `samesite="strict"` on auth cookies
+- Use `slowapi` for rate limiting on auth/sensitive routes
+- Never store plaintext passwords — use `passlib` with bcrypt
+
+```python
+# CORS — explicit origins only
+from fastapi.middleware.cors import CORSMiddleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://yourdomain.com"],  # never "*" in prod
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["Authorization"],
+)
+```
+
+## Background Tasks
+- Use FastAPI `BackgroundTasks` for fire-and-forget work (email, webhooks)
+- Use Celery for work that needs retries, scheduling, or guaranteed delivery
+- Never use `asyncio.create_task()` for work that must survive request cancellation
+
+```python
+# Correct — BackgroundTasks for lightweight side effects
+@router.post("/orders")
+async def create_order(bg: BackgroundTasks, ...):
+    order = await order_service.create(...)
+    bg.add_task(send_confirmation_email, order.id)
+    return order
+```
+
+## Deployment Checklist
+- Set `debug=False` and `reload=False` in production uvicorn
+- Use `gunicorn -k uvicorn.workers.UvicornWorker` for multi-worker production
+- Health endpoint: `GET /health` returns `{"status": "ok"}` — no DB check needed at ingress
+- Readiness endpoint: `GET /ready` checks DB connection — used by k8s readiness probe
+
+## Common Mistakes Claude Makes Without This Config
+- Calling sync SQLAlchemy in `async def` routes (blocks the event loop)
+- Using `requests` instead of `httpx.AsyncClient` in async routes
+- Creating multiple `ConnectionManager` instances for WebSocket
+- Putting business logic directly in route handlers
+- Using `useEffect` for server data fetching instead of React Query
+- Missing query key invalidation after mutations

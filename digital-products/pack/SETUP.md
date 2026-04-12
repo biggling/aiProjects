@@ -9,25 +9,40 @@ Complete installation in 10 minutes for Starter/Pro, 20 minutes for Elite.
 Copy the CLAUDE.md that matches your project's primary stack to your project root:
 
 ```bash
-# Go microservices
+# Go microservices (REST/gRPC, pgx, chi, slog)
 cp 1-stack-configs/go-microservices/CLAUDE.md /your/project/CLAUDE.md
 
-# TypeScript / Node.js
+# TypeScript / Node.js (Hono, Zod, Vitest, ESM)
 cp 1-stack-configs/typescript-node/CLAUDE.md /your/project/CLAUDE.md
 
-# Python data pipeline (Celery, SQLAlchemy, Alembic)
+# Python data pipeline (Celery, SQLAlchemy 2.x, Alembic, loguru)
 cp 1-stack-configs/python-data-pipeline/CLAUDE.md /your/project/CLAUDE.md
 
-# Python FastAPI + React
+# Python FastAPI + React (async, React Query, WebSocket)
 cp 1-stack-configs/python-fastapi-react/CLAUDE.md /your/project/CLAUDE.md
 
-# Kotlin / Android (Jetpack Compose)
+# Kotlin / Android (Jetpack Compose, MVVM, Hilt, Room)
 cp 1-stack-configs/kotlin-android/CLAUDE.md /your/project/CLAUDE.md
 
-# GDScript / Godot 4
+# GDScript / Godot 4 (2D/3D game, signals, autoloads)
 cp 1-stack-configs/gdscript-godot4/CLAUDE.md /your/project/CLAUDE.md
 
-# Multi-project workspace
+# Next.js / React (App Router, Server Components, Prisma, NextAuth)
+cp 1-stack-configs/nextjs-react/CLAUDE.md /your/project/CLAUDE.md
+
+# Rust (Tokio, Axum, SQLx, Anyhow, Clippy)
+cp 1-stack-configs/rust/CLAUDE.md /your/project/CLAUDE.md
+
+# Java / Spring Boot (Spring Data JPA, Spring Security, MapStruct, JUnit 5)
+cp 1-stack-configs/java-spring-boot/CLAUDE.md /your/project/CLAUDE.md
+
+# React Native / Expo (Expo Router, Riverpod, React Query, NativeWind)
+cp 1-stack-configs/react-native/CLAUDE.md /your/project/CLAUDE.md
+
+# Flutter / Dart (Riverpod 2, GoRouter, Freezed, Dio)
+cp 1-stack-configs/flutter-dart/CLAUDE.md /your/project/CLAUDE.md
+
+# Multi-project workspace (side projects, autonomous agents, cron)
 cp 1-stack-configs/side-project-workspace/CLAUDE.md /your/workspace/CLAUDE.md
 ```
 
@@ -135,16 +150,30 @@ chmod +x ~/.claude/hooks/**/*.sh
 
 If you already have a settings.json, merge the `hooks` block. If not, create it:
 
+> **Minimum recommended (safety only):** `block-rm-rf`, `block-force-push`
+> **Full enforcement:** add `enforce-commit-format`, `block-test-skip`, `auto-format`, `run-linter`
+
 ```json
 {
   "hooks": {
-    "PreToolCall": [
+    "PreToolUse": [
       {
         "matcher": "Bash",
         "hooks": [
           {"type": "command", "command": "bash ~/.claude/hooks/pre-tool-call/block-rm-rf.sh"},
           {"type": "command", "command": "bash ~/.claude/hooks/pre-tool-call/block-force-push.sh"},
+          {"type": "command", "command": "bash ~/.claude/hooks/pre-tool-call/enforce-commit-format.sh"},
+          {"type": "command", "command": "bash ~/.claude/hooks/pre-tool-call/block-test-skip.sh"},
           {"type": "command", "command": "bash ~/.claude/hooks/pre-tool-call/log-tool-calls.sh"}
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {"type": "command", "command": "bash ~/.claude/hooks/post-tool-call/auto-format.sh"},
+          {"type": "command", "command": "bash ~/.claude/hooks/post-tool-call/run-linter.sh"},
+          {"type": "command", "command": "bash ~/.claude/hooks/post-tool-call/notify-telegram.sh"}
         ]
       }
     ],
@@ -169,24 +198,51 @@ export TELEGRAM_CHAT_ID="your_chat_id_here"
 
 ---
 
-## Step 6: Context Optimization (5 min) — Elite
-
-Copy relevant snippets from `6-1m-context-optimization/context-trim.md` to your CLAUDE.md.
-Start with sections 1 (Response Conciseness) and 6 (Decision Autonomy) — biggest impact for least effort.
-
----
-
-## Step 7: Cross-Platform AGENTS.md — Elite
+## Step 6: Install Slash Commands (2 min) — Elite
 
 ```bash
-# Copy the AGENTS.md for your stack
-cp 7-cross-platform/go-microservices/AGENTS.md /your/project/AGENTS.md
-# Customize as needed
+# Install globally (works in all projects)
+mkdir -p ~/.claude/commands
+cp 9-slash-commands/*.md ~/.claude/commands/
+
+# Or per-project only
+mkdir -p /your/project/.claude/commands
+cp 9-slash-commands/*.md /your/project/.claude/commands/
+```
+
+Then in any Claude Code session:
+```
+/review              # structured pre-push code review
+/commit              # generate conventional commit message
+/security-scan       # OWASP scan on staged changes
+/test-coverage       # find and write missing tests
+/standup             # daily standup from git log
+/refactor            # targeted refactor proposals
 ```
 
 ---
 
-## Step 8: Notion Dashboard — Elite
+## Step 7: Context Optimization (5 min) — Elite
+
+Copy relevant snippets from `6-1m-context-optimization/context-trim.md` to your CLAUDE.md.
+Start with sections 1 (Response Conciseness) and 6 (Decision Autonomy) — biggest impact.
+
+Read `6-1m-context-optimization/hidden-features.md` — surface features most devs discover after 6+ months:
+`/compact`, `/memory`, git worktrees, headless mode, MCP token management.
+
+---
+
+## Step 8: Cross-Platform AGENTS.md — Elite
+
+```bash
+# Copy the AGENTS.md for your stack
+cp 7-cross-platform/go-microservices/AGENTS.md /your/project/AGENTS.md
+# Customize as needed — works with Cursor, OpenCode, Continue
+```
+
+---
+
+## Step 9: Notion Dashboard — Elite
 
 1. Open the link in `8-notion-dashboard/template-link.txt`
 2. Click "Duplicate" (top-right)
@@ -194,17 +250,39 @@ cp 7-cross-platform/go-microservices/AGENTS.md /your/project/AGENTS.md
 
 ---
 
+## Step 10: Test Your Config (5 min) — All tiers
+
+This is the step most people skip — and then wonder why Claude still gets things wrong.
+
+```bash
+# Start a fresh Claude Code session in your project
+cd /your/project
+claude
+```
+
+Then run the 6 test prompts from `EFFECTIVENESS-TEST.md`. Score Claude's responses.
+If tests fail → move those rules to hooks (or use the slash commands as explicit enforcement).
+
+Target: 5/6 tests passing at session start.
+
+---
+
 ## Verify Everything Works
 
 ```bash
-# Start a Claude Code session — hooks should print git status automatically
-cd /your/project
-claude
+# Hooks fire on session open (should print git status)
+cd /your/project && claude
 
-# Test the work agent
+# Safety hook blocks rm -rf (should exit with BLOCKED message)
+claude --print "run: rm -rf /tmp/test-dir"
+
+# Commit format hook blocks bad messages
+claude --print "run: git commit -m 'updated stuff'"
+
+# Work agent (picks up from continue.md)
 ./scripts/run-agent-continue.sh your-project
 
-# Test the research agent (needs a research/AGENT.md file)
+# Research agent (reads research/AGENT.md)
 ./scripts/run-research.sh your-project
 ```
 

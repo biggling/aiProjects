@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 # pre-tool-call/block-rm-rf.sh
 # Blocks any `rm -rf` command that targets paths outside /tmp.
-# Claude Code hook — PreToolCall, matcher: Bash
-# Exit 0 = allow. Exit 1 = block.
+# Claude Code hook — PreToolUse, matcher: Bash
+# Deny: output JSON + exit 0. Allow: exit 0 with no output.
 
-# Hook receives tool input as JSON on stdin
 INPUT=$(cat)
-COMMAND=$(echo "$INPUT" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('command',''))" 2>/dev/null || echo "")
+COMMAND=$(echo "$INPUT" | jq -r '.tool_input.command // empty' 2>/dev/null)
 
 # Check if this is a rm -rf / rm -r command
 if echo "$COMMAND" | grep -qE 'rm\s+(-[a-zA-Z]*r[a-zA-Z]*f?|--recursive)\s'; then
@@ -14,9 +13,8 @@ if echo "$COMMAND" | grep -qE 'rm\s+(-[a-zA-Z]*r[a-zA-Z]*f?|--recursive)\s'; the
   if echo "$COMMAND" | grep -qE 'rm\s+.*\s+/tmp/'; then
     exit 0
   fi
-  echo "BLOCKED: rm -rf detected outside /tmp. Command: $COMMAND" >&2
-  echo "If you need to delete recursively, confirm with the user first or use a safer approach." >&2
-  exit 1
+  printf '{"hookSpecificOutput":{"hookEventName":"PreToolUse","permissionDecision":"deny","permissionDecisionReason":"rm -rf is blocked outside /tmp. Use specific file deletions instead, or ask the user to run this command manually."}}'
+  exit 0
 fi
 
 exit 0

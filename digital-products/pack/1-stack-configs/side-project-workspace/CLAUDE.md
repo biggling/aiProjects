@@ -111,3 +111,37 @@ Ask the human before:
 - Free tools only until revenue justifies paid
 - Update STATUS.md when project phase or status changes
 - Each project has its own CLAUDE.md for stack-specific rules
+
+## Session Start Checklist
+Every time you start work in this workspace, do these in order:
+1. Read `STATUS.md` — know the current state of every project before touching any code
+2. `cd` into the highest-priority non-blocked project
+3. Read that project's `continue.md` — understand exactly where you left off
+4. Read `research/findings/latest.md` if it exists — new data may change priorities
+5. Start on `## Next Actions` item 1 — don't invent new work
+
+## Git Workflow (Multi-Project)
+- Each project is a subdirectory of the workspace repo
+- Commit changes per project: `git add project-a/` and commit with `[project-a]` prefix
+- Never mix changes from two projects in one commit
+- Branch per feature when the feature will take >1 session: `project-a/feature-name`
+
+## When to Escalate vs Proceed
+Proceed autonomously:
+- Any code change, refactor, test, or bug fix
+- Adding dependencies (document in continue.md what was added and why)
+- Creating new files, folders, scripts
+- Running CI/tests locally
+
+Escalate to the human:
+- Any paid API key, subscription, or cloud resource
+- Production deployments or database migrations
+- Changing authentication, billing, or access-control logic
+- Deleting more than a single file
+
+## Common Mistakes Claude Makes Without This Config
+- Starting work on a lower-priority project when the higher one is unblocked
+- Skipping `continue.md` and re-deriving context from scratch (wastes context tokens)
+- Making decisions that require money without flagging them
+- Mixing commits across projects
+- Updating `continue.md` with vague notes instead of specific next actions

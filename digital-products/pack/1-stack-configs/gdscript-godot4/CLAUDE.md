@@ -109,3 +109,54 @@ func _process(delta):
 - No `print()` in shipped builds — use `push_warning()` / `push_error()` or `#DEBUG` guards
 - No business logic in UI scenes — UI emits signals, game logic responds
 - No hardcoded screen positions — use anchors and containers
+
+## Save System
+- All save data goes through `SaveManager` autoload — never write/read files directly from gameplay scripts
+- Use JSON for save data — human-readable, easy to debug
+- Validate save data on load — handle missing keys with defaults for forward compatibility
+- Save on meaningful events (level complete, item picked up) — never only on quit
+
+```gdscript
+# SaveManager.gd (autoload)
+const SAVE_PATH = "user://save.json"
+
+func save() -> void:
+    var data = {"level": GameState.current_level, "score": GameState.score}
+    var file = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
+    file.store_string(JSON.stringify(data))
+
+func load_save() -> Dictionary:
+    if not FileAccess.file_exists(SAVE_PATH):
+        return {}
+    var file = FileAccess.open(SAVE_PATH, FileAccess.READ)
+    var result = JSON.parse_string(file.get_as_text())
+    return result if result else {}
+```
+
+## Input Actions (Not Hardcoded Keys)
+- All input goes through named actions defined in Project Settings → Input Map
+- Never check `Input.is_key_pressed(KEY_SPACE)` — use `Input.is_action_pressed("jump")`
+- This makes remapping and gamepad support automatic
+
+```gdscript
+# Wrong
+if Input.is_key_pressed(KEY_SPACE):
+    jump()
+
+# Correct
+if Input.is_action_just_pressed("jump"):
+    jump()
+```
+
+## Scene Transitions
+- Use a `TransitionManager` autoload with an overlay `ColorRect` for fade in/out
+- `call_deferred("emit_signal", "transition_finished")` to avoid scene-change-during-physics errors
+- Never `get_tree().change_scene_to_file()` directly from gameplay code — always route through TransitionManager
+
+## Common Mistakes Claude Makes Without This Config
+- Calling `get_node()` inside `_process()` — creates stutter from path lookup every frame
+- Using `print()` in shipped builds — use `push_warning()` guarded by `OS.is_debug_build()`
+- Calling parent methods directly instead of emitting signals — creates tight coupling
+- Using `preload()` inside `_process()` — freezes the game
+- Hardcoded keyboard keys instead of input actions — breaks gamepad and rebinding
+- Business logic inside UI scenes — makes testing and reuse impossible

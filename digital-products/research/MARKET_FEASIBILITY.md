@@ -1,6 +1,17 @@
 # Digital Products — Market Feasibility & Research Summary
 
-> Compiled 2026-03-29 from 11 research sessions (2026-03-22 to 2026-03-28)
+> **v2.0 updated 2026-04-05** — See full updated analysis: [findings/2026-04-05_market_feasibility_v2.md](findings/2026-04-05_market_feasibility_v2.md)
+> v1.0 compiled 2026-03-29 from 11 research sessions (2026-03-22 to 2026-03-28)
+
+## v2 Key Changes (April 2026)
+- **Cursor IDE added** — $2B ARR, 2M users; .cursorrules packs = parallel opportunity to CLAUDE.md
+- **Product #1 reframed** — "AI IDE Config Bundle" (CLAUDE.md + .cursorrules + AGENTS.md) → 10M+ developer TAM
+- **AI prompt packs downgraded RED** — InsightRaider 146K analysis confirms 4.1% breakout rate; commodity trap confirmed
+- **New #5 product** — Indie Hacker OS (Notion): dev-specific, premium pricing $37–$97
+- **New #6 product** — Multi-Platform Revenue Tracker (Google Sheets): low effort, dogfood product
+- **Blender addons** — Highest breakout rate but zero BiG skill fit; eliminated
+
+---
 
 ---
 
@@ -282,13 +293,17 @@ Include: `.claude/auto-mode-trusted.json` safety profiles, multi-agent conductor
 
 ## 10. Final Feasibility Scores
 
-| Product | Market Demand | Competition | BiG's Moat | Revenue Potential | Feasibility |
-|---|---|---|---|---|---|
-| CLAUDE.md Config Pack | 9/10 | 8/10 (low) | 10/10 | $500–5K/mo | **GREEN** |
-| Memory OS add-on | 8/10 | 9/10 (zero) | 9/10 | Bundle upsell | **GREEN** |
-| Auto Mode profiles | 8/10 | 9/10 (zero) | 8/10 | Pro tier | **GREEN** |
-| Cross-platform AGENTS.md | 8/10 | 9/10 (near-zero) | 8/10 | TAM expansion | **GREEN** |
-| AI Prompt Pack | 7/10 | 5/10 (moderate) | 7/10 | Bundle add-on | **YELLOW** |
-| Notion Dashboard (Etsy) | 6/10 | 7/10 (low) | 6/10 | $200–1K/mo | **YELLOW** |
-| Non-Dev Claude Pack | 7/10 | 8/10 (low) | 4/10 | Separate audience | **YELLOW** |
-| Generic n8n/automation packs | 5/10 | 2/10 (saturated) | 5/10 | Low ceiling | **RED** |
+> v2 updated rankings — see [findings/2026-04-05_market_feasibility_v2.md](findings/2026-04-05_market_feasibility_v2.md) for full analysis
+
+| Rank | Product | Market Demand | Competition | BiG's Moat | Revenue Potential | Phase | Feasibility |
+|---|---|---|---|---|---|---|---|
+| #1 | AI IDE Config Bundle (CLAUDE.md + .cursorrules + AGENTS.md) | 9/10 | 9/10 (zero) | 9/10 | $1K–10K/mo | Phase 1 | **GREEN** |
+| #2 | Memory OS add-on | 8/10 | 9/10 (zero) | 9/10 | Bundle upsell | Phase 1 | **GREEN** |
+| #3 | Auto Mode safety profiles | 8/10 | 9/10 (zero) | 8/10 | Pro tier | Phase 1 | **GREEN** |
+| #4 | Cursor Rules Pack (.cursorrules) | 9/10 | 8/10 (low) | 9/10 | TAM expansion | Phase 1 | **GREEN** |
+| #5 | Indie Hacker OS (Notion template) | 7/10 | 7/10 | 7/10 | $200–2K/mo | Phase 2 | **YELLOW-GREEN** |
+| #6 | Multi-Platform Revenue Tracker (Sheets) | 7/10 | 7/10 | 8/10 | Bundle add-on | Phase 2 | **YELLOW-GREEN** |
+| #7 | Non-Dev Claude Code Pack | 7/10 | 8/10 (low) | 4/10 | Separate audience | Phase 3 | **YELLOW** |
+| #8 | AI Prompt Pack (standalone) | 5/10 | 3/10 (saturated) | 6/10 | Commodity | Never | **RED** |
+| #9 | Generic n8n/automation packs | 5/10 | 2/10 (saturated) | 5/10 | Low ceiling | Never | **RED** |
+| #10 | Blender Add-ons | 10/10 | 9/10 | 0/10 | $2.2B but N/A | Never | **RED (no skill)** |

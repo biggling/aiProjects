@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claude Code Elite Pack — Stop Explaining Your Stack Every Session</title>
+  <meta name="description" content="12 battle-tested CLAUDE.md configs + Memory OS + Auto Mode safety profiles + autonomous agent runner. Claude knows your conventions from turn 0." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1117;
+      --bg-card: #161b22;
+      --bg-code: #1c2128;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --text-faint: #484f58;
+      --accent: #58a6ff;
+      --accent-green: #3fb950;
+      --accent-orange: #d29922;
+      --accent-red: #f85149;
+      --accent-purple: #bc8cff;
+      --gold: #e3b341;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Layout ───────────────────────────────── */
+    .container { max-width: 780px; margin: 0 auto; padding: 0 24px; }
+    .wide      { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+    section { padding: 72px 0; border-bottom: 1px solid var(--border); }
+    section:last-child { border-bottom: none; }
+
+    /* ── Nav ──────────────────────────────────── */
+    nav {
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      background: rgba(13,17,23,.92);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+    }
+    .nav-brand {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: -.01em;
+    }
+    .nav-cta {
+      background: var(--accent);
+      color: #0d1117;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 7px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .nav-cta:hover { background: #79b8ff; text-decoration: none; }
+
+    /* ── Hero ─────────────────────────────────── */
+    .hero {
+      padding: 96px 0 80px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(88,166,255,.12);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(88,166,255,.25);
+      margin-bottom: 28px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -.03em;
+      margin-bottom: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero h1 span { color: var(--accent); }
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 40px;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #0d1117;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 13px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background .15s;
+    }
+    .btn-primary:hover { background: #79b8ff; text-decoration: none; }
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 13px 28px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      transition: border-color .15s, color .15s;
+    }
+    .btn-secondary:hover { border-color: var(--text-muted); color: var(--text); text-decoration: none; }
+
+    .hero-social-proof {
+      margin-top: 40px;
+      color: var(--text-faint);
+      font-size: 13px;
+    }
+
+    /* ── Terminal mockup ──────────────────────── */
+    .terminal {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: left;
+      max-width: 660px;
+      margin: 48px auto 0;
+    }
+    .terminal-bar {
+      background: #21262d;
+      padding: 10px 16px;
+      display: flex;
+      gap: 7px;
+      align-items: center;
+    }
+    .terminal-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+    }
+    .terminal-dot.red    { background: #ff5f57; }
+    .terminal-dot.yellow { background: #ffbd2e; }
+    .terminal-dot.green  { background: #28c840; }
+    .terminal-title {
+      flex: 1;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .terminal-body {
+      padding: 20px 24px;
+      font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+      font-size: 13.5px;
+      line-height: 1.8;
+    }
+    .t-dim    { color: var(--text-faint); }
+    .t-green  { color: var(--accent-green); }
+    .t-blue   { color: var(--accent); }
+    .t-orange { color: var(--accent-orange); }
+    .t-purple { color: var(--accent-purple); }
+    .t-red    { color: var(--accent-red); }
+    .t-text   { color: var(--text); }
+
+    /* ── Section headings ────────────────────── */
+    .section-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .section-intro {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin-bottom: 48px;
+    }
+
+    /* ── Pain ─────────────────────────────────── */
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .pain-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .pain-card-icon { font-size: 24px; margin-bottom: 12px; }
+    .pain-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+    .pain-card p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+
+    /* ── Before / After ──────────────────────── */
+    .ba-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 640px) { .ba-grid { grid-template-columns: 1fr; } }
+    .ba-card {
+      background: var(--bg-card);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .ba-header {
+      padding: 10px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .ba-header.before { background: rgba(248,81,73,.12); color: var(--accent-red); }
+    .ba-header.after  { background: rgba(63,185,80,.12); color: var(--accent-green); }
+    .ba-code {
+      padding: 16px;
+      font-family: 'SF Mono', 'Fira Code', Consolas, monospace;
+      font-size: 12.5px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      white-space: pre;
+      overflow-x: auto;
+    }
+    .ba-code .highlight { color: var(--accent-green); font-weight: 600; }
+    .ba-code .bad       { color: var(--accent-red); }
+    .ba-code .comment   { color: var(--text-faint); }
+
+    /* ── Stack grid ──────────────────────────── */
+    .stack-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .stack-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      transition: border-color .15s;
+    }
+    .stack-card:hover { border-color: var(--accent); }
+    .stack-icon { font-size: 28px; margin-bottom: 12px; }
+    .stack-name { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .stack-desc { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+    /* ── Feature list ────────────────────────── */
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .feature-item { display: flex; gap: 14px; }
+    .feature-icon {
+      flex-shrink: 0;
+      width: 36px; height: 36px;
+      border-radius: 8px;
+      background: rgba(88,166,255,.12);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+    }
+    .feature-text h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .feature-text p  { font-size: 13px; color: var(--text-muted); line-height: 1.55; }
+
+    /* ── Pricing ─────────────────────────────── */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      align-items: start;
+    }
+    @media (max-width: 768px) { .pricing-grid { grid-template-columns: 1fr; } }
+    .pricing-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 24px;
+      position: relative;
+    }
+    .pricing-card.featured {
+      border-color: var(--accent);
+      background: linear-gradient(180deg, rgba(88,166,255,.06) 0%, var(--bg-card) 60%);
+    }
+    .pricing-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: #0d1117;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .pricing-tier {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .pricing-price {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -.04em;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .pricing-price sup { font-size: 1.2rem; vertical-align: super; line-height: 0; }
+    .pricing-desc { font-size: 13px; color: var(--text-muted); margin-bottom: 24px; line-height: 1.5; }
+    .pricing-cta {
+      display: block;
+      text-align: center;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 11px;
+      border-radius: 7px;
+      margin-bottom: 24px;
+      text-decoration: none;
+      transition: background .15s;
+    }
+    .pricing-cta.primary   { background: var(--accent); color: #0d1117; }
+    .pricing-cta.secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
+    .pricing-cta.primary:hover   { background: #79b8ff; text-decoration: none; }
+    .pricing-cta.secondary:hover { border-color: var(--accent); text-decoration: none; }
+    .pricing-divider { height: 1px; background: var(--border); margin: 20px 0; }
+    .pricing-features { list-style: none; }
+    .pricing-features li {
+      font-size: 13px;
+      color: var(--text-muted);
+      padding: 5px 0;
+      display: flex;
+      gap: 10px;
+    }
+    .pricing-features li .check { color: var(--accent-green); flex-shrink: 0; }
+    .pricing-features li .dash  { color: var(--text-faint); flex-shrink: 0; }
+
+    /* ── Comparison table ────────────────────── */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    .compare-table th, .compare-table td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .compare-table th { color: var(--text-muted); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table td:first-child { color: var(--text); }
+    .compare-table td:not(:first-child) { color: var(--text-muted); }
+    .compare-table .good { color: var(--accent-green); font-weight: 600; }
+    .compare-table .bad  { color: var(--accent-red); }
+    .compare-table .highlight-col { background: rgba(88,166,255,.05); }
+
+    /* ── Testimonials ────────────────────────── */
+    .quote-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .quote-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .quote-text {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: var(--text);
+      margin-bottom: 16px;
+      font-style: italic;
+    }
+    .quote-text::before { content: '\201C'; }
+    .quote-text::after  { content: '\201D'; }
+    .quote-author { font-size: 13px; color: var(--text-muted); }
+    .quote-author strong { color: var(--text); font-weight: 600; display: block; }
+
+    /* ── FAQ ─────────────────────────────────── */
+    .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+    .faq-a { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+
+    /* ── Author ──────────────────────────────── */
+    .author-card {
+      display: flex;
+      gap: 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      align-items: flex-start;
+    }
+    @media (max-width: 560px) { .author-card { flex-direction: column; } }
+    .author-avatar {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-purple) 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+    .author-info h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+    .author-info .title { font-size: 13px; color: var(--accent); margin-bottom: 12px; }
+    .author-info p { font-size: 14px; color: var(--text-muted); line-height: 1.65; }
+
+    /* ── Footer CTA ──────────────────────────── */
+    .footer-cta {
+      text-align: center;
+      padding: 80px 0;
+    }
+    .footer-cta h2 { margin-bottom: 14px; }
+    .footer-cta p { color: var(--text-muted); margin-bottom: 32px; }
+    .footer-cta .guarantee {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 20px;
+    }
+
+    /* ── Footer ──────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-faint);
+    }
+
+    /* ── Utilities ───────────────────────────── */
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 9px;
+      border-radius: 4px;
+      margin-right: 4px;
+    }
+    .tag-new     { background: rgba(63,185,80,.15); color: var(--accent-green); }
+    .tag-popular { background: rgba(88,166,255,.15); color: var(--accent); }
+    .tag-elite   { background: rgba(227,179,65,.15); color: var(--gold); }
+
+    code {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-family: 'SF Mono', 'Fira Code', Consolas, monospace;
+      font-size: .88em;
+      color: var(--accent-purple);
+    }
+
+    .highlight-box {
+      background: rgba(88,166,255,.07);
+      border: 1px solid rgba(88,166,255,.2);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .highlight-box p { font-size: 14px; color: var(--text-muted); line-height: 1.7; margin: 0; }
+    .highlight-box strong { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<!-- ─── NAV ─────────────────────────────────────── -->
+<nav>
+  <span class="nav-brand">Claude Code Elite Pack</span>
+  <a href="#pricing" class="nav-cta">Get the Pack →</a>
+</nav>
+
+<!-- ─── HERO ─────────────────────────────────────── -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">For Claude Code Power Users</div>
+    <h1>Claude keeps forgetting<br><span>your stack.</span><br>This fixes it permanently.</h1>
+    <p class="hero-sub">
+      12 battle-tested CLAUDE.md configs + Memory OS + Auto Mode safety profiles +
+      autonomous agent runner. Built by a senior engineer who uses Claude Code every day.
+    </p>
+    <div class="hero-actions">
+      <a href="#pricing" class="btn-primary">Get the Pack — from $19</a>
+      <a href="#examples" class="btn-secondary">See before/after examples</a>
+    </div>
+    <p class="hero-social-proof">Free lifetime updates &nbsp;·&nbsp; 30-day refund &nbsp;·&nbsp; 10-min install</p>
+
+    <div class="terminal">
+      <div class="terminal-bar">
+        <div class="terminal-dot red"></div>
+        <div class="terminal-dot yellow"></div>
+        <div class="terminal-dot green"></div>
+        <div class="terminal-title">~/my-project — claude</div>
+      </div>
+      <div class="terminal-body">
+<span class="t-dim"># Before — you spend 15 min re-explaining every session</span>
+<span class="t-text">you: "In Go, always wrap errors with fmt.Errorf, never panic..."</span>
+<span class="t-text">you: "We use pgx not database/sql..."</span>
+<span class="t-text">you: "Don't put business logic in HTTP handlers..."</span>
+<span class="t-red">claude: *still gets it wrong*</span>
+
+<span class="t-dim"># After — drop in CLAUDE.md, Claude knows from turn 0</span>
+<span class="t-green">$ cp pack/1-stack-configs/go-microservices/CLAUDE.md .</span>
+<span class="t-text">you: "Add a GET /users/:id endpoint"</span>
+<span class="t-green">claude: *writes proper pgx query, wraps errors, no panic, context propagated*</span>
+<span class="t-blue">✓ No explanation needed. No corrections needed.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PAIN ──────────────────────────────────────── -->
+<section>
+  <div class="container">
+    <div class="section-label">The Problem</div>
+    <h2>Context rot is costing you<br>hours every week.</h2>
+    <p class="section-intro">
+      You pay $100–200/month for Claude Max. But every new session, it starts fresh.
+      Here's what actually happens:
+    </p>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-card-icon">🔁</div>
+        <h3>Re-explaining the same conventions</h3>
+        <p>"We use SQLAlchemy 2.x. Always wrap in <code>asyncio.to_thread()</code>.
+        No <code>session.query()</code> legacy style." Every. Single. Session.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-card-icon">🐛</div>
+        <h3>Claude writes patterns you've banned</h3>
+        <p>Go code with <code>panic()</code> in service logic. TypeScript with <code>any</code> everywhere.
+        Kotlin with <code>runBlocking</code> on the main thread. You catch it. You correct it. It forgets.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-card-icon">🔥</div>
+        <h3>30k tokens burned on overhead</h3>
+        <p>Re-explaining architecture. Claude re-reading files it already loaded.
+        Verbose reasoning for simple questions. You hit rate limits faster. Sessions end mid-task.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-card-icon">😰</div>
+        <h3>Auto Mode feels dangerous</h3>
+        <p>You've seen Claude try <code>rm -rf</code> or push to main in Auto Mode.
+        So you stay in manual mode and approve every action. That defeats the purpose.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-card-icon">⏳</div>
+        <h3>Side projects move at 1 task/week</h3>
+        <p>You have 5 hours max. Half goes to context setup.
+        Your projects are stuck in Phase 1 for months because you can't maintain momentum.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-card-icon">🧩</div>
+        <h3>Your team uses other tools too</h3>
+        <p>Claude Code at home, Cursor at work, OpenCode in CI.
+        You maintain three separate instruction files that slowly drift apart.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHAT IT IS ────────────────────────────────── -->
+<section>
+  <div class="container">
+    <div class="section-label">The Solution</div>
+    <h2>A production config system,<br>not a template pack.</h2>
+    <p class="section-intro">
+      Not AI-generated templates. Not copied from GitHub. These are the actual configs from
+      real production codebases, refined over months of daily Claude Code use until Claude
+      stopped making the same mistakes.
+    </p>
+    <div class="feature-list">
+      <div class="feature-item">
+        <div class="feature-icon">📋</div>
+        <div class="feature-text">
+          <h4>12 Stack-Specific CLAUDE.md Files</h4>
+          <p>Each one encodes real conventions for that stack. Drop into your project root.
+          Claude knows your patterns from the very first message.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🧠</div>
+        <div class="feature-text">
+          <h4>Memory OS — Context That Persists</h4>
+          <p>4 structured files Claude reads at session start. Decisions, gotchas,
+          current work — all loaded in 30 seconds. No more context rot.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🛡️</div>
+        <div class="feature-text">
+          <h4>Auto Mode Safety Profiles</h4>
+          <p>4 pre-built settings.json files calibrated for different risk levels.
+          Conservative for exploration. Trusted-dev for commits. CI for cron.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🪝</div>
+        <div class="feature-text">
+          <h4>Hooks Library — Hard Safety Rails</h4>
+          <p>Shell scripts that block <code>rm -rf</code>, block force-push,
+          log every tool call, and notify you on Telegram. Can't be talked around.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🤖</div>
+        <div class="feature-text">
+          <h4>Autonomous Agent Runner</h4>
+          <p>Research at 8am. Work at 8pm. Weekly summary Sunday.
+          Claude runs on a schedule while you sleep. Check the diffs in the morning.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-text">
+          <h4>1M Context Optimization</h4>
+          <p>CLAUDE.md snippets that cut token waste by 40%. Summarize hook.
+          Real-time token usage in your statusline so sessions don't die mid-task.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── STACKS ────────────────────────────────────── -->
+<section>
+  <div class="container">
+    <div class="section-label">Stack Configs</div>
+    <h2>12 configs for the stacks<br>you actually use.</h2>
+    <p class="section-intro">
+      Each CLAUDE.md encodes real, stack-specific conventions — not generic advice.
+      Go and Python are completely different. These reflect that.
+    </p>
+    <div class="stack-grid">
+      <div class="stack-card">
+        <div class="stack-icon">🐹</div>
+        <div class="stack-name">Go Microservices</div>
+        <div class="stack-desc">Error wrapping, no panic(), slog, pgx, chi, interfaces, table-driven tests</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">📘</div>
+        <div class="stack-name">TypeScript / Node</div>
+        <div class="stack-desc">Strict mode, ESM, Zod validation, no any, Hono, MCP SDK patterns</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">▲</div>
+        <div class="stack-name">Next.js App Router <span class="tag tag-new">New</span></div>
+        <div class="stack-desc">Server Components, Server Actions, Prisma singleton, NextAuth</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">🦀</div>
+        <div class="stack-name">Rust <span class="tag tag-new">New</span></div>
+        <div class="stack-desc">anyhow/thiserror, Tokio async, Axum, SQLx compile-time queries</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">☕</div>
+        <div class="stack-name">Java Spring Boot <span class="tag tag-new">New</span></div>
+        <div class="stack-desc">Layered architecture, JPA anti-patterns, MapStruct, exception handling</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">🐍</div>
+        <div class="stack-name">Python FastAPI + React</div>
+        <div class="stack-desc">asyncio.to_thread(), React Query, WebSocket singleton, CORS</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">🔬</div>
+        <div class="stack-name">Python Data Pipeline</div>
+        <div class="stack-desc">SQLAlchemy 2.x, Alembic, Celery, loguru, checkpointing, Pydantic</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">🤖</div>
+        <div class="stack-name">Kotlin Android</div>
+        <div class="stack-desc">Jetpack Compose, MVVM, StateFlow, Hilt, Room, navigation, permissions</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">📱</div>
+        <div class="stack-name">React Native / Expo <span class="tag tag-new">New</span></div>
+        <div class="stack-desc">Expo Router, FlatList, React Query, Zustand, SecureStorage</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">🐦</div>
+        <div class="stack-name">Flutter / Dart <span class="tag tag-new">New</span></div>
+        <div class="stack-desc">Riverpod 2, GoRouter, Freezed models, Dio, ListView.builder</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">🎮</div>
+        <div class="stack-name">GDScript / Godot 4</div>
+        <div class="stack-desc">Signal-first design, no get_node() in loops, save system, input actions</div>
+      </div>
+      <div class="stack-card">
+        <div class="stack-icon">🗂️</div>
+        <div class="stack-name">Side Project Workspace</div>
+        <div class="stack-desc">Multi-project, continue.md pattern, agent runner, status board</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── BEFORE / AFTER ────────────────────────────── -->
+<section id="examples">
+  <div class="container">
+    <div class="section-label">Before / After</div>
+    <h2>The difference is immediate.</h2>
+    <p class="section-intro">Same prompt. Completely different output. No explanation needed.</p>
+
+    <!-- Example 1: Go -->
+    <p style="font-size:13px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.07em; font-weight:600; margin-bottom:12px;">Go — "Add a GET /users/:id endpoint"</p>
+    <div class="ba-grid" style="margin-bottom:32px;">
+      <div class="ba-card">
+        <div class="ba-header before">Without CLAUDE.md</div>
+        <div class="ba-code"><span class="bad">func GetUser(db *sql.DB, id string) (*User, error) {
+    var u User
+    err := db.QueryRow(
+        "SELECT * FROM users WHERE id = " + id,  // ← SQL injection
+    ).Scan(&u.ID, &u.Name)
+    if err != nil {
+        panic(err)  // ← panic in service code
+    }
+    return &u, nil
+}</span></div>
+      </div>
+      <div class="ba-card">
+        <div class="ba-header after">With go-microservices/CLAUDE.md</div>
+        <div class="ba-code"><span class="highlight">func (r *UserRepo) GetUser(
+    ctx context.Context, id string,
+) (*domain.User, error) {
+    row, err := r.db.QueryRow(ctx,
+        "SELECT id, name FROM users WHERE id = $1",
+        id)  // ← parameterized
+    if err != nil {
+        return nil, fmt.Errorf("get user %s: %w", id, err)
+    }
+    var u domain.User
+    if err := row.Scan(&u.ID, &u.Name); err != nil {
+        if errors.Is(err, pgx.ErrNoRows) {
+            return nil, nil
+        }
+        return nil, fmt.Errorf("scan user: %w", err)
+    }
+    return &u, nil
+}</span></div>
+      </div>
+    </div>
+
+    <!-- Example 2: Next.js -->
+    <p style="font-size:13px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.07em; font-weight:600; margin-bottom:12px;">Next.js — "Show all users from the database"</p>
+    <div class="ba-grid" style="margin-bottom:32px;">
+      <div class="ba-card">
+        <div class="ba-header before">Without CLAUDE.md</div>
+        <div class="ba-code"><span class="bad">'use client'
+export default function UsersPage() {
+  const [users, setUsers] = useState([])
+  useEffect(() => {
+    fetch('/api/users')
+      .then(r => r.json())
+      .then(setUsers)  // ← useEffect for server data
+  }, [])
+  return <div>{users.map(u => ...)}</div>
+  // client component, extra API round-trip, no SEO
+}</span></div>
+      </div>
+      <div class="ba-card">
+        <div class="ba-header after">With nextjs-react/CLAUDE.md</div>
+        <div class="ba-code"><span class="highlight">// Server Component — no directive needed
+export default async function UsersPage() {
+  const users = await db.user.findMany({
+    select: { id: true, name: true, email: true },
+    orderBy: { createdAt: 'desc' },
+  })
+  // direct DB call, zero client JS, full SEO
+  return &lt;UserList users={users} /&gt;
+}
+<span class="comment">// No API route. No useEffect. No useState.
+// Faster. Simpler. More secure.</span></span></div>
+      </div>
+    </div>
+
+    <!-- Example 3: Kotlin -->
+    <p style="font-size:13px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.07em; font-weight:600; margin-bottom:12px;">Kotlin Android — "Show a list of items"</p>
+    <div class="ba-grid">
+      <div class="ba-card">
+        <div class="ba-header before">Without CLAUDE.md</div>
+        <div class="ba-code"><span class="bad">@Composable
+fun ItemList() {
+  // Blocks main thread
+  val items = runBlocking { db.itemDao().getAll() }
+  Column {
+    items.forEach { item ->
+      Text(item.name)  // no lazy loading
+    }
+  }
+}</span></div>
+      </div>
+      <div class="ba-card">
+        <div class="ba-header after">With kotlin-android/CLAUDE.md</div>
+        <div class="ba-code"><span class="highlight">@HiltViewModel
+class ItemViewModel @Inject constructor(
+    private val repo: ItemRepository
+) : ViewModel() {
+    val state = repo.getAll()
+        .map { ItemUiState.Success(it) }
+        .stateIn(viewModelScope, WhileSubscribed(5000), Loading)
+}
+
+@Composable
+fun ItemListScreen(vm: ItemViewModel = hiltViewModel()) {
+    val state by vm.state.collectAsState()
+    when (state) {
+        is Loading -> CircularProgressIndicator()
+        is Success -> LazyColumn {
+            items(state.items) { ItemCard(it) }
+        }
+        is Error -> ErrorView(state.message)
+    }
+}</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MEMORY OS ─────────────────────────────────── -->
+<section>
+  <div class="container">
+    <div class="section-label">Memory OS — Pro &amp; Elite</div>
+    <h2>Claude picks up exactly<br>where you left off.</h2>
+    <p class="section-intro">
+      Four markdown files. Claude reads them at session start. Full context in 30 seconds.
+      You never re-explain your project again.
+    </p>
+    <div class="terminal" style="max-width:100%;">
+      <div class="terminal-bar">
+        <div class="terminal-dot red"></div>
+        <div class="terminal-dot yellow"></div>
+        <div class="terminal-dot green"></div>
+        <div class="terminal-title">Session start — with Memory OS</div>
+      </div>
+      <div class="terminal-body">
+<span class="t-text">you: "Continue the auth flow"</span>
+
+<span class="t-dim"># Claude reads memory-bank/ in 30 seconds...</span>
+
+<span class="t-green">claude: I can see from memory-bank/:</span>
+<span class="t-green">  — FastAPI + React trading dashboard</span>
+<span class="t-green">  — JWT: 15-min access tokens, 30-day refresh in httponly cookies</span>
+<span class="t-green">  — Last session: completed /auth/refresh endpoint</span>
+<span class="t-green">  — Left off at: the React useAuth hook in hooks/useAuth.ts</span>
+<span class="t-green">  — Known rule: never localStorage for tokens (systemPatterns.md)</span>
+<span class="t-green">  Picking up at the useAuth hook now...</span>
+<span class="t-blue">
+✓ Zero re-explanation. Full context. Work starts immediately.</span>
+      </div>
+    </div>
+
+    <div class="highlight-box" style="margin-top:32px;">
+      <p>
+        <strong>How it works:</strong> Memory OS is 4 files in <code>memory-bank/</code>.
+        <code>projectBrief.md</code> describes your project once.
+        <code>activeContext.md</code> tracks what you're working on.
+        <code>progress.md</code> is your permanent sprint board.
+        <code>systemPatterns.md</code> accumulates architecture decisions and gotchas so Claude never makes the same mistake twice.
+        Claude reads all four at session start. Claude updates <code>activeContext.md</code> and <code>progress.md</code> at session end.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── MULTI-AGENT ───────────────────────────────── -->
+<section>
+  <div class="container">
+    <div class="section-label">Multi-Agent System — Starter+</div>
+    <h2>Claude works on your projects<br>while you sleep.</h2>
+    <p class="section-intro">
+      A cron-ready script system. Research runs in the morning. Work runs in the evening.
+      You check the diffs over coffee.
+    </p>
+    <div class="terminal" style="max-width:100%;">
+      <div class="terminal-bar">
+        <div class="terminal-dot red"></div>
+        <div class="terminal-dot yellow"></div>
+        <div class="terminal-dot green"></div>
+        <div class="terminal-title">crontab — installed once, runs forever</div>
+      </div>
+      <div class="terminal-body">
+<span class="t-dim"># 8:00am every day — research agent</span>
+<span class="t-blue">0 8 * * * /workspace/scripts/run-research.sh mcp-apps</span>
+<span class="t-dim">→ reads research/AGENT.md, searches web, saves findings/2026-04-05.md</span>
+
+<span class="t-dim"># 8:00pm every day — work agent</span>
+<span class="t-blue">0 20 * * * /workspace/scripts/run-agent-continue.sh mcp-apps</span>
+<span class="t-dim">→ inlines continue.md + latest research → does next task → commits</span>
+
+<span class="t-dim"># Sunday 7:00am — weekly summary</span>
+<span class="t-blue">0 7 * * 0 /workspace/scripts/weekly-summary.sh</span>
+<span class="t-dim">→ reads all continue.md files → generates cross-project digest</span>
+
+<span class="t-green">
+[Mon morning — git log]
+8f3a2c1 feat: implement get_trending_tools with pagination
+4d9b7e2 test: add schema validation for tool input
+</span><span class="t-blue">✓ Two tasks done. You didn't touch the keyboard.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── COMPARISON ───────────────────────────────── -->
+<section>
+  <div class="container">
+    <div class="section-label">Why Not Free GitHub Repos?</div>
+    <h2>Free configs are written<br>for the demo, not production.</h2>
+    <p class="section-intro">
+      Search GitHub for "CLAUDE.md template". You'll find generic files written by
+      people who set Claude Code up once for a tutorial. This is different.
+    </p>
+    <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th class="bad">Free GitHub configs</th>
+            <th class="good highlight-col">Claude Code Elite Pack</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Stack specificity</td>
+            <td class="bad">Generic, one-size-fits-all</td>
+            <td class="good highlight-col">12 stacks — Go vs Python vs Rust are completely different</td>
+          </tr>
+          <tr>
+            <td>Origin</td>
+            <td class="bad">AI-generated templates</td>
+            <td class="good highlight-col">Built from real projects, bugs corrected over months</td>
+          </tr>
+          <tr>
+            <td>Security guidance</td>
+            <td class="bad">None or surface-level</td>
+            <td class="good highlight-col">Per-stack: SQL injection, CORS, token storage, input validation</td>
+          </tr>
+          <tr>
+            <td>Common mistakes section</td>
+            <td class="bad">Missing</td>
+            <td class="good highlight-col">Every config lists exactly what Claude gets wrong without it</td>
+          </tr>
+          <tr>
+            <td>Context system</td>
+            <td class="bad">None</td>
+            <td class="good highlight-col">Memory OS — 4 files keep context alive across sessions</td>
+          </tr>
+          <tr>
+            <td>Auto Mode safety</td>
+            <td class="bad">None</td>
+            <td class="good highlight-col">4 calibrated profiles + hard-block hooks</td>
+          </tr>
+          <tr>
+            <td>Automation</td>
+            <td class="bad">None</td>
+            <td class="good highlight-col">Full cron-ready agent runner, research + work + summary</td>
+          </tr>
+          <tr>
+            <td>Token efficiency</td>
+            <td class="bad">Not considered</td>
+            <td class="good highlight-col">Context-trim snippets, summarize hook, statusline counter</td>
+          </tr>
+          <tr>
+            <td>Updates</td>
+            <td class="bad">Abandoned or infrequent</td>
+            <td class="good highlight-col">Maintained by someone who uses this daily — free lifetime updates</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRICING ──────────────────────────────────── -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-label">Pricing</div>
+    <h2>Pay once. Use forever.</h2>
+    <p class="section-intro">Free lifetime updates. 30-day refund — no questions asked.</p>
+    <div class="pricing-grid">
+
+      <!-- STARTER -->
+      <div class="pricing-card">
+        <div class="pricing-tier">Starter</div>
+        <div class="pricing-price"><sup>$</sup>19</div>
+        <div class="pricing-desc">Drop-in stack configs + autonomous agent runner. Works in 10 minutes.</div>
+        <a href="#" class="pricing-cta secondary">Get Starter →</a>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 12 stack-specific CLAUDE.md files</li>
+          <li><span class="check">✓</span> Go, TypeScript, Next.js, Rust, Java</li>
+          <li><span class="check">✓</span> Python, Kotlin, React Native, Flutter</li>
+          <li><span class="check">✓</span> Godot 4, workspace config</li>
+          <li><span class="check">✓</span> Multi-agent script system</li>
+          <li><span class="check">✓</span> run-research.sh + run-agent-continue.sh</li>
+          <li><span class="check">✓</span> crontab.conf — install and forget</li>
+          <li><span class="check">✓</span> continue.md template</li>
+          <li><span class="check">✓</span> EXAMPLES.md — before/after for all stacks</li>
+          <li><span class="dash">—</span> Memory OS</li>
+          <li><span class="dash">—</span> Auto Mode profiles</li>
+          <li><span class="dash">—</span> Hooks library</li>
+        </ul>
+      </div>
+
+      <!-- PRO -->
+      <div class="pricing-card featured">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="pricing-tier">Pro</div>
+        <div class="pricing-price"><sup>$</sup>37</div>
+        <div class="pricing-desc">Everything in Starter + Memory OS + safety profiles + hooks. The full daily driver setup.</div>
+        <a href="#" class="pricing-cta primary">Get Pro →</a>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Everything in Starter</li>
+          <li><span class="check">✓</span> Memory OS — 4 templates + setup script</li>
+          <li><span class="check">✓</span> projectBrief + activeContext + progress + systemPatterns</li>
+          <li><span class="check">✓</span> Auto Mode profiles (4 levels)</li>
+          <li><span class="check">✓</span> conservative / standard / trusted-dev / CI</li>
+          <li><span class="check">✓</span> Hooks library (6 hooks)</li>
+          <li><span class="check">✓</span> block-rm-rf + block-force-push</li>
+          <li><span class="check">✓</span> log-tool-calls + Telegram notify</li>
+          <li><span class="check">✓</span> session-start context loader</li>
+          <li><span class="dash">—</span> 1M context optimization</li>
+          <li><span class="dash">—</span> Cross-platform AGENTS.md</li>
+          <li><span class="dash">—</span> Notion dashboard</li>
+        </ul>
+      </div>
+
+      <!-- ELITE -->
+      <div class="pricing-card">
+        <div class="pricing-tier">Elite <span class="tag tag-elite">Full System</span></div>
+        <div class="pricing-price"><sup>$</sup>97</div>
+        <div class="pricing-desc">Everything in Pro + token optimization + cross-platform + Notion dashboard.</div>
+        <a href="#" class="pricing-cta secondary">Get Elite →</a>
+        <div class="pricing-divider"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Everything in Pro</li>
+          <li><span class="check">✓</span> 1M context optimization guide</li>
+          <li><span class="check">✓</span> context-trim.md CLAUDE.md snippets</li>
+          <li><span class="check">✓</span> summarize hook (auto-appends to memory)</li>
+          <li><span class="check">✓</span> Token budget statusline config</li>
+          <li><span class="check">✓</span> Cross-platform AGENTS.md pack</li>
+          <li><span class="check">✓</span> Works with Cursor + OpenCode + Continue</li>
+          <li><span class="check">✓</span> Notion Side Project Dashboard</li>
+          <li><span class="check">✓</span> Kanban + timeline + revenue tracker</li>
+          <li><span class="check">✓</span> Research log per project</li>
+        </ul>
+      </div>
+
+    </div>
+    <p style="text-align:center; font-size:13px; color:var(--text-muted); margin-top:24px;">
+      All tiers include free lifetime updates and a 30-day no-questions refund.
+    </p>
+  </div>
+</section>
+
+<!-- ─── WHO IT'S FOR ─────────────────────────────── -->
+<section>
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px;">
+      <div>
+        <h3 style="font-size:1.1rem; font-weight:700; margin-bottom:16px; color:var(--accent-green);">✓ This is for you if:</h3>
+        <ul style="list-style:none; font-size:14px; color:var(--text-muted); line-height:2;">
+          <li>You use Claude Code daily (Pro or Max)</li>
+          <li>You switch between stacks — Go one week, TypeScript the next</li>
+          <li>You've caught Claude generating wrong patterns for your codebase</li>
+          <li>You've spent 20+ min in a session re-explaining architecture</li>
+          <li>You want Auto Mode without the anxiety of what Claude might do</li>
+          <li>You have side projects that aren't moving fast enough</li>
+          <li>Your team uses Cursor or OpenCode alongside Claude Code</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:1.1rem; font-weight:700; margin-bottom:16px; color:var(--accent-red);">✗ This is NOT for you if:</h3>
+        <ul style="list-style:none; font-size:14px; color:var(--text-muted); line-height:2;">
+          <li>You're just trying Claude Code for the first time</li>
+          <li>You want a generic prompt list (GitHub has free ones)</li>
+          <li>You don't have a codebase with actual conventions yet</li>
+          <li>You code in a stack not covered (check the list above first)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── AUTHOR ────────────────────────────────────── -->
+<section>
+  <div class="container">
+    <div class="author-card">
+      <div class="author-avatar">👨‍💻</div>
+      <div class="author-info">
+        <h3>Built by a senior engineer who uses this daily.</h3>
+        <div class="title">10 years · Go, Java, Python, Kotlin, TypeScript · Bangkok, Thailand</div>
+        <p>
+          I built these configs because I was tired of Claude forgetting my stack. I built the agent runner
+          because I have under 5 hours/week for side projects and needed the computer to work while I slept.
+          <br><br>
+          These are the actual files from my actual projects — microservices, trading bots, mobile apps,
+          MCP servers. I cleaned them up and packaged them so you don't have to spend the 40+ hours I spent
+          getting them right.
+          <br><br>
+          I use Claude Code every day. When something changes or breaks, I fix it. Every buyer gets updates free.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ───────────────────────────────────────── -->
+<section>
+  <div class="container">
+    <div class="section-label">FAQ</div>
+    <h2>Common questions.</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Do these work with the Claude Code free tier?</div>
+      <div class="faq-a">The CLAUDE.md configs and Memory OS work regardless of tier — they're just files.
+      The multi-agent scripts use <code>--print</code> mode which requires API access or a Claude Pro/Max subscription.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What version of Claude Code is required?</div>
+      <div class="faq-a">Tested on Claude Code v2.1.x (April 2026). Auto Mode profiles use the settings.json format from v2.0+.
+      Hooks use the standard hook API. CLAUDE.md files work with any version.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do these work with Cursor, OpenCode, or Continue?</div>
+      <div class="faq-a">The CLAUDE.md files work with any editor that reads the file (most do).
+      The AGENTS.md files (Elite tier) are specifically formatted for OpenCode, Cursor, Continue, and other AGENTS.md-compatible tools.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">My stack isn't in the list. What do I do?</div>
+      <div class="faq-a">The 12 configs cover the most common stacks. If yours isn't listed, use
+      <code>side-project-workspace/CLAUDE.md</code> as the base and add your conventions at the bottom.
+      The structure and patterns (error handling, testing, what not to do) transfer across stacks.
+      If you buy and your stack genuinely isn't supported, I'll either customize one for you or refund you.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can the cron agent break my codebase?</div>
+      <div class="faq-a">Use <code>3-auto-mode-profiles/standard/settings.json</code> for cron runs —
+      it allows edits and tests but blocks git push and destructive bash commands.
+      Combine with the <code>block-rm-rf.sh</code> hook for belt-and-suspenders safety.
+      In two months of daily use, the agent has never done something I couldn't revert.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What's your refund policy?</div>
+      <div class="faq-a">30-day no-questions refund. If you drop the configs in and they don't work for your stack,
+      I'll refund you or customize one config for you directly. Reply to your purchase receipt.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How long does setup take?</div>
+      <div class="faq-a">Starter: 5 minutes (copy one file, you're done). Pro: 15 minutes.
+      Elite (all 8 components): about 25 minutes. See <code>SETUP.md</code> included in the pack for step-by-step instructions.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do I get future updates?</div>
+      <div class="faq-a">Updates are pushed to the Gumroad product. You'll receive an email when a new version is available.
+      All buyers get every future update for free — no re-purchase, no subscription.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER CTA ────────────────────────────────── -->
+<div class="footer-cta">
+  <div class="container">
+    <h2>Stop wasting your sessions<br>on re-explaining your stack.</h2>
+    <p>Claude knows your conventions from turn 0. Memory persists. Agents run while you sleep.</p>
+    <div class="hero-actions">
+      <a href="#pricing" class="btn-primary">Get the Pack — from $19</a>
+      <a href="#examples" class="btn-secondary">See examples first</a>
+    </div>
+    <div class="guarantee">
+      🛡️ 30-day refund &nbsp;·&nbsp; Free lifetime updates &nbsp;·&nbsp; 10-min install
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Claude Code Elite Pack &nbsp;·&nbsp; Built by a senior engineer in Bangkok &nbsp;·&nbsp; Questions? Reply to your purchase receipt.</p>
+</footer>
+
+</body>
+</html>

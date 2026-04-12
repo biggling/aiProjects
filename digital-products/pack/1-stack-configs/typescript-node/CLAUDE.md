@@ -88,3 +88,59 @@ src/
 - No `console.log` in production code — use a structured logger (pino)
 - No `ts-ignore` or `eslint-disable` without a comment explaining why
 - No synchronous file I/O (`readFileSync`) in request handlers
+
+## Security
+- Set HTTP security headers with `helmet` (or Hono's equivalent) on every app
+- Configure CORS explicitly — never `Access-Control-Allow-Origin: *` in production
+- Validate and sanitize all user input at the route boundary using Zod before it enters service layer
+- Never put secrets in environment variable names that start with `VITE_` or `NEXT_PUBLIC_` (they get bundled client-side)
+- Use `crypto.randomUUID()` for ID generation — never `Math.random()`
+- Rate-limit auth and sensitive endpoints: `express-rate-limit` or Hono middleware
+- Use parameterized queries — never string-concatenate SQL
+
+```typescript
+// Correct — Zod validation at boundary
+const bodySchema = z.object({ email: z.string().email(), password: z.string().min(8) })
+
+app.post('/login', (c) => {
+  const result = bodySchema.safeParse(await c.req.json())
+  if (!result.success) return c.json({ error: 'Invalid input' }, 400)
+  // result.data is now typed and safe
+})
+```
+
+## Graceful Shutdown
+- Handle `SIGTERM` and `SIGINT` — close DB pools, flush queues before exit
+- Never `process.exit(1)` inside route handlers — throw and let the framework handle it
+
+```typescript
+// Shutdown pattern
+const shutdown = async () => {
+  await server.close()
+  await db.end()
+  process.exit(0)
+}
+process.on('SIGTERM', shutdown)
+process.on('SIGINT', shutdown)
+```
+
+## Logging (pino)
+- Use `pino` for structured JSON logging in all environments
+- Include `requestId` in every log line within a request handler
+- Log at `info` for normal flow, `warn` for handled errors, `error` for unexpected failures
+- Never log passwords, tokens, or full request bodies
+
+```typescript
+// src/lib/logger.ts
+import pino from 'pino'
+export const logger = pino({ level: process.env.LOG_LEVEL ?? 'info' })
+```
+
+## Common Mistakes Claude Makes Without This Config
+- Using `interface` everywhere instead of `type` for object shapes
+- Using `any` instead of `unknown` + type guards
+- Writing `.then()` chains instead of `async/await`
+- Default exports instead of named exports
+- Missing `AbortController` timeout on `fetch()` calls
+- Forgetting `import type` for type-only imports (causes circular dependency issues in bundlers)
+- Using `Math.random()` for IDs or tokens

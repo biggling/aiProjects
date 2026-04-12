@@ -114,3 +114,48 @@ interface ItemDao {
 - No business logic in Composables
 - No hardcoded strings — use `stringResource(R.string.key)`
 - No hardcoded dimensions — use `dimensionResource()` or `MaterialTheme.spacing`
+
+## Navigation (Compose Navigation)
+- Define all routes as constants in a `Screen` sealed class or object
+- Pass only primitive arguments via nav args — load full objects from ViewModel/Repository
+- Use `rememberNavController()` at the top-level composable only; pass `NavController` down as a lambda, not the controller itself
+- Back stack: use `popUpTo` + `launchSingleTop = true` to avoid duplicate destinations
+
+```kotlin
+// Correct — typed route constants
+sealed class Screen(val route: String) {
+    object Home : Screen("home")
+    object Detail : Screen("detail/{itemId}") {
+        fun createRoute(itemId: Int) = "detail/$itemId"
+    }
+}
+```
+
+## Permissions
+- Request permissions at the moment they're needed, not at app launch
+- Use `rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission())` in Compose
+- Handle denial gracefully — show rationale, provide a path to settings
+- Never assume a permission is granted — always check before use
+
+```kotlin
+val launcher = rememberLauncherForActivityResult(
+    ActivityResultContracts.RequestPermission()
+) { granted ->
+    if (!granted) showPermissionRationale()
+}
+```
+
+## Offline-First / Data Sync
+- Room is the single source of truth — UI always reads from Room, never directly from network
+- Repository fetches from network, saves to Room, Room emits updated `Flow<T>` to UI
+- Use `WorkManager` for background sync that must survive process death
+- Mark sync work as `Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED)`
+
+## Common Mistakes Claude Makes Without This Config
+- Calling `viewModel()` inside nested Composables (creates a new ViewModel per recomposition)
+- Using `LiveData` in new code instead of `StateFlow`
+- Calling DAO directly from ViewModel instead of via Repository
+- Using `runBlocking` in production coroutine code
+- Using `GlobalScope.launch` instead of `viewModelScope`
+- `Column { items.forEach { ... } }` instead of `LazyColumn` for lists
+- Accessing DB on the main thread (missing `withContext(Dispatchers.IO)`)

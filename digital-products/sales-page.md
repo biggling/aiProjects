@@ -1,5 +1,10 @@
 # Sales Page — Claude Code Elite Pack
 
+> ⚠️ This file is superseded by the polished versions in `sales/`:
+> - `sales/landing-page.html` — standalone HTML landing page (host anywhere)
+> - `sales/gumroad-description.md` — Gumroad copy, ready to paste
+> - `sales/social-launch-copy.md` — Reddit, Twitter, Product Hunt, HN, LinkedIn
+>
 > Platform: Gumroad (primary), Etsy (secondary)
 > Price: $19 / $37 / $97
 > Keyword target: "claude code CLAUDE.md config pack"

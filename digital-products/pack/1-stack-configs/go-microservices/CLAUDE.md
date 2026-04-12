@@ -85,3 +85,62 @@ pkg/                    ← shared, importable by other services
 - No `interface{}` or `any` without a clear reason — use typed interfaces
 - No `time.Sleep` in production logic — use tickers or context deadlines
 - No ignoring errors: `_, err := f()` must handle `err`
+
+## Security
+- Validate all input at the HTTP boundary — never trust request body fields without validation
+- Use `net/http`'s `MaxBytesReader` to limit request body size: `r.Body = http.MaxBytesReader(w, r.Body, 1<<20)`
+- Never log request bodies that may contain credentials or PII
+- Use `crypto/rand` for token/secret generation — never `math/rand`
+- Set `Secure`, `HttpOnly`, `SameSite=Strict` on session cookies
+- Rate-limit auth endpoints — use `golang.org/x/time/rate` or middleware
+- Never expose internal error messages to clients — map to safe public messages
+
+```go
+// Correct — safe error response
+func (h *Handler) handleError(w http.ResponseWriter, err error, code int) {
+    h.log.Error("request failed", "error", err)  // full error to logs
+    http.Error(w, http.StatusText(code), code)    // safe message to client
+}
+```
+
+## Observability
+- Add OpenTelemetry tracing: `go.opentelemetry.io/otel`
+- Instrument every service boundary (HTTP handler, DB call, external API call)
+- Propagate trace context via HTTP headers: `otel.GetTextMapPropagator().Inject(ctx, header)`
+- Expose `/metrics` (Prometheus format) and `/healthz` on a separate internal port
+- Health check endpoint should return 200 only when the service is ready to accept traffic (DB connected, etc.)
+
+```go
+// Health check pattern
+func (h *Handler) HandleHealth(w http.ResponseWriter, r *http.Request) {
+    if err := h.db.PingContext(r.Context()); err != nil {
+        http.Error(w, "db not ready", http.StatusServiceUnavailable)
+        return
+    }
+    w.WriteHeader(http.StatusOK)
+}
+```
+
+## Graceful Shutdown
+- Always implement graceful shutdown — drain in-flight requests before exiting
+- Listen for `SIGTERM` and `SIGINT`; give handlers 15–30 seconds to finish
+- Close DB connections and Kafka consumers after HTTP server stops
+
+```go
+// Shutdown pattern
+quit := make(chan os.Signal, 1)
+signal.Notify(quit, syscall.SIGTERM, syscall.SIGINT)
+<-quit
+ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
+defer cancel()
+server.Shutdown(ctx)
+```
+
+## Common Mistakes Claude Makes Without This Config
+- Writing `panic()` in service code instead of returning errors
+- Using `interface{}` instead of typed interfaces for repository mocks
+- Placing business logic in HTTP handlers instead of the service layer
+- Using `math/rand` for token generation
+- Missing `context.Context` propagation through the call chain
+- Hardcoding ports or DB URLs in code instead of reading from env
+- Using `time.Sleep` instead of context timeouts for retry logic

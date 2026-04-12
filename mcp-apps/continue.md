@@ -1,7 +1,7 @@
 # MCP Apps / MCP Server Products — Continue
 
 ## Last Session
-2026-03-22 — Phase 1 research complete + buyer persona / market sizing research added. See mcp-apps/research/findings/2026-03-22.md for full findings.
+2026-04-05 — Batch 2 research complete: 10 new MCP opportunities researched (sports/betting, media monitoring, visa/travel, energy/carbon, grants, health/wearables, multi-cloud FinOps, academic literature, CVE security, patent IP). Top picks: Visa Requirements MCP (+6 score), CVE Security MCP (+5), Grant Discovery MCP (+5). See research/findings/2026-04-05_new-niches-batch2.md. Master ranking updated to 30 total opportunities in master-opportunity-ranking-2026-04-05.md.
 
 ## What This Is
 Build and sell niche MCP servers listed on Claude/ChatGPT app marketplaces. App directories are largely empty in 2026 — early movers with quality, focused tools can command $10-50/month subscriptions.

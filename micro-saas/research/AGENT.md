@@ -35,6 +35,8 @@
 - **Webhook Safety Net**: High demand for managed webhook proxies (e.g., "HookSalvage") for solo devs. [2026-03-24, Synthesis]
 - **Vertical Micro-SaaS Gap**: A $19–$49/mo "sweet spot" for tools solving hyper-specific problems (e.g., Solar Installers, HVAC). [2026-03-27, Reddit]
 - **"The Seat Apocalypse"**: Shift from per-seat to Hybrid/Usage-Based models as AI reduces human headcount. [2026-03-25, Medium]
+- **EU AI Act "Deployer" Mandate**: SMBs using AI APIs must have an inventory and transparency labels by Aug 2, 2026. [2026-04-06, getactready.com]
+- **California DROP Automation**: Businesses must poll the state "Delete Request" platform every 45 days starting Aug 1, 2026. [2026-04-06, datagrail.io]
 
 ### Market Size & Growth
 - **Freelancer Market**: Global market size projected at $1.5 trillion by 2026. [2026-03-23, Medium]
@@ -43,50 +45,34 @@
 - **Micro-SaaS Market**: Projected to reach $60B by 2030, with 2026 favoring "headless" API-first tools. [2026-03-27, Search]
 
 ### Target Persona — E-commerce Sellers (Global)
-- **Shopee Technical Fee**: 5% technology service fee effective February 1, 2026 for SG/MY/TH/VN all seller types including cross-border. [2026-03-27, BigSeller]
-- **Shopee New Store Benefit**: 3-month commission-free program (Jan 1, 2026); covers SG/MY/TH/VN/PH/TW; cap 500 orders/month. [2026-03-27, Forest Shipping]
-- **Shopee PH Penalties**: LSR threshold halved to 5%; Pre-order listing cap set at ≤5% with strict enforcement. [2026-03-26, Shopee.sg]
-- **Shopee Penalty AI (v4.2)**: Seller Performance Policy v4.2 (March 2026): 83% of deductions from AI flagging; penalties trigger within 90 minutes; no real-time monitoring tool exists. [2026-03-27, Alibaba]
-- **Shopee PIV**: Product Identity Verification mandatory for new listings in electronics, cosmetics, baby products, branded apparel. [2026-03-27, Shopee SG]
-- **TikTok FBT Mandate**: Aggressive push for "Fulfilled by TikTok" in US; algorithm "punishing" non-FBT sellers with reach drops. [2026-03-27, YouTube/Reddit]
-- **TikTok Semantic Audits**: Mandatory product attributes enforced March 20, 2026; AI suppresses listings with video-data conflicts. No third-party enrichment tool exists. [2026-03-27, CJDropshipping]
-- **Etsy Semantic Search**: Transitioned to LLM-powered search in March 2026; prioritizes intent and AI visual photo verification. [2026-03-27, Gelato]
+- **Shopee Technical Fee**: 5% technology service fee effective February 1, 2026 for SG/MY/TH/VN all seller types. [2026-03-27, BigSeller]
+- **Amazon Account Health Rating (AHR)**: Minimum score of 200 required; 3-day grace period for critical violations in 2026. [2026-04-06, apexbin.com]
+- **VAT OSS Expulsion Risk**: 3 missed filings in 2 years leads to a 2-year ban from the simplified EU tax scheme. [2026-04-06, amavat.eu]
+- **TikTok "Comment-to-Buy"**: Integration with AI agents (e.g., Agentative) now standard for live-selling automation. [2026-04-06, agentative.ai]
+- **Shopify MoR Adoption**: High-growth sellers shifting to Merchant of Record services (Paddle/Lemon Squeezy) to bypass global VAT registration. [2026-04-06, Reddit]
 
 ### Target Persona — Freelancers / Solo Devs (Global)
 - **Pain Points**: Bloatware fatigue; high demand for "Apple Notes-like" minimalist invoicing tools. [2026-03-27, Reddit]
 - **E-Invoicing Compliance**: Mandatory e-invoicing standards in 2026 creating "compliance headaches" for solo freelancers. [2026-03-27, Reddit]
-- **Webhook Management**: `HookBytes` (Laravel 12) emerged as a lightweight alternative for solo dev monitoring. [2026-03-24, Reddit]
-
-### Target Persona — SMB Owners (Global)
-- **Pain Points**: AI "Token Shock" (unpredictable costs) and "Shadow AI" data leakage concerns. [2026-03-23, 2026 Trends]
-- **EU AI Act Article 4**: Organizations must complete "AI Literacy" training for staff by Aug 2, 2026. [2026-03-27, Medium]
-
-### Target Persona — Content Creators / Influencers (Global)
-- **AI Content Repurposing**: High demand for tools turning one video into ten platform-specific formats automatically. [2026-03-27, Search]
 
 ### Thai SMB & Seller Pain Points
-- **Shopee PH/MY/TH**: Local sellers crushed by 20% fees and China competition. [2026-03-23, Reddit]
-- **Shopee Compliance**: `sender_real_name` now mandatory for Taiwan C2C order APIs. [2026-03-24, Shopee Open Platform]
+- **e-Tax Invoice by Email**: Simplified path for SMEs (<30M THB revenue); requires PDF/A-3 or XML with ETDA timestamps. [2026-04-06, RD.go.th]
+- **200% Software Deduction**: Thai SMEs can double-deduct e-tax software costs from taxable income through 2027. [2026-04-06, storecove.com]
 
-### Pricing Models
-- **Usage-Based Pricing**: 70% of B2B customers prefer per-transaction or outcome-based models over seat-based. [2026-03-24, Dashboardly]
-- **Hybrid Gold Standard**: 51% of AI SaaS use a base fee + metered usage to balance MRR and expansion. [2026-03-25, Zylo]
+### Regulatory & Compliance
+- **FTC Operation AI Comply**: Crackdown on "AI-washing" and deceptive health claims in wellness marketing. [2026-04-06, afslaw.com]
+- **GDPR/CCPA Identity Verification**: Surge in "DSAR spam" driving demand for automated ID verification in deletion tools. [2026-04-06, Enzuzo]
+- **EU Digital Omnibus Trilogue**: April 28, 2026 target date; may delay High-Risk AI deadline to Dec 2026/early 2027. Transparency rules (Aug 2) unchanged. [2026-04-12, onetrust.com]
+- **California DROP Adoption Gap**: Only 575 registered data brokers vs. 1,000+ estimated operating in CA; 242,000+ consumer requests already submitted. [2026-04-12, transcend.io]
 
-### Webhook Tools Landscape
-- **Hookdeck**: Dominant inbound webhook SaaS; $39/mo (1M req); expanded to outbound "Outpost" in 2026. [2026-03-27, Hookdeck]
-- **Svix Pricing Gap**: $0 → $490/mo with no mid-tier; gap for 100K–500K msg/mo teams at $29–$99/mo. [2026-03-27, Svix]
-- **Convoy**: MIT open-source, self-hosted, inbound + outbound on PostgreSQL. [2026-03-27, MagicBell]
-- **LeanMQ**: New open-source Redis-based webhook replacement with DLQ/TTL. [2026-03-27, DEV Community]
+### TikTok Shop LDR (Post-Enforcement)
+- **LDR Enforcement Live April 6**: 50% order volume cap at >10% LDR; carrier *scan* (not label) required within 2 business days. No competitor tool launched yet. [2026-04-12, geekseller.com]
+- **Carrier Scan Aggregation Gap**: Real-time carrier scan status + proactive alerting is the core unsolved problem for sellers. [2026-04-12, Synthesis]
 
-### Alternative Ideas
-- **Developer Utilities**: Webhook Dead-Letter Office, Env-to-Secret Sync, SQL-to-CSV Scheduler. [2026-03-23, 2026 Trends]
-- **AI Invoice Negotiator**: Automated system for analyzing client payment history and proposing settlements. [2026-03-27, Reddit]
-- **EU AI Act Article 4 SMB Tool**: Lightweight compliance tracker (training + audit trail + AI inventory) for EU SMBs; August 3, 2026 enforcement deadline; no micro-SaaS exists yet. [2026-03-27, EU AI Act]
-
-### GTM — First 10 Customers
-- **2026 Playbook**: Landing page (20+ signups) + 10–20 problem interviews + beta discount = validate before build. [2026-03-27, Superframeworks]
-- **Channels that work**: Reddit "I built this" posts in niche subreddits; LinkedIn before/after posts; LTD pre-sales on AppSumo. [2026-03-27, Indie Hackers/Reddit]
-- **2026 Indie Stack**: Lovable + Cursor + Supabase + Stripe = ship in days for $0–$50/month. [2026-03-27, TLDL]
+### Shopee (April 2026 Policy Updates)
+- **90-Minute Auto-Penalty**: Shopee now triggers penalty points within 90 minutes of breach; failed appeals are non-refundable. [2026-04-12, shopdora.com]
+- **New Infrastructure Fees**: Active Global Selling program fee introduced April 1 for MY, PH, TH. [2026-04-12, shopdora.com]
+- **Overseas Warehouse 90-Day Rule**: Products stored >90 days trigger automatic 14-day retrieval notice. [2026-04-12, shopdora.com]
 
 ---
 

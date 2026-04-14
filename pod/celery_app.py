@@ -1,7 +1,7 @@
 from celery import Celery
-from tools.shared.config import REDIS_URL
+from tools.shared.config import CELERY_BROKER_URL, CELERY_RESULT_BACKEND
 
-app = Celery("pod", broker=REDIS_URL, backend=REDIS_URL)
+app = Celery("pod", broker=CELERY_BROKER_URL, backend=CELERY_RESULT_BACKEND)
 
 app.conf.update(
     task_serializer="json",

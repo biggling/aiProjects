@@ -63,7 +63,8 @@ S3_ENDPOINT_URL = _optional("S3_ENDPOINT_URL")
 
 # App
 DATABASE_URL = _optional("DATABASE_URL", "sqlite:///data/pod.db")
-REDIS_URL = _optional("REDIS_URL", "redis://redis:6379/0")
+CELERY_BROKER_URL = _optional("CELERY_BROKER_URL", "sqla+sqlite:///data/celery_broker.db")
+CELERY_RESULT_BACKEND = _optional("CELERY_RESULT_BACKEND", "db+sqlite:///data/celery_results.db")
 DASHBOARD_USER = _optional("DASHBOARD_USER", "admin")
 DASHBOARD_PASS = _optional("DASHBOARD_PASS", "changeme")
 

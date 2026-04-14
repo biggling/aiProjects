@@ -1,14 +1,4 @@
 services:
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6379:6379"
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-
   dashboard:
     build: .
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000
@@ -17,9 +7,6 @@ services:
     env_file: .env
     volumes:
       - ./data:/app/data
-    depends_on:
-      redis:
-        condition: service_healthy
 
   worker:
     build: .
@@ -27,9 +14,6 @@ services:
     env_file: .env
     volumes:
       - ./data:/app/data
-    depends_on:
-      redis:
-        condition: service_healthy
 
   beat:
     build: .
@@ -37,16 +21,3 @@ services:
     env_file: .env
     volumes:
       - ./data:/app/data
-    depends_on:
-      redis:
-        condition: service_healthy
-
-  flower:
-    image: mher/flower
-    command: celery --broker=redis://redis:6379/0 flower --basic-auth=${DASHBOARD_USER:-admin}:${DASHBOARD_PASS:-changeme}
-    ports:
-      - "5555:5555"
-    env_file: .env
-    depends_on:
-      redis:
-        condition: service_healthy

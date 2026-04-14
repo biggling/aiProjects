@@ -65,7 +65,7 @@ def _generate_gemini(prompt_text: str, output_path: str) -> dict | None:
             )
             image_bytes = response.generated_images[0].image.image_bytes
         else:
-            # Gemini 2.0 Flash native image output
+            # Gemini Flash native image output
             response = client.models.generate_content(
                 model=GEMINI_IMAGE_MODEL,
                 contents=prompt_text,
@@ -74,7 +74,11 @@ def _generate_gemini(prompt_text: str, output_path: str) -> dict | None:
                 ),
             )
             part = response.candidates[0].content.parts[0]
-            image_bytes = base64.b64decode(part.inline_data.data)
+            inline = part.inline_data
+            image_bytes = inline.data  # already bytes — no base64 decode needed
+            # Adjust extension to match actual mime type
+            if inline.mime_type == "image/jpeg":
+                output_path = os.path.splitext(output_path)[0] + ".jpg"
 
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, "wb") as f:

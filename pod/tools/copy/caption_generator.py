@@ -1,31 +1,27 @@
 from sqlalchemy import select
 
-from tools.shared.api_clients import get_anthropic
+from tools.shared.api_clients import get_gemini
 from tools.shared.db import get_session
 from tools.shared.models import Listing, Niche
 from tools.shared.logger import get_logger
 
 logger = get_logger("caption_generator")
 
+_CAPTION_MODEL = "gemini-2.5-flash"
+
 
 def generate_caption(title: str, keyword: str) -> str:
-    """Generate a social media caption via Claude."""
-    client = get_anthropic()
+    """Generate a social media caption via Gemini."""
+    client = get_gemini()
 
-    response = client.messages.create(
-        model="claude-sonnet-4-20250514",
-        max_tokens=256,
-        messages=[{
-            "role": "user",
-            "content": (
-                f'Write ONE engaging social media caption (max 200 characters) for this product:\n'
-                f'Title: {title}\nNiche: {keyword}\n'
-                f'Include 3-5 relevant hashtags. Output ONLY the caption text, nothing else.'
-            ),
-        }],
+    prompt = (
+        f'Write ONE engaging social media caption (max 200 characters) for this product:\n'
+        f'Title: {title}\nNiche: {keyword}\n'
+        f'Include 3-5 relevant hashtags. Output ONLY the caption text, nothing else.'
     )
 
-    caption = response.content[0].text.strip()
+    response = client.models.generate_content(model=_CAPTION_MODEL, contents=prompt)
+    caption = response.text.strip()
     return caption[:200]
 
 

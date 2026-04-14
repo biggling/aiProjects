@@ -2,39 +2,34 @@ import json
 
 from sqlalchemy import select
 
-from tools.shared.api_clients import get_anthropic
+from tools.shared.api_clients import get_gemini
 from tools.shared.db import get_session
 from tools.shared.models import Design, Listing, Niche
 from tools.shared.logger import get_logger
 
 logger = get_logger("copy_generator")
 
+_COPY_MODEL = "gemini-2.5-flash"
+
 
 def generate_copy(keyword: str) -> dict:
-    """Call Claude to generate Etsy listing copy for a niche."""
-    client = get_anthropic()
+    """Call Gemini to generate Etsy listing copy for a niche."""
+    client = get_gemini()
 
-    response = client.messages.create(
-        model="claude-sonnet-4-20250514",
-        max_tokens=2048,
-        system=(
-            "You are an Etsy SEO expert. Output ONLY valid JSON, no markdown, "
-            "no code blocks, no explanation."
-        ),
-        messages=[{
-            "role": "user",
-            "content": (
-                f'For the niche "{keyword}" and product type "t-shirt", '
-                "write a JSON object with:\n"
-                '- "title": 140-char Etsy title, front-load keywords\n'
-                '- "description": 800-char description, 5 bullet points, benefits-focused\n'
-                '- "tags": array of exactly 13 strings, mix long-tail and short keywords\n'
-                "Output only valid JSON."
-            ),
-        }],
+    prompt = (
+        "You are an Etsy SEO expert. Output ONLY valid JSON, no markdown, "
+        "no code blocks, no explanation.\n\n"
+        f'For the niche "{keyword}" and product type "t-shirt", '
+        "write a JSON object with:\n"
+        '- "title": 140-char Etsy title, front-load keywords\n'
+        '- "description": 800-char description, 5 bullet points, benefits-focused\n'
+        '- "tags": array of exactly 13 strings, mix long-tail and short keywords\n'
+        "Output only valid JSON."
     )
 
-    text = response.content[0].text.strip()
+    response = client.models.generate_content(model=_COPY_MODEL, contents=prompt)
+
+    text = response.text.strip()
     if text.startswith("```"):
         text = text.split("```")[1]
         if text.startswith("json"):

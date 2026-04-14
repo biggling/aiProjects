@@ -25,9 +25,9 @@ GEMINI_API_KEY = _optional("GEMINI_API_KEY")
 # "auto" tries Gemini first (cheaper), falls back to Stability AI, then DALL-E.
 IMAGE_BACKEND = _optional("IMAGE_BACKEND", "auto")
 
-# Gemini image model: "imagen-3.0-generate-002" (best quality) or
-# "gemini-2.0-flash-preview-image-generation" (faster/cheaper)
-GEMINI_IMAGE_MODEL = _optional("GEMINI_IMAGE_MODEL", "nano banana2")
+# Gemini image model: "imagen-4.0-generate-001" (best quality) or
+# "gemini-3.1-flash-image-preview" (faster/cheaper)
+GEMINI_IMAGE_MODEL = _optional("GEMINI_IMAGE_MODEL", "gemini-3.1-flash-image-preview")
 
 # Etsy — Shop A (personalized gifts / seasonal)
 ETSY_API_KEY = _optional("ETSY_API_KEY")
